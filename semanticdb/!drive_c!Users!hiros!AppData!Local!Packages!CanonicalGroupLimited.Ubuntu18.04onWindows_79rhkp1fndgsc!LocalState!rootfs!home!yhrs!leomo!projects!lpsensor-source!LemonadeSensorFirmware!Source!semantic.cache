@@ -1,0 +1,1495 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [235 253])
+            ("string.h" include (:system-flag t) nil [254 273])
+            ("LpmsSensorParameters.h" include nil nil [275 308])
+            ("debug_msg.h" include nil nil [309 331])
+            ("LedControl_stm32.h" include nil nil [332 361])
+            ("LpmsAssignments.h" include nil nil [362 390])
+            ("LpmsRtc.h" include nil nil [391 411])
+            ("LpmsTimebase.h" include nil nil [412 437])
+            ("SensorManager.h" include nil nil [438 464])
+            ("GasGauge.h" include nil nil [465 486])
+            ("Charger.h" include nil nil [487 507])
+            ("version.h" include nil nil [508 528])
+            ("gReg" variable (:type ("LpmsReg" type (:type "class") nil nil)) nil [530 543])
+            ("productId" variable
+               (:dereference 1
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [544 566])
+            ("sensorInfo" variable
+               (:dereference 1
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [567 590])
+            ("lpFilterParam" variable
+               (:typemodifiers ("extern")
+                :type ("LpFilterParameters" type (:type "class") nil nil))
+                nil [592 632])
+            ("calibrationData" variable
+               (:typemodifiers ("extern")
+                :type ("LpmsCalibrationData" type (:type "class") nil nil))
+                nil [633 676])
+            ("a" variable
+               (:typemodifiers ("extern")
+                :type ("LpVector3f" type (:type "class") nil nil))
+                nil [677 697])
+            ("b" variable
+               (:typemodifiers ("extern")
+                :type ("LpVector3f" type (:type "class") nil nil))
+                nil [698 718])
+            ("g" variable
+               (:typemodifiers ("extern")
+                :type ("LpVector3f" type (:type "class") nil nil))
+                nil [719 739])
+            ("w" variable
+               (:typemodifiers ("extern")
+                :type ("LpVector3f" type (:type "class") nil nil))
+                nil [740 760])
+            ("gRaw" variable
+               (:typemodifiers ("extern")
+                :type ("LpVector3f" type (:type "class") nil nil))
+                nil [761 784])
+            ("q" variable
+               (:typemodifiers ("extern")
+                :type ("LpVector4f" type (:type "class") nil nil))
+                nil [785 805])
+            ("qOffset" variable
+               (:typemodifiers ("extern")
+                :type ("LpVector4f" type (:type "class") nil nil))
+                nil [806 832])
+            ("qAfterOffset" variable
+               (:typemodifiers ("extern")
+                :type ("LpVector4f" type (:type "class") nil nil))
+                nil [833 864])
+            ("r" variable
+               (:typemodifiers ("extern")
+                :type ("LpVector3f" type (:type "class") nil nil))
+                nil [865 885])
+            ("rAfterOffset" variable
+               (:typemodifiers ("extern")
+                :type ("LpVector3f" type (:type "class") nil nil))
+                nil [886 917])
+            ("linAcc" variable
+               (:typemodifiers ("extern")
+                :type ("LpVector3f" type (:type "class") nil nil))
+                nil [918 943])
+            ("magNoise" variable
+               (:typemodifiers ("extern")
+                :type "float")
+                nil [944 966])
+            ("lpmsStatus" variable
+               (:typemodifiers ("extern")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [967 994])
+            ("temperature" variable
+               (:typemodifiers ("extern")
+                :type "float")
+                nil [995 1020])
+            ("measurementTime" variable
+               (:typemodifiers ("extern")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1021 1053])
+            ("mQ_hx" variable
+               (:typemodifiers ("extern")
+                :type ("LpVector4f" type (:type "class") nil nil))
+                nil [1054 1078])
+            ("mQ_offset" variable
+               (:typemodifiers ("extern")
+                :type ("LpVector4f" type (:type "class") nil nil))
+                nil [1079 1107])
+            ("ledFlashTime" variable
+               (:typemodifiers ("extern")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1108 1137])
+            ("lpmsMeasurementPeriod" variable
+               (:typemodifiers ("extern")
+                :type "float")
+                nil [1138 1173])
+            ("lpmsMeasurementIntervals" variable
+               (:typemodifiers ("extern")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1174 1214])
+            ("lpmsLedPeriod" variable
+               (:typemodifiers ("extern")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1215 1245])
+            ("cyclesPerDataTransfer" variable
+               (:typemodifiers ("extern")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1246 1283])
+            ("deviceName" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1284 1314])
+            ("waveform" variable
+               (:typemodifiers ("extern")
+                :type ("LED_Waveform" type (:type "class") nil nil))
+                nil [1315 1344])
+            ("ledState" variable
+               (:typemodifiers ("extern")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1345 1370])
+            ("cyclesPerDataTransfer" variable
+               (:typemodifiers ("extern")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1371 1408])
+            ("writeRegisters" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1434 1439]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1411 1479])
+            ("getImuID" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1499 1504]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1481 1553])
+            ("setImuID" function
+               (:arguments 
+                  ( ("id" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1569 1581]))                  
+                :type "void")
+                nil [1555 1626])
+            ("updateConfigRegToSensorManager" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1664 1669]))                  
+                :type "void")
+                nil [1628 1823])
+            ("setStreamFreq" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1847 1861]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1825 3124])
+            ("updateStreamFreq" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3148 3153]))                  
+                :type "void")
+                nil [3126 4179])
+            ("setOrientationOffset" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4210 4224]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [4181 4493])
+            ("resetOrientationOffset" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4528 4542]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [4497 4670])
+            ("setGyrRange" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4692 4706]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [4672 5386])
+            ("setGyrOutputRate" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5413 5427]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5388 5980])
+            ("setGyrBias" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6016 6030]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5997 6175])
+            ("getGyrBias" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6196 6210])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6211 6223]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [6177 6304])
+            ("getGyrAlignMatrix" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6332 6346])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6347 6359]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [6306 6446])
+            ("getGyrAlignBias" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6472 6486])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6487 6499]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [6448 6585])
+            ("setGyrAlignMatrix" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6613 6627]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [6587 6763])
+            ("setGyrAlignBias" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6789 6803]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [6765 6943])
+            ("setEnableGyrThresh" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6972 6986]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [6945 7264])
+            ("setEnableGyrAutoCal" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7294 7308]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [7266 7584])
+            ("setAccRange" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7606 7620]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [7586 8399])
+            ("setAccOutputRate" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8426 8440]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [8401 9092])
+            ("setAccBias" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9113 9127]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [9094 9271])
+            ("setAccOffset" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9294 9308]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [9273 9433])
+            ("getAccOffset" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9456 9470])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9471 9483]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [9435 9565])
+            ("setAccAlignMatrix" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9593 9607]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [9567 9743])
+            ("getAccAlignMatrix" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9771 9785])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9786 9798]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [9745 9885])
+            ("setAccCovar" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9907 9921]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [9887 10061])
+            ("setMagRange" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10083 10097]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [10063 10939])
+            ("setMagOutputRate" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10966 10980]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [10941 11465])
+            ("setHardIronOffsetData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11497 11511]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [11467 11622])
+            ("getHardIronOffsetData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11654 11668])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11669 11681]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [11624 11781])
+            ("setSoftIronMatrixData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11813 11827]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [11783 11945])
+            ("getSoftIronMatrixData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11977 11991])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11992 12004]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [11947 12108])
+            ("updateMagAlignMatrix" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12136 12141]))                  
+                :type "void")
+                nil [12110 12221])
+            ("updateMagAlignBias" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12247 12252]))                  
+                :type "void")
+                nil [12223 12334])
+            ("updateMagReference" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12360 12365]))                  
+                :type "void")
+                nil [12336 12427])
+            ("setMagAlignMatrix" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12455 12469]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [12429 12617])
+            ("setMagAlignBias" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12643 12657]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [12619 12805])
+            ("setMagReference" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12832 12846]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [12808 12960])
+            ("getMagAlignMatrix" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12988 13002])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13003 13015]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [12962 13108])
+            ("getMagAlignBias" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13134 13148])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13149 13161]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [13110 13252])
+            ("getMagReference" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13278 13292])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13293 13305]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [13254 13382])
+            ("setFieldEstimateData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13413 13427]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [13384 13567])
+            ("getFieldEstimateData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13598 13612])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13613 13625]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [13569 13722])
+            ("setMagCovar" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13744 13758]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [13724 13898])
+            ("setTransmitData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13924 13938]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [13900 15419])
+            ("getFirmwareVersion" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15448 15462])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15463 15475]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [15421 15646])
+            ("getBatteryLevelData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15676 15690])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15691 15703]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [15648 15892])
+            ("getBatteryVoltageData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15924 15938])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15939 15951]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [15894 16151])
+            ("getChargingStatus" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16180 16194]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [16154 16402])
+            ("getTemperatureData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16431 16445])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16446 16458]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [16404 16648])
+            ("getStatus" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16668 16682]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [16650 16746])
+            ("getConfigReg" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16770 16775]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [16748 16812])
+            ("setTimestamp" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16832 16846]))                  
+                :type "void")
+                nil [16814 16885])
+            ("setFilterPreset" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16911 16925]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [16887 18396])
+            ("setFilterMode" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18420 18434]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [18398 19395])
+            ("updateFilterMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19419 19424]))                  
+                :type "void")
+                nil [19397 19982])
+            ("setLinAccCompMode" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20010 20024]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [19984 20146])
+            ("updateLinAccCompMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20174 20179]))                  
+                :type "void")
+                nil [20148 20251])
+            ("getLinAccCompMode" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20279 20293])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20294 20306]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [20253 20392])
+            ("setCentriCompMode" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20420 20434]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [20394 20555])
+            ("updateCentriCompMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20583 20588]))                  
+                :type "void")
+                nil [20557 20659])
+            ("getCentriCompMode" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20687 20701])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20702 20714]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [20661 20799])
+            ("getRawDataLp" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20822 20836])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20837 20849]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [20801 20930])
+            ("setRawDataLp" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20953 20967]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [20932 21670])
+            ("updateRawDataLp" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21693 21698]))                  
+                :type "void")
+                nil [21672 22257])
+            ("getRollData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22279 22293])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22294 22306])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22307 22320])
+                    ("degRad" variable (:type "int") (reparse-symbol arg-sub-list) [22321 22332]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [22259 22527])
+            ("getPitchData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22550 22564])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22565 22577])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22578 22591])
+                    ("degRad" variable (:type "int") (reparse-symbol arg-sub-list) [22592 22603]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [22529 22798])
+            ("getYawData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22819 22833])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22834 22846])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22847 22860])
+                    ("degRad" variable (:type "int") (reparse-symbol arg-sub-list) [22861 22872]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [22800 23067])
+            ("getWXData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23087 23101])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23102 23114])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23115 23128])
+                    ("degRad" variable (:type "int") (reparse-symbol arg-sub-list) [23129 23140]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [23069 23313])
+            ("getWYData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23333 23347])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23348 23360])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23361 23374])
+                    ("degRad" variable (:type "int") (reparse-symbol arg-sub-list) [23375 23386]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [23315 23559])
+            ("getWZData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23579 23593])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23594 23606])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23607 23620])
+                    ("degRad" variable (:type "int") (reparse-symbol arg-sub-list) [23621 23632]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [23561 23805])
+            ("getQ0Data" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23825 23839])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23840 23852])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23853 23866]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [23807 23918])
+            ("getQ1Data" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23938 23952])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23953 23965])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23966 23979]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [23920 24031])
+            ("getQ2Data" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24051 24065])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24066 24078])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24079 24092]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [24033 24144])
+            ("getQ3Data" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24164 24178])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24179 24191])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24192 24205]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [24146 24257])
+            ("getLinAccXData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24282 24296])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24297 24309])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24310 24323]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [24259 24388])
+            ("getLinAccYData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24413 24427])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24428 24440])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24441 24454]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [24390 24519])
+            ("getLinAccZData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24544 24558])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24559 24571])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24572 24585]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [24521 24650])
+            ("getAccXData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24672 24686])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24687 24699])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24700 24713]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [24652 24765])
+            ("getAccYData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24787 24801])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24802 24814])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24815 24828]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [24767 24880])
+            ("getAccZData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24902 24916])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24917 24929])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24930 24943]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [24882 24995])
+            ("getMagXData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25017 25031])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25032 25044])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25045 25058]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [24997 25110])
+            ("getMagYData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25132 25146])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25147 25159])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25160 25173]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [25112 25225])
+            ("getMagZData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25247 25261])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25262 25274])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25275 25288]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [25227 25340])
+            ("getGyroXData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25477 25491])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25492 25504])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25505 25518])
+                    ("degRad" variable (:type "int") (reparse-symbol arg-sub-list) [25519 25530]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [25456 25709])
+            ("getGyroYData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25732 25746])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25747 25759])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25760 25773])
+                    ("degRad" variable (:type "int") (reparse-symbol arg-sub-list) [25774 25785]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [25711 25964])
+            ("getGyroZData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25987 26001])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26002 26014])
+                    ("prec" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26015 26028])
+                    ("degRad" variable (:type "int") (reparse-symbol arg-sub-list) [26029 26040]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [25966 26219])
+            ("setLpBusDataMode" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26246 26260]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [26221 26526])
+            ("getTimeStampOutputMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [26559 26564]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [26528 26768])
+            ("setTimeStampOutputMode" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26801 26815]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [26770 27087])
+            ("setRtcOutputMode" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27381 27395]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [27356 27649])
+            ("setRtcDatetime" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27748 27762]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [27725 28114])
+            ("setRtcCalibration" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28229 28243]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [28203 28332])
+            ("setProductId" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28356 28370])
+                    ("l" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28371 28382]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [28335 28625])
+            ("setLedColor" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28648 28662])
+                    ("len" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28663 28677]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [28628 28982])
+            ("setLedWaveform" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29008 29022]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [28985 29445])
+            ("getLedColor" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29467 29481])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29482 29494]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [29447 29552]))          
+      :file "LpmsSensorParameters.c"
+      :pointmax 29554
+      :fsize 29553
+      :lastmodtime '(23800 38943 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("main.h" include nil nil [426 443])
+            ("mainloop.h" include nil nil [444 465])
+            ("main" function (:type "void") nil [563 710]))          
+      :file "main.c"
+      :pointmax 712
+      :fsize 711
+      :lastmodtime '(23800 38943 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "SensorManager.h"
+      :fsize 4919
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "LpmsRtc.h"
+      :fsize 1228
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "SystemUpdater.h"
+      :fsize 384
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "debug_msg.h"
+      :fsize 1190
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "EmbedFLASH.h"
+      :fsize 1011
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "GasGauge.h"
+      :fsize 2164
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "version.h"
+      :fsize 244
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "LedControl_stm32.h"
+      :fsize 793
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "LpmsAssignments.h"
+      :fsize 3266
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "LpmsTimebase.h"
+      :fsize 867
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "main.h"
+      :fsize 93
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SensorManager.h" include nil nil [225 251])
+            ("LpmsSensorParameters.h" include nil nil [300 333])
+            ("LpmsRtc.h" include nil nil [334 354])
+            ("SystemUpdater.h" include nil nil [355 381])
+            ("debug_msg.h" include nil nil [382 404])
+            ("EmbedFLASH.h" include nil nil [405 428])
+            ("GasGauge.h" include nil nil [429 450])
+            ("version.h" include nil nil [451 471])
+            ("gyrRawData" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [528 550])
+            ("accRawData" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [551 573])
+            ("magRawData" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [574 596])
+            ("rawTemp" variable (:type ("int16_t" type (:type "class") nil nil)) nil [597 613])
+            ("a" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [660 673])
+            ("aRaw" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [674 690])
+            ("b" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [691 704])
+            ("bRaw" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [705 721])
+            ("g" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [722 735])
+            ("gRaw" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [736 752])
+            ("q" variable (:type ("LpVector4f" type (:type "class") nil nil)) nil [753 766])
+            ("qOffset" variable (:type ("LpVector4f" type (:type "class") nil nil)) nil [767 786])
+            ("qAfterOffset" variable (:type ("LpVector4f" type (:type "class") nil nil)) nil [787 811])
+            ("r" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [812 825])
+            ("w" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [826 839])
+            ("rAfterOffset" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [840 864])
+            ("linAcc" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [865 883])
+            ("translation" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [884 907])
+            ("velocity" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [908 928])
+            ("magNoise" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [929 951])
+            ("gyroTempData" variable (:type ("int8_t" type (:type "class") nil nil)) nil [952 972])
+            ("accMagTempData" variable (:type ("int16_t" type (:type "class") nil nil)) nil [973 996])
+            ("tempData" variable (:type ("int16_t" type (:type "class") nil nil)) nil [997 1014])
+            ("currentMode" variable (:type ("uint8_t" type (:type "class") nil nil)) nil [1015 1035])
+            ("curretOutPutMode" variable (:type ("uint8_t" type (:type "class") nil nil)) nil [1036 1061])
+            ("calibrationData" variable (:type ("LpmsCalibrationData" type (:type "class") nil nil)) nil [1125 1161])
+            ("lpFilterParam" variable (:type ("LpFilterParameters" type (:type "class") nil nil)) nil [1162 1195])
+            ("isGyrCalibrationEnabled" variable
+               (:default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1196 1232])
+            ("cumulatedGyrData" variable
+               (:dereference 1
+                :default-value "{ 0, 0, 0 }"
+                :type "float")
+                nil [1233 1273])
+            ("startGyrData" variable
+               (:dereference 1
+                :default-value "{ 0, 0, 0 }"
+                :type "float")
+                nil [1274 1310])
+            ("endGyrData" variable
+               (:dereference 1
+                :default-value "{ 0, 0, 0 }"
+                :type "float")
+                nil [1311 1345])
+            ("gDrift" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [1346 1364])
+            ("cumulatedGyrCounter" variable
+               (:default-value "0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1365 1398])
+            ("startGyrCounter" variable
+               (:default-value "0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1399 1428])
+            ("endGyrCounter" variable
+               (:default-value "0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1429 1456])
+            ("gyrCalibrationDuration" variable
+               (:default-value "0"
+                :type "float")
+                nil [1457 1490])
+            ("isRefCalibrationEnabled" variable
+               (:default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1491 1527])
+            ("cumulatedRefData" variable
+               (:dereference 1
+                :default-value "{ 0.0f, 0.0f, 0.0f }"
+                :type "float")
+                nil [1528 1577])
+            ("cumulatedRefCounter" variable
+               (:default-value "0"
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [1578 1610])
+            ("refCalibrationDuration" variable
+               (:default-value "0"
+                :type "float")
+                nil [1611 1644])
+            ("maxGyr" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [1645 1663])
+            ("minGyr" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [1664 1682])
+            ("lpmsStatus" variable
+               (:default-value "0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1683 1707])
+            ("isDataSending" variable
+               (:default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1720 1746])
+            ("gLowX" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [1747 1766])
+            ("gLowY" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [1767 1786])
+            ("gLowZ" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [1787 1806])
+            ("preGX" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [1807 1826])
+            ("preGY" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [1827 1846])
+            ("preGZ" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [1847 1866])
+            ("aAvg" variable
+               (:dereference 1
+                :type "float")
+                nil [1867 1881])
+            ("preAvg" variable
+               (:dereference 1
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [1882 1900])
+            ("startTime" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [1901 1924])
+            ("pCycleCount" variable
+               (:default-value "0"
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [1925 1949])
+            ("gyrRawDataLp" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [1950 1974])
+            ("accRawDataLp" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [1975 1999])
+            ("magRawDataLp" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [2000 2024])
+            ("tB" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [2025 2039])
+            ("measurementTime" variable
+               (:typemodifiers ("volatile")
+                :default-value "0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2040 2078])
+            ("sendTime" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [2079 2101])
+            ("aRawNoLp" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [2102 2122])
+            ("mQ_hx" variable (:type ("LpVector4f" type (:type "class") nil nil)) nil [2123 2140])
+            ("mQ_offset" variable (:type ("LpVector4f" type (:type "class") nil nil)) nil [2141 2162])
+            ("lpmsMeasurementPeriod" variable
+               (:default-value "0.00250f"
+                :type "float")
+                nil [2163 2202])
+            ("lpmsMeasurementIntervals" variable
+               (:default-value "1"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2208 2245])
+            ("gyrRawDataX" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [2246 2269])
+            ("accRawDataX" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [2270 2293])
+            ("magRawDataX" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [2294 2317])
+            ("gReg" variable
+               (:typemodifiers ("extern")
+                :type ("LpmsReg" type (:type "class") nil nil))
+                nil [3632 3652])
+            ("ledFlashTime" variable
+               (:typemodifiers ("extern")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3653 3682])
+            ("deviceName" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3708 3738])
+            ("initSensorManager" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3765 3770]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [3740 11926])
+            ("correctRawAxisAlignment" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11957 11962]))                  
+                :type "void")
+                nil [11928 12408])
+            ("updateSensorData" function
+               (:arguments 
+                  ( ("i2cTimeOut" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12511 12531]))                  
+                :type "void")
+                nil [12489 13235])
+            ("processSensorData" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13260 13265]))                  
+                :type "void")
+                nil [13237 16343])
+            ("MAX_Q_SIZE" variable (:constant-flag t) nil [16353 16363])
+            ("dataQ" variable
+               (:dereference 1
+                :type ("SensorData" type (:type "class") nil nil))
+                nil [16366 16395])
+            ("dataQC" variable
+               (:default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [16396 16415])
+            ("addDataToDataQ" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16437 16442]))                  
+                :type "void")
+                nil [16417 16691])
+            ("resetDataQ" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16709 16714]))                  
+                :type "void")
+                nil [16693 16732])
+            ("calculateDataQAvg" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16763 16768]))                  
+                :type ("SensorData" type (:type "class") nil nil))
+                nil [16734 17486])
+            ("applyLowPass" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17506 17511]))                  
+                :type "void")
+                nil [17488 18112])
+            ("calcLinearAcceleration" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18142 18147]))                  
+                :type "void")
+                nil [18114 18387])
+            ("accAverage" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18405 18410]))                  
+                :type "void")
+                nil [18389 18520])
+            ("getFilterParam" function
+               (:arguments 
+                  ( ("lpFP" variable
+                       (:pointer 1
+                        :type ("LpFilterParameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18542 18567]))                  
+                :type "void")
+                nil [18522 18596])
+            ("setFilterParam" function
+               (:arguments 
+                  ( ("lpFP" variable (:type ("LpFilterParameters" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18618 18642]))                  
+                :type "void")
+                nil [18598 18670])
+            ("getSensorParam" function
+               (:arguments 
+                  ( ("lCD" variable
+                       (:pointer 1
+                        :type ("LpmsCalibrationData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18692 18717]))                  
+                :type "void")
+                nil [18672 18747])
+            ("setSensorParam" function
+               (:arguments 
+                  ( ("lCD" variable (:type ("LpmsCalibrationData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18769 18793]))                  
+                :type "void")
+                nil [18749 18822])
+            ("getCurrentMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18847 18852]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [18824 18878])
+            ("setCommandMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18900 18905]))                  
+                :type "void")
+                nil [18880 19070])
+            ("initStreamMode" function (:type "void") nil [19072 20042])
+            ("setStreamMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20063 20068]))                  
+                :type "void")
+                nil [20044 20199])
+            ("setStorageMode" function
+               (:arguments 
+                  ( ("mode" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20508 20521]))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [20485 20795])
+            ("getStorageMode" function (:type ("int16_t" type (:type "class") nil nil)) nil [21081 21214])
+            ("startGyrCalibration" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21242 21247]))                  
+                :type "void")
+                nil [21217 21775])
+            ("checkGyrCal" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21794 21799]))                  
+                :type "void")
+                nil [21777 22887])
+            ("stopGyrCalibration" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [22913 22918]))                  
+                :type "void")
+                nil [22889 23624])
+            ("startRefCalibration" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23651 23656]))                  
+                :type "void")
+                nil [23626 23971])
+            ("checkRefCal" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23990 23995]))                  
+                :type "void")
+                nil [23973 24529])
+            ("stopRefCalibration" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [24555 24560]))                  
+                :type "void")
+                nil [24531 25813])
+            ("correctAxisAlignment" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [25841 25846]))                  
+                :type "void")
+                nil [25815 26074])
+            ("getSensorData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26098 26112])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26113 26125]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [26076 30221])
+            ("getCurrentMeasurementTime" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30261 30275])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30276 30288]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [30227 30559]))          
+      :file "SensorManager.c"
+      :pointmax 34050
+      :fsize 34061
+      :lastmodtime '(23800 38943 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAX_Q_SIZE" . ((number "8" 16364 . 16365)))
+          )
+))
+  :file "!drive_c!Users!hiros!AppData!Local!Packages!CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc!LocalState!rootfs!home!yhrs!leomo!projects!lpsensor-source!LemonadeSensorFirmware!Source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

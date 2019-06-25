@@ -1,0 +1,203 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :file "main.h"
+      :fsize 93
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("Bluetooth.h" include nil nil [82 104])
+            ("CommunicationManager.h" include nil nil [105 138])
+            ("GasGauge.h" include nil nil [139 160])
+            ("LedControl.h" include nil nil [161 184])
+            ("LpmsConfig.h" include nil nil [185 208])
+            ("LpmsModbus.h" include nil nil [209 232])
+            ("LpmsRtc.h" include nil nil [233 253])
+            ("LpmsTimebase.h" include nil nil [254 279])
+            ("LpStopwatch.h" include nil nil [280 304])
+            ("McuControl.h" include nil nil [305 328])
+            ("SensorManager.h" include nil nil [329 355])
+            ("SystemUpdater.h" include nil nil [356 382])
+            ("SpiFlash.h" include nil nil [383 404])
+            ("watchdog.h" include nil nil [405 426])
+            ("debug_msg.h" include nil nil [428 450])
+            ("diagnostic_check.h" include nil nil [451 480])
+            ("diagnostic_check_callback.h" include nil nil [481 519])
+            ("mainloop.h" include nil nil [520 541])
+            ("peripherals.h" include nil nil [542 566])
+            ("sendCounter" variable
+               (:default-value "0"
+                :type "int")
+                nil [623 643])
+            ("syncFlag" variable
+               (:default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [740 761])
+            ("goToSleep" variable
+               (:default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [890 912])
+            ("inCharging" variable
+               (:default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [918 941])
+            ("ledFlashTime" variable
+               (:typemodifiers ("extern")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [943 972])
+            ("systemStepTimeout" variable (:type ("uint8_t" type (:type "class") nil nil)) nil [985 1011])
+            ("measurementTime" variable
+               (:typemodifiers ("extern")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1012 1044])
+            ("COUNT_BATT_UPDATE" variable (:constant-flag t) nil [1070 1087])
+            ("COUNT_RTC_UPDATE" variable (:constant-flag t) nil [1099 1115])
+            ("secondCounter" variable
+               (:default-value "0"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1120 1147])
+            ("batteryUpdateCounter" variable
+               (:default-value "COUNT_BATT_UPDATE"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1148 1198])
+            ("rtcUpdateCounter" variable
+               (:default-value "COUNT_RTC_UPDATE"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1199 1244])
+            ("m_nStart" variable
+               (:typemodifiers ("extern")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1246 1271])
+            ("m_nStop" variable
+               (:typemodifiers ("extern")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1272 1296])
+            ("sw" variable (:type ("stopwatch" type (:type "class") nil nil)) nil [1298 1311])
+            ("sw_p" variable
+               (:default-value "&sw"
+                :type ("stopwatch_t" type (:type "class") nil nil))
+                nil [1312 1335])
+            ("SystemInit" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1360 1365]))                  
+                :type "void")
+                nil [1337 1366])
+            ("SystemCoreClockUpdate" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1401 1406]))                  
+                :type "void")
+                nil [1367 1407])
+            ("mainloop_initialize" function (:type "void") nil [1409 2825])
+            ("mainloop_run_loop" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2850 2855]))                  
+                :type "void")
+                nil [2827 2897])
+            ("mainloop_run" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2917 2922]))                  
+                :type "void")
+                nil [2899 3446])
+            ("mainloop_on_not_connected" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3480 3485]))                  
+                :type "void")
+                nil [3449 4440])
+            ("mainloop_on_connected" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4470 4475]))                  
+                :type "void")
+                nil [4443 7908]))          
+      :file "mainloop.c"
+      :pointmax 7953
+      :fsize 7951
+      :lastmodtime '(23802 13505 0 0)
+      :unmatched-syntax '((symbol 980 . 984) (EXTERN 973 . 979) (symbol 913 . 917) (symbol 885 . 889) (symbol 883 . 884))
+      :lexical-table 
+        '(("COUNT_RTC_UPDATE" . ((number "30" 1116 . 1118)))
+          ("COUNT_BATT_UPDATE" . ((number "30" 1088 . 1090)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "Bluetooth.h"
+      :fsize 4778
+      :lastmodtime '(23802 13508 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "CommunicationManager.h"
+      :fsize 5491
+      :lastmodtime '(23802 13508 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "GasGauge.h"
+      :fsize 2164
+      :lastmodtime '(23811 13823 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "LedControl.h"
+      :fsize 1587
+      :lastmodtime '(23802 13508 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "LpmsConfig.h"
+      :fsize 23314
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "LpmsModbus.h"
+      :fsize 1132
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "LpmsRtc.h"
+      :fsize 1228
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "LpmsTimebase.h"
+      :fsize 867
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "LpStopwatch.h"
+      :fsize 617
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "McuControl.h"
+      :fsize 603
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "SensorManager.h"
+      :fsize 4919
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "SystemUpdater.h"
+      :fsize 384
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "SpiFlash.h"
+      :fsize 6301
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "watchdog.h"
+      :fsize 286
+      :lastmodtime '(23802 13508 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "debug_msg.h"
+      :fsize 1190
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "diagnostic_check.h"
+      :fsize 1888
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "diagnostic_check_callback.h"
+      :fsize 368
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "peripherals.h"
+      :fsize 275
+      :lastmodtime '(23802 13505 0 0)))
+  :file "!drive_c!dev!leomo!lpsensor-source!LemonadeSensorFirmware!Source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
