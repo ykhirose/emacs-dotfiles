@@ -43,7 +43,7 @@
 
 ;; theme
 (setq custom-theme-directory "~/.emacs.d/themes/")
-(load-theme 'atom-one-dark t)
+(load-theme 'manoj-dark t)
 
 
 ;; ;; theme
