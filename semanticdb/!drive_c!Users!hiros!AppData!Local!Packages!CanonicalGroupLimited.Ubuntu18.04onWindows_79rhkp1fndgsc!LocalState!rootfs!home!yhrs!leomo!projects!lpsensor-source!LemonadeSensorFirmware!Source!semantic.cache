@@ -1485,11 +1485,510 @@
       :pointmax 34050
       :fsize 34061
       :lastmodtime '(23800 38943 0 0)
-      :unmatched-syntax nil
+      :unmatched-syntax '((symbol 2203 . 2207) (symbol 1715 . 1719) (STATIC 1708 . 1714))
       :lexical-table 
         '(("MAX_Q_SIZE" . ((number "8" 16364 . 16365)))
           )
-))
+)
+    (semanticdb-table "semanticdb-table"
+      :file "LpmsConfig.h"
+      :fsize 23314
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "LpmsModbus.h"
+      :fsize 1132
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "LpStopwatch.h"
+      :fsize 617
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "McuControl.h"
+      :fsize 603
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "SpiFlash.h"
+      :fsize 6301
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "diagnostic_check.h"
+      :fsize 1888
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "diagnostic_check_callback.h"
+      :fsize 368
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "peripherals.h"
+      :fsize 275
+      :lastmodtime '(23800 38943 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("Bluetooth.h" include nil nil [82 104])
+            ("CommunicationManager.h" include nil nil [105 138])
+            ("GasGauge.h" include nil nil [139 160])
+            ("LedControl.h" include nil nil [161 184])
+            ("LpmsConfig.h" include nil nil [185 208])
+            ("LpmsModbus.h" include nil nil [209 232])
+            ("LpmsRtc.h" include nil nil [233 253])
+            ("LpmsTimebase.h" include nil nil [254 279])
+            ("LpStopwatch.h" include nil nil [280 304])
+            ("McuControl.h" include nil nil [305 328])
+            ("SensorManager.h" include nil nil [329 355])
+            ("SystemUpdater.h" include nil nil [356 382])
+            ("SpiFlash.h" include nil nil [383 404])
+            ("watchdog.h" include nil nil [405 426])
+            ("debug_msg.h" include nil nil [428 450])
+            ("diagnostic_check.h" include nil nil [451 480])
+            ("diagnostic_check_callback.h" include nil nil [481 519])
+            ("mainloop.h" include nil nil [520 541])
+            ("peripherals.h" include nil nil [542 566])
+            ("sendCounter" variable
+               (:default-value "0"
+                :type "int")
+                nil [623 643])
+            ("syncFlag" variable
+               (:default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [740 761])
+            ("goToSleep" variable
+               (:default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [889 911])
+            ("inCharging" variable
+               (:default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [917 940])
+            ("ledFlashTime" variable
+               (:typemodifiers ("extern")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [942 971])
+            ("systemStepTimeout" variable (:type ("uint8_t" type (:type "class") nil nil)) nil [984 1010])
+            ("measurementTime" variable
+               (:typemodifiers ("extern")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1011 1043])
+            ("COUNT_BATT_UPDATE" variable (:constant-flag t) nil [1069 1086])
+            ("COUNT_RTC_UPDATE" variable (:constant-flag t) nil [1098 1114])
+            ("secondCounter" variable
+               (:default-value "0"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1119 1146])
+            ("batteryUpdateCounter" variable
+               (:default-value "COUNT_BATT_UPDATE"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1147 1197])
+            ("rtcUpdateCounter" variable
+               (:default-value "COUNT_RTC_UPDATE"
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1198 1243])
+            ("m_nStart" variable
+               (:typemodifiers ("extern")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1245 1270])
+            ("m_nStop" variable
+               (:typemodifiers ("extern")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1271 1295])
+            ("sw" variable (:type ("stopwatch" type (:type "class") nil nil)) nil [1297 1310])
+            ("sw_p" variable
+               (:default-value "&sw"
+                :type ("stopwatch_t" type (:type "class") nil nil))
+                nil [1311 1334])
+            ("SystemInit" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1359 1364]))                  
+                :type "void")
+                nil [1336 1365])
+            ("SystemCoreClockUpdate" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1400 1405]))                  
+                :type "void")
+                nil [1366 1406])
+            ("mainloop_initialize" function (:type "void") nil [1408 2824])
+            ("mainloop_run_loop" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2849 2854]))                  
+                :type "void")
+                nil [2826 2896])
+            ("mainloop_run" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2916 2921]))                  
+                :type "void")
+                nil [2898 3445])
+            ("mainloop_on_not_connected" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3479 3484]))                  
+                :type "void")
+                nil [3448 4439])
+            ("mainloop_on_connected" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4469 4474]))                  
+                :type "void")
+                nil [4442 7907]))          
+      :file "mainloop.c"
+      :pointmax 7952
+      :fsize 7951
+      :lastmodtime '(23825 49538 0 0)
+      :unmatched-syntax '((symbol 979 . 983) (EXTERN 972 . 978) (symbol 912 . 916) (symbol 884 . 888))
+      :lexical-table 
+        '(("COUNT_RTC_UPDATE" . ((number "30" 1115 . 1117)))
+          ("COUNT_BATT_UPDATE" . ((number "30" 1087 . 1089)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CommunicationManager.h" include nil nil [150 183])
+            ("SpiFlash.h" include nil nil [184 205])
+            ("debug_msg.h" include nil nil [206 228])
+            ("McuControl.h" include nil nil [229 252])
+            ("Bluetooth.h" include nil nil [253 275])
+            ("LedControl.h" include nil nil [276 299])
+            ("LpmsSensorParameters.h" include nil nil [300 333])
+            ("LpmsConfig.h" include nil nil [334 357])
+            ("LpmsRtc.h" include nil nil [358 378])
+            ("packet.h" include nil nil [379 398])
+            ("SensorManager.h" include nil nil [399 425])
+            ("SystemUpdater.h" include nil nil [426 452])
+            ("gReg" variable
+               (:typemodifiers ("extern")
+                :type ("LpmsReg" type (:type "class") nil nil))
+                nil [477 497])
+            ("productId" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [498 527])
+            ("sensorInfo" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [528 558])
+            ("syncFlag" variable
+               (:typemodifiers ("extern")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [559 583])
+            ("initCommunicationManager" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [652 657]))                  
+                :type "void")
+                nil [622 757])
+            ("updateDataTransmission" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [820 825]))                  
+                :type "void")
+                nil [792 991])
+            ("sendBatteryLevel" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1047 1052]))                  
+                :type "void")
+                nil [1025 1081])
+            ("sendBatteryVoltage" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1140 1145]))                  
+                :type "void")
+                nil [1116 1176])
+            ("sendSensorTemperature" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1234 1239]))                  
+                :type "void")
+                nil [1207 1271])
+            ("sendRTCDatetime" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1316 1321]))                  
+                :type "void")
+                nil [1295 1349])
+            ("commGoToCommandMode" function (:type "void") nil [1370 1453])
+            ("commGoToStreamMode" function (:type "void") nil [1473 1534])
+            ("commOrientationOffsetSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1591 1607]))                  
+                :type "void")
+                nil [1561 1700])
+            ("commOrientationOffsetReset" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1761 1777]))                  
+                :type "void")
+                nil [1729 1872])
+            ("commStreamFreqSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1915 1931]))                  
+                :type "void")
+                nil [1892 2017])
+            ("commConfigGet" function (:type "void") nil [2033 2153])
+            ("commStatusGet" function (:type "void") nil [2155 2262])
+            ("commImuIDSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2282 2298]))                  
+                :type "void")
+                nil [2264 2366])
+            ("commImuIDGet" function (:type "void") nil [2368 2487])
+            ("commGyrRangeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2510 2526]))                  
+                :type "void")
+                nil [2489 2610])
+            ("commGyrRangeGet" function (:type "void") nil [2612 2740])
+            ("commAccRangeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2763 2779]))                  
+                :type "void")
+                nil [2742 2863])
+            ("commAccRangeGet" function (:type "void") nil [2865 2993])
+            ("commMagRangeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3016 3032]))                  
+                :type "void")
+                nil [2995 3116])
+            ("commMagRangeGet" function (:type "void") nil [3118 3246])
+            ("commFilterModeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3271 3287]))                  
+                :type "void")
+                nil [3248 3373])
+            ("commFilterModeGet" function (:type "void") nil [3374 3508])
+            ("commFilterPresetSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3535 3551]))                  
+                :type "void")
+                nil [3510 3639])
+            ("commFilterPresetGet" function (:type "void") nil [3641 3781])
+            ("commSensorDataGet" function (:type "void") nil [3783 3886])
+            ("commHardIronOffsetSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3915 3931]))                  
+                :type "void")
+                nil [3888 4025])
+            ("commHardIronOffsetGet" function (:type "void") nil [4027 4229])
+            ("commSoftIronMatrixSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4258 4274]))                  
+                :type "void")
+                nil [4231 4368])
+            ("commSoftIronMatrixGet" function (:type "void") nil [4370 4572])
+            ("commReferenceReset" function (:type "void") nil [4574 4641])
+            ("commFieldEstimateSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4669 4685]))                  
+                :type "void")
+                nil [4643 4777])
+            ("commFieldEstimateGet" function (:type "void") nil [4779 4977])
+            ("commAccAlignMatrixSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5006 5022]))                  
+                :type "void")
+                nil [4979 5111])
+            ("commAccAlignMatrixGet" function (:type "void") nil [5113 5311])
+            ("commAccBiasSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5333 5349]))                  
+                :type "void")
+                nil [5313 5433])
+            ("commAccBiasGet" function (:type "void") nil [5435 5613])
+            ("commGyrAlignMatrixSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5642 5658]))                  
+                :type "void")
+                nil [5615 5747])
+            ("commGyrAlignMatrixGet" function (:type "void") nil [5749 5947])
+            ("commGyrAlignBiasSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5974 5990]))                  
+                :type "void")
+                nil [5949 6077])
+            ("commGyrAlignBiasGet" function (:type "void") nil [6079 6271])
+            ("commGyrStaticBiasSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6320 6336]))                  
+                :type "void")
+                nil [6294 6418])
+            ("commGyrStaticBiasGet" function (:type "void") nil [6420 6609])
+            ("commRawDataLpSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6633 6649]))                  
+                :type "void")
+                nil [6611 6733])
+            ("commRawDataLpGet" function (:type "void") nil [6735 6918])
+            ("commTimestampSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6942 6958]))                  
+                :type "void")
+                nil [6920 7004])
+            ("commLinAccCompModeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7033 7049]))                  
+                :type "void")
+                nil [7006 7138])
+            ("commLinAccCompModeGet" function (:type "void") nil [7140 7339])
+            ("commCentriCompModeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7368 7384]))                  
+                :type "void")
+                nil [7341 7473])
+            ("commCentriCompModeGet" function (:type "void") nil [7475 7673])
+            ("commGyrAutoCalEnable" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7701 7717]))                  
+                :type "void")
+                nil [7675 7809])
+            ("commGyrThresEnable" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7835 7851]))                  
+                :type "void")
+                nil [7811 7942])
+            ("commGyrCalibraStart" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7969 7974]))                  
+                :type "void")
+                nil [7944 8016])
+            ("commTransmitDataSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8043 8059]))                  
+                :type "void")
+                nil [8018 8146])
+            ("commLpBusDataModeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8174 8190]))                  
+                :type "void")
+                nil [8148 8278])
+            ("commTimestampOutputModeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8312 8328]))                  
+                :type "void")
+                nil [8280 8422])
+            ("commMagAlignmentMatrixSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8455 8471]))                  
+                :type "void")
+                nil [8424 8560])
+            ("commMagAlignmentMatrixGet" function (:type "void") nil [8562 8768])
+            ("commMagAlignmentBiasSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8800 8816]))                  
+                :type "void")
+                nil [8771 8903])
+            ("commMagAlignmentBiasGet" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8934 8939]))                  
+                :type "void")
+                nil [8905 9109])
+            ("commMagReferenceSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9136 9152]))                  
+                :type "void")
+                nil [9111 9239])
+            ("commMagReferenceGet" function (:type "void") nil [9241 9432])
+            ("commRegistersWrite" function (:type "void") nil [9434 9540])
+            ("commFactoryValueRestore" function (:type "void") nil [9542 9678])
+            ("commFirmwareVersionGet" function (:type "void") nil [9680 9879])
+            ("commIAPUpdate" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9901 9917]))                  
+                :type "void")
+                nil [9881 9942])
+            ("commFirmwareUpdate" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9968 9984]))                  
+                :type "void")
+                nil [9944 10014])
+            ("commBatteryLevelGet" function (:type "void") nil [10016 10209])
+            ("commBatteryVoltageGet" function (:type "void") nil [10211 10410])
+            ("commChargingStatusGet" function (:type "void") nil [10412 10544])
+            ("commTemperatureDataGet" function (:type "void") nil [10546 10741])
+            ("commProductIdSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10765 10781]))                  
+                :type "void")
+                nil [10743 10871])
+            ("commProductIdGet" function (:type "void") nil [10873 11000])
+            ("commDeviceNameSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11025 11041]))                  
+                :type "void")
+                nil [11002 11077])
+            ("commDeviceNameGet" function (:type "void") nil [11079 11172])
+            ("commDeviceInfoGet" function (:type "void") nil [11175 11306])
+            ("commLedColorSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11329 11345]))                  
+                :type "void")
+                nil [11308 11443])
+            ("commLedColorGet" function (:type "void") nil [11445 11624])
+            ("commLedWaveformSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11650 11666]))                  
+                :type "void")
+                nil [11626 11752])
+            ("commVibratorStateSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11780 11796]))                  
+                :type "void")
+                nil [11754 11836])
+            ("commVibratorWaveformSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11867 11883]))                  
+                :type "void")
+                nil [11838 11923])
+            ("commPingGet" function (:type "void") nil [11925 12110])
+            ("commSyncStart" function (:type "void") nil [12112 12165])
+            ("commSyncStop" function (:type "void") nil [12167 12219])
+            ("commRTCOutputModeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12247 12263]))                  
+                :type "void")
+                nil [12221 12351])
+            ("commRTCOutputModeGet" function (:type "void") nil [12353 12651])
+            ("commStorageModeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17176 17192]))                  
+                :type "void")
+                nil [17152 18129])
+            ("commStorageModeGet" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18155 18160]))                  
+                :type "void")
+                nil [18131 18328])
+            ("commMCUReset" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18348 18353]))                  
+                :type "void")
+                nil [18330 18372])
+            ("commRTCDatetimeGet" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18398 18403]))                  
+                :type "void")
+                nil [18374 18565])
+            ("commRTCDatetimeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18591 18607]))                  
+                :type "void")
+                nil [18567 18698])
+            ("commRTCSmoothCalibrationGet" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18733 18738]))                  
+                :type "void")
+                nil [18700 19090])
+            ("commRTCSmoothCalibrationSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19125 19141]))                  
+                :type "void")
+                nil [19092 19236])
+            ("communicate" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19256 19272]))                  
+                :type "void")
+                nil [19238 27398]))          
+      :file "CommunicationManager.c"
+      :pointmax 27399
+      :fsize 27398
+      :lastmodtime '(23800 38943 0 0)
+      :unmatched-syntax nil))
   :file "!drive_c!Users!hiros!AppData!Local!Packages!CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc!LocalState!rootfs!home!yhrs!leomo!projects!lpsensor-source!LemonadeSensorFirmware!Source!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

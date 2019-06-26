@@ -100,3 +100,60 @@
       helm-candidate-number-limit 200)
 
 (global-set-key "\C-x\C-f" 'helm-find-files)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(column-number-mode t)
+ '(package-selected-packages
+	 (quote
+		(helm-gtags smartparens srefactor helm ctags color-theme auto-complete))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Ricty Diminished for Powerline" :foundry "outline" :slant normal :weight normal :height 109 :width normal)))))
+
+;;; helm-gtags
+(require 'helm-gtags)
+(helm-gtags-mode t)
+
+(custom-set-variables
+	;'(helm-gtags-path-style 'relative)
+ '(helm-gtags-ignore-case t)
+ '(helm-gtags-auto-update t))
+
+(add-hook 'helm-gtags-mode-hook
+					'(lambda ()
+						 ;; do what i mean
+						 (local-set-key (kbd "M-.") 'helm-gtags-dwim)
+						 ;; 入力されたタグの定義元へジャンプ
+						 (local-set-key (kbd "M-t") 'helm-gtags-find-tag)
+						 ;; 入力タグを参照する場所へジャンプ
+						 (local-set-key (kbd "M-r") 'helm-gtags-find-rtag)
+						 ;; 入力したシンボルを参照する場所へジャンプ
+						 (local-set-key (kbd "M-s") 'helm-gtags-find-symbol)
+						 ;; タグ一覧からタグを選択し、その定義元にジャンプする
+						 (local-set-key (kbd "M-l") 'helm-gtags-select)
+						 ;; ジャンプ前の場所に戻る
+						 (local-set-key (kbd "M-,") 'helm-gtags-pop-stack)
+						 (local-set-key (kbd "M-g M-p") 'helm-gtags-parse-file)
+						 (local-set-key (kbd "C-c <") 'helm-gtags-previous-history)
+						 (local-set-key (kbd "C-c >") 'helm-gtags-next-history)))
+
+;;;; semantic
+(semantic-mode 1)
+(global-semantic-idle-scheduler-mode 1)
+(global-semanticdb-minor-mode 1)
+(global-semantic-idle-completions-mode 1)
+(global-semantic-decoration-mode 1)
+(global-semantic-stickyfunc-mode 1)
+(global-semantic-mru-bookmark-mode 1)
+lo
+;;;; srefactor
+(require 'srefactor)
+(require 'srefactor-lisp)
+(define-key c-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
+(define-key c++-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)

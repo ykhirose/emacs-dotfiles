@@ -1,0 +1,65 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("package-initialize" code nil nil [288 308])
+            ("add-to-load-path" function (:arguments ("paths")) nil [310 675])
+            ("add-to-load-path" code nil nil [729 777])
+            ("when" code nil nil [779 867])
+            ("add-to-list" code nil nil [1115 1205])
+            ("add-to-list" code nil nil [1221 1310])
+            ("add-to-list" code nil nil [1318 1389])
+            ("package-initialize" code nil nil [1405 1425])
+            ("setq" code nil nil [1452 1497])
+            ("setq" code nil nil [1508 1558])
+            ("load-theme" code nil nil [1559 1585])
+            ("if" code nil nil [1664 1738])
+            ("set-alpha" function
+               (:user-visible-flag t
+                :arguments ("alpha-num"))
+                nil [1830 1975])
+            ("global-linum-mode" code nil nil [2001 2022])
+            ("line-number-mode" code nil nil [2060 2080])
+            ("column-number-mode" code nil nil [2113 2135])
+            ("setq" code nil nil [2171 2201])
+            ("setq-default" code nil nil [2216 2242])
+            ("my-hl-line-face" variable
+               (:default-value (quote ((((class color) (background dark)) (:background "DarkSlateGrey" t)) (((class color) (background light)) (:background "LightGoldenrodYellow" t)) (t (:bold t))))
+                :type "face")
+                nil [2270 2488])
+            ("setq" code nil nil [2489 2526])
+            ("global-hl-line-mode" code nil nil [2527 2550])
+            ("helm" include nil nil [2561 2576])
+            ("helm-config" include nil nil [2577 2599])
+            ("helm-mode" code nil nil [2601 2614])
+            ("setq" code nil nil [2616 2730])
+            ("global-set-key" code nil nil [2732 2776])
+            ("custom-set-variables" code nil nil [2777 3161])
+            ("custom-set-faces" code nil nil [3162 3534])
+            ("helm-gtags" include nil nil [3551 3572])
+            ("helm-gtags-mode" code nil nil [3573 3592])
+            ("custom-set-variables" code nil nil [3594 3711])
+            ("add-hook" code nil nil [3713 4456])
+            ("semantic-mode" code nil nil [4472 4489])
+            ("global-semantic-idle-scheduler-mode" code nil nil [4490 4529])
+            ("global-semanticdb-minor-mode" code nil nil [4530 4562])
+            ("global-semantic-idle-completions-mode" code nil nil [4563 4604])
+            ("global-semantic-decoration-mode" code nil nil [4605 4640])
+            ("global-semantic-stickyfunc-mode" code nil nil [4641 4676])
+            ("global-semantic-mru-bookmark-mode" code nil nil [4677 4714])
+            ("srefactor" include nil nil [4733 4753])
+            ("srefactor-lisp" include nil nil [4754 4779])
+            ("define-key" code nil nil [4780 4846])
+            ("define-key" code nil nil [4847 4915]))          
+      :file "init.el"
+      :pointmax 5435
+      :fsize 5895
+      :lastmodtime '(23827 7769 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_c!Users!hiros!.emacs.d!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

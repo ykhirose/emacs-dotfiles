@@ -1,0 +1,241 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1048 1065])
+            ("macroexp" include nil nil [1066 1085])
+            ("gv" include nil nil [1086 1099])
+            ("cl-unload-function" function nil nil [3595 3753])
+            ("dolist" code nil nil [3790 4503])
+            ("dolist" code nil nil [4505 9132])
+            ("cl--wrap-in-nil-block" function (:arguments ("fun" "args")) nil [9134 9216])
+            ("advice-add" code nil nil [9217 9269])
+            ("advice-add" code nil nil [9270 9323])
+            ("cl--pass-args-to-cl-declare" function (:arguments ("specs")) nil [9325 9413])
+            ("advice-add" code nil nil [9414 9472])
+            ("cl-closure-vars" variable nil nil [9632 9660])
+            ("cl--function-convert-cache" variable nil nil [9661 9700])
+            ("cl--function-convert" function (:arguments ("f")) nil [9702 11817])
+            ("lexical-let" function (:arguments ("bindings" "body")) nil [11819 13830])
+            ("lexical-let*" function (:arguments ("bindings" "body")) nil [13832 14362])
+            ("flet" function (:arguments ("bindings" "body")) nil [14441 16195])
+            ("labels" function (:arguments ("bindings" "body")) nil [16197 17364])
+            ("cl--gv-adapt" function (:arguments ("cl-gv" "do")) nil [17560 18450])
+            ("define-setf-expander" function (:arguments ("name" "arglist" "body")) nil [18452 19355])
+            ("defsetf" function (:arguments ("name" "arg1" "args")) nil [19357 20975])
+            ("make-obsolete" code nil nil [22889 22941])
+            ("declare-function" code nil nil [22943 22995])
+            ("define-modify-macro" function (:arguments ("name" "arglist" "func" "doc")) nil [22997 23819])
+            ("define-obsolete-function-alias" code nil nil [23921 23989])
+            ("define-obsolete-variable-alias" code nil nil [23990 24082])
+            ("define-obsolete-function-alias" code nil nil [24083 24159])
+            ("cl-not-hash-table" function (:arguments ("x" "y" "_z")) nil [24297 24446])
+            ("cl-builtin-gethash" variable (:default-value (symbol-function (quote gethash))) nil [24448 24502])
+            ("make-obsolete-variable" code nil nil [24503 24558])
+            ("cl-builtin-remhash" variable (:default-value (symbol-function (quote remhash))) nil [24559 24613])
+            ("make-obsolete-variable" code nil nil [24614 24669])
+            ("cl-builtin-clrhash" variable (:default-value (symbol-function (quote clrhash))) nil [24670 24724])
+            ("make-obsolete-variable" code nil nil [24725 24780])
+            ("cl-builtin-maphash" variable (:default-value (symbol-function (quote maphash))) nil [24781 24835])
+            ("make-obsolete-variable" code nil nil [24837 24892])
+            ("define-obsolete-function-alias" code nil nil [24893 24959])
+            ("define-obsolete-function-alias" code nil nil [24960 25024])
+            ("define-obsolete-function-alias" code nil nil [25025 25085])
+            ("define-obsolete-function-alias" code nil nil [25086 25146])
+            ("define-obsolete-function-alias" code nil nil [25147 25207])
+            ("define-obsolete-function-alias" code nil nil [25208 25268])
+            ("define-obsolete-function-alias" code nil nil [25269 25329])
+            ("define-obsolete-function-alias" code nil nil [25330 25406])
+            ("define-obsolete-function-alias" code nil nil [25407 25477])
+            ("define-obsolete-function-alias" code nil nil [25478 25556])
+            ("define-obsolete-function-alias" code nil nil [25558 25654])
+            ("define-obsolete-function-alias" code nil nil [25655 25731])
+            ("define-obsolete-function-alias" code nil nil [25732 25805])
+            ("define-obsolete-function-alias" code nil nil [25806 25872])
+            ("cl-maclisp-member" function (:arguments ("item" "list")) nil [25874 26029])
+            ("cl-struct-setf-expander" function (:arguments ("x" "name" "accessor" "pred-form" "pos")) nil [26080 27014])
+            ("cl" package nil nil [27016 27029])
+            ("run-hooks" code nil nil [27031 27056]))          
+      :file "cl.el"
+      :pointmax 27078
+      :fsize 27079
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "cl-lib.el"
+      :fsize 26211
+      :lastmodtime '(23603 24958 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "macroexp.el"
+      :fsize 23127
+      :lastmodtime '(23603 24958 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "gv.el"
+      :fsize 25279
+      :lastmodtime '(23603 24958 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "easy-mmode.el"
+      :fsize 26602
+      :lastmodtime '(23603 24958 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "pcase.el"
+      :fsize 41544
+      :lastmodtime '(23603 24958 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("warnings" customgroup (:user-visible-flag t) nil [947 1033])
+            ("warning-levels" variable (:default-value (quote ((:emergency "Emergency%s: " ding) (:error "Error%s: ") (:warning "Warning%s: ") (:debug "Debug%s: ")))) nil [1035 1812])
+            ("put" code nil nil [1813 1858])
+            ("warning-level-aliases" variable (:default-value (quote ((emergency . :emergency) (error . :error) (warning . :warning) (notice . :warning) (info . :warning) (critical . :emergency) (alarm . :emergency)))) nil [2008 2434])
+            ("warning-minimum-level" variable (:default-value :warning) nil [2437 2859])
+            ("defvaralias" code nil nil [2860 2927])
+            ("warning-minimum-log-level" variable (:default-value :warning) nil [2929 3358])
+            ("defvaralias" code nil nil [3359 3426])
+            ("warning-suppress-log-types" variable nil nil [3428 3942])
+            ("warning-suppress-types" variable nil nil [3944 4557])
+            ("warning-prefix-function" variable nil nil [4731 5128])
+            ("warning-series" variable nil nil [5301 5739])
+            ("put" code nil nil [5740 5785])
+            ("warning-fill-prefix" variable nil nil [5958 6067])
+            ("warning-type-format" variable (:default-value (purecopy " (%s)")) nil [6240 6479])
+            ("warning-numeric-level" function (:arguments ("level")) nil [6482 6683])
+            ("warning-suppress-p" function (:arguments ("type" "suppress-list")) nil [6685 7606])
+            ("display-warning" function (:arguments ("type" "message" "level" "buffer-name")) nil [7624 12053])
+            ("lwarn" function (:arguments ("type" "level" "message" "args")) nil [12186 13086])
+            ("warn" function (:arguments ("message" "args")) nil [13103 13428])
+            ("warnings" package nil nil [13430 13449]))          
+      :file "warnings.el"
+      :pointmax 13477
+      :fsize 13476
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("push" code nil nil [4540 4601])
+            ("cl-lib" include nil nil [4984 5001])
+            ("cl-macs" include nil nil [5022 5040])
+            ("pcase" include nil nil [5083 5099])
+            ("cl-defstruct" code nil nil [5102 5405])
+            ("cl-generic-define-generalizer" function (:arguments ("name" "priority" "tagcode-function" "specializers-function")) nil [5408 6266])
+            ("cl-generic-define-generalizer" code nil nil [6268 6388])
+            ("cl-defstruct" code nil nil [6390 6908])
+            ("cl-defstruct" code nil nil [6910 7715])
+            ("cl-generic-function-options" function (:arguments ("generic")) nil [7717 7850])
+            ("cl--generic" function (:arguments ("name")) nil [7852 7909])
+            ("cl-generic-p" function (:arguments ("f")) nil [7911 8018])
+            ("cl-generic-ensure-function" function (:arguments ("name" "noerror")) nil [8020 8752])
+            ("cl-defgeneric" function (:arguments ("name" "args" "options-and-methods")) nil [8769 11796])
+            ("cl-generic-define" function (:arguments ("name" "args" "options")) nil [11813 12873])
+            ("cl-generic-current-method-specializers" function nil nil [12875 13138])
+            ("cl-generic-define-context-rewriter" function (:arguments ("name" "args" "body")) nil [13140 13551])
+            ("cl--generic-lambda" function (:arguments ("args" "body")) nil [15324 17281])
+            ("cl--generic-split-args" function (:arguments ("args")) nil [13990 15320])
+            ("cl--generic-fgrep" function (:arguments ("vars" "sexp")) nil [13635 13986])
+            ("put" code nil nil [17284 17372])
+            ("cl--generic-make-defmethod-docstring" function nil nil [17374 18248])
+            ("cl-defmethod" function (:arguments ("name" "args" "body")) nil [18265 21558])
+            ("cl--generic-member-method" function (:arguments ("specializers" "qualifiers" "methods")) nil [21560 21895])
+            ("cl--generic-load-hist-format" function (:arguments ("name" "qualifiers" "specializers")) nil [21897 22199])
+            ("cl-generic-define-method" function (:arguments ("name" "qualifiers" "args" "uses-cnm" "function")) nil [22216 25331])
+            ("cl--generic-with-memoization" function (:arguments ("place" "code")) nil [25333 25614])
+            ("cl--generic-dispatchers" variable (:default-value (make-hash-table :test (function equal))) nil [25616 25680])
+            ("cl--generic-get-dispatcher" function (:arguments ("dispatch")) nil [25682 28165])
+            ("cl--generic-make-function" function (:arguments ("generic")) nil [28167 28389])
+            ("cl--generic-make-next-function" function (:arguments ("generic" "dispatches" "methods")) nil [28391 29170])
+            ("cl--generic-combined-method-memoization" variable (:default-value (make-hash-table :test (function equal) :weakness (quote value))) nil [29172 29525])
+            ("define-error" code nil nil [29527 29596])
+            ("cl--generic-build-combined-method" function (:arguments ("generic" "methods")) nil [29598 30839])
+            ("cl--generic-no-next-method-function" function (:arguments ("generic" "method")) nil [30841 30977])
+            ("cl-generic-call-method" function (:arguments ("generic" "method" "fun")) nil [30979 31887])
+            ("defalias" code nil nil [31912 31976])
+            ("cl--generic-standard-method-combination" function (:arguments ("generic" "methods")) nil [31978 33630])
+            ("cl-generic-apply" function (:arguments ("generic" "args")) nil [33632 34137])
+            ("cl--generic-arg-specializer" function (:arguments ("method" "dispatch-arg")) nil [34139 34421])
+            ("cl--generic-cache-miss" function (:arguments ("generic" "dispatch-arg" "dispatches-left" "methods-left" "types")) nil [34423 35193])
+            ("cl-defgeneric" code nil nil [35195 36980])
+            ("cl-defgeneric" code nil nil [36982 37488])
+            ("unless" code nil nil [37490 37814])
+            ("cl-defmethod" code nil nil [37816 38042])
+            ("cl--generic-prefill-dispatchers" function (:arguments ("arg-or-context" "specializer")) nil [38303 39307])
+            ("cl-defmethod" code nil nil [39310 39510])
+            ("cl--generic-nnm-sample" variable
+               (:constant-flag t
+                :default-value (cl--generic-no-next-method-function t t))
+                nil [39512 39587])
+            ("cl--generic-cnm-sample" variable
+               (:constant-flag t
+                :default-value (funcall (cl--generic-build-combined-method nil (list (cl--generic-make-method nil nil t (function identity))))))
+                nil [39588 39737])
+            ("cl--generic-isnot-nnm-p" function (:arguments ("cnm")) nil [39739 41038])
+            ("define-error" code nil nil [41105 41145])
+            ("define-error" code nil nil [41146 41210])
+            ("define-error" code nil nil [41211 41281])
+            ("define-error" code nil nil [41282 41360])
+            ("cl-defgeneric" code nil nil [41362 41568])
+            ("cl-defgeneric" code nil nil [41570 41771])
+            ("cl-defgeneric" code nil nil [41773 41965])
+            ("cl-call-next-method" function (:arguments ("_args")) nil [41967 42213])
+            ("cl-next-method-p" function nil nil [42215 42550])
+            ("cl-find-method" function (:arguments ("generic" "qualifiers" "specializers")) nil [42567 42748])
+            ("cl--generic-search-method" function (:arguments ("met-name")) nil [42789 43740])
+            ("cl--generic-find-defgeneric-regexp" variable (:default-value "(\\(?:cl-\\)?defgeneric[ 	]+%s\\>") nil [43800 43880])
+            ("with-eval-after-load" code nil nil [43882 44172])
+            ("cl--generic-method-info" function (:arguments ("method")) nil [44174 45392])
+            ("add-hook" code nil nil [45394 45465])
+            ("cl--generic-describe" function (:arguments ("function")) nil [45466 46989])
+            ("cl--generic-specializers-apply-to-type-p" function (:arguments ("specializers" "type")) nil [46991 47859])
+            ("cl-generic-all-functions" function (:arguments ("type")) nil [47861 48459])
+            ("cl--generic-method-documentation" function (:arguments ("function" "type")) nil [48461 48991])
+            ("cl--generic-method-files" function (:arguments ("method")) nil [48993 49578])
+            ("cl--generic-head-used" variable (:default-value (make-hash-table :test (function eql))) nil [50276 50336])
+            ("cl-generic-define-generalizer" code nil nil [50338 50544])
+            ("cl-defmethod" code nil nil [50546 51078])
+            ("cl--generic-prefill-dispatchers" code nil nil [51080 51126])
+            ("cl--generic-eql-used" variable (:default-value (make-hash-table :test (function eql))) nil [51171 51230])
+            ("cl-generic-define-generalizer" code nil nil [51232 51425])
+            ("cl-defmethod" code nil nil [51427 51678])
+            ("cl--generic-prefill-dispatchers" code nil nil [51680 51725])
+            ("cl--generic-prefill-dispatchers" code nil nil [51726 51783])
+            ("cl--generic-prefill-dispatchers" code nil nil [51784 51907])
+            ("cl--generic-prefill-dispatchers" code nil nil [51908 52031])
+            ("cl--generic-struct-tag" function (:arguments ("name" "_")) nil [52078 52207])
+            ("cl--generic-class-parents" function (:arguments ("class")) nil [52209 52598])
+            ("cl--generic-struct-specializers" function (:arguments ("tag" "_")) nil [52600 52817])
+            ("cl-generic-define-generalizer" code nil nil [52819 52947])
+            ("cl-defmethod" code nil nil [52949 53711])
+            ("cl--generic-prefill-dispatchers" code nil nil [53713 53772])
+            ("cl--generic-typeof-types" variable
+               (:constant-flag t
+                :default-value (quote ((integer number number-or-marker atom) (symbol atom) (string array sequence atom) (cons list sequence) (marker number-or-marker atom) (overlay atom) (float number atom) (window-configuration atom) (process atom) (window atom) (subr atom) (compiled-function function atom) (buffer atom) (char-table array sequence atom) (bool-vector array sequence atom) (frame atom) (hash-table atom) (terminal atom) (thread atom) (mutex atom) (condvar atom) (font-spec atom) (font-entity atom) (font-object atom) (vector array sequence atom) (null symbol list sequence atom))))
+                nil [53807 54856])
+            ("cl--generic-all-builtin-types" variable
+               (:constant-flag t
+                :default-value (delete-dups (copy-sequence (apply (function append) cl--generic-typeof-types))))
+                nil [54858 54972])
+            ("cl-generic-define-generalizer" code nil nil [54974 55253])
+            ("cl-defmethod" code nil nil [55255 55999])
+            ("cl--generic-prefill-dispatchers" code nil nil [56001 56044])
+            ("cl--generic-derived-specializers" function (:arguments ("mode" "_")) nil [56385 56665])
+            ("cl-generic-define-generalizer" code nil nil [56667 56835])
+            ("cl-defmethod" code nil nil [56837 57067])
+            ("cl-generic-define-context-rewriter" code nil nil [57069 57323])
+            ("cl-defmethod" code nil nil [57353 57783])
+            ("cl-generic" package nil nil [57786 57807]))          
+      :file "cl-generic.el"
+      :pointmax 57836
+      :fsize 57837
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax '((close-paren 39307 . 39308) (symbol 38045 . 38062) (open-paren 38044 . 38045) (close-paren 17281 . 17282) (symbol 13554 . 13570) (open-paren 13553 . 13554) (close-paren 5099 . 5100) (symbol 5065 . 5082) (open-paren 5064 . 5065) (close-paren 5040 . 5041) (symbol 5004 . 5021) (open-paren 5003 . 5004) (close-paren 5001 . 5002) (symbol 4966 . 4983) (open-paren 4965 . 4966)))
+    (semanticdb-table "semanticdb-table"
+      :file "cl-macs.el"
+      :fsize 136385
+      :lastmodtime '(23603 24958 0 0)))
+  :file "!drive_c!Tools!emacs-26.2!share!emacs!26.2!lisp!emacs-lisp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

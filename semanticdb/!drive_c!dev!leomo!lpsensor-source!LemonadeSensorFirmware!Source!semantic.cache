@@ -40,112 +40,2053 @@
             ("goToSleep" variable
                (:default-value "0"
                 :type ("uint8_t" type (:type "class") nil nil))
-                nil [890 912])
+                nil [889 911])
             ("inCharging" variable
                (:default-value "0"
                 :type ("uint8_t" type (:type "class") nil nil))
-                nil [918 941])
+                nil [917 940])
             ("ledFlashTime" variable
                (:typemodifiers ("extern")
                 :type ("uint16_t" type (:type "class") nil nil))
-                nil [943 972])
-            ("systemStepTimeout" variable (:type ("uint8_t" type (:type "class") nil nil)) nil [985 1011])
+                nil [942 971])
+            ("systemStepTimeout" variable (:type ("uint8_t" type (:type "class") nil nil)) nil [984 1010])
             ("measurementTime" variable
                (:typemodifiers ("extern")
                 :type ("uint32_t" type (:type "class") nil nil))
-                nil [1012 1044])
-            ("COUNT_BATT_UPDATE" variable (:constant-flag t) nil [1070 1087])
-            ("COUNT_RTC_UPDATE" variable (:constant-flag t) nil [1099 1115])
+                nil [1011 1043])
+            ("COUNT_BATT_UPDATE" variable (:constant-flag t) nil [1069 1086])
+            ("COUNT_RTC_UPDATE" variable (:constant-flag t) nil [1098 1114])
             ("secondCounter" variable
                (:default-value "0"
                 :type ("uint16_t" type (:type "class") nil nil))
-                nil [1120 1147])
+                nil [1119 1146])
             ("batteryUpdateCounter" variable
                (:default-value "COUNT_BATT_UPDATE"
                 :type ("uint16_t" type (:type "class") nil nil))
-                nil [1148 1198])
+                nil [1147 1197])
             ("rtcUpdateCounter" variable
                (:default-value "COUNT_RTC_UPDATE"
                 :type ("uint16_t" type (:type "class") nil nil))
-                nil [1199 1244])
+                nil [1198 1243])
             ("m_nStart" variable
                (:typemodifiers ("extern")
                 :type ("uint32_t" type (:type "class") nil nil))
-                nil [1246 1271])
+                nil [1245 1270])
             ("m_nStop" variable
                (:typemodifiers ("extern")
                 :type ("uint32_t" type (:type "class") nil nil))
-                nil [1272 1296])
-            ("sw" variable (:type ("stopwatch" type (:type "class") nil nil)) nil [1298 1311])
+                nil [1271 1295])
+            ("sw" variable (:type ("stopwatch" type (:type "class") nil nil)) nil [1297 1310])
             ("sw_p" variable
                (:default-value "&sw"
                 :type ("stopwatch_t" type (:type "class") nil nil))
-                nil [1312 1335])
+                nil [1311 1334])
             ("SystemInit" function
                (:prototype-flag t
                 :typemodifiers ("extern")
                 :arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1360 1365]))                  
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1359 1364]))                  
                 :type "void")
-                nil [1337 1366])
+                nil [1336 1365])
             ("SystemCoreClockUpdate" function
                (:prototype-flag t
                 :typemodifiers ("extern")
                 :arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1401 1406]))                  
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1400 1405]))                  
                 :type "void")
-                nil [1367 1407])
-            ("mainloop_initialize" function (:type "void") nil [1409 2825])
+                nil [1366 1406])
+            ("mainloop_initialize" function (:type "void") nil [1408 2824])
             ("mainloop_run_loop" function
                (:arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2850 2855]))                  
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2849 2854]))                  
                 :type "void")
-                nil [2827 2897])
+                nil [2826 2896])
             ("mainloop_run" function
                (:arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2917 2922]))                  
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2916 2921]))                  
                 :type "void")
-                nil [2899 3446])
+                nil [2898 3445])
             ("mainloop_on_not_connected" function
                (:arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3480 3485]))                  
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3479 3484]))                  
                 :type "void")
-                nil [3449 4440])
+                nil [3448 4439])
             ("mainloop_on_connected" function
                (:arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4470 4475]))                  
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4469 4474]))                  
                 :type "void")
-                nil [4443 7908]))          
+                nil [4442 7907]))          
       :file "mainloop.c"
-      :pointmax 7953
+      :pointmax 7952
       :fsize 7951
       :lastmodtime '(23802 13505 0 0)
-      :unmatched-syntax '((symbol 980 . 984) (EXTERN 973 . 979) (symbol 913 . 917) (symbol 885 . 889) (symbol 883 . 884))
+      :unmatched-syntax nil
       :lexical-table 
-        '(("COUNT_RTC_UPDATE" . ((number "30" 1116 . 1118)))
-          ("COUNT_BATT_UPDATE" . ((number "30" 1088 . 1090)))
+        '(("COUNT_RTC_UPDATE" . ((number "30" 1115 . 1117)))
+          ("COUNT_BATT_UPDATE" . ((number "30" 1087 . 1089)))
           )
 )
     (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__BLUETOOTH_H__" variable (:constant-flag t) nil [453 468])
+            ("stdint.h" include (:system-flag t) nil [470 489])
+            ("BT_BAUDRATE_1200" variable (:constant-flag t) nil [585 601])
+            ("BT_BAUDRATE_2400" variable (:constant-flag t) nil [626 642])
+            ("BT_BAUDRATE_4800" variable (:constant-flag t) nil [667 683])
+            ("BT_BAUDRATE_9600" variable (:constant-flag t) nil [708 724])
+            ("BT_BAUDRATE_19200" variable (:constant-flag t) nil [749 766])
+            ("BT_BAUDRATE_38400" variable (:constant-flag t) nil [791 808])
+            ("BT_BAUDRATE_57600" variable (:constant-flag t) nil [833 850])
+            ("BT_BAUDRATE_115200" variable (:constant-flag t) nil [875 893])
+            ("BT_BAUDRATE_230400" variable (:constant-flag t) nil [918 936])
+            ("BT_BAUDRATE_460800" variable (:constant-flag t) nil [961 979])
+            ("BT_BAUDRATE_921600" variable (:constant-flag t) nil [1004 1022])
+            ("BT_CONNECTED" variable (:constant-flag t) nil [1080 1092])
+            ("BT_NOT_CONNECTED" variable (:constant-flag t) nil [1104 1120])
+            ("BT_MAX_RX_BUFFER_LENGTH" variable (:constant-flag t) nil [1167 1190])
+            ("bluetoothSetUSARTConfig" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("baudrate" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1305 1323]))                  
+                :type "void")
+                nil [1276 1324])
+            ("bluetoothSetDmaConfig" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1389 1394]))                  
+                :type "void")
+                nil [1362 1395])
+            ("bluetoothSetGpioConfig" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1462 1467]))                  
+                :type "void")
+                nil [1434 1468])
+            ("bluetoothInitBaudrate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1541 1546]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1511 1547])
+            ("bluetoothReset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1599 1604]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1576 1605])
+            ("bluetoothSoftReset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1633 1638]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1606 1639])
+            ("bluetoothForceBaudrate9600" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1730 1735]))                  
+                :type "void")
+                nil [1698 1736])
+            ("bluetoothUseFirmwareBaudrate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1809 1814]))                  
+                :type "void")
+                nil [1775 1815])
+            ("bluetoothSetMaster" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("isEnabled" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1881 1899]))                  
+                :type "void")
+                nil [1857 1900])
+            ("bluetoothGotoCommandMode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1973 1978]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1940 1979])
+            ("bluetoothGotoDataMode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2046 2051]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2016 2052])
+            ("bluetoothShowStatus" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2105 2110]))                  
+                :type "void")
+                nil [2080 2111])
+            ("bluetoothSetFactoryDefault" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("isEnabled" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2190 2208]))                  
+                :type "void")
+                nil [2158 2209])
+            ("bluetoothSetAutoDiscovery" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("isEnabled" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2289 2307]))                  
+                :type "void")
+                nil [2258 2308])
+            ("bluetoothSetBaudrate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("baudrate" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2373 2391]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2344 2392])
+            ("bluetoothStartDataTransfer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pDataBuffer" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2460 2481])
+                    ("dataLength" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2482 2502]))                  
+                :type "void")
+                nil [2428 2503])
+            ("bluetoothStopDataTransfer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2569 2574]))                  
+                :type "void")
+                nil [2538 2575])
+            ("bluetoothSetName" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2636 2641]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2611 2642])
+            ("bluetoothGetName" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2704 2709]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2678 2710])
+            ("bluetoothEnableLowPowerConnectMode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2792 2797]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2749 2798])
+            ("bluetoothDisableLowPowerConnectMode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2882 2887]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2838 2888])
+            ("bluetoothEnableLowLatency" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2955 2960]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2921 2961])
+            ("bluetoothEnableLowLatencyOptimization" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3045 3050]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2999 3051])
+            ("bluetoothDisableSpecialCommands" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3122 3127]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3082 3128])
+            ("bluetoothIsReadyForSend" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [3214 3218]))                  
+                :type "int")
+                nil [3186 3219])
+            ("bluetoothCheckConnectionStatus" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3305 3310]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3266 3311])
+            ("pollBluetoothData" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3371 3376]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3345 3377])
+            ("bluetoothGotoFastMode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3409 3414]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3379 3415])
+            ("checkConnectionStatus" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3447 3452]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3417 3453])
+            ("bluetoothGotoSleepMode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3486 3491]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3455 3492])
+            ("bluetoothSetFlowControl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3526 3531]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3494 3532])
+            ("bluetoothSetTimeout" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3562 3567]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3534 3568])
+            ("bluetoothSetAlternateMfiPins" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3607 3612]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3570 3613])
+            ("bluetoothWaitForInit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3644 3649]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3615 3650])
+            ("bluetoothSetCpuSpeed" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3681 3686]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3652 3687])
+            ("bluetoothSetDisableEncryption" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3727 3732]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3689 3733])
+            ("bluetoothSetNoBuffers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3765 3770]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3735 3771])
+            ("bluetoothSetFactory" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3801 3806]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3773 3807])
+            ("bluetoothDisableAuthentification" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3850 3855]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3809 3856])
+            ("bluetoothEnableSleepMode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3891 3896]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3858 3897])
+            ("bluetoothSetActive" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("f" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3923 3933]))                  
+                :type "void")
+                nil [3899 3934])
+            ("bluetoothDisable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3958 3963]))                  
+                :type "void")
+                nil [3936 3964])
+            ("bluetoothMFIPing" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3991 3996]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3966 3997])
+            ("bluetoothSetUseExtLpo" function
+               (:prototype-flag t
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3999 4031])
+            ("bluetoothDefaultAuth" function
+               (:prototype-flag t
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [4033 4064])
+            ("bluetoothSendConfigCommand" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4101 4114]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [4066 4115])
+            ("bluetoothEnableResetPin" function
+               (:prototype-flag t
+                :type "void")
+                nil [4117 4148])
+            ("bluetoothDisableResetPin" function
+               (:prototype-flag t
+                :type "void")
+                nil [4150 4182])
+            ("bluetoothVerifyAddress" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("expect" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4214 4230]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [4184 4231])
+            ("BTGPIOConfig" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pin" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4334 4347])
+                    ("io" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4348 4359]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [4313 4360])
+            ("BTGPIOWrite" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pin" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4406 4419])
+                    ("val" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4420 4432]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [4386 4433])
+            ("BTGPIORead" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pin" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4483 4495]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [4464 4496])
+            ("BT_UART_WAIT_LONG" variable (:constant-flag t) nil [4575 4592])
+            ("BT_DMA_TIMEOUT_LONG" variable (:constant-flag t) nil [4650 4669])
+            ("BT_DMA_TIMEOUT_SHORT" variable (:constant-flag t) nil [4683 4703]))          
       :file "Bluetooth.h"
+      :pointmax 4779
       :fsize 4778
-      :lastmodtime '(23802 13508 0 0))
+      :lastmodtime '(23802 13508 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BT_BAUDRATE_2400" . ((number "2400" 654 . 658)))
+          ("BT_BAUDRATE_19200" . ((number "19200" 777 . 782)))
+          ("BT_MAX_RX_BUFFER_LENGTH" . ((number "64" 1191 . 1193)))
+          ("BT_DMA_TIMEOUT_LONG" . ((number "5000" 4670 . 4674)))
+          ("BT_BAUDRATE_115200" . ((number "115200" 903 . 909)))
+          ("BT_BAUDRATE_460800" . ((number "460800" 989 . 995)))
+          ("BT_CONNECTED" . ((number "1" 1094 . 1095)))
+          ("BT_BAUDRATE_1200" . ((number "1200" 613 . 617)))
+          ("BT_BAUDRATE_230400" . ((number "230400" 946 . 952)))
+          ("BT_UART_WAIT_LONG" . ((number "8000" 4593 . 4597)))
+          ("BT_BAUDRATE_921600" . ((number "921600" 1032 . 1038)))
+          ("BT_BAUDRATE_57600" . ((number "57600" 861 . 866)))
+          ("BT_DMA_TIMEOUT_SHORT" . ((number "200" 4704 . 4707)))
+          ("__BLUETOOTH_H__")
+          ("BT_BAUDRATE_4800" . ((number "4800" 695 . 699)))
+          ("BT_BAUDRATE_9600" . ((number "9600" 736 . 740)))
+          ("BT_BAUDRATE_38400" . ((number "38400" 819 . 824)))
+          ("BT_NOT_CONNECTED" . ((number "0" 1121 . 1122)))
+          )
+)
     (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_COMMUNICATION_MANAGER_H" variable (:constant-flag t) nil [762 786])
+            ("_COMMUNICATION_MANAGER_H" variable (:constant-flag t) nil [762 786])
+            ("_COMMUNICATION_MANAGER_H" variable (:constant-flag t) nil [762 786])
+            ("_COMMUNICATION_MANAGER_H" variable (:constant-flag t) nil [762 786])
+            ("_COMMUNICATION_MANAGER_H" variable (:constant-flag t) nil [762 786])
+            ("_COMMUNICATION_MANAGER_H" variable (:constant-flag t) nil [762 786])
+            ("LpmsModbus.h" include nil nil [789 812])
+            ("packet.h" include nil nil [813 832])
+            ("initCommunicationManager" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1008 1013]))                  
+                :type "void")
+                nil [978 1014])
+            ("updateDataTransmission" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1135 1140]))                  
+                :type "void")
+                nil [1107 1141])
+            ("sendBatteryLevel" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1209 1214]))                  
+                :type "void")
+                nil [1187 1215])
+            ("sendBatteryVoltage" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1274 1279]))                  
+                :type "void")
+                nil [1250 1280])
+            ("sendSensorTemperature" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1345 1350]))                  
+                :type "void")
+                nil [1318 1351])
+            ("sendRTCDatetime" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1396 1401]))                  
+                :type "void")
+                nil [1375 1402])
+            ("communicate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1421 1437]))                  
+                :type "void")
+                nil [1404 1438])
+            ("commGoToCommandMode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1465 1470]))                  
+                :type "void")
+                nil [1440 1471])
+            ("commGoToStreamMode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1497 1502]))                  
+                :type "void")
+                nil [1473 1503])
+            ("commOrientationOffsetSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1535 1551]))                  
+                :type "void")
+                nil [1505 1552])
+            ("commOrientationOffsetReset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1586 1602]))                  
+                :type "void")
+                nil [1554 1603])
+            ("commStreamFreqSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1628 1644]))                  
+                :type "void")
+                nil [1605 1645])
+            ("commConfigGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1666 1671]))                  
+                :type "void")
+                nil [1647 1672])
+            ("commStatusGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1693 1698]))                  
+                :type "void")
+                nil [1674 1699])
+            ("commImuIDSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1719 1735]))                  
+                :type "void")
+                nil [1701 1736])
+            ("commImuIDGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1756 1761]))                  
+                :type "void")
+                nil [1738 1762])
+            ("commGyrRangeSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1785 1801]))                  
+                :type "void")
+                nil [1764 1802])
+            ("commGyrRangeGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1825 1830]))                  
+                :type "void")
+                nil [1804 1831])
+            ("commAccRangeSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1854 1870]))                  
+                :type "void")
+                nil [1833 1871])
+            ("commAccRangeGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1894 1899]))                  
+                :type "void")
+                nil [1873 1900])
+            ("commMagRangeSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1923 1939]))                  
+                :type "void")
+                nil [1902 1940])
+            ("commMagRangeGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1963 1968]))                  
+                :type "void")
+                nil [1942 1969])
+            ("commFilterModeSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1994 2010]))                  
+                :type "void")
+                nil [1971 2011])
+            ("commFilterModeGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2036 2041]))                  
+                :type "void")
+                nil [2013 2042])
+            ("commFilterPresetSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2069 2085]))                  
+                :type "void")
+                nil [2044 2086])
+            ("commFilterPresetGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2113 2118]))                  
+                :type "void")
+                nil [2088 2119])
+            ("commSensorDataGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2144 2149]))                  
+                :type "void")
+                nil [2121 2150])
+            ("commHardIronOffsetSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2179 2195]))                  
+                :type "void")
+                nil [2152 2196])
+            ("commHardIronOffsetGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2225 2230]))                  
+                :type "void")
+                nil [2198 2231])
+            ("commSoftIronMatrixSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2260 2276]))                  
+                :type "void")
+                nil [2233 2277])
+            ("commSoftIronMatrixGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2306 2311]))                  
+                :type "void")
+                nil [2279 2312])
+            ("commReferenceReset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2338 2343]))                  
+                :type "void")
+                nil [2314 2344])
+            ("commFieldEstimateSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2372 2388]))                  
+                :type "void")
+                nil [2346 2389])
+            ("commFieldEstinateGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2417 2422]))                  
+                :type "void")
+                nil [2391 2423])
+            ("commAccAlignMatrixSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2452 2468]))                  
+                :type "void")
+                nil [2425 2469])
+            ("commAccAlignMatrixGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2498 2503]))                  
+                :type "void")
+                nil [2471 2504])
+            ("commAccBiasSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2526 2542]))                  
+                :type "void")
+                nil [2506 2543])
+            ("commAccBiasGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2565 2570]))                  
+                :type "void")
+                nil [2545 2571])
+            ("commGyrAlignMatrixSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2600 2616]))                  
+                :type "void")
+                nil [2573 2617])
+            ("commGyrAlignMatrixGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2646 2651]))                  
+                :type "void")
+                nil [2619 2652])
+            ("commGyrAlignBiasSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2679 2695]))                  
+                :type "void")
+                nil [2654 2696])
+            ("commGyrAlignBiasGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2723 2728]))                  
+                :type "void")
+                nil [2698 2729])
+            ("commGyrStaticBiasSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2757 2773]))                  
+                :type "void")
+                nil [2731 2774])
+            ("commGyrStaticBiasGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2802 2807]))                  
+                :type "void")
+                nil [2776 2808])
+            ("commRawDataLpSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2832 2848]))                  
+                :type "void")
+                nil [2810 2849])
+            ("commRawDataLpGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2873 2878]))                  
+                :type "void")
+                nil [2851 2879])
+            ("commTimestampSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2903 2919]))                  
+                :type "void")
+                nil [2881 2920])
+            ("commLinAccCompModeSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2949 2965]))                  
+                :type "void")
+                nil [2922 2966])
+            ("commLinAccCompModeGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2995 3000]))                  
+                :type "void")
+                nil [2968 3001])
+            ("commCentriCompModeSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3030 3046]))                  
+                :type "void")
+                nil [3003 3047])
+            ("commCentriCompModeGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3076 3081]))                  
+                :type "void")
+                nil [3049 3082])
+            ("commGyrAutoCalEnable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3110 3126]))                  
+                :type "void")
+                nil [3084 3127])
+            ("commGyrThresEnable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3153 3169]))                  
+                :type "void")
+                nil [3129 3170])
+            ("commGyrCalibraStart" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3197 3202]))                  
+                :type "void")
+                nil [3172 3203])
+            ("commTransmitDataSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3230 3246]))                  
+                :type "void")
+                nil [3205 3247])
+            ("commLpBusDataModeSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3275 3291]))                  
+                :type "void")
+                nil [3249 3292])
+            ("commTimestampOutputModeSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3326 3342]))                  
+                :type "void")
+                nil [3294 3343])
+            ("commMagAlignmentMatrixSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3376 3392]))                  
+                :type "void")
+                nil [3345 3393])
+            ("commMagAlignmentMatrixGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3426 3431]))                  
+                :type "void")
+                nil [3395 3432])
+            ("commMagAlignmentBiasSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3463 3479]))                  
+                :type "void")
+                nil [3434 3480])
+            ("commMagAlignmentBiasGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3511 3516]))                  
+                :type "void")
+                nil [3482 3517])
+            ("commMagReferenceSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3544 3560]))                  
+                :type "void")
+                nil [3519 3561])
+            ("commMagReferenceGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3588 3593]))                  
+                :type "void")
+                nil [3563 3594])
+            ("commRegistersWrite" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3620 3625]))                  
+                :type "void")
+                nil [3596 3626])
+            ("commFactoryValueRestore" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3657 3662]))                  
+                :type "void")
+                nil [3628 3663])
+            ("commFirmwareVersionGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3693 3698]))                  
+                :type "void")
+                nil [3665 3699])
+            ("commIAPUpdate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3720 3736]))                  
+                :type "void")
+                nil [3701 3737])
+            ("commFirmwareUpdate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3763 3779]))                  
+                :type "void")
+                nil [3739 3780])
+            ("commBatteryLevelGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3807 3812]))                  
+                :type "void")
+                nil [3782 3813])
+            ("commBatteryVoltageGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3842 3847]))                  
+                :type "void")
+                nil [3815 3848])
+            ("commChargingStatusGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3877 3882]))                  
+                :type "void")
+                nil [3850 3883])
+            ("commTemperatureDataGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3913 3918]))                  
+                :type "void")
+                nil [3885 3919])
+            ("commProductIdSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3943 3959]))                  
+                :type "void")
+                nil [3921 3960])
+            ("commProductIdGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3984 3989]))                  
+                :type "void")
+                nil [3962 3990])
+            ("commDeviceNameSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4015 4031]))                  
+                :type "void")
+                nil [3992 4032])
+            ("commDeviceNameGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4057 4062]))                  
+                :type "void")
+                nil [4034 4063])
+            ("commDeviceInfoGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4088 4093]))                  
+                :type "void")
+                nil [4065 4094])
+            ("commLedColorSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4117 4133]))                  
+                :type "void")
+                nil [4096 4134])
+            ("commLedColorGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4157 4162]))                  
+                :type "void")
+                nil [4136 4163])
+            ("commLedWaveformSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4189 4205]))                  
+                :type "void")
+                nil [4165 4206])
+            ("commLedWaveformGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4232 4237]))                  
+                :type "void")
+                nil [4208 4238])
+            ("commVibratorStateSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4266 4282]))                  
+                :type "void")
+                nil [4240 4283])
+            ("commVibratorWaveformSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4314 4330]))                  
+                :type "void")
+                nil [4285 4331])
+            ("commPingGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4350 4355]))                  
+                :type "void")
+                nil [4333 4356])
+            ("commSyncStart" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4377 4382]))                  
+                :type "void")
+                nil [4358 4383])
+            ("commSyncStop" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4403 4408]))                  
+                :type "void")
+                nil [4385 4409])
+            ("commRTCOutputModeSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4437 4453]))                  
+                :type "void")
+                nil [4411 4454])
+            ("commRTCOutputModeGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4482 4487]))                  
+                :type "void")
+                nil [4456 4488])
+            ("commStorageModeSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5167 5183]))                  
+                :type "void")
+                nil [5143 5184])
+            ("commStorageModeGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5210 5215]))                  
+                :type "void")
+                nil [5186 5216])
+            ("commMCUReset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5236 5241]))                  
+                :type "void")
+                nil [5218 5242])
+            ("commRTCDatetimeGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5268 5273]))                  
+                :type "void")
+                nil [5244 5274])
+            ("commRTCDatetimeSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5300 5316]))                  
+                :type "void")
+                nil [5276 5317])
+            ("commRTCSmoothCalibrationGet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5352 5357]))                  
+                :type "void")
+                nil [5319 5358])
+            ("commRTCSmoothCalibrationSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5393 5409]))                  
+                :type "void")
+                nil [5360 5410]))          
       :file "CommunicationManager.h"
+      :pointmax 5492
       :fsize 5491
-      :lastmodtime '(23802 13508 0 0))
+      :lastmodtime '(23802 13508 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_COMMUNICATION_MANAGER_H")
+          )
+)
     (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("GAS_GAUGE" variable (:constant-flag t) nil [59 68])
+            ("common.h" include nil nil [70 89])
+            ("compat.h" include nil nil [152 171])
+            ("stc3115_Driver.h" include nil nil [210 237])
+            ("GASGAUGE_I2C_SCL_IO_PORT" variable (:constant-flag t) nil [928 952])
+            ("GASGAUGE_I2C_SCL_PIN" variable (:constant-flag t) nil [967 987])
+            ("GASGAUGE_I2C_SCL_SOURCE" variable (:constant-flag t) nil [1008 1031])
+            ("GASGAUGE_I2C_SCL_AF" variable (:constant-flag t) nil [1057 1076])
+            ("GASGAUGE_I2C_SCL_RCC_PORT" variable (:constant-flag t) nil [1100 1125])
+            ("GASGAUGE_I2C_SDA_IO_PORT" variable (:constant-flag t) nil [1155 1179])
+            ("GASGAUGE_I2C_SDA_PIN" variable (:constant-flag t) nil [1194 1214])
+            ("GASGAUGE_I2C_SDA_SOURCE" variable (:constant-flag t) nil [1235 1258])
+            ("GASGAUGE_I2C_SDA_AF" variable (:constant-flag t) nil [1284 1303])
+            ("GASGAUGE_I2C_SDA_RCC_PORT" variable (:constant-flag t) nil [1328 1353])
+            ("GASGAUGE_I2C_PORT" variable (:constant-flag t) nil [1383 1400])
+            ("GASGAUGE_I2C_RCC_PERIPH" variable (:constant-flag t) nil [1416 1439])
+            ("GASGAUGE_I2C_ADDRESS" variable (:constant-flag t) nil [1478 1498])
+            ("GASGAUGE_I2C_SPEED" variable (:constant-flag t) nil [1513 1531])
+            ("GASGAUGE_I2C_OWN_ADDRESS" variable (:constant-flag t) nil [1552 1576])
+            ("gasGaugeSetI2CConfig" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1609 1614]))                  
+                :type "void")
+                nil [1583 1615])
+            ("gasGaugeI2cWrite" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("reg_addr" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1638 1661])
+                    ("length" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1662 1683])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1684 1710]))                  
+                :type "int")
+                nil [1617 1711])
+            ("gasGaugeI2cRead" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("reg_addr" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1732 1755])
+                    ("length" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1756 1777])
+                    ("data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1778 1798]))                  
+                :type "int")
+                nil [1712 1799])
+            ("gasGaugeWriteRegister" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("address" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1826 1842])
+                    ("data" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1843 1856]))                  
+                :type "int")
+                nil [1800 1857])
+            ("gasGaugeInit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1878 1883]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [1858 1884])
+            ("updateGasGauge" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("slice" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1904 1918])
+                    ("i2cTimeOut" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1919 1939]))                  
+                :type "int")
+                nil [1885 1940])
+            ("getBatteryLevel" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1989 1994]))                  
+                :type "float")
+                nil [1967 1995])
+            ("getBatteryVoltage" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2020 2025]))                  
+                :type "float")
+                nil [1996 2026])
+            ("getBatteryCurrent" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2051 2056]))                  
+                :type "float")
+                nil [2027 2057])
+            ("gasGaugeEnable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2078 2083]))                  
+                :type "void")
+                nil [2058 2084])
+            ("gasGaugeDisable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2106 2111]))                  
+                :type "void")
+                nil [2085 2112]))          
       :file "GasGauge.h"
+      :pointmax 2165
       :fsize 2164
-      :lastmodtime '(23811 13823 0 0))
+      :lastmodtime '(23811 13823 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GASGAUGE_I2C_SCL_SOURCE" . ((symbol "GPIO_PinSource8" 1033 . 1048)))
+          ("GASGAUGE_I2C_SCL_AF" . ((symbol "GPIO_AF_I2C3" 1079 . 1091)))
+          ("GASGAUGE_I2C_SCL_RCC_PORT" . ((symbol "RCC_AHB1Periph_GPIOA" 1126 . 1146)))
+          ("GASGAUGE_I2C_SDA_SOURCE" . ((symbol "GPIO_PinSource4" 1260 . 1275)))
+          ("GASGAUGE_I2C_ADDRESS" . ((number "0xe0" 1500 . 1504)))
+          ("GAS_GAUGE")
+          ("GASGAUGE_I2C_PORT" . ((symbol "I2C3" 1403 . 1407)))
+          ("GASGAUGE_I2C_RCC_PERIPH" . ((symbol "RCC_APB1Periph_I2C3" 1441 . 1460)))
+          ("GASGAUGE_I2C_SPEED" . ((number "400000" 1537 . 1543)))
+          ("GASGAUGE_I2C_OWN_ADDRESS" . ((number "0xa0" 1577 . 1581)))
+          ("GASGAUGE_I2C_SCL_IO_PORT" . ((symbol "GPIOA" 953 . 958)))
+          ("GASGAUGE_I2C_SDA_AF" . ((symbol "GPIO_AF9_I2C3" 1306 . 1319)))
+          ("GASGAUGE_I2C_SDA_RCC_PORT" . ((symbol "RCC_AHB1Periph_GPIOB" 1354 . 1374)))
+          ("GASGAUGE_I2C_SCL_PIN" . ((symbol "GPIO_Pin_8" 989 . 999)))
+          ("GASGAUGE_I2C_SDA_PIN" . ((symbol "GPIO_Pin_4" 1216 . 1226)))
+          ("GASGAUGE_I2C_SDA_IO_PORT" . ((symbol "GPIOB" 1180 . 1185)))
+          )
+)
     (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__LED_CONTROL_H__" variable (:constant-flag t) nil [35 52])
+            ("stdint.h" include (:system-flag t) nil [54 73])
+            ("_LED_Waveform" type
+               (:members 
+                  ( ("pwm" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [164 177])
+                    ("pwmInc" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [211 227])
+                    ("pwmDec" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [261 277])
+                    ("blink" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [311 325])
+                    ("color" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [366 384])
+                    ("waveform" variable
+                       (:dereference 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [447 468])
+                    ("timer" variable
+                       (:dereference 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [550 568])
+                    ("timerIdx" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [591 609]))                  
+                :type "struct")
+                nil [131 637])
+            ("LED_Waveform" type
+               (:typedef ("_LED_Waveform" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [131 637])
+            ("LED_initWaveformStruct" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("wf" variable
+                       (:pointer 1
+                        :type ("LED_Waveform" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [667 684]))                  
+                :type "void")
+                nil [639 685])
+            ("LED_resetWaveformTimers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("wf" variable
+                       (:pointer 1
+                        :type ("LED_Waveform" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [715 732]))                  
+                :type "void")
+                nil [686 733])
+            ("LED_updateWaveformAlive" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("wf" variable
+                       (:pointer 1
+                        :type ("LED_Waveform" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [763 780]))                  
+                :type "void")
+                nil [734 781])
+            ("LED_initialize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [803 808]))                  
+                :type "void")
+                nil [783 809])
+            ("LED_initializePwm" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [833 838]))                  
+                :type "void")
+                nil [810 839])
+            ("LED_updateAlive" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [861 866]))                  
+                :type "void")
+                nil [840 867])
+            ("LED_updateBattery" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [891 896]))                  
+                :type "void")
+                nil [868 897])
+            ("LED_updateChargingWaveform" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [942 947]))                  
+                :type "void")
+                nil [910 948])
+            ("LED_updateParameters" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [975 980]))                  
+                :type "void")
+                nil [949 981])
+            ("LED_setPwmColors" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("red" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1004 1017])
+                    ("green" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1040 1055])
+                    ("blue" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1078 1092]))                  
+                :type "void")
+                nil [982 1093])
+            ("LED_getPwmPeriod" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1120 1125]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [1094 1126])
+            ("LED_showWhite" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1147 1152]))                  
+                :type "void")
+                nil [1128 1153])
+            ("LED_showRed" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1171 1176]))                  
+                :type "void")
+                nil [1154 1177])
+            ("LED_showGreen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1197 1202]))                  
+                :type "void")
+                nil [1178 1203])
+            ("LED_showBlue" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1222 1227]))                  
+                :type "void")
+                nil [1204 1228])
+            ("LED_showYellow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1249 1254]))                  
+                :type "void")
+                nil [1229 1255])
+            ("LED_showMagenta" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1277 1282]))                  
+                :type "void")
+                nil [1256 1283])
+            ("LED_showRGB" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1301 1311])
+                    ("g" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1312 1322])
+                    ("b" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1323 1333]))                  
+                :type "void")
+                nil [1284 1334])
+            ("LED_switchOff" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1354 1359]))                  
+                :type "void")
+                nil [1335 1360])
+            ("LED_showCyan" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1379 1384]))                  
+                :type "void")
+                nil [1361 1385])
+            ("LED_setUpdateFirmwarePattern" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1421 1426]))                  
+                :type "void")
+                nil [1387 1427])
+            ("LED_blinkTwice" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1448 1453]))                  
+                :type "void")
+                nil [1428 1454])
+            ("LED_toggleCyan" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1510 1515]))                  
+                :type "void")
+                nil [1490 1516]))          
       :file "LedControl.h"
+      :pointmax 1588
       :fsize 1587
-      :lastmodtime '(23802 13508 0 0))
+      :lastmodtime '(23802 13508 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__LED_CONTROL_H__")
+          )
+)
     (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MS_CONFIG_H" variable (:constant-flag t) nil [260 271])
+            ("stdint.h" include (:system-flag t) nil [273 292])
+            ("REG_ARRAY_SIZE" variable (:constant-flag t) nil [887 901])
+            ("REG_START_ADDRESS" variable (:constant-flag t) nil [1047 1064])
+            ("COMMAND_START_ADDRESS" variable (:constant-flag t) nil [1122 1143])
+            ("LPMS_CONFIG" variable (:constant-flag t) nil [1184 1195])
+            ("LPMS_IMU_ID" variable (:constant-flag t) nil [1242 1253])
+            ("LPMS_GYR_RANGE" variable (:constant-flag t) nil [1306 1320])
+            ("LPMS_ACC_RANGE" variable (:constant-flag t) nil [1370 1384])
+            ("LPMS_MAG_RANGE" variable (:constant-flag t) nil [1434 1448])
+            ("LPMS_GYR_OUTPUT_RATE" variable (:constant-flag t) nil [1498 1518])
+            ("LPMS_ACC_OUTPUT_RATE" variable (:constant-flag t) nil [1562 1582])
+            ("LPMS_MAG_OUTPUT_RATE" variable (:constant-flag t) nil [1626 1646])
+            ("LPMS_GYR_BIAS_X" variable (:constant-flag t) nil [1690 1705])
+            ("LPMS_GYR_BIAS_Y" variable (:constant-flag t) nil [1754 1769])
+            ("LPMS_GYR_BIAS_Z" variable (:constant-flag t) nil [1818 1833])
+            ("LPMS_GYR_GAIN_X" variable (:constant-flag t) nil [1883 1898])
+            ("LPMS_GYR_GAIN_Y" variable (:constant-flag t) nil [1948 1963])
+            ("LPMS_GYR_GAIN_Z" variable (:constant-flag t) nil [2013 2028])
+            ("LPMS_ACC_BIAS_X" variable (:constant-flag t) nil [2078 2093])
+            ("LPMS_ACC_BIAS_Y" variable (:constant-flag t) nil [2143 2158])
+            ("LPMS_ACC_BIAS_Z" variable (:constant-flag t) nil [2208 2223])
+            ("LPMS_ACC_GAIN_X" variable (:constant-flag t) nil [2273 2288])
+            ("LPMS_ACC_GAIN_Y" variable (:constant-flag t) nil [2338 2353])
+            ("LPMS_ACC_GAIN_Z" variable (:constant-flag t) nil [2403 2418])
+            ("LPMS_MAG_BIAS_X" variable (:constant-flag t) nil [2468 2483])
+            ("LPMS_MAG_BIAS_Y" variable (:constant-flag t) nil [2533 2548])
+            ("LPMS_MAG_BIAS_Z" variable (:constant-flag t) nil [2598 2613])
+            ("LPMS_MAG_GAIN_X" variable (:constant-flag t) nil [2663 2678])
+            ("LPMS_MAG_GAIN_Y" variable (:constant-flag t) nil [2728 2743])
+            ("LPMS_MAG_GAIN_Z" variable (:constant-flag t) nil [2793 2808])
+            ("LPMS_GYR_ALIG_00" variable (:constant-flag t) nil [2858 2874])
+            ("LPMS_GYR_ALIG_01" variable (:constant-flag t) nil [2923 2939])
+            ("LPMS_GYR_ALIG_02" variable (:constant-flag t) nil [2988 3004])
+            ("LPMS_GYR_ALIG_10" variable (:constant-flag t) nil [3053 3069])
+            ("LPMS_GYR_ALIG_11" variable (:constant-flag t) nil [3118 3134])
+            ("LPMS_GYR_ALIG_12" variable (:constant-flag t) nil [3183 3199])
+            ("LPMS_GYR_ALIG_20" variable (:constant-flag t) nil [3248 3264])
+            ("LPMS_GYR_ALIG_21" variable (:constant-flag t) nil [3313 3329])
+            ("LPMS_GYR_ALIG_22" variable (:constant-flag t) nil [3378 3394])
+            ("LPMS_ACC_ALIG_00" variable (:constant-flag t) nil [3443 3459])
+            ("LPMS_ACC_ALIG_01" variable (:constant-flag t) nil [3508 3524])
+            ("LPMS_ACC_ALIG_02" variable (:constant-flag t) nil [3573 3589])
+            ("LPMS_ACC_ALIG_10" variable (:constant-flag t) nil [3638 3654])
+            ("LPMS_ACC_ALIG_11" variable (:constant-flag t) nil [3703 3719])
+            ("LPMS_ACC_ALIG_12" variable (:constant-flag t) nil [3768 3784])
+            ("LPMS_ACC_ALIG_20" variable (:constant-flag t) nil [3833 3849])
+            ("LPMS_ACC_ALIG_21" variable (:constant-flag t) nil [3898 3914])
+            ("LPMS_ACC_ALIG_22" variable (:constant-flag t) nil [3963 3979])
+            ("LPMS_MAG_ALIG_00" variable (:constant-flag t) nil [4028 4044])
+            ("LPMS_MAG_ALIG_01" variable (:constant-flag t) nil [4093 4109])
+            ("LPMS_MAG_ALIG_02" variable (:constant-flag t) nil [4158 4174])
+            ("LPMS_MAG_ALIG_10" variable (:constant-flag t) nil [4223 4239])
+            ("LPMS_MAG_ALIG_11" variable (:constant-flag t) nil [4288 4304])
+            ("LPMS_MAG_ALIG_12" variable (:constant-flag t) nil [4353 4369])
+            ("LPMS_MAG_ALIG_20" variable (:constant-flag t) nil [4418 4434])
+            ("LPMS_MAG_ALIG_21" variable (:constant-flag t) nil [4483 4499])
+            ("LPMS_MAG_ALIG_22" variable (:constant-flag t) nil [4548 4564])
+            ("LPMS_ACC_REF_X" variable (:constant-flag t) nil [4613 4627])
+            ("LPMS_ACC_REF_Y" variable (:constant-flag t) nil [4678 4692])
+            ("LPMS_ACC_REF_Z" variable (:constant-flag t) nil [4743 4757])
+            ("LPMS_MAG_REF_X" variable (:constant-flag t) nil [4808 4822])
+            ("LPMS_MAG_REF_Y" variable (:constant-flag t) nil [4873 4887])
+            ("LPMS_MAG_REF_Z" variable (:constant-flag t) nil [4938 4952])
+            ("LPMS_GYR_THRES_X" variable (:constant-flag t) nil [5003 5019])
+            ("LPMS_GYR_THRES_Y" variable (:constant-flag t) nil [5068 5084])
+            ("LPMS_GYR_THRES_Z" variable (:constant-flag t) nil [5133 5149])
+            ("LPMS_MAG_THRES_X" variable (:constant-flag t) nil [5198 5214])
+            ("LPMS_MAG_THRES_Y" variable (:constant-flag t) nil [5263 5279])
+            ("LPMS_MAG_THRES_Z" variable (:constant-flag t) nil [5328 5344])
+            ("LPMS_ACC_COMP_GAIN_1" variable (:constant-flag t) nil [5393 5413])
+            ("LPMS_ACC_COVAR_1" variable (:constant-flag t) nil [5458 5474])
+            ("LPMS_MAG_COMP_GAIN_1" variable (:constant-flag t) nil [5523 5543])
+            ("LPMS_MAG_COVAR_1" variable (:constant-flag t) nil [5588 5604])
+            ("LPMS_ACC_COMP_GAIN_2" variable (:constant-flag t) nil [5653 5673])
+            ("LPMS_ACC_COVAR_2" variable (:constant-flag t) nil [5718 5734])
+            ("LPMS_MAG_COMP_GAIN_2" variable (:constant-flag t) nil [5783 5803])
+            ("LPMS_MAG_COVAR_2" variable (:constant-flag t) nil [5848 5864])
+            ("LPMS_ACC_COMP_GAIN_3" variable (:constant-flag t) nil [5913 5933])
+            ("LPMS_ACC_COVAR_3" variable (:constant-flag t) nil [5978 5994])
+            ("LPMS_MAG_COMP_GAIN_3" variable (:constant-flag t) nil [6043 6063])
+            ("LPMS_MAG_COVAR_3" variable (:constant-flag t) nil [6108 6124])
+            ("LPMS_ACC_COMP_GAIN_USER" variable (:constant-flag t) nil [6173 6196])
+            ("LPMS_ACC_COVAR_USER" variable (:constant-flag t) nil [6238 6257])
+            ("LPMS_MAG_COMP_GAIN_USER" variable (:constant-flag t) nil [6303 6326])
+            ("LPMS_MAG_COVAR_USER" variable (:constant-flag t) nil [6368 6387])
+            ("LPMS_PROCESS_COVAR" variable (:constant-flag t) nil [6433 6451])
+            ("LPMS_FILTER_MODE" variable (:constant-flag t) nil [6498 6514])
+            ("LPMS_FILTER_PRESET" variable (:constant-flag t) nil [6563 6581])
+            ("LPMS_OFFSET_QUAT_0" variable (:constant-flag t) nil [6628 6646])
+            ("LPMS_OFFSET_QUAT_1" variable (:constant-flag t) nil [6693 6711])
+            ("LPMS_OFFSET_QUAT_2" variable (:constant-flag t) nil [6758 6776])
+            ("LPMS_OFFSET_QUAT_3" variable (:constant-flag t) nil [6823 6841])
+            ("LPMS_MAG_SOFT_00" variable (:constant-flag t) nil [6888 6904])
+            ("LPMS_MAG_SOFT_01" variable (:constant-flag t) nil [6953 6969])
+            ("LPMS_MAG_SOFT_02" variable (:constant-flag t) nil [7018 7034])
+            ("LPMS_MAG_SOFT_10" variable (:constant-flag t) nil [7083 7099])
+            ("LPMS_MAG_SOFT_11" variable (:constant-flag t) nil [7148 7164])
+            ("LPMS_MAG_SOFT_12" variable (:constant-flag t) nil [7213 7229])
+            ("LPMS_MAG_SOFT_20" variable (:constant-flag t) nil [7278 7294])
+            ("LPMS_MAG_SOFT_21" variable (:constant-flag t) nil [7343 7359])
+            ("LPMS_MAG_SOFT_22" variable (:constant-flag t) nil [7408 7424])
+            ("LPMS_MAG_DECLINATION" variable (:constant-flag t) nil [7473 7493])
+            ("LPMS_MAG_FIELD_EST" variable (:constant-flag t) nil [7538 7556])
+            ("LPMS_MAG_FIELD_INC" variable (:constant-flag t) nil [7603 7621])
+            ("LPMS_GYR_ALIG_BIAS_X" variable (:constant-flag t) nil [7668 7688])
+            ("LPMS_GYR_ALIG_BIAS_Y" variable (:constant-flag t) nil [7734 7754])
+            ("LPMS_GYR_ALIG_BIAS_Z" variable (:constant-flag t) nil [7800 7820])
+            ("LPMS_RAW_DATA_LP" variable (:constant-flag t) nil [7866 7882])
+            ("LPMS_RG_NOT_USED0" variable (:constant-flag t) nil [7932 7949])
+            ("LPMS_RG_NOT_USED1" variable (:constant-flag t) nil [7998 8015])
+            ("LPMS_LIN_ACC_COMP_MODE" variable (:constant-flag t) nil [8064 8086])
+            ("LPMS_CENTRI_COMP_MODE" variable (:constant-flag t) nil [8130 8151])
+            ("LPMS_RG_NOT_USED2" variable (:constant-flag t) nil [8196 8213])
+            ("LPMS_MAG_ALIG_BIAS_X" variable (:constant-flag t) nil [8262 8282])
+            ("LPMS_MAG_ALIG_BIAS_Y" variable (:constant-flag t) nil [8328 8348])
+            ("LPMS_MAG_ALIG_BIAS_Z" variable (:constant-flag t) nil [8394 8414])
+            ("LPMS_RG_NOT_USED3" variable (:constant-flag t) nil [8460 8477])
+            ("LPMS_HEADING_OFFSET_0" variable (:constant-flag t) nil [8526 8547])
+            ("LPMS_HEADING_OFFSET_1" variable (:constant-flag t) nil [8592 8613])
+            ("LPMS_HEADING_OFFSET_2" variable (:constant-flag t) nil [8658 8679])
+            ("LPMS_HEADING_OFFSET_3" variable (:constant-flag t) nil [8724 8745])
+            ("LPMS_OFFSET_MODE" variable (:constant-flag t) nil [8790 8806])
+            ("LPMS_DEVICE_NAME_1" variable (:constant-flag t) nil [8856 8874])
+            ("LPMS_DEVICE_NAME_2" variable (:constant-flag t) nil [8954 8972])
+            ("LPMS_DEVICE_NAME_3" variable (:constant-flag t) nil [9020 9038])
+            ("LPMS_DEVICE_NAME_4" variable (:constant-flag t) nil [9086 9104])
+            ("LPMS_PRODUCT_ID_1" variable (:constant-flag t) nil [9152 9169])
+            ("LPMS_PRODUCT_ID_2" variable (:constant-flag t) nil [9249 9266])
+            ("LPMS_PRODUCT_ID_3" variable (:constant-flag t) nil [9315 9332])
+            ("LPMS_PRODUCT_ID_4" variable (:constant-flag t) nil [9381 9398])
+            ("LPMS_SENSOR_MODEL" variable (:constant-flag t) nil [9447 9464])
+            ("LPMS_FIRMWARE_VERSION" variable (:constant-flag t) nil [9529 9550])
+            ("LPMS_SW_MODEL" variable (:constant-flag t) nil [9615 9628])
+            ("LPMS_BUILD_NUMBER" variable (:constant-flag t) nil [9699 9716])
+            ("LPMS_HW_VERSION" variable (:constant-flag t) nil [9781 9796])
+            ("REPLY_ACK" variable (:constant-flag t) nil [9933 9942])
+            ("REPLY_NACK" variable (:constant-flag t) nil [10001 10011])
+            ("UPDATE_FIRMWARE" variable (:constant-flag t) nil [10126 10141])
+            ("UPDATE_IAP" variable (:constant-flag t) nil [10194 10204])
+            ("GET_CONFIG" variable (:constant-flag t) nil [10291 10301])
+            ("GET_STATUS" variable (:constant-flag t) nil [10359 10369])
+            ("GOTO_COMMAND_MODE" variable (:constant-flag t) nil [10446 10463])
+            ("GOTO_STREAM_MODE" variable (:constant-flag t) nil [10514 10530])
+            ("GET_SENSOR_DATA" variable (:constant-flag t) nil [10604 10619])
+            ("SET_TRANSMIT_DATA" variable (:constant-flag t) nil [10672 10689])
+            ("SET_STREAM_FREQ" variable (:constant-flag t) nil [10741 10756])
+            ("WRITE_REGISTERS" variable (:constant-flag t) nil [10844 10859])
+            ("RESTORE_FACTORY_VALUE" variable (:constant-flag t) nil [10913 10934])
+            ("RESET_REFERENCE" variable (:constant-flag t) nil [11021 11036])
+            ("SET_ORIENTATION_OFFSET" variable (:constant-flag t) nil [11090 11112])
+            ("RESET_ORIENTATION_OFFSET" variable (:constant-flag t) nil [11159 11183])
+            ("SET_TIMESTAMP" variable (:constant-flag t) nil [11255 11268])
+            ("SET_TIMESTAMP_OUTPUT_MODE" variable (:constant-flag t) nil [11324 11349])
+            ("GET_PING" variable (:constant-flag t) nil [11394 11402])
+            ("SET_IMU_ID" variable (:constant-flag t) nil [11482 11492])
+            ("GET_IMU_ID" variable (:constant-flag t) nil [11551 11561])
+            ("START_GYR_CALIBRA" variable (:constant-flag t) nil [11643 11660])
+            ("ENABLE_GYR_AUTOCAL" variable (:constant-flag t) nil [11712 11730])
+            ("ENABLE_GYR_THRES" variable (:constant-flag t) nil [11781 11797])
+            ("SET_GYR_RANGE" variable (:constant-flag t) nil [11850 11863])
+            ("GET_GYR_RANGE" variable (:constant-flag t) nil [11919 11932])
+            ("SET_ACC_BIAS" variable (:constant-flag t) nil [12015 12027])
+            ("GET_ACC_BIAS" variable (:constant-flag t) nil [12084 12096])
+            ("SET_ACC_ALIGN_MATRIX" variable (:constant-flag t) nil [12153 12173])
+            ("GET_ACC_ALIGN_MATRIX" variable (:constant-flag t) nil [12222 12242])
+            ("SET_ACC_RANGE" variable (:constant-flag t) nil [12291 12304])
+            ("GET_ACC_RANGE" variable (:constant-flag t) nil [12360 12373])
+            ("SET_MAG_RANGE" variable (:constant-flag t) nil [12455 12468])
+            ("GET_MAG_RANGE" variable (:constant-flag t) nil [12524 12537])
+            ("SET_HARD_IRON_OFFSET" variable (:constant-flag t) nil [12593 12613])
+            ("GET_HARD_IRON_OFFSET" variable (:constant-flag t) nil [12662 12682])
+            ("SET_SOFT_IRON_MATRIX" variable (:constant-flag t) nil [12731 12751])
+            ("GET_SOFT_IRON_MATRIX" variable (:constant-flag t) nil [12800 12820])
+            ("SET_FIELD_ESTIMATE" variable (:constant-flag t) nil [12869 12887])
+            ("GET_FIELD_ESTIMATE" variable (:constant-flag t) nil [12938 12956])
+            ("SET_MAG_ALIGNMENT_MATRIX" variable (:constant-flag t) nil [13007 13031])
+            ("GET_MAG_ALIGNMENT_MATRIX" variable (:constant-flag t) nil [13076 13100])
+            ("SET_MAG_ALIGNMENT_BIAS" variable (:constant-flag t) nil [13145 13167])
+            ("GET_MAG_ALIGNMENT_BIAS" variable (:constant-flag t) nil [13214 13236])
+            ("SET_MAG_REFRENCE" variable (:constant-flag t) nil [13283 13299])
+            ("GET_MAG_REFERENCE" variable (:constant-flag t) nil [13352 13369])
+            ("SET_FILTER_MODE" variable (:constant-flag t) nil [13441 13456])
+            ("GET_FILTER_MODE" variable (:constant-flag t) nil [13510 13525])
+            ("SET_FILTER_PRESET" variable (:constant-flag t) nil [13579 13596])
+            ("GET_FILTER_PRESET" variable (:constant-flag t) nil [13648 13665])
+            ("SET_LIN_ACC_COMP_MODE" variable (:constant-flag t) nil [13717 13738])
+            ("GET_LIN_ACC_COMP_MODE" variable (:constant-flag t) nil [13786 13807])
+            ("SET_CENTRI_COMP_MODE" variable (:constant-flag t) nil [13855 13875])
+            ("GET_CENTRI_COMP_MODE" variable (:constant-flag t) nil [13924 13944])
+            ("SET_RAW_DATA_LP" variable (:constant-flag t) nil [13993 14008])
+            ("GET_RAW_DATA_LP" variable (:constant-flag t) nil [14062 14077])
+            ("SET_LPBUS_DATA_MODE" variable (:constant-flag t) nil [14132 14151])
+            ("GET_FIRMWARE_VERSION" variable (:constant-flag t) nil [14226 14246])
+            ("SET_GYR_ALIGN_BIAS" variable (:constant-flag t) nil [14295 14313])
+            ("GET_GYR_ALIGN_BIAS" variable (:constant-flag t) nil [14364 14382])
+            ("SET_GYR_ALIGN_MATRIX" variable (:constant-flag t) nil [14433 14453])
+            ("GET_GYR_ALIGN_MATRIX" variable (:constant-flag t) nil [14502 14522])
+            ("SET_GYR_STATIC_BIAS" variable (:constant-flag t) nil [14571 14590])
+            ("GET_GYR_STATIC_BIAS" variable (:constant-flag t) nil [14641 14660])
+            ("SET_VIBRATOR_STATE" variable (:constant-flag t) nil [14726 14744])
+            ("GET_BATTERY_LEVEL" variable (:constant-flag t) nil [14889 14906])
+            ("GET_BATTERY_VOLTAGE" variable (:constant-flag t) nil [14958 14977])
+            ("GET_CHARGING_STATUS" variable (:constant-flag t) nil [15027 15046])
+            ("SET_DEVICE_NAME" variable (:constant-flag t) nil [15113 15128])
+            ("GET_DEVICE_NAME" variable (:constant-flag t) nil [15182 15197])
+            ("SET_LED_COLOR" variable (:constant-flag t) nil [15259 15272])
+            ("GET_LED_COLOR" variable (:constant-flag t) nil [15328 15341])
+            ("SET_LED_WAVEFORM" variable (:constant-flag t) nil [15398 15414])
+            ("SET_PRODUCT_ID" variable (:constant-flag t) nil [15484 15498])
+            ("GET_PRODUCT_ID" variable (:constant-flag t) nil [15553 15567])
+            ("GET_DEVICE_INFO" variable (:constant-flag t) nil [15622 15637])
+            ("START_SYNC" variable (:constant-flag t) nil [15709 15719])
+            ("STOP_SYNC" variable (:constant-flag t) nil [15778 15787])
+            ("GET_TEMPERATURE" variable (:constant-flag t) nil [15848 15863])
+            ("SET_VIBRATOR_WAVEFORM" variable (:constant-flag t) nil [15919 15940])
+            ("START_DEBUG_LOGGING" variable (:constant-flag t) nil [16013 16032])
+            ("STOP_DEBUG_LOGGING" variable (:constant-flag t) nil [16083 16101])
+            ("CLEAR_DEBUG_LOG" variable (:constant-flag t) nil [16153 16168])
+            ("FULL_FLASH_ERASE" variable (:constant-flag t) nil [16223 16239])
+            ("GET_DEBUG_LOGGING_STATUS" variable (:constant-flag t) nil [16293 16317])
+            ("GET_DEBUG_LOG_SIZE" variable (:constant-flag t) nil [16363 16381])
+            ("GET_DEBUG_LOG" variable (:constant-flag t) nil [16433 16446])
+            ("GET_DEBUG_MSG" variable (:constant-flag t) nil [16521 16534])
+            ("GET_DEBUG_MSG_SECTOR" variable (:constant-flag t) nil [16612 16632])
+            ("START_DEBUG_MSG_MODE" variable (:constant-flag t) nil [16703 16723])
+            ("STOP_DEBUG_MSG_MODE" variable (:constant-flag t) nil [16794 16813])
+            ("GET_DEBUG_MSG_MODE" variable (:constant-flag t) nil [16885 16903])
+            ("DMY_DT_MODE" variable (:constant-flag t) nil [16970 16981])
+            ("DMY_DT_AXIS" variable (:constant-flag t) nil [17061 17072])
+            ("DMY_DT_SKPRT" variable (:constant-flag t) nil [17152 17164])
+            ("SET_RTC_OUTPUT_MODE" variable (:constant-flag t) nil [17261 17280])
+            ("GET_RTC_OUTPUT_MODE" variable (:constant-flag t) nil [17352 17371])
+            ("GET_RTC_CALIBRATION" variable (:constant-flag t) nil [17422 17441])
+            ("SET_RTC_CALIBRATION" variable (:constant-flag t) nil [17491 17510])
+            ("GET_RTC_DATETIME" variable (:constant-flag t) nil [17560 17576])
+            ("SET_RTC_DATETIME" variable (:constant-flag t) nil [17629 17645])
+            ("SET_STORAGE_MODE" variable (:constant-flag t) nil [17715 17731])
+            ("GET_STORAGE_MODE" variable (:constant-flag t) nil [17806 17822])
+            ("RESET_MCU" variable (:constant-flag t) nil [17918 17927])
+            ("CR_NOT_USED_0" variable (:constant-flag t) nil [18024 18037])
+            ("LPMS_GYR_AUTOCAL_ENABLED" variable (:constant-flag t) nil [18101 18125])
+            ("CR_NOT_USED_1" variable (:constant-flag t) nil [18178 18191])
+            ("LPMS_TIMESTAMP_COUNTER_MODE_ENABLED" variable (:constant-flag t) nil [18255 18290])
+            ("CR_NOT_USED_3" variable (:constant-flag t) nil [18332 18345])
+            ("CR_NOT_USED_4" variable (:constant-flag t) nil [18409 18422])
+            ("LPMS_ACC_COMP_ENABLED" variable (:constant-flag t) nil [18486 18507])
+            ("CR_NOT_USED_6" variable (:constant-flag t) nil [18563 18576])
+            ("LPMS_GYR_THRES_ENABLED" variable (:constant-flag t) nil [18640 18662])
+            ("LPMS_LPBUS_DATA_MODE_16BIT_ENABLED" variable (:constant-flag t) nil [18717 18751])
+            ("LPMS_LINACC_OUTPUT_ENABLED" variable (:constant-flag t) nil [18794 18820])
+            ("LPMS_DYNAMIC_COVAR_ENABLED" variable (:constant-flag t) nil [18871 18897])
+            ("CR_NOT_USED_7" variable (:constant-flag t) nil [18948 18961])
+            ("LPMS_QUAT_OUTPUT_ENABLED" variable (:constant-flag t) nil [19025 19049])
+            ("LPMS_EULER_OUTPUT_ENABLED" variable (:constant-flag t) nil [19102 19127])
+            ("LPMS_ANGULAR_VELOCITY_OUTPUT_ENABLED" variable (:constant-flag t) nil [19179 19215])
+            ("LPMS_GYR_CALIBRA_ENABLED" variable (:constant-flag t) nil [19256 19280])
+            ("CR_NOT_USED_8" variable (:constant-flag t) nil [19333 19346])
+            ("CR_NOT_USED_9" variable (:constant-flag t) nil [19410 19423])
+            ("LPMS_GYR_RAW_OUTPUT_ENABLED" variable (:constant-flag t) nil [19524 19551])
+            ("LPMS_ACC_RAW_OUTPUT_ENABLED" variable (:constant-flag t) nil [19601 19628])
+            ("LPMS_MAG_RAW_OUTPUT_ENABLED" variable (:constant-flag t) nil [19678 19705])
+            ("CR_NOT_USED_10" variable (:constant-flag t) nil [19755 19769])
+            ("LPMS_RTC_COUMTER_MODE_ENABLED" variable (:constant-flag t) nil [19831 19860])
+            ("LPMS_COMMAND_MODE" variable (:constant-flag t) nil [19971 19988])
+            ("LPMS_STREAM_MODE" variable (:constant-flag t) nil [20025 20041])
+            ("LPMS_STORAGE_MODE" variable (:constant-flag t) nil [20079 20096])
+            ("LPMS_GYR_CALIBRATION_RUNNING" variable (:constant-flag t) nil [20133 20161])
+            ("LPMS_MAG_CALIBRATION_RUNNING" variable (:constant-flag t) nil [20187 20215])
+            ("LPMS_GYR_INIT_FAILED" variable (:constant-flag t) nil [20241 20261])
+            ("LPMS_ACC_INIT_FAILED" variable (:constant-flag t) nil [20295 20315])
+            ("LPMS_MAG_INIT_FAILED" variable (:constant-flag t) nil [20349 20369])
+            ("SR_NOT_USED_1" variable (:constant-flag t) nil [20403 20416])
+            ("LPMS_GYR_UNRESPONSIVE" variable (:constant-flag t) nil [20457 20478])
+            ("LPMS_ACC_UNRESPONSIVE" variable (:constant-flag t) nil [20511 20532])
+            ("LPMS_MAG_UNRESPONSIVE" variable (:constant-flag t) nil [20566 20587])
+            ("LPMS_FLASH_WRITE_FAILED" variable (:constant-flag t) nil [20621 20644])
+            ("SR_NOT_USED_2" variable (:constant-flag t) nil [20676 20689])
+            ("LPMS_SET_BROADCAST_FREQ_FAILED" variable (:constant-flag t) nil [20731 20761])
+            ("LPMS_REF_CALIBRATION_RUNNING" variable (:constant-flag t) nil [20786 20814])
+            ("SR_NOT_USED_3" variable (:constant-flag t) nil [20841 20854])
+            ("LPMS_STREAM_FREQ_5HZ_ENABLED" variable (:constant-flag t) nil [20929 20957])
+            ("LPMS_STREAM_FREQ_10HZ_ENABLED" variable (:constant-flag t) nil [20980 21009])
+            ("LPMS_STREAM_FREQ_25HZ_ENABLED" variable (:constant-flag t) nil [21031 21060])
+            ("LPMS_STREAM_FREQ_50HZ_ENABLED" variable (:constant-flag t) nil [21082 21111])
+            ("LPMS_STREAM_FREQ_100HZ_ENABLED" variable (:constant-flag t) nil [21133 21163])
+            ("LPMS_STREAM_FREQ_200HZ_ENABLED" variable (:constant-flag t) nil [21184 21214])
+            ("LPMS_STREAM_FREQ_400HZ_ENABLED" variable (:constant-flag t) nil [21235 21265])
+            ("SF_NOT_USED_0" variable (:constant-flag t) nil [21286 21299])
+            ("LPMS_STREAM_FREQ_MASK" variable (:constant-flag t) nil [21337 21358])
+            ("LPMS_STREAM_FREQ_5HZ" variable (:constant-flag t) nil [21421 21441])
+            ("LPMS_STREAM_FREQ_10HZ" variable (:constant-flag t) nil [21473 21494])
+            ("LPMS_STREAM_FREQ_25HZ" variable (:constant-flag t) nil [21526 21547])
+            ("LPMS_STREAM_FREQ_50HZ" variable (:constant-flag t) nil [21579 21600])
+            ("LPMS_STREAM_FREQ_100HZ" variable (:constant-flag t) nil [21632 21654])
+            ("LPMS_STREAM_FREQ_200HZ" variable (:constant-flag t) nil [21686 21708])
+            ("LPMS_STREAM_FREQ_400HZ" variable (:constant-flag t) nil [21740 21762])
+            ("LPMS_FILTER_PRM_SET_1" variable (:constant-flag t) nil [21822 21843])
+            ("LPMS_FILTER_PRM_SET_2" variable (:constant-flag t) nil [21865 21886])
+            ("LPMS_FILTER_PRM_SET_3" variable (:constant-flag t) nil [21908 21929])
+            ("LPMS_FILTER_PRM_SET_4" variable (:constant-flag t) nil [21951 21972])
+            ("LPMS_ENABLE_GYR_THRESHOLD" variable (:constant-flag t) nil [22027 22052])
+            ("LPMS_DISABLE_GYR_THRESHOLD" variable (:constant-flag t) nil [22078 22104])
+            ("LPMS_ENABLE_MAG_AUTOCAL" variable (:constant-flag t) nil [22171 22194])
+            ("LPMS_DISABLE_MAG_AUTOCAL" variable (:constant-flag t) nil [22222 22246])
+            ("LPMS_ENABLE_GYR_AUTOCAL" variable (:constant-flag t) nil [22313 22336])
+            ("LPMS_DISABLE_GYR_AUTOCAL" variable (:constant-flag t) nil [22364 22388])
+            ("LPMS_LP_OFF" variable (:constant-flag t) nil [22444 22455])
+            ("LPMS_LP_01" variable (:constant-flag t) nil [22479 22489])
+            ("LPMS_LP_005" variable (:constant-flag t) nil [22514 22525])
+            ("LPMS_LP_001" variable (:constant-flag t) nil [22549 22560])
+            ("LPMS_LP_0005" variable (:constant-flag t) nil [22584 22596])
+            ("LPMS_LP_0001" variable (:constant-flag t) nil [22619 22631])
+            ("LPMS_LPBUS_DATA_MODE_32" variable (:constant-flag t) nil [22655 22678])
+            ("LPMS_LPBUS_DATA_MODE_16" variable (:constant-flag t) nil [22691 22714])
+            ("LPMS_TIMESTAMP_ELAPSED_TIME_MODE" variable (:constant-flag t) nil [22728 22760])
+            ("LPMS_TIMESTAMP_COUNTER_MODE" variable (:constant-flag t) nil [22773 22800])
+            ("LPMS_RTC_COUNTER_MODE" variable (:constant-flag t) nil [22836 22857])
+            ("_LpmsReg" type
+               (:members 
+                  ( ("data" variable
+                       (:dereference 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [22919 22949]))                  
+                :type "struct")
+                nil [22885 22960])
+            ("LpmsReg" type
+               (:typedef ("_LpmsReg" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [22885 22960])
+            ("hasUserConfig" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [22984 22989]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [22962 22990])
+            ("hasFactoryConfig" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23016 23021]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [22991 23022])
+            ("resetToFactory" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23077 23082]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [23054 23083])
+            ("writeCompleteRegisterSet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23150 23155]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [23117 23156]))          
       :file "LpmsConfig.h"
+      :pointmax 23315
       :fsize 23314
-      :lastmodtime '(23802 13505 0 0))
+      :lastmodtime '(23802 13505 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LPMS_ACC_GAIN_X" . ((semantic-list "(REG_START_ADDRESS + 17)" 2305 . 2329)))
+          ("LPMS_GYR_ALIG_10" . ((semantic-list "(REG_START_ADDRESS + 29)" 3085 . 3109)))
+          ("LPMS_MAG_ALIG_11" . ((semantic-list "(REG_START_ADDRESS + 48)" 4320 . 4344)))
+          ("LPMS_GYR_THRES_X" . ((semantic-list "(REG_START_ADDRESS + 59)" 5035 . 5059)))
+          ("LPMS_MAG_THRES_Y" . ((semantic-list "(REG_START_ADDRESS + 63)" 5295 . 5319)))
+          ("LPMS_ACC_COVAR_1" . ((semantic-list "(REG_START_ADDRESS + 66)" 5490 . 5514)))
+          ("LPMS_PROCESS_COVAR" . ((semantic-list "(REG_START_ADDRESS + 81)" 6465 . 6489)))
+          ("LPMS_MAG_SOFT_21" . ((semantic-list "(REG_START_ADDRESS + 95)" 7375 . 7399)))
+          ("LPMS_BUILD_NUMBER" . ((semantic-list "(REG_START_ADDRESS + 154)" 9731 . 9756)))
+          ("SET_MAG_RANGE" . ((semantic-list "(COMMAND_START_ADDRESS + 33)" 12487 . 12515)))
+          ("GET_HARD_IRON_OFFSET" . ((semantic-list "(COMMAND_START_ADDRESS + 36)" 12694 . 12722)))
+          ("SET_FILTER_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 41)" 13473 . 13501)))
+          ("SET_CENTRI_COMP_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 69)" 13887 . 13915)))
+          ("GET_BATTERY_VOLTAGE" . ((semantic-list "(COMMAND_START_ADDRESS + 96)" 14990 . 15018)))
+          ("GET_RTC_CALIBRATION" . ((semantic-list "(COMMAND_START_ADDRESS + 71)" 17454 . 17482)))
+          ("SET_RTC_DATETIME" . ((semantic-list "(COMMAND_START_ADDRESS + 74)" 17661 . 17689)))
+          ("LPMS_TIMESTAMP_COUNTER_MODE_ENABLED" . ((semantic-list "(uint32_t)" 18295 . 18305) (semantic-list "(0x00000001 << 28)" 18305 . 18323)))
+          ("LPMS_ACC_COMP_ENABLED" . ((semantic-list "(uint32_t)" 18526 . 18536) (semantic-list "(0x00000001 << 25)" 18536 . 18554)))
+          ("LPMS_GYR_RAW_OUTPUT_ENABLED" . ((semantic-list "(uint32_t)" 19564 . 19574) (semantic-list "(0x00000001 << 12)" 19574 . 19592)))
+          ("LPMS_MAG_CALIBRATION_RUNNING" . ((semantic-list "(0x0001 << 4)" 20219 . 20232)))
+          ("LPMS_ACC_UNRESPONSIVE" . ((semantic-list "(0x0001 << 10)" 20543 . 20557)))
+          ("LPMS_ACC_GAIN_Y" . ((semantic-list "(REG_START_ADDRESS + 18)" 2370 . 2394)))
+          ("LPMS_GYR_ALIG_11" . ((semantic-list "(REG_START_ADDRESS + 30)" 3150 . 3174)))
+          ("LPMS_MAG_ALIG_12" . ((semantic-list "(REG_START_ADDRESS + 49)" 4385 . 4409)))
+          ("LPMS_GYR_THRES_Y" . ((semantic-list "(REG_START_ADDRESS + 60)" 5100 . 5124)))
+          ("LPMS_MAG_THRES_Z" . ((semantic-list "(REG_START_ADDRESS + 64)" 5360 . 5384)))
+          ("LPMS_ACC_COVAR_2" . ((semantic-list "(REG_START_ADDRESS + 70)" 5750 . 5774)))
+          ("LPMS_MAG_COMP_GAIN_USER" . ((semantic-list "(REG_START_ADDRESS + 79)" 6335 . 6359)))
+          ("LPMS_MAG_SOFT_22" . ((semantic-list "(REG_START_ADDRESS + 96)" 7440 . 7464)))
+          ("LPMS_MAG_DECLINATION" . ((semantic-list "(REG_START_ADDRESS + 97)" 7505 . 7529)))
+          ("LPMS_RG_NOT_USED0" . ((semantic-list "(REG_START_ADDRESS + 114)" 7964 . 7989)))
+          ("LPMS_MAG_ALIG_BIAS_X" . ((semantic-list "(REG_START_ADDRESS + 134)" 8294 . 8319)))
+          ("SET_TIMESTAMP" . ((semantic-list "(COMMAND_START_ADDRESS + 66)" 11287 . 11315)))
+          ("START_GYR_CALIBRA" . ((semantic-list "(COMMAND_START_ADDRESS + 22)" 11675 . 11703)))
+          ("ENABLE_GYR_AUTOCAL" . ((semantic-list "(COMMAND_START_ADDRESS + 23)" 11744 . 11772)))
+          ("SET_ACC_BIAS" . ((semantic-list "(COMMAND_START_ADDRESS + 27)" 12047 . 12075)))
+          ("GET_MAG_RANGE" . ((semantic-list "(COMMAND_START_ADDRESS + 34)" 12556 . 12584)))
+          ("SET_MAG_ALIGNMENT_BIAS" . ((semantic-list "(COMMAND_START_ADDRESS + 77)" 13177 . 13205)))
+          ("GET_CENTRI_COMP_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 70)" 13956 . 13984)))
+          ("SET_LED_COLOR" . ((semantic-list "(COMMAND_START_ADDRESS + 92)" 15291 . 15319)))
+          ("SET_LED_WAVEFORM" . ((semantic-list "(COMMAND_START_ADDRESS + 101)" 15430 . 15459)))
+          ("START_SYNC" . ((semantic-list "(COMMAND_START_ADDRESS + 98)" 15741 . 15769)))
+          ("DMY_DT_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 118)" 17002 . 17031)))
+          ("DMY_DT_SKPRT" . ((semantic-list "(COMMAND_START_ADDRESS + 120)" 17184 . 17213)))
+          ("LPMS_ACC_INIT_FAILED" . ((semantic-list "(0x0001 << 6)" 20327 . 20340)))
+          ("LPMS_STREAM_FREQ_50HZ_ENABLED" . ((number "0x00000003" 21114 . 21124)))
+          ("LPMS_STREAM_FREQ_MASK" . ((number "0x00000007" 21369 . 21379)))
+          ("LPMS_STREAM_FREQ_50HZ" . ((semantic-list "(uint32_t)" 21611 . 21621) (number "50" 21621 . 21623)))
+          ("LPMS_FILTER_PRM_SET_1" . ((number "0x00000000" 21846 . 21856)))
+          ("LPMS_DISABLE_GYR_THRESHOLD" . ((number "0x00000000" 22110 . 22120)))
+          ("LPMS_LP_OFF" . ((number "0x00000000" 22460 . 22470)))
+          ("LPMS_LPBUS_DATA_MODE_32" . ((number "0x0" 22679 . 22682)))
+          ("LPMS_RTC_COUNTER_MODE" . ((number "0x1" 22858 . 22861)))
+          ("COMMAND_START_ADDRESS" . ((number "0" 1160 . 1161)))
+          ("LPMS_IMU_ID" . ((semantic-list "(REG_START_ADDRESS + 1)" 1274 . 1297)))
+          ("LPMS_ACC_OUTPUT_RATE" . ((semantic-list "(REG_START_ADDRESS + 6)" 1594 . 1617)))
+          ("LPMS_GYR_GAIN_X" . ((semantic-list "(REG_START_ADDRESS + 11)" 1915 . 1939)))
+          ("LPMS_ACC_GAIN_Z" . ((semantic-list "(REG_START_ADDRESS + 19)" 2435 . 2459)))
+          ("LPMS_GYR_ALIG_12" . ((semantic-list "(REG_START_ADDRESS + 31)" 3215 . 3239)))
+          ("LPMS_MAG_ALIG_20" . ((semantic-list "(REG_START_ADDRESS + 50)" 4450 . 4474)))
+          ("LPMS_GYR_THRES_Z" . ((semantic-list "(REG_START_ADDRESS + 61)" 5165 . 5189)))
+          ("LPMS_ACC_COVAR_3" . ((semantic-list "(REG_START_ADDRESS + 74)" 6010 . 6034)))
+          ("LPMS_ACC_COMP_GAIN_USER" . ((semantic-list "(REG_START_ADDRESS + 77)" 6205 . 6229)))
+          ("LPMS_RG_NOT_USED1" . ((semantic-list "(REG_START_ADDRESS + 130)" 8030 . 8055)))
+          ("LPMS_MAG_ALIG_BIAS_Y" . ((semantic-list "(REG_START_ADDRESS + 135)" 8360 . 8385)))
+          ("REPLY_NACK" . ((semantic-list "(COMMAND_START_ADDRESS + 1)" 10033 . 10060)))
+          ("SET_ACC_ALIGN_MATRIX" . ((semantic-list "(COMMAND_START_ADDRESS + 29)" 12185 . 12213)))
+          ("GET_FIELD_ESTIMATE" . ((semantic-list "(COMMAND_START_ADDRESS + 40)" 12970 . 12998)))
+          ("GET_LIN_ACC_COMP_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 68)" 13818 . 13846)))
+          ("GET_LED_COLOR" . ((semantic-list "(COMMAND_START_ADDRESS + 100)" 15360 . 15389)))
+          ("LPMS_GYR_UNRESPONSIVE" . ((semantic-list "(0x0001 << 9)" 20489 . 20502)))
+          ("LPMS_STREAM_FREQ_25HZ_ENABLED" . ((number "0x00000002" 21063 . 21073)))
+          ("SF_NOT_USED_0" . ((number "0x00000007" 21318 . 21328)))
+          ("LPMS_FILTER_PRM_SET_2" . ((number "0x00000001" 21889 . 21899)))
+          ("LPMS_ENABLE_MAG_AUTOCAL" . ((number "0x00000001" 22203 . 22213)))
+          ("LPMS_GYR_GAIN_Y" . ((semantic-list "(REG_START_ADDRESS + 12)" 1980 . 2004)))
+          ("LPMS_ACC_BIAS_X" . ((semantic-list "(REG_START_ADDRESS + 14)" 2110 . 2134)))
+          ("LPMS_GYR_ALIG_20" . ((semantic-list "(REG_START_ADDRESS + 32)" 3280 . 3304)))
+          ("LPMS_MAG_ALIG_21" . ((semantic-list "(REG_START_ADDRESS + 51)" 4515 . 4539)))
+          ("LPMS_ACC_REF_X" . ((semantic-list "(REG_START_ADDRESS + 53)" 4645 . 4669)))
+          ("LPMS_ACC_COMP_GAIN_1" . ((semantic-list "(REG_START_ADDRESS + 65)" 5425 . 5449)))
+          ("LPMS_OFFSET_QUAT_0" . ((semantic-list "(REG_START_ADDRESS + 84)" 6660 . 6684)))
+          ("LPMS_RG_NOT_USED2" . ((semantic-list "(REG_START_ADDRESS + 133)" 8228 . 8253)))
+          ("LPMS_MAG_ALIG_BIAS_Z" . ((semantic-list "(REG_START_ADDRESS + 136)" 8426 . 8451)))
+          ("UPDATE_FIRMWARE" . ((semantic-list "(COMMAND_START_ADDRESS + 2)" 10158 . 10185)))
+          ("SET_TIMESTAMP_OUTPUT_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 102)" 11356 . 11385)))
+          ("SET_GYR_RANGE" . ((semantic-list "(COMMAND_START_ADDRESS + 25)" 11882 . 11910)))
+          ("GET_ACC_ALIGN_MATRIX" . ((semantic-list "(COMMAND_START_ADDRESS + 30)" 12254 . 12282)))
+          ("GET_RTC_DATETIME" . ((semantic-list "(COMMAND_START_ADDRESS + 73)" 17592 . 17620)))
+          ("CR_NOT_USED_0" . ((semantic-list "(uint32_t)" 18064 . 18074) (semantic-list "(0x00000001 << 31)" 18074 . 18092)))
+          ("LPMS_GYR_CALIBRA_ENABLED" . ((semantic-list "(uint32_t)" 19296 . 19306) (semantic-list "(0x00000001 << 15)" 19306 . 19324)))
+          ("LPMS_MAG_INIT_FAILED" . ((semantic-list "(0x0001 << 7)" 20381 . 20394)))
+          ("LPMS_STREAM_FREQ_100HZ_ENABLED" . ((number "0x00000004" 21165 . 21175)))
+          ("LPMS_STREAM_FREQ_100HZ" . ((semantic-list "(uint32_t)" 21664 . 21674) (number "100" 21674 . 21677)))
+          ("LPMS_FILTER_PRM_SET_3" . ((number "0x00000002" 21932 . 21942)))
+          ("LPMS_ENABLE_GYR_AUTOCAL" . ((number "0x00000001" 22345 . 22355)))
+          ("LPMS_LP_005" . ((number "0x00000002" 22530 . 22540)))
+          ("LPMS_MAG_OUTPUT_RATE" . ((semantic-list "(REG_START_ADDRESS + 7)" 1658 . 1681)))
+          ("LPMS_GYR_GAIN_Z" . ((semantic-list "(REG_START_ADDRESS + 13)" 2045 . 2069)))
+          ("LPMS_ACC_BIAS_Y" . ((semantic-list "(REG_START_ADDRESS + 15)" 2175 . 2199)))
+          ("LPMS_GYR_ALIG_21" . ((semantic-list "(REG_START_ADDRESS + 33)" 3345 . 3369)))
+          ("LPMS_ACC_ALIG_00" . ((semantic-list "(REG_START_ADDRESS + 35)" 3475 . 3499)))
+          ("LPMS_MAG_ALIG_22" . ((semantic-list "(REG_START_ADDRESS + 52)" 4580 . 4604)))
+          ("LPMS_ACC_REF_Y" . ((semantic-list "(REG_START_ADDRESS + 54)" 4710 . 4734)))
+          ("LPMS_ACC_COMP_GAIN_2" . ((semantic-list "(REG_START_ADDRESS + 69)" 5685 . 5709)))
+          ("LPMS_OFFSET_QUAT_1" . ((semantic-list "(REG_START_ADDRESS + 85)" 6725 . 6749)))
+          ("LPMS_GYR_ALIG_BIAS_X" . ((semantic-list "(REG_START_ADDRESS + 100)" 7700 . 7725)))
+          ("LPMS_RG_NOT_USED3" . ((semantic-list "(REG_START_ADDRESS + 137)" 8492 . 8517)))
+          ("LPMS_FIRMWARE_VERSION" . ((semantic-list "(REG_START_ADDRESS + 152)" 9561 . 9586)))
+          ("GET_CONFIG" . ((semantic-list "(COMMAND_START_ADDRESS + 4)" 10323 . 10350)))
+          ("GET_SENSOR_DATA" . ((semantic-list "(COMMAND_START_ADDRESS + 9)" 10636 . 10663)))
+          ("RESTORE_FACTORY_VALUE" . ((semantic-list "(COMMAND_START_ADDRESS + 16)" 10945 . 10973)))
+          ("GET_GYR_RANGE" . ((semantic-list "(COMMAND_START_ADDRESS + 26)" 11951 . 11979)))
+          ("SET_MAG_REFRENCE" . ((semantic-list "(COMMAND_START_ADDRESS + 78)" 13315 . 13343)))
+          ("SET_GYR_ALIGN_MATRIX" . ((semantic-list "(COMMAND_START_ADDRESS + 50)" 14465 . 14493)))
+          ("SET_RTC_CALIBRATION" . ((semantic-list "(COMMAND_START_ADDRESS + 72)" 17523 . 17551)))
+          ("CR_NOT_USED_1" . ((semantic-list "(uint32_t)" 18218 . 18228) (semantic-list "(0x00000001 << 29)" 18228 . 18246)))
+          ("LPMS_MAG_UNRESPONSIVE" . ((semantic-list "(0x0001 << 11)" 20598 . 20612)))
+          ("LPMS_STREAM_FREQ_10HZ_ENABLED" . ((number "0x00000001" 21012 . 21022)))
+          ("LPMS_STREAM_FREQ_200HZ_ENABLED" . ((number "0x00000005" 21216 . 21226)))
+          ("LPMS_STREAM_FREQ_25HZ" . ((semantic-list "(uint32_t)" 21558 . 21568) (number "25" 21568 . 21570)))
+          ("LPMS_FILTER_PRM_SET_4" . ((number "0x00000003" 21975 . 21985)))
+          ("LPMS_LP_0001" . ((number "0x00000005" 22635 . 22645)))
+          ("REG_START_ADDRESS" . ((number "0" 1085 . 1086)))
+          ("LPMS_GYR_BIAS_X" . ((semantic-list "(REG_START_ADDRESS + 8)" 1722 . 1745)))
+          ("LPMS_ACC_BIAS_Z" . ((semantic-list "(REG_START_ADDRESS + 16)" 2240 . 2264)))
+          ("LPMS_GYR_ALIG_22" . ((semantic-list "(REG_START_ADDRESS + 34)" 3410 . 3434)))
+          ("LPMS_ACC_ALIG_01" . ((semantic-list "(REG_START_ADDRESS + 36)" 3540 . 3564)))
+          ("LPMS_ACC_REF_Z" . ((semantic-list "(REG_START_ADDRESS + 55)" 4775 . 4799)))
+          ("LPMS_MAG_REF_X" . ((semantic-list "(REG_START_ADDRESS + 56)" 4840 . 4864)))
+          ("LPMS_MAG_COMP_GAIN_1" . ((semantic-list "(REG_START_ADDRESS + 67)" 5555 . 5579)))
+          ("LPMS_MAG_COVAR_1" . ((semantic-list "(REG_START_ADDRESS + 68)" 5620 . 5644)))
+          ("LPMS_ACC_COMP_GAIN_3" . ((semantic-list "(REG_START_ADDRESS + 73)" 5945 . 5969)))
+          ("LPMS_OFFSET_QUAT_2" . ((semantic-list "(REG_START_ADDRESS + 86)" 6790 . 6814)))
+          ("LPMS_GYR_ALIG_BIAS_Y" . ((semantic-list "(REG_START_ADDRESS + 101)" 7766 . 7791)))
+          ("RESET_REFERENCE" . ((semantic-list "(COMMAND_START_ADDRESS + 17)" 11053 . 11081)))
+          ("ENABLE_GYR_THRES" . ((semantic-list "(COMMAND_START_ADDRESS + 24)" 11813 . 11841)))
+          ("SET_MAG_ALIGNMENT_MATRIX" . ((semantic-list "(COMMAND_START_ADDRESS + 76)" 13039 . 13067)))
+          ("GET_GYR_ALIGN_MATRIX" . ((semantic-list "(COMMAND_START_ADDRESS + 51)" 14534 . 14562)))
+          ("GET_CHARGING_STATUS" . ((semantic-list "(COMMAND_START_ADDRESS + 107)" 15059 . 15088)))
+          ("GET_DEVICE_INFO" . ((semantic-list "(COMMAND_START_ADDRESS + 95)" 15654 . 15682)))
+          ("STOP_SYNC" . ((semantic-list "(COMMAND_START_ADDRESS + 99)" 15810 . 15838)))
+          ("GET_TEMPERATURE" . ((semantic-list "(COMMAND_START_ADDRESS + 103)" 15880 . 15909)))
+          ("CLEAR_DEBUG_LOG" . ((semantic-list "(COMMAND_START_ADDRESS + 110)" 16185 . 16214)))
+          ("GET_DEBUG_LOG_SIZE" . ((semantic-list "(COMMAND_START_ADDRESS + 113)" 16395 . 16424)))
+          ("LPMS_LPBUS_DATA_MODE_16BIT_ENABLED" . ((semantic-list "(uint32_t)" 18757 . 18767) (semantic-list "(0x00000001 << 22)" 18767 . 18785)))
+          ("LPMS_TIMESTAMP_COUNTER_MODE" . ((number "0x1" 22806 . 22809)))
+          ("LPMS_ACC_RANGE" . ((semantic-list "(REG_START_ADDRESS + 3)" 1402 . 1425)))
+          ("LPMS_GYR_BIAS_Y" . ((semantic-list "(REG_START_ADDRESS + 9)" 1786 . 1809)))
+          ("LPMS_MAG_GAIN_X" . ((semantic-list "(REG_START_ADDRESS + 23)" 2695 . 2719)))
+          ("LPMS_ACC_ALIG_02" . ((semantic-list "(REG_START_ADDRESS + 37)" 3605 . 3629)))
+          ("LPMS_MAG_REF_Y" . ((semantic-list "(REG_START_ADDRESS + 57)" 4905 . 4929)))
+          ("LPMS_MAG_COMP_GAIN_2" . ((semantic-list "(REG_START_ADDRESS + 71)" 5815 . 5839)))
+          ("LPMS_MAG_COVAR_2" . ((semantic-list "(REG_START_ADDRESS + 72)" 5880 . 5904)))
+          ("LPMS_ACC_COVAR_USER" . ((semantic-list "(REG_START_ADDRESS + 78)" 6270 . 6294)))
+          ("LPMS_OFFSET_QUAT_3" . ((semantic-list "(REG_START_ADDRESS + 87)" 6855 . 6879)))
+          ("LPMS_MAG_SOFT_00" . ((semantic-list "(REG_START_ADDRESS + 88)" 6920 . 6944)))
+          ("LPMS_MAG_FIELD_EST" . ((semantic-list "(REG_START_ADDRESS + 98)" 7570 . 7594)))
+          ("LPMS_GYR_ALIG_BIAS_Z" . ((semantic-list "(REG_START_ADDRESS + 102)" 7832 . 7857)))
+          ("LPMS_HEADING_OFFSET_0" . ((semantic-list "(REG_START_ADDRESS + 138)" 8558 . 8583)))
+          ("LPMS_SW_MODEL" . ((semantic-list "(REG_START_ADDRESS + 153)" 9647 . 9672)))
+          ("SET_STREAM_FREQ" . ((semantic-list "(COMMAND_START_ADDRESS + 11)" 10773 . 10801)))
+          ("SET_ORIENTATION_OFFSET" . ((semantic-list "(COMMAND_START_ADDRESS + 18)" 11122 . 11150)))
+          ("GET_RAW_DATA_LP" . ((semantic-list "(COMMAND_START_ADDRESS + 61)" 14094 . 14122)))
+          ("STOP_DEBUG_LOGGING" . ((semantic-list "(COMMAND_START_ADDRESS + 109)" 16115 . 16144)))
+          ("GET_DEBUG_MSG" . ((semantic-list "(COMMAND_START_ADDRESS + 115)" 16553 . 16582)))
+          ("GET_DEBUG_MSG_SECTOR" . ((semantic-list "(COMMAND_START_ADDRESS + 122)" 16644 . 16673)))
+          ("STOP_DEBUG_MSG_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 117)" 16826 . 16855)))
+          ("CR_NOT_USED_3" . ((semantic-list "(uint32_t)" 18372 . 18382) (semantic-list "(0x00000001 << 27)" 18382 . 18400)))
+          ("LPMS_DYNAMIC_COVAR_ENABLED" . ((semantic-list "(uint32_t)" 18911 . 18921) (semantic-list "(0x00000001 << 20)" 18921 . 18939)))
+          ("LPMS_COMMAND_MODE" . ((semantic-list "(0x0001 << 0)" 20003 . 20016)))
+          ("LPMS_STORAGE_MODE" . ((semantic-list "(0x0001 << 2)" 20111 . 20124)))
+          ("LPMS_GYR_INIT_FAILED" . ((semantic-list "(0x0001 << 5)" 20273 . 20286)))
+          ("LPMS_STREAM_FREQ_400HZ_ENABLED" . ((number "0x00000006" 21267 . 21277)))
+          ("LPMS_STREAM_FREQ_200HZ" . ((semantic-list "(uint32_t)" 21718 . 21728) (number "200" 21728 . 21731)))
+          ("LPMS_LP_01" . ((number "0x00000001" 22495 . 22505)))
+          ("REG_ARRAY_SIZE" . ((semantic-list "(uint32_t)" 919 . 929) (number "156" 929 . 932)))
+          ("LPMS_GYR_OUTPUT_RATE" . ((semantic-list "(REG_START_ADDRESS + 5)" 1530 . 1553)))
+          ("LPMS_GYR_BIAS_Z" . ((semantic-list "(REG_START_ADDRESS + 10)" 1850 . 1874)))
+          ("LPMS_MAG_GAIN_Y" . ((semantic-list "(REG_START_ADDRESS + 24)" 2760 . 2784)))
+          ("LPMS_ACC_ALIG_10" . ((semantic-list "(REG_START_ADDRESS + 38)" 3670 . 3694)))
+          ("LPMS_MAG_REF_Z" . ((semantic-list "(REG_START_ADDRESS + 58)" 4970 . 4994)))
+          ("LPMS_MAG_COMP_GAIN_3" . ((semantic-list "(REG_START_ADDRESS + 75)" 6075 . 6099)))
+          ("LPMS_MAG_COVAR_3" . ((semantic-list "(REG_START_ADDRESS + 76)" 6140 . 6164)))
+          ("LPMS_MAG_SOFT_01" . ((semantic-list "(REG_START_ADDRESS + 89)" 6985 . 7009)))
+          ("LPMS_RAW_DATA_LP" . ((semantic-list "(REG_START_ADDRESS + 113)" 7898 . 7923)))
+          ("LPMS_HEADING_OFFSET_1" . ((semantic-list "(REG_START_ADDRESS + 139)" 8624 . 8649)))
+          ("LPMS_HW_VERSION" . ((semantic-list "(REG_START_ADDRESS + 155)" 9813 . 9838)))
+          ("REPLY_ACK" . ((semantic-list "(COMMAND_START_ADDRESS + 0)" 9965 . 9992)))
+          ("WRITE_REGISTERS" . ((semantic-list "(COMMAND_START_ADDRESS + 15)" 10876 . 10904)))
+          ("SET_IMU_ID" . ((semantic-list "(COMMAND_START_ADDRESS + 20)" 11514 . 11542)))
+          ("SET_FILTER_PRESET" . ((semantic-list "(COMMAND_START_ADDRESS + 43)" 13611 . 13639)))
+          ("SET_PRODUCT_ID" . ((semantic-list "(COMMAND_START_ADDRESS + 93)" 15516 . 15544)))
+          ("GET_DEBUG_MSG_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 126)" 16917 . 16946)))
+          ("SET_STORAGE_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 123)" 17747 . 17776)))
+          ("CR_NOT_USED_4" . ((semantic-list "(uint32_t)" 18449 . 18459) (semantic-list "(0x00000001 << 26)" 18459 . 18477)))
+          ("LPMS_RTC_COUMTER_MODE_ENABLED" . ((semantic-list "(uint32_t)" 19871 . 19881) (semantic-list "(0x00000001 << 8)" 19881 . 19898)))
+          ("LPMS_STREAM_MODE" . ((semantic-list "(0x0001 << 1)" 20057 . 20070)))
+          ("SR_NOT_USED_1" . ((semantic-list "(0x0001 << 8)" 20435 . 20448)))
+          ("LPMS_SET_BROADCAST_FREQ_FAILED" . ((semantic-list "(0x0001 << 14)" 20763 . 20777)))
+          ("LPMS_MAG_RANGE" . ((semantic-list "(REG_START_ADDRESS + 4)" 1466 . 1489)))
+          ("LPMS_MAG_GAIN_Z" . ((semantic-list "(REG_START_ADDRESS + 25)" 2825 . 2849)))
+          ("LPMS_ACC_ALIG_11" . ((semantic-list "(REG_START_ADDRESS + 39)" 3735 . 3759)))
+          ("LPMS_FILTER_PRESET" . ((semantic-list "(REG_START_ADDRESS + 83)" 6595 . 6619)))
+          ("LPMS_MAG_SOFT_02" . ((semantic-list "(REG_START_ADDRESS + 90)" 7050 . 7074)))
+          ("LPMS_CENTRI_COMP_MODE" . ((semantic-list "(REG_START_ADDRESS + 132)" 8162 . 8187)))
+          ("LPMS_HEADING_OFFSET_2" . ((semantic-list "(REG_START_ADDRESS + 140)" 8690 . 8715)))
+          ("LPMS_OFFSET_MODE" . ((semantic-list "(REG_START_ADDRESS + 142)" 8822 . 8847)))
+          ("GET_IMU_ID" . ((semantic-list "(COMMAND_START_ADDRESS + 21)" 11583 . 11611)))
+          ("GET_MAG_ALIGNMENT_MATRIX" . ((semantic-list "(COMMAND_START_ADDRESS + 79)" 13108 . 13136)))
+          ("GET_FILTER_PRESET" . ((semantic-list "(COMMAND_START_ADDRESS + 44)" 13680 . 13708)))
+          ("GET_GYR_STATIC_BIAS" . ((semantic-list "(COMMAND_START_ADDRESS + 105)" 14673 . 14702)))
+          ("GET_BATTERY_LEVEL" . ((semantic-list "(COMMAND_START_ADDRESS + 89)" 14921 . 14949)))
+          ("GET_DEVICE_NAME" . ((semantic-list "(COMMAND_START_ADDRESS + 91)" 15214 . 15242)))
+          ("GET_DEBUG_LOGGING_STATUS" . ((semantic-list "(COMMAND_START_ADDRESS + 112)" 16325 . 16354)))
+          ("DMY_DT_AXIS" . ((semantic-list "(COMMAND_START_ADDRESS + 119)" 17093 . 17122)))
+          ("GET_RTC_OUTPUT_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 125)" 17384 . 17413)))
+          ("LPMS_ACC_RAW_OUTPUT_ENABLED" . ((semantic-list "(uint32_t)" 19641 . 19651) (semantic-list "(0x00000001 << 11)" 19651 . 19669)))
+          ("CR_NOT_USED_10" . ((semantic-list "(uint32_t)" 19795 . 19805) (semantic-list "(0x00000001 << 9)" 19805 . 19822)))
+          ("SR_NOT_USED_2" . ((semantic-list "(0x0001 << 13)" 20708 . 20722)))
+          ("LPMS_LP_0005" . ((number "0x00000004" 22600 . 22610)))
+          ("LPMS_TIMESTAMP_ELAPSED_TIME_MODE" . ((number "0x0" 22761 . 22764)))
+          ("LPMS_MAG_BIAS_X" . ((semantic-list "(REG_START_ADDRESS + 20)" 2500 . 2524)))
+          ("LPMS_ACC_ALIG_12" . ((semantic-list "(REG_START_ADDRESS + 40)" 3800 . 3824)))
+          ("LPMS_MAG_ALIG_00" . ((semantic-list "(REG_START_ADDRESS + 44)" 4060 . 4084)))
+          ("LPMS_MAG_SOFT_10" . ((semantic-list "(REG_START_ADDRESS + 91)" 7115 . 7139)))
+          ("LPMS_HEADING_OFFSET_3" . ((semantic-list "(REG_START_ADDRESS + 141)" 8756 . 8781)))
+          ("LPMS_DEVICE_NAME_1" . ((semantic-list "(REG_START_ADDRESS + 143)" 8888 . 8913)))
+          ("LPMS_PRODUCT_ID_1" . ((semantic-list "(REG_START_ADDRESS + 147)" 9184 . 9209)))
+          ("UPDATE_IAP" . ((semantic-list "(COMMAND_START_ADDRESS + 3)" 10226 . 10253)))
+          ("RESET_ORIENTATION_OFFSET" . ((semantic-list "(COMMAND_START_ADDRESS + 82)" 11191 . 11219)))
+          ("GET_MAG_REFERENCE" . ((semantic-list "(COMMAND_START_ADDRESS + 81)" 13384 . 13412)))
+          ("GET_FILTER_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 42)" 13542 . 13570)))
+          ("SET_GYR_ALIGN_BIAS" . ((semantic-list "(COMMAND_START_ADDRESS + 48)" 14327 . 14355)))
+          ("SET_VIBRATOR_WAVEFORM" . ((semantic-list "(COMMAND_START_ADDRESS + 106)" 15951 . 15980)))
+          ("START_DEBUG_LOGGING" . ((semantic-list "(COMMAND_START_ADDRESS + 108)" 16045 . 16074)))
+          ("START_DEBUG_MSG_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 116)" 16735 . 16764)))
+          ("CR_NOT_USED_6" . ((semantic-list "(uint32_t)" 18603 . 18613) (semantic-list "(0x00000001 << 24)" 18613 . 18631)))
+          ("LPMS_GYR_THRES_ENABLED" . ((semantic-list "(uint32_t)" 18680 . 18690) (semantic-list "(0x00000001 << 23)" 18690 . 18708)))
+          ("LPMS_GYR_CALIBRATION_RUNNING" . ((semantic-list "(0x0001 << 3)" 20165 . 20178)))
+          ("SR_NOT_USED_3" . ((semantic-list "(0x0001 << 16)" 20873 . 20887)))
+          ("LPMS_MAG_BIAS_Y" . ((semantic-list "(REG_START_ADDRESS + 21)" 2565 . 2589)))
+          ("LPMS_GYR_ALIG_00" . ((semantic-list "(REG_START_ADDRESS + 26)" 2890 . 2914)))
+          ("LPMS_ACC_ALIG_20" . ((semantic-list "(REG_START_ADDRESS + 41)" 3865 . 3889)))
+          ("LPMS_MAG_ALIG_01" . ((semantic-list "(REG_START_ADDRESS + 45)" 4125 . 4149)))
+          ("LPMS_FILTER_MODE" . ((semantic-list "(REG_START_ADDRESS + 82)" 6530 . 6554)))
+          ("LPMS_MAG_SOFT_11" . ((semantic-list "(REG_START_ADDRESS + 92)" 7180 . 7204)))
+          ("LPMS_MAG_FIELD_INC" . ((semantic-list "(REG_START_ADDRESS + 99)" 7635 . 7659)))
+          ("LPMS_LIN_ACC_COMP_MODE" . ((semantic-list "(REG_START_ADDRESS + 131)" 8096 . 8121)))
+          ("LPMS_DEVICE_NAME_2" . ((semantic-list "(REG_START_ADDRESS + 144)" 8986 . 9011)))
+          ("LPMS_PRODUCT_ID_2" . ((semantic-list "(REG_START_ADDRESS + 148)" 9281 . 9306)))
+          ("GET_ACC_BIAS" . ((semantic-list "(COMMAND_START_ADDRESS + 28)" 12116 . 12144)))
+          ("GET_MAG_ALIGNMENT_BIAS" . ((semantic-list "(COMMAND_START_ADDRESS + 80)" 13246 . 13274)))
+          ("SET_RAW_DATA_LP" . ((semantic-list "(COMMAND_START_ADDRESS + 60)" 14025 . 14053)))
+          ("SET_LPBUS_DATA_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 75)" 14164 . 14192)))
+          ("GET_FIRMWARE_VERSION" . ((semantic-list "(COMMAND_START_ADDRESS + 47)" 14258 . 14286)))
+          ("SET_VIBRATOR_STATE" . ((semantic-list "(COMMAND_START_ADDRESS + 87)" 14758 . 14786)))
+          ("GET_PRODUCT_ID" . ((semantic-list "(COMMAND_START_ADDRESS + 94)" 15585 . 15613)))
+          ("GET_STORAGE_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 124)" 17838 . 17867)))
+          ("LPMS_GYR_AUTOCAL_ENABLED" . ((semantic-list "(uint32_t)" 18141 . 18151) (semantic-list "(0x00000001 << 30)" 18151 . 18169)))
+          ("CR_NOT_USED_7" . ((semantic-list "(uint32_t)" 18988 . 18998) (semantic-list "(0x00000001 << 19)" 18998 . 19016)))
+          ("LPMS_QUAT_OUTPUT_ENABLED" . ((semantic-list "(uint32_t)" 19065 . 19075) (semantic-list "(0x00000001 << 18)" 19075 . 19093)))
+          ("LPMS_MAG_RAW_OUTPUT_ENABLED" . ((semantic-list "(uint32_t)" 19718 . 19728) (semantic-list "(0x00000001 << 10)" 19728 . 19746)))
+          ("LPMS_STREAM_FREQ_10HZ" . ((semantic-list "(uint32_t)" 21505 . 21515) (number "10" 21515 . 21517)))
+          ("MS_CONFIG_H")
+          ("LPMS_CONFIG" . ((symbol "REG_START_ADDRESS" 1216 . 1233)))
+          ("LPMS_GYR_RANGE" . ((semantic-list "(REG_START_ADDRESS + 2)" 1338 . 1361)))
+          ("LPMS_MAG_BIAS_Z" . ((semantic-list "(REG_START_ADDRESS + 22)" 2630 . 2654)))
+          ("LPMS_GYR_ALIG_01" . ((semantic-list "(REG_START_ADDRESS + 27)" 2955 . 2979)))
+          ("LPMS_ACC_ALIG_21" . ((semantic-list "(REG_START_ADDRESS + 42)" 3930 . 3954)))
+          ("LPMS_MAG_ALIG_02" . ((semantic-list "(REG_START_ADDRESS + 46)" 4190 . 4214)))
+          ("LPMS_MAG_COVAR_USER" . ((semantic-list "(REG_START_ADDRESS + 80)" 6400 . 6424)))
+          ("LPMS_MAG_SOFT_12" . ((semantic-list "(REG_START_ADDRESS + 93)" 7245 . 7269)))
+          ("LPMS_DEVICE_NAME_3" . ((semantic-list "(REG_START_ADDRESS + 145)" 9052 . 9077)))
+          ("LPMS_PRODUCT_ID_3" . ((semantic-list "(REG_START_ADDRESS + 149)" 9347 . 9372)))
+          ("LPMS_SENSOR_MODEL" . ((semantic-list "(REG_START_ADDRESS + 151)" 9479 . 9504)))
+          ("SET_ACC_RANGE" . ((semantic-list "(COMMAND_START_ADDRESS + 31)" 12323 . 12351)))
+          ("SET_SOFT_IRON_MATRIX" . ((semantic-list "(COMMAND_START_ADDRESS + 37)" 12763 . 12791)))
+          ("GET_DEBUG_LOG" . ((semantic-list "(COMMAND_START_ADDRESS + 114)" 16465 . 16494)))
+          ("RESET_MCU" . ((semantic-list "(COMMAND_START_ADDRESS + 128)" 17950 . 17979)))
+          ("LPMS_EULER_OUTPUT_ENABLED" . ((semantic-list "(uint32_t)" 19142 . 19152) (semantic-list "(0x00000001 << 17)" 19152 . 19170)))
+          ("LPMS_ANGULAR_VELOCITY_OUTPUT_ENABLED" . ((semantic-list "(uint32_t)" 19219 . 19229) (semantic-list "(0x00000001 << 16)" 19229 . 19247)))
+          ("CR_NOT_USED_8" . ((semantic-list "(uint32_t)" 19373 . 19383) (semantic-list "(0x00000001 << 14)" 19383 . 19401)))
+          ("LPMS_STREAM_FREQ_5HZ_ENABLED" . ((number "0x00000000" 20961 . 20971)))
+          ("LPMS_STREAM_FREQ_5HZ" . ((semantic-list "(uint32_t)" 21453 . 21463) (number "5" 21463 . 21464)))
+          ("LPMS_ENABLE_GYR_THRESHOLD" . ((number "0x00000001" 22059 . 22069)))
+          ("LPMS_DISABLE_MAG_AUTOCAL" . ((number "0x00000000" 22254 . 22264)))
+          ("LPMS_GYR_ALIG_02" . ((semantic-list "(REG_START_ADDRESS + 28)" 3020 . 3044)))
+          ("LPMS_ACC_ALIG_22" . ((semantic-list "(REG_START_ADDRESS + 43)" 3995 . 4019)))
+          ("LPMS_MAG_ALIG_10" . ((semantic-list "(REG_START_ADDRESS + 47)" 4255 . 4279)))
+          ("LPMS_MAG_THRES_X" . ((semantic-list "(REG_START_ADDRESS + 62)" 5230 . 5254)))
+          ("LPMS_MAG_SOFT_20" . ((semantic-list "(REG_START_ADDRESS + 94)" 7310 . 7334)))
+          ("LPMS_DEVICE_NAME_4" . ((semantic-list "(REG_START_ADDRESS + 146)" 9118 . 9143)))
+          ("LPMS_PRODUCT_ID_4" . ((semantic-list "(REG_START_ADDRESS + 150)" 9413 . 9438)))
+          ("GET_STATUS" . ((semantic-list "(COMMAND_START_ADDRESS + 5)" 10391 . 10418)))
+          ("GOTO_COMMAND_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 6)" 10478 . 10505)))
+          ("GOTO_STREAM_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 7)" 10546 . 10573)))
+          ("SET_TRANSMIT_DATA" . ((semantic-list "(COMMAND_START_ADDRESS + 10)" 10704 . 10732)))
+          ("GET_PING" . ((semantic-list "(COMMAND_START_ADDRESS + 97)" 11426 . 11454)))
+          ("GET_ACC_RANGE" . ((semantic-list "(COMMAND_START_ADDRESS + 32)" 12392 . 12420)))
+          ("SET_HARD_IRON_OFFSET" . ((semantic-list "(COMMAND_START_ADDRESS + 35)" 12625 . 12653)))
+          ("GET_SOFT_IRON_MATRIX" . ((semantic-list "(COMMAND_START_ADDRESS + 38)" 12832 . 12860)))
+          ("SET_FIELD_ESTIMATE" . ((semantic-list "(COMMAND_START_ADDRESS + 39)" 12901 . 12929)))
+          ("SET_LIN_ACC_COMP_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 67)" 13749 . 13777)))
+          ("GET_GYR_ALIGN_BIAS" . ((semantic-list "(COMMAND_START_ADDRESS + 49)" 14396 . 14424)))
+          ("SET_GYR_STATIC_BIAS" . ((semantic-list "(COMMAND_START_ADDRESS + 104)" 14603 . 14632)))
+          ("SET_DEVICE_NAME" . ((semantic-list "(COMMAND_START_ADDRESS + 90)" 15145 . 15173)))
+          ("FULL_FLASH_ERASE" . ((semantic-list "(COMMAND_START_ADDRESS + 111)" 16255 . 16284)))
+          ("SET_RTC_OUTPUT_MODE" . ((semantic-list "(COMMAND_START_ADDRESS + 121)" 17293 . 17322)))
+          ("LPMS_LINACC_OUTPUT_ENABLED" . ((semantic-list "(uint32_t)" 18834 . 18844) (semantic-list "(0x00000001 << 21)" 18844 . 18862)))
+          ("CR_NOT_USED_9" . ((semantic-list "(uint32_t)" 19450 . 19460) (semantic-list "(0x00000001 << 13)" 19460 . 19478)))
+          ("LPMS_FLASH_WRITE_FAILED" . ((semantic-list "(0x0001 << 12)" 20653 . 20667)))
+          ("LPMS_REF_CALIBRATION_RUNNING" . ((semantic-list "(0x0001 << 15)" 20818 . 20832)))
+          ("LPMS_STREAM_FREQ_400HZ" . ((semantic-list "(uint32_t)" 21772 . 21782) (number "400" 21782 . 21785)))
+          ("LPMS_DISABLE_GYR_AUTOCAL" . ((number "0x00000000" 22396 . 22406)))
+          ("LPMS_LP_001" . ((number "0x00000003" 22565 . 22575)))
+          ("LPMS_LPBUS_DATA_MODE_16" . ((number "0x1" 22715 . 22718)))
+          )
+)
     (semanticdb-table "semanticdb-table"
       :file "LpmsModbus.h"
       :fsize 1132
@@ -187,9 +2128,146 @@
       :fsize 1190
       :lastmodtime '(23802 13505 0 0))
     (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__DIAGNOSTIC_CHECK_H__" variable (:constant-flag t) nil [114 136])
+            ("stdint.h" include (:system-flag t) nil [138 157])
+            ("LpMatrix.h" include nil nil [158 179])
+            ("Lsm6ds3.h" include nil nil [180 200])
+            ("LpFilterCVersion.h" include nil nil [201 230])
+            ("DIAGNOSTIC_CHECK_VERSION" variable (:constant-flag t) nil [296 320])
+            ("DIAGNOSTIC_SAMPLE_WAITTIME_MILLIS" variable (:constant-flag t) nil [350 383])
+            ("DIAGNOSTIC_SAMPLE_COUNT" variable (:constant-flag t) nil [456 479])
+            ("DIAGNOSTIC_THRESHOLD_ACC_QUIESCENT" variable (:constant-flag t) nil [592 626])
+            ("DIAGNOSTIC_THRESHOLD_ACC_PULSE" variable (:constant-flag t) nil [650 680])
+            ("DIAGNOSTIC_THRESHOLD_GYR_BIAS" variable (:constant-flag t) nil [708 737])
+            ("DIAGNOSTIC_THRESHOLD_GYR_PULSE_NOISE" variable (:constant-flag t) nil [791 827])
+            ("DIAGNOSTIC_RESULT_ACCEPTABLE_FAILURE_COUNT" variable (:constant-flag t) nil [866 908])
+            ("DIAGNOSTIC_RESULT_TRY_COUNT" variable (:constant-flag t) nil [920 947])
+            ("_DiagnosticState" type
+               (:members 
+                  ( ("DIAGNOSTIC_CHECK_NOT_STARTED" variable
+                       (:constant-flag t
+                        :default-value (1033 1034)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1002 1034])
+                    ("DIAGNOSTIC_CHECK_STARTED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1038 1063])
+                    ("DIAGNOSTIC_CHECK_NO_FAILURE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1066 1094])
+                    ("DIAGNOSTIC_CHECK_FAILED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1097 1122]))                  
+                :type "enum")
+                nil [968 1139])
+            ("DiagnosticState" type
+               (:typedef ("_DiagnosticState" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [968 1139])
+            ("_DiagnosticQuiescentState" type
+               (:members 
+                  ( ("DIAGNOSTIC_DETECTED_QUIESCENT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1184 1214])
+                    ("DIAGNOSTIC_NOT_DETECTED_QUIESCENT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1217 1252]))                  
+                :type "enum")
+                nil [1141 1278])
+            ("DiagnosticQuiescentState" type
+               (:typedef ("_DiagnosticQuiescentState" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [1141 1278])
+            ("_DiagnosticResult" type
+               (:members 
+                  ( ("version" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1352 1369])
+                    ("range" variable (:type ("LpVector3f" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1372 1389])
+                    ("isFailed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1392 1410]))                  
+                :type "struct")
+                nil [1315 1430])
+            ("DiagnosticResult" type
+               (:typedef ("_DiagnosticResult" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1315 1430])
+            ("diagnostic_check_reset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1460 1465]))                  
+                :type "void")
+                nil [1432 1466])
+            ("diagnostic_check_start" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1496 1501]))                  
+                :type "void")
+                nil [1468 1502])
+            ("diagnostic_check_get_state" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1547 1552]))                  
+                :type ("DiagnosticState" type (:type "class") nil nil))
+                nil [1504 1553])
+            ("diagnostic_check_is_finished" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1593 1598]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1555 1599])
+            ("diagnostic_check_acc_len" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("acc" variable (:type ("LpVector3f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1632 1647]))                  
+                :type "float")
+                nil [1601 1648])
+            ("diagnostic_check_sensor_data" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1684 1689]))                  
+                :type "void")
+                nil [1650 1690])
+            ("_diagnostic_check_sensor_data" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1727 1732]))                  
+                :type "void")
+                nil [1692 1733])
+            ("diagnostic_check_finish" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1764 1769]))                  
+                :type "void")
+                nil [1735 1770])
+            ("diagnostic_check_store_results" function
+               (:prototype-flag t
+                :type "void")
+                nil [1772 1810]))          
       :file "diagnostic_check.h"
+      :pointmax 1889
       :fsize 1888
-      :lastmodtime '(23802 13505 0 0))
+      :lastmodtime '(23802 13505 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DIAGNOSTIC_SAMPLE_COUNT" . ((number "100" 500 . 503)))
+          ("__DIAGNOSTIC_CHECK_H__")
+          ("DIAGNOSTIC_THRESHOLD_GYR_PULSE_NOISE" . 
+              ((number "4000.0f" 835 . 842) (punctuation "/" 842 . 843) (number "65535.0f" 843 . 851) (punctuation "*" 851 . 852) (number "100.0" 852 . 857)))
+          ("DIAGNOSTIC_RESULT_TRY_COUNT" . ((number "10" 964 . 966)))
+          ("DIAGNOSTIC_THRESHOLD_ACC_QUIESCENT" . ((number "0.01f" 636 . 641)))
+          ("DIAGNOSTIC_THRESHOLD_ACC_PULSE" . ((number "0.02f" 694 . 699)))
+          ("DIAGNOSTIC_SAMPLE_WAITTIME_MILLIS" . ((number "250.0f" 394 . 400)))
+          ("DIAGNOSTIC_RESULT_ACCEPTABLE_FAILURE_COUNT" . ((number "3" 910 . 911)))
+          ("DIAGNOSTIC_CHECK_VERSION" . ((number "2" 340 . 341)))
+          ("DIAGNOSTIC_THRESHOLD_GYR_BIAS" . 
+              ((number "4000.0f" 752 . 759) (punctuation "/" 759 . 760) (number "65535.0f" 760 . 768) (punctuation "*" 768 . 769) (symbol "GYR_CAL_THRES" 769 . 782)))
+          )
+)
     (semanticdb-table "semanticdb-table"
       :file "diagnostic_check_callback.h"
       :fsize 368
@@ -197,7 +2275,1223 @@
     (semanticdb-table "semanticdb-table"
       :file "peripherals.h"
       :fsize 275
-      :lastmodtime '(23802 13505 0 0)))
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("LP_MATRIX" variable (:constant-flag t) nil [454 463])
+            ("math.h" include (:system-flag t) nil [465 482])
+            ("stdint.h" include (:system-flag t) nil [483 502])
+            ("_float2int" type
+               (:members 
+                  ( ("u32_val" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [533 550])
+                    ("float_val" variable (:type "float") (reparse-symbol classsubparts) [553 569]))                  
+                :type "union")
+                nil [504 582])
+            ("float2int" type
+               (:typedef ("_float2int" type (:type "union") nil nil)
+                :type "typedef")
+                nil [504 582])
+            ("_char2int" type
+               (:members 
+                  ( ("u32_val" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [612 629])
+                    ("c" variable
+                       (:dereference 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [632 645]))                  
+                :type "union")
+                nil [584 657])
+            ("char2int" type
+               (:typedef ("_char2int" type (:type "union") nil nil)
+                :type "typedef")
+                nil [584 657])
+            ("_LpMatrix3x3f" type
+               (:members 
+                  ( ("data" variable
+                       (:dereference 2
+                        :type "float")
+                        (reparse-symbol classsubparts) [758 775]))                  
+                :type "struct")
+                nil [723 793])
+            ("LpMatrix3x3f" type
+               (:typedef ("_LpMatrix3x3f" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [723 793])
+            ("_LpMatrix3x4f" type
+               (:members 
+                  ( ("data" variable
+                       (:dereference 2
+                        :type "float")
+                        (reparse-symbol classsubparts) [832 849]))                  
+                :type "struct")
+                nil [797 867])
+            ("LpMatrix3x4f" type
+               (:typedef ("_LpMatrix3x4f" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [797 867])
+            ("_LpMatrix4x3f" type
+               (:members 
+                  ( ("data" variable
+                       (:dereference 2
+                        :type "float")
+                        (reparse-symbol classsubparts) [906 923]))                  
+                :type "struct")
+                nil [871 941])
+            ("LpMatrix4x3f" type
+               (:typedef ("_LpMatrix4x3f" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [871 941])
+            ("_LpMatrix4x4f" type
+               (:members 
+                  ( ("data" variable
+                       (:dereference 2
+                        :type "float")
+                        (reparse-symbol classsubparts) [980 997]))                  
+                :type "struct")
+                nil [945 1015])
+            ("LpMatrix4x4f" type
+               (:typedef ("_LpMatrix4x4f" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [945 1015])
+            ("_LpVector3f" type
+               (:members 
+                  ( ("data" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1052 1066]))                  
+                :type "struct")
+                nil [1019 1082])
+            ("LpVector3f" type
+               (:typedef ("_LpVector3f" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1019 1082])
+            ("_LpVector4f" type
+               (:members 
+                  ( ("data" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol classsubparts) [1119 1133]))                  
+                :type "struct")
+                nil [1086 1149])
+            ("LpVector4f" type
+               (:typedef ("_LpVector4f" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1086 1149])
+            ("_LpVector3i" type
+               (:members 
+                  ( ("data" variable
+                       (:dereference 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1186 1202]))                  
+                :type "struct")
+                nil [1153 1218])
+            ("LpVector3i" type
+               (:typedef ("_LpVector3i" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1153 1218])
+            ("_LpVector3i32" type
+               (:members 
+                  ( ("data" variable
+                       (:dereference 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1257 1273]))                  
+                :type "struct")
+                nil [1222 1291])
+            ("LpVector3i32" type
+               (:typedef ("_LpVector3i32" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1222 1291])
+            ("_LpVector4i" type
+               (:members 
+                  ( ("data" variable
+                       (:dereference 1
+                        :type ("int16_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1328 1344]))                  
+                :type "struct")
+                nil [1295 1360])
+            ("LpVector4i" type
+               (:typedef ("_LpVector4i" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1295 1360])
+            ("_LpMatrix4x4i" type
+               (:members 
+                  ( ("data" variable
+                       (:dereference 2
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1399 1419]))                  
+                :type "struct")
+                nil [1364 1437])
+            ("LpMatrix4x4i" type
+               (:typedef ("_LpMatrix4x4i" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1364 1437])
+            ("fastSqrt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1456 1470]))                  
+                :type "float")
+                nil [1441 1471])
+            ("fastSin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [1488 1496]))                  
+                :type "float")
+                nil [1474 1497])
+            ("fastCos" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [1514 1522]))                  
+                :type "float")
+                nil [1500 1523])
+            ("matDet3x3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1578 1596]))                  
+                :type "float")
+                nil [1562 1597])
+            ("matInv3x3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1616 1634])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1635 1654]))                  
+                :type "float")
+                nil [1600 1655])
+            ("matAdd3x3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src1" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1672 1691])
+                    ("src2" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1692 1711])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1712 1731]))                  
+                :type "int")
+                nil [1658 1732])
+            ("matAdd4x4" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src1" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1749 1768])
+                    ("src2" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1769 1788])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1789 1808]))                  
+                :type "int")
+                nil [1735 1809])
+            ("matMult3x3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src1" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1827 1846])
+                    ("src2" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1847 1866])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1867 1886]))                  
+                :type "int")
+                nil [1812 1887])
+            ("matMult3x4to4x4" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src1" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1910 1929])
+                    ("src2" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1930 1949])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1950 1969]))                  
+                :type "int")
+                nil [1890 1970])
+            ("matMult3x4to4x3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src1" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1993 2012])
+                    ("src2" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2013 2032])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2033 2052]))                  
+                :type "int")
+                nil [1973 2053])
+            ("matMult4x4to4x3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src1" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2076 2095])
+                    ("src2" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2096 2115])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2116 2135]))                  
+                :type "int")
+                nil [2056 2136])
+            ("matMult4x3to3x3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src1" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2159 2178])
+                    ("src2" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2179 2198])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2199 2218]))                  
+                :type "int")
+                nil [2139 2219])
+            ("matMult4x3to3x4" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src1" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2242 2261])
+                    ("src2" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2262 2281])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2282 2301]))                  
+                :type "int")
+                nil [2222 2302])
+            ("matMult4x4" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src1" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2320 2339])
+                    ("src2" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2340 2359])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2360 2379]))                  
+                :type "int")
+                nil [2305 2380])
+            ("matVectMult3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("matrix" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2400 2421])
+                    ("vector" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2422 2441])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2442 2459]))                  
+                :type "int")
+                nil [2383 2460])
+            ("matVectMult4" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("matrix" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2480 2501])
+                    ("vector" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2502 2521])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2522 2539]))                  
+                :type "int")
+                nil [2463 2540])
+            ("matVectMult3x4" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("matrix" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2562 2583])
+                    ("vector" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2584 2603])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2604 2621]))                  
+                :type "int")
+                nil [2543 2622])
+            ("matVectMult4x3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("matrix" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2644 2665])
+                    ("vector" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2666 2685])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2686 2703]))                  
+                :type "int")
+                nil [2625 2704])
+            ("matTrans3x3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2723 2741])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2742 2761]))                  
+                :type "int")
+                nil [2707 2762])
+            ("matTrans4x4" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2781 2799])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2800 2819]))                  
+                :type "int")
+                nil [2765 2820])
+            ("matTrans3x4" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2839 2857])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2858 2877]))                  
+                :type "int")
+                nil [2823 2878])
+            ("scalarMatMult3x3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("scal" variable (:type "float") (reparse-symbol arg-sub-list) [2902 2913])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2914 2932])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2933 2952]))                  
+                :type "int")
+                nil [2881 2953])
+            ("scalarMatMult4x4" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("scal" variable (:type "float") (reparse-symbol arg-sub-list) [2977 2988])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2989 3007])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3008 3027]))                  
+                :type "int")
+                nil [2956 3028])
+            ("scalarMatMult3x4" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("scal" variable (:type "float") (reparse-symbol arg-sub-list) [3052 3063])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3064 3082])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3083 3102]))                  
+                :type "int")
+                nil [3031 3103])
+            ("createIdentity3x3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3129 3148]))                  
+                :type "void")
+                nil [3106 3149])
+            ("createIdentity4x4" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3175 3194]))                  
+                :type "void")
+                nil [3152 3195])
+            ("matZero3x3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3214 3233]))                  
+                :type "void")
+                nil [3198 3234])
+            ("matZero4x4" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3253 3272]))                  
+                :type "void")
+                nil [3237 3273])
+            ("matZero3x4" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3292 3311]))                  
+                :type "void")
+                nil [3276 3312])
+            ("matZero4x3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix4x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3331 3350]))                  
+                :type "void")
+                nil [3315 3351])
+            ("matCopy3x3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3370 3388])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3389 3408]))                  
+                :type "void")
+                nil [3354 3409])
+            ("vect3x1Norm" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable (:type ("LpVector3f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3466 3481]))                  
+                :type "float")
+                nil [3448 3482])
+            ("vect4x1Norm" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable (:type ("LpVector4f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3503 3518]))                  
+                :type "float")
+                nil [3485 3519])
+            ("vectZero3x1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3539 3556]))                  
+                :type "void")
+                nil [3522 3557])
+            ("scalarVectMult3x1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("scal" variable (:type "float") (reparse-symbol arg-sub-list) [3582 3593])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3594 3610])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3611 3628]))                  
+                :type "int")
+                nil [3560 3629])
+            ("scalarVectMult4x1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("scal" variable (:type "float") (reparse-symbol arg-sub-list) [3654 3665])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3666 3682])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3683 3700]))                  
+                :type "int")
+                nil [3632 3701])
+            ("vectAdd4x1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src1" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3720 3737])
+                    ("src2" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3738 3755])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3756 3773]))                  
+                :type "void")
+                nil [3704 3774])
+            ("vectAdd3x1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src1" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3793 3810])
+                    ("src2" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3811 3828])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3829 3846]))                  
+                :type "void")
+                nil [3777 3847])
+            ("vectSub3x1" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src1" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3866 3883])
+                    ("src2" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3884 3901])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3902 3919]))                  
+                :type "void")
+                nil [3850 3920])
+            ("vecCWiseDiv3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src1" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3941 3958])
+                    ("src2" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3959 3976])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3977 3994]))                  
+                :type "void")
+                nil [3923 3995])
+            ("vecCWiseMult3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src1" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4017 4034])
+                    ("src2" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4035 4052])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4053 4070]))                  
+                :type "void")
+                nil [3998 4071])
+            ("vect3x1SetScalar" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4096 4112])
+                    ("scalar" variable (:type "float") (reparse-symbol arg-sub-list) [4113 4126]))                  
+                :type "void")
+                nil [4074 4127])
+            ("quaternionInv" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4177 4193])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4194 4211]))                  
+                :type "void")
+                nil [4158 4212])
+            ("quaternionMult" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src1" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4235 4252])
+                    ("src2" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4253 4270])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4271 4288]))                  
+                :type "void")
+                nil [4215 4289])
+            ("quaternionToEuler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("q" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4315 4329])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4330 4344]))                  
+                :type "void")
+                nil [4292 4345])
+            ("quaternionToMatrix" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("q" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4372 4386])
+                    ("M" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4387 4403]))                  
+                :type "void")
+                nil [4348 4404])
+            ("quaternionIdentity" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4431 4448]))                  
+                :type "void")
+                nil [4407 4449])
+            ("quaternionCon" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4471 4487])
+                    ("dest" variable
+                       (:pointer 1
+                        :type ("LpVector4f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4488 4505]))                  
+                :type "void")
+                nil [4452 4506])
+            ("quatRotVec" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("q" variable (:type ("LpVector4f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4525 4538])
+                    ("vI" variable (:type ("LpVector3f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4539 4553])
+                    ("vO" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4554 4569]))                  
+                :type "void")
+                nil [4509 4570])
+            ("convertLpMatrixToArray" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("LpMatrix3x3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4619 4637])
+                    ("dest" variable
+                       (:dereference 2
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4638 4655]))                  
+                :type "void")
+                nil [4591 4656])
+            ("convertLpVectorToArray" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type ("LpVector3f" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4687 4703])
+                    ("dest" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4704 4718]))                  
+                :type "void")
+                nil [4659 4719]))          
+      :file "LpMatrix.h"
+      :pointmax 4757
+      :fsize 4756
+      :lastmodtime '(23802 13508 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LP_MATRIX")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "Lsm6ds3.h"
+      :fsize 5428
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "LpFilterCVersion.h"
+      :fsize 3839
+      :lastmodtime '(23802 13508 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "compat.h"
+      :fsize 3949
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "stc3115_Driver.h"
+      :fsize 8565
+      :lastmodtime '(23802 13508 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SensorManager.h" include nil nil [225 251])
+            ("LpmsSensorParameters.h" include nil nil [300 333])
+            ("LpmsRtc.h" include nil nil [334 354])
+            ("SystemUpdater.h" include nil nil [355 381])
+            ("debug_msg.h" include nil nil [382 404])
+            ("EmbedFLASH.h" include nil nil [405 428])
+            ("GasGauge.h" include nil nil [429 450])
+            ("version.h" include nil nil [451 471])
+            ("gyrRawData" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [528 550])
+            ("accRawData" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [551 573])
+            ("magRawData" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [574 596])
+            ("rawTemp" variable (:type ("int16_t" type (:type "class") nil nil)) nil [597 613])
+            ("a" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [660 673])
+            ("aRaw" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [674 690])
+            ("b" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [691 704])
+            ("bRaw" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [705 721])
+            ("g" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [722 735])
+            ("gRaw" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [736 752])
+            ("q" variable (:type ("LpVector4f" type (:type "class") nil nil)) nil [753 766])
+            ("qOffset" variable (:type ("LpVector4f" type (:type "class") nil nil)) nil [767 786])
+            ("qAfterOffset" variable (:type ("LpVector4f" type (:type "class") nil nil)) nil [787 811])
+            ("r" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [812 825])
+            ("w" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [826 839])
+            ("rAfterOffset" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [840 864])
+            ("linAcc" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [865 883])
+            ("translation" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [884 907])
+            ("velocity" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [908 928])
+            ("magNoise" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [929 951])
+            ("gyroTempData" variable (:type ("int8_t" type (:type "class") nil nil)) nil [952 972])
+            ("accMagTempData" variable (:type ("int16_t" type (:type "class") nil nil)) nil [973 996])
+            ("tempData" variable (:type ("int16_t" type (:type "class") nil nil)) nil [997 1014])
+            ("currentMode" variable (:type ("uint8_t" type (:type "class") nil nil)) nil [1015 1035])
+            ("curretOutPutMode" variable (:type ("uint8_t" type (:type "class") nil nil)) nil [1036 1061])
+            ("calibrationData" variable (:type ("LpmsCalibrationData" type (:type "class") nil nil)) nil [1125 1161])
+            ("lpFilterParam" variable (:type ("LpFilterParameters" type (:type "class") nil nil)) nil [1162 1195])
+            ("isGyrCalibrationEnabled" variable
+               (:default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1196 1232])
+            ("cumulatedGyrData" variable
+               (:dereference 1
+                :default-value "{ 0, 0, 0 }"
+                :type "float")
+                nil [1233 1273])
+            ("startGyrData" variable
+               (:dereference 1
+                :default-value "{ 0, 0, 0 }"
+                :type "float")
+                nil [1274 1310])
+            ("endGyrData" variable
+               (:dereference 1
+                :default-value "{ 0, 0, 0 }"
+                :type "float")
+                nil [1311 1345])
+            ("gDrift" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [1346 1364])
+            ("cumulatedGyrCounter" variable
+               (:default-value "0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1365 1398])
+            ("startGyrCounter" variable
+               (:default-value "0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1399 1428])
+            ("endGyrCounter" variable
+               (:default-value "0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1429 1456])
+            ("gyrCalibrationDuration" variable
+               (:default-value "0"
+                :type "float")
+                nil [1457 1490])
+            ("isRefCalibrationEnabled" variable
+               (:default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1491 1527])
+            ("cumulatedRefData" variable
+               (:dereference 1
+                :default-value "{ 0.0f, 0.0f, 0.0f }"
+                :type "float")
+                nil [1528 1577])
+            ("cumulatedRefCounter" variable
+               (:default-value "0"
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [1578 1610])
+            ("refCalibrationDuration" variable
+               (:default-value "0"
+                :type "float")
+                nil [1611 1644])
+            ("maxGyr" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [1645 1663])
+            ("minGyr" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [1664 1682])
+            ("lpmsStatus" variable
+               (:default-value "0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1683 1707])
+            ("isDataSending" variable
+               (:default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1720 1746])
+            ("gLowX" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [1747 1766])
+            ("gLowY" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [1767 1786])
+            ("gLowZ" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [1787 1806])
+            ("preGX" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [1807 1826])
+            ("preGY" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [1827 1846])
+            ("preGZ" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [1847 1866])
+            ("aAvg" variable
+               (:dereference 1
+                :type "float")
+                nil [1867 1881])
+            ("preAvg" variable
+               (:dereference 1
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [1882 1900])
+            ("startTime" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [1901 1924])
+            ("pCycleCount" variable
+               (:default-value "0"
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [1925 1949])
+            ("gyrRawDataLp" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [1950 1974])
+            ("accRawDataLp" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [1975 1999])
+            ("magRawDataLp" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [2000 2024])
+            ("tB" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [2025 2039])
+            ("measurementTime" variable
+               (:typemodifiers ("volatile")
+                :default-value "0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2040 2078])
+            ("sendTime" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [2079 2101])
+            ("aRawNoLp" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [2102 2122])
+            ("mQ_hx" variable (:type ("LpVector4f" type (:type "class") nil nil)) nil [2123 2140])
+            ("mQ_offset" variable (:type ("LpVector4f" type (:type "class") nil nil)) nil [2141 2162])
+            ("lpmsMeasurementPeriod" variable
+               (:default-value "0.00250f"
+                :type "float")
+                nil [2163 2202])
+            ("lpmsMeasurementIntervals" variable
+               (:default-value "1"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2208 2245])
+            ("gyrRawDataX" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [2246 2269])
+            ("accRawDataX" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [2270 2293])
+            ("magRawDataX" variable (:type ("LpVector3f" type (:type "class") nil nil)) nil [2294 2317])
+            ("gReg" variable
+               (:typemodifiers ("extern")
+                :type ("LpmsReg" type (:type "class") nil nil))
+                nil [3632 3652])
+            ("ledFlashTime" variable
+               (:typemodifiers ("extern")
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [3653 3682])
+            ("deviceName" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3708 3738])
+            ("initSensorManager" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3765 3770]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [3740 11926])
+            ("correctRawAxisAlignment" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11957 11962]))                  
+                :type "void")
+                nil [11928 12408])
+            ("updateSensorData" function
+               (:arguments 
+                  ( ("i2cTimeOut" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12511 12531]))                  
+                :type "void")
+                nil [12489 13235])
+            ("processSensorData" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13260 13265]))                  
+                :type "void")
+                nil [13237 16343])
+            ("MAX_Q_SIZE" variable (:constant-flag t) nil [16353 16363])
+            ("dataQ" variable
+               (:dereference 1
+                :type ("SensorData" type (:type "class") nil nil))
+                nil [16366 16395])
+            ("dataQC" variable
+               (:default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [16396 16415])
+            ("addDataToDataQ" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16437 16442]))                  
+                :type "void")
+                nil [16417 16691])
+            ("resetDataQ" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16709 16714]))                  
+                :type "void")
+                nil [16693 16732])
+            ("calculateDataQAvg" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16763 16768]))                  
+                :type ("SensorData" type (:type "class") nil nil))
+                nil [16734 17486])
+            ("applyLowPass" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17506 17511]))                  
+                :type "void")
+                nil [17488 18112])
+            ("calcLinearAcceleration" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18142 18147]))                  
+                :type "void")
+                nil [18114 18387])
+            ("accAverage" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18405 18410]))                  
+                :type "void")
+                nil [18389 18520])
+            ("getFilterParam" function
+               (:arguments 
+                  ( ("lpFP" variable
+                       (:pointer 1
+                        :type ("LpFilterParameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18542 18567]))                  
+                :type "void")
+                nil [18522 18596])
+            ("setFilterParam" function
+               (:arguments 
+                  ( ("lpFP" variable (:type ("LpFilterParameters" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18618 18642]))                  
+                :type "void")
+                nil [18598 18670])
+            ("getSensorParam" function
+               (:arguments 
+                  ( ("lCD" variable
+                       (:pointer 1
+                        :type ("LpmsCalibrationData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18692 18717]))                  
+                :type "void")
+                nil [18672 18747])
+            ("setSensorParam" function
+               (:arguments 
+                  ( ("lCD" variable (:type ("LpmsCalibrationData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18769 18793]))                  
+                :type "void")
+                nil [18749 18822])
+            ("getCurrentMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18847 18852]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [18824 18878])
+            ("setCommandMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18900 18905]))                  
+                :type "void")
+                nil [18880 19070])
+            ("initStreamMode" function (:type "void") nil [19072 20042])
+            ("setStreamMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20063 20068]))                  
+                :type "void")
+                nil [20044 20199])
+            ("setStorageMode" function
+               (:arguments 
+                  ( ("mode" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20508 20521]))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [20485 20795])
+            ("getStorageMode" function (:type ("int16_t" type (:type "class") nil nil)) nil [21081 21214])
+            ("startGyrCalibration" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21242 21247]))                  
+                :type "void")
+                nil [21217 21775])
+            ("checkGyrCal" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21794 21799]))                  
+                :type "void")
+                nil [21777 22887])
+            ("stopGyrCalibration" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [22913 22918]))                  
+                :type "void")
+                nil [22889 23624])
+            ("startRefCalibration" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23651 23656]))                  
+                :type "void")
+                nil [23626 23971])
+            ("checkRefCal" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23990 23995]))                  
+                :type "void")
+                nil [23973 24529])
+            ("stopRefCalibration" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [24555 24560]))                  
+                :type "void")
+                nil [24531 25813])
+            ("correctAxisAlignment" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [25841 25846]))                  
+                :type "void")
+                nil [25815 26074])
+            ("getSensorData" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26098 26112])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26113 26125]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [26076 30221])
+            ("getCurrentMeasurementTime" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30261 30275])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30276 30288]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [30227 30559]))          
+      :file "SensorManager.c"
+      :pointmax 34050
+      :fsize 34061
+      :lastmodtime '(23802 13505 0 0)
+      :unmatched-syntax '((symbol 2203 . 2207) (symbol 1715 . 1719) (STATIC 1708 . 1714))
+      :lexical-table 
+        '(("MAX_Q_SIZE" . ((number "8" 16364 . 16365)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "LpmsSensorParameters.h"
+      :fsize 10406
+      :lastmodtime '(23802 13508 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "EmbedFLASH.h"
+      :fsize 1011
+      :lastmodtime '(23802 13505 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "version.h"
+      :fsize 256
+      :lastmodtime '(23810 18663 0 0)))
   :file "!drive_c!dev!leomo!lpsensor-source!LemonadeSensorFirmware!Source!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

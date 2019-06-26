@@ -1,0 +1,255 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("add-log" include nil nil [1024 1042])
+            ("pcvs-util" include nil nil [1077 1097])
+            ("ring" include nil nil [1098 1113])
+            ("message" include nil nil [1114 1132])
+            ("log-edit" customgroup (:user-visible-flag t) nil [1167 1339])
+            ("cvs-buffer" variable nil nil [1363 1382])
+            ("easy-mmode-defmap" code nil nil [1406 1987])
+            ("vc-log-mode-map" variable (:default-value log-edit-mode-map) nil [2042 2084])
+            ("vc-log-entry-mode" variable (:default-value vc-log-mode-map) nil [2085 2127])
+            ("easy-menu-define" code nil nil [2129 3257])
+            ("log-edit-confirm" variable (:default-value (quote changed)) nil [3259 3550])
+            ("log-edit-keep-buffer" variable nil nil [3552 3685])
+            ("log-edit-require-final-newline" variable (:default-value t) nil [3687 3932])
+            ("log-edit-setup-invert" variable nil nil [3934 4130])
+            ("log-edit-setup-add-author" variable nil nil [4132 4353])
+            ("log-edit-hook" variable (:default-value (quote (log-edit-insert-message-template log-edit-insert-cvs-template log-edit-insert-changelog log-edit-show-files))) nil [4355 4918])
+            ("log-edit-mode-hook" variable (:default-value (if (boundp (quote vc-log-mode-hook)) vc-log-mode-hook)) nil [4920 5076])
+            ("log-edit-done-hook" variable nil nil [5078 5509])
+            ("log-edit-strip-single-file-name" variable nil nil [5511 5693])
+            ("log-edit-changelog-full-paragraphs" variable (:default-value t) nil [5695 6698])
+            ("log-edit-files-buf" variable
+               (:constant-flag t
+                :default-value "*log-edit-files*")
+                nil [6743 6791])
+            ("log-edit-initial-files" variable nil nil [6792 6827])
+            ("log-edit-callback" variable nil nil [6828 6858])
+            ("log-edit-diff-function" variable nil nil [6859 6894])
+            ("log-edit-listfun" variable nil nil [6895 6924])
+            ("log-edit-parent-buffer" variable nil nil [6926 6961])
+            ("log-edit-vc-backend" variable nil nil [6963 7044])
+            ("log-edit-maximum-comment-ring-size" variable
+               (:constant-flag t
+                :default-value 32)
+                nil [7085 7191])
+            ("define-obsolete-variable-alias" code nil nil [7192 7271])
+            ("log-edit-comment-ring" variable (:default-value (make-ring log-edit-maximum-comment-ring-size)) nil [7272 7349])
+            ("define-obsolete-variable-alias" code nil nil [7350 7443])
+            ("log-edit-comment-ring-index" variable nil nil [7444 7484])
+            ("log-edit-last-comment-match" variable nil nil [7485 7524])
+            ("log-edit-new-comment-index" function (:arguments ("stride" "len")) nil [7526 7957])
+            ("log-edit-previous-comment" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [7959 8562])
+            ("log-edit-next-comment" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [8564 8754])
+            ("log-edit-comment-search-backward" function
+               (:user-visible-flag t
+                :arguments ("str" "stride"))
+                nil [8756 9655])
+            ("log-edit-comment-search-forward" function
+               (:user-visible-flag t
+                :arguments ("str"))
+                nil [9657 9918])
+            ("log-edit-comment-to-change-log" function
+               (:user-visible-flag t
+                :arguments ("whoami" "file-name"))
+                nil [9920 11769])
+            ("define-obsolete-function-alias" code nil nil [11804 11891])
+            ("define-obsolete-function-alias" code nil nil [11892 11971])
+            ("define-obsolete-function-alias" code nil nil [11972 12072])
+            ("define-obsolete-function-alias" code nil nil [12073 12172])
+            ("define-obsolete-function-alias" code nil nil [12173 12270])
+            ("log-edit-summary" variable
+               (:default-value (quote ((t :inherit font-lock-function-name-face)))
+                :type "face")
+                nil [12297 12421])
+            ("log-edit-header" variable
+               (:default-value (quote ((t :inherit font-lock-keyword-face)))
+                :type "face")
+                nil [12423 12540])
+            ("log-edit-unknown-header" variable
+               (:default-value (quote ((t :inherit font-lock-comment-face)))
+                :type "face")
+                nil [12542 12671])
+            ("log-edit-headers-alist" variable (:default-value (quote (("Summary" . log-edit-summary) ("Fixes") ("Author")))) nil [12673 12858])
+            ("log-edit-header-contents-regexp" variable
+               (:constant-flag t
+                :default-value "[ 	]*\\(.*\\(
+[ 	].*\\)*\\)
+?")
+                nil [12860 13045])
+            ("log-edit-match-to-eoh" function (:arguments ("_limit")) nil [13047 13872])
+            ("log-edit-goto-eoh" function nil nil [13874 14101])
+            ("log-edit--match-first-line" function (:arguments ("limit")) nil [14103 14597])
+            ("log-edit-font-lock-keywords" variable (:default-value (\` ((log-edit-match-to-eoh ((\, (concat "^\\(\\([[:alpha:]-]+\\):\\)" log-edit-header-contents-regexp)) (progn (goto-char (match-beginning 0)) (match-end 0)) nil (1 (if (assoc-string (match-string 2) log-edit-headers-alist t) (quote log-edit-header) (quote log-edit-unknown-header)) nil lax) (3 (or (cdr (assoc-string (match-string 2) log-edit-headers-alist t)) (quote log-edit-header)) nil lax)) ("^
+" (progn (goto-char (match-end 0)) (1+ (match-end 0))) nil (0 (quote (:height 0.1 :inverse-video t))))) (log-edit--match-first-line (0 (quote log-edit-summary)))))) nil [14599 15361])
+            ("log-edit-font-lock-gnu-style" variable nil nil [15363 15482])
+            ("put" code nil nil [15483 15549])
+            ("log-edit-font-lock-gnu-keywords" variable
+               (:constant-flag t
+                :default-value (quote (("^[ 	]*\\(?:\\* .*\\)?\\(([^
+)]*,\\s-*\\)$" (1 (quote (face font-lock-warning-face help-echo "Continue function lists with \")\\n(\".")) t)) ("):[ 	
+]*[[:alpha:]]+\\(ed\\)\\>" (1 (quote (face font-lock-warning-face help-echo "Use present tense.")) t)) ("): [a-z]" (0 (quote (face font-lock-warning-face help-echo "Capitalize.")) t)) ("[^[:upper:]]\\(\\. [[:upper:]]\\)" (1 (quote (face font-lock-warning-face help-echo "Use two spaces to end a sentence")) t)) ("^(" (0 (let ((beg (max (point-min) (- (match-beginning 0) 2)))) (put-text-property beg (match-end 0) (quote font-lock-multiline) t) (if (eq (char-syntax (char-after beg)) 119) (quote (face font-lock-warning-face help-echo "Punctuate previous line.")))) t)))))
+                nil [15551 16947])
+            ("log-edit-font-lock-keywords" function nil nil [16949 17144])
+            ("log-edit" function (:arguments ("callback" "setup" "params" "buffer" "mode" "_ignore")) nil [17161 19291])
+            ("define-derived-mode" code nil nil [19293 20043])
+            ("log-edit-hide-buf" function (:arguments ("buf" "where")) nil [20045 20499])
+            ("log-edit-remember-comment" function (:arguments ("comment")) nil [20501 20772])
+            ("log-edit-done" function (:user-visible-flag t) nil [20774 22570])
+            ("log-edit-kill-buffer" function (:user-visible-flag t) nil [22572 22830])
+            ("log-edit-files" function nil nil [22832 22963])
+            ("log-edit-mode-help" function (:user-visible-flag t) nil [22965 23297])
+            ("log-edit-common-indent" variable nil nil [23299 23440])
+            ("log-edit-set-common-indentation" function nil nil [23442 23907])
+            ("log-edit-show-diff" function (:user-visible-flag t) nil [23909 24136])
+            ("log-edit-show-files" function (:user-visible-flag t) nil [24138 24702])
+            ("log-edit-beginning-of-line" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [24704 25037])
+            ("log-edit-empty-buffer-p" function nil nil [25039 25329])
+            ("log-edit-insert-message-template" function (:user-visible-flag t) nil [25331 25676])
+            ("log-edit-insert-cvs-template" function (:user-visible-flag t) nil [25678 26166])
+            ("log-edit-insert-cvs-rcstemplate" function (:user-visible-flag t) nil [26168 26683])
+            ("log-edit-insert-filenames" function (:user-visible-flag t) nil [26685 26881])
+            ("log-edit-insert-filenames-without-changelog" function (:user-visible-flag t) nil [26883 27332])
+            ("log-edit-add-to-changelog" function (:user-visible-flag t) nil [27334 27622])
+            ("log-edit-changelog-use-first" variable nil nil [27624 27665])
+            ("log-edit-rewrite-tiny-change" variable (:default-value t) nil [27667 27747])
+            ("log-edit-rewrite-fixes" variable nil nil [27749 28060])
+            ("put" code nil nil [28061 28176])
+            ("log-edit-add-field" function (:arguments ("field" "value")) nil [28178 28484])
+            ("log-edit-insert-changelog" function
+               (:user-visible-flag t
+                :arguments ("use-first"))
+                nil [28486 30849])
+            ("log-edit-narrow-changelog" function nil nil [30954 31570])
+            ("log-edit-changelog-paragraph" function nil nil [31572 32086])
+            ("log-edit-changelog-subparagraph" function nil nil [32088 32661])
+            ("log-edit-changelog-entry" function nil nil [32663 33063])
+            ("user-full-name" variable nil nil [33065 33088])
+            ("user-mail-address" variable nil nil [33089 33115])
+            ("log-edit-author" variable nil nil [33117 33141])
+            ("log-edit-changelog-ours-p" function nil nil [33179 35271])
+            ("log-edit-changelog-entries" function (:arguments ("file")) nil [35273 37685])
+            ("log-edit-changelog--pattern" function (:arguments ("file" "changelog-file-name")) nil [37687 38645])
+            ("log-edit-changelog-insert-entries" function (:arguments ("buffer" "beg" "end" "files")) nil [38647 39545])
+            ("log-edit-insert-changelog-entries" function (:arguments ("files")) nil [39547 40584])
+            ("log-edit-toggle-header" function (:arguments ("header" "value")) nil [40586 40765])
+            ("log-edit-set-header" function (:arguments ("header" "value" "toggle")) nil [40767 41759])
+            ("log-edit-extract-headers" function (:arguments ("headers" "comment")) nil [41761 43572])
+            ("log-edit" package nil nil [43574 43593]))          
+      :file "log-edit.el"
+      :pointmax 43621
+      :fsize 43620
+      :lastmodtime '(23603 24960 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "add-log.el"
+      :fsize 50729
+      :lastmodtime '(23603 24960 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "pcvs-util.el"
+      :fsize 12694
+      :lastmodtime '(23603 24960 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("pcvs-util" include nil nil [4039 4059])
+            ("vc-find-revision" function (:prototype-flag t) nil [4060 4093])
+            ("vc-diff-internal" function (:prototype-flag t) nil [4094 4127])
+            ("cvs-minor-wrap-function" variable nil nil [4129 4161])
+            ("cvs-force-command" variable nil nil [4162 4188])
+            ("log-view" customgroup (:user-visible-flag t) nil [4190 4319])
+            ("easy-mmode-defmap" code nil nil [4321 5281])
+            ("easy-menu-define" code nil nil [5283 6534])
+            ("log-view-mode-hook" variable nil nil [6536 6611])
+            ("log-view-expanded-log-entry-function" variable nil nil [6613 6922])
+            ("log-view-file" variable
+               (:default-value (quote ((((class color) (background light)) (:background "grey70" :weight bold)) (t (:weight bold))))
+                :type "face")
+                nil [6924 7126])
+            ("log-view-message" variable
+               (:default-value (quote ((((class color) (background light)) (:background "grey85")) (t (:weight bold))))
+                :type "face")
+                nil [7128 7323])
+            ("log-view-file-re" variable (:default-value (concat "^\\(?:Working file: \\(?1:.+\\)" "\\|\\(?:SCCS/s\\.\\|Changes to \\)\\(?1:.+\\):" "\\)
+")) nil [7325 7724])
+            ("log-view-per-file-logs" variable (:default-value t) nil [7726 7817])
+            ("log-view-message-re" variable (:default-value (concat "^\\(?:revision \\(?1:[.0-9]+\\)\\(?:	.*\\)?" "\\|r\\(?1:[0-9]+\\) | .* | .*" "\\|D \\(?1:[.0-9]+\\) .*" (concat "\\|[^ 
+].*[^0-9
+][0-9][0-9]:[0-9][0-9][^0-9
+].*[^ 
+]" "  .*@.*
+\\(?:  \\* \\(?1:.*\\)\\)?") "\\)$")) nil [7819 8775])
+            ("log-view-font-lock-keywords" variable (:default-value (quote ((eval \` ((\, log-view-file-re) (1 (if (boundp (quote cvs-filename-face)) cvs-filename-face)) (0 (quote log-view-file) append))) (eval \` ((\, log-view-message-re) quote log-view-message))))) nil [8777 9134])
+            ("log-view-font-lock-defaults" variable
+               (:constant-flag t
+                :default-value (quote (log-view-font-lock-keywords t nil nil nil)))
+                nil [9136 9221])
+            ("log-view-vc-fileset" variable nil nil [9223 9308])
+            ("log-view-vc-backend" variable nil nil [9310 9391])
+            ("define-derived-mode" code nil nil [9436 9944])
+            ("easy-mmode-define-navigation" code nil nil [10015 10092])
+            ("easy-mmode-define-navigation" code nil nil [10093 10161])
+            ("log-view-goto-rev" function (:arguments ("rev")) nil [10163 10347])
+            ("log-view-dir-re" variable
+               (:constant-flag t
+                :default-value "^cvs[.ex]* [a-z]+: Logging \\(.+\\)$")
+                nil [10419 10484])
+            ("log-view-current-file" function nil nil [10486 11176])
+            ("log-view-current-entry" function (:arguments ("pos" "move")) nil [11178 12071])
+            ("log-view-inside-comment-p" function (:arguments ("pos")) nil [12073 12224])
+            ("log-view-current-tag" function (:arguments ("pos")) nil [12226 12425])
+            ("log-view-toggle-mark-entry" function (:user-visible-flag t) nil [12427 13450])
+            ("log-view-get-marked" function nil nil [13452 13832])
+            ("log-view-toggle-entry-display" function (:user-visible-flag t) nil [13834 15353])
+            ("log-view-beginning-of-defun" function (:arguments ("arg")) nil [15355 16545])
+            ("log-view-end-of-defun-1" function nil nil [16547 17276])
+            ("log-view-end-of-defun" function (:arguments ("arg")) nil [17278 17552])
+            ("cvs-minor-current-files" variable nil nil [17554 17586])
+            ("cvs-branch-prefix" variable nil nil [17587 17613])
+            ("cvs-secondary-branch-prefix" variable nil nil [17614 17650])
+            ("log-view-minor-wrap" function (:arguments ("buf" "f")) nil [17652 18661])
+            ("log-view-find-revision" function
+               (:user-visible-flag t
+                :arguments ("pos"))
+                nil [18663 19167])
+            ("log-view-extract-comment" function nil nil [19170 19765])
+            ("declare-function" code nil nil [19767 19838])
+            ("log-view-modify-change-comment" function (:user-visible-flag t) nil [19840 20141])
+            ("log-view-annotate-version" function
+               (:user-visible-flag t
+                :arguments ("pos"))
+                nil [20143 20626])
+            ("log-view-diff" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [20643 21223])
+            ("log-view-diff-changeset" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [21225 22034])
+            ("log-view-diff-common" function (:arguments ("beg" "end" "whole-changeset")) nil [22036 23068])
+            ("log-view" package nil nil [23070 23089]))          
+      :file "log-view.el"
+      :pointmax 23117
+      :fsize 23116
+      :lastmodtime '(23603 24960 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_c!Tools!emacs-26.2!share!emacs!26.2!lisp!vc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
