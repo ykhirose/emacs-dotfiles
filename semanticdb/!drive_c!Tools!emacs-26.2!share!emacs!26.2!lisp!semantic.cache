@@ -414,7 +414,7 @@
             ("subregexp-context-p" function (:arguments ("regexp" "pos" "start")) nil [152196 154106])
             ("split-string-default-separators" variable
                (:constant-flag t
-                :default-value "[ 	
+                :default-value "[ 	
 ]+")
                 nil [154128 154481])
             ("split-string" function (:arguments ("string" "separators" "omit-nulls" "trim")) nil [154743 157859])
@@ -741,20 +741,20 @@
             ("inhibit-local-variables-suffixes" variable nil nil [122693 122969])
             ("inhibit-local-variables-ignore-case" variable (:default-value t) nil [123041 123147])
             ("inhibit-local-variables-p" function nil nil [123149 123959])
-            ("auto-mode-interpreter-regexp" variable (:default-value (purecopy "#![ 	]?\\([^ 	
-]*/bin/env[ 	]\\)?\\([^ 	
+            ("auto-mode-interpreter-regexp" variable (:default-value (purecopy "#![ 	]?\\([^ 	
+]*/bin/env[ 	]\\)?\\([^ 	
 ]+\\)")) nil [123961 124479])
             ("magic-mode-alist" variable nil nil [124481 125015])
             ("put" code nil nil [125016 125063])
-            ("magic-fallback-mode-alist" variable (:default-value (purecopy (\` ((image-type-auto-detected-p . image-mode) ("\\(PK00\\)?[P]K" . archive-mode) ((\, (let* ((incomment-re "\\(?:[^-]\\|-[^-]\\)") (comment-re (concat "\\(?:!--" incomment-re "*-->[ 	
-]*<\\)"))) (concat "\\(?:<\\?xml[ 	
-]+[^>]*>\\)?[ 	
-]*<" comment-re "*" "\\(?:!DOCTYPE[ 	
-]+[^>]*>[ 	
-]*<[ 	
-]*" comment-re "*\\)?" "[Hh][Tt][Mm][Ll]"))) . mhtml-mode) ("<!DOCTYPE[ 	
-]+[Hh][Tt][Mm][Ll]" . mhtml-mode) ("<\\?xml " . xml-mode) ((\, (let* ((incomment-re "\\(?:[^-]\\|-[^-]\\)") (comment-re (concat "\\(?:!--" incomment-re "*-->[ 	
-]*<\\)"))) (concat "[ 	
+            ("magic-fallback-mode-alist" variable (:default-value (purecopy (\` ((image-type-auto-detected-p . image-mode) ("\\(PK00\\)?[P]K" . archive-mode) ((\, (let* ((incomment-re "\\(?:[^-]\\|-[^-]\\)") (comment-re (concat "\\(?:!--" incomment-re "*-->[ 	
+]*<\\)"))) (concat "\\(?:<\\?xml[ 	
+]+[^>]*>\\)?[ 	
+]*<" comment-re "*" "\\(?:!DOCTYPE[ 	
+]+[^>]*>[ 	
+]*<[ 	
+]*" comment-re "*\\)?" "[Hh][Tt][Mm][Ll]"))) . mhtml-mode) ("<!DOCTYPE[ 	
+]+[Hh][Tt][Mm][Ll]" . mhtml-mode) ("<\\?xml " . xml-mode) ((\, (let* ((incomment-re "\\(?:[^-]\\|-[^-]\\)") (comment-re (concat "\\(?:!--" incomment-re "*-->[ 	
+]*<\\)"))) (concat "[ 	
 ]*<" comment-re "*!DOCTYPE "))) . sgml-mode) ("%!PS" . ps-mode) ("# xmcd " . conf-unix-mode))))) nil [125065 126608])
             ("put" code nil nil [126609 126665])
             ("magic-mode-regexp-match-limit" variable (:default-value 4000) nil [126667 126809])
@@ -780,7 +780,7 @@
             ("hack-local-variables-confirm" function (:arguments ("all-vars" "unsafe-vars" "risky-vars" "dir-name")) nil [141545 144415])
             ("hack-local-variable-regexp" variable
                (:constant-flag t
-                :default-value "[ 	]*\\([^][;\"'?()\\ 	
+                :default-value "[ 	]*\\([^][;\"'?()\\ 	
 ]+\\)[ 	]*:[ 	]*")
                 nil [144417 144504])
             ("hack-local-variables-prop-line" function (:arguments ("handle-mode")) nil [144506 147784])
@@ -1453,7 +1453,237 @@
       :pointmax 109805
       :fsize 109804
       :lastmodtime '(23603 24958 0 0)
-      :unmatched-syntax nil))
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("read-file-local-variable" function (:arguments ("prompt")) nil [1155 1917])
+            ("read-file-local-variable-value" function (:arguments ("variable")) nil [1919 3571])
+            ("read-file-local-variable-mode" function nil nil [3573 4410])
+            ("modify-file-local-variable-message" function (:arguments ("variable" "value" "op")) nil [4412 5507])
+            ("modify-file-local-variable" function (:arguments ("variable" "value" "op" "interactive")) nil [5509 8837])
+            ("add-file-local-variable" function
+               (:user-visible-flag t
+                :arguments ("variable" "value" "interactive"))
+                nil [8854 9888])
+            ("delete-file-local-variable" function
+               (:user-visible-flag t
+                :arguments ("variable" "interactive"))
+                nil [9905 10198])
+            ("modify-file-local-variable-prop-line" function (:arguments ("variable" "value" "op" "interactive")) nil [10200 14745])
+            ("add-file-local-variable-prop-line" function
+               (:user-visible-flag t
+                :arguments ("variable" "value" "interactive"))
+                nil [14762 15389])
+            ("delete-file-local-variable-prop-line" function
+               (:user-visible-flag t
+                :arguments ("variable" "interactive"))
+                nil [15406 15711])
+            ("auto-insert" variable nil nil [15713 15733])
+            ("modify-dir-local-variable" function (:arguments ("mode" "variable" "value" "op")) nil [15756 19315])
+            ("add-dir-local-variable" function
+               (:user-visible-flag t
+                :arguments ("mode" "variable" "value"))
+                nil [19332 19740])
+            ("delete-dir-local-variable" function
+               (:user-visible-flag t
+                :arguments ("mode" "variable"))
+                nil [19757 20062])
+            ("copy-file-locals-to-dir-locals" function (:user-visible-flag t) nil [20079 20347])
+            ("copy-dir-locals-to-file-locals" function (:user-visible-flag t) nil [20364 20578])
+            ("copy-dir-locals-to-file-locals-prop-line" function (:user-visible-flag t) nil [20595 20817])
+            ("enable-connection-local-variables" variable (:default-value t) nil [20869 20973])
+            ("connection-local-variables-alist" variable nil nil [20975 21305])
+            ("make-variable-buffer-local" code nil nil [21306 21368])
+            ("setq" code nil nil [21369 21470])
+            ("connection-local-profile-alist" variable (:default-value (quote nil)) nil [21472 21845])
+            ("connection-local-criteria-alist" variable (:default-value (quote nil)) nil [21847 22391])
+            ("connection-local-normalize-criteria" function (:arguments ("criteria")) nil [22393 22768])
+            ("connection-local-get-profiles" function (:arguments ("criteria")) nil [22770 23503])
+            ("connection-local-set-profiles" function (:arguments ("criteria" "profiles")) nil [23520 24660])
+            ("connection-local-get-profile-variables" function (:arguments ("profile")) nil [24662 24834])
+            ("connection-local-set-profile-variables" function (:arguments ("profile" "variables")) nil [24851 25544])
+            ("hack-connection-local-variables" function (:arguments ("criteria")) nil [25546 26196])
+            ("hack-connection-local-variables-apply" function (:arguments ("criteria")) nil [26213 26581])
+            ("with-connection-local-profiles" function (:arguments ("profiles" "body")) nil [26598 27418])
+            ("files-x" package nil nil [27423 27441]))          
+      :file "files-x.el"
+      :pointmax 27468
+      :fsize 27467
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("when" code nil nil [1088 1364])
+            ("file-name-buffer-file-type-alist" variable (:default-value (quote (("[:/].*config.sys$") ("\\.\\(obj\\|exe\\|com\\|lib\\|sys\\|bin\\|ico\\|pif\\|class\\)$" . t) ("\\.\\(dll\\|drv\\|386\\|vxd\\|fon\\|fnt\\|fot\\|ttf\\|grp\\)$" . t) ("\\.\\(bmp\\|wav\\|avi\\|mpg\\|jpg\\|tif\\|mov\\|au\\)$" . t) ("\\.\\(arc\\|zip\\|pak\\|lzh\\|zoo\\)$" . t) ("\\.\\(a\\|o\\|tar\\|z\\|gz\\|taz\\|jar\\)$" . t) ("\\.sx[dmicw]$" . t) ("\\.tp[ulpw]$" . t) ("[:/]tags$")))) nil [1445 2463])
+            ("make-obsolete-variable" code nil nil [2465 2562])
+            ("find-buffer-file-type-coding-system" function (:arguments ("command")) nil [2564 6270])
+            ("make-obsolete" code nil nil [6271 6334])
+            ("find-file-binary" function
+               (:user-visible-flag t
+                :arguments ("filename"))
+                nil [6336 6673])
+            ("find-file-text" function
+               (:user-visible-flag t
+                :arguments ("filename"))
+                nil [6675 6872])
+            ("w32-find-file-not-found-set-buffer-file-coding-system" function nil nil [6874 7500])
+            ("add-hook" code nil nil [7552 7651])
+            ("define-obsolete-variable-alias" code nil nil [7723 7828])
+            ("w32-untranslated-filesystem-list" variable nil nil [7829 8066])
+            ("w32-untranslated-canonical-name" function (:arguments ("filename")) nil [8068 9050])
+            ("w32-untranslated-file-p" function (:arguments ("filename")) nil [9052 9472])
+            ("define-obsolete-function-alias" code nil nil [9474 9577])
+            ("w32-add-untranslated-filesystem" function
+               (:user-visible-flag t
+                :arguments ("filesystem"))
+                nil [9578 10289])
+            ("define-obsolete-function-alias" code nil nil [10292 10401])
+            ("w32-remove-untranslated-filesystem" function
+               (:user-visible-flag t
+                :arguments ("filesystem"))
+                nil [10402 10899])
+            ("define-obsolete-variable-alias" code nil nil [10974 11101])
+            ("w32-direct-print-region-use-command-dot-com" variable (:default-value t) nil [11102 11264])
+            ("w32-direct-print-region-helper" function (:arguments ("printer" "start" "end" "lpr-prog" "_delete-text" "_buf" "_display" "rest")) nil [11379 15529])
+            ("printer-name" variable nil nil [15531 15552])
+            ("declare-function" code nil nil [15554 15604])
+            ("define-obsolete-function-alias" code nil nil [15606 15711])
+            ("w32-direct-print-region-function" function (:arguments ("start" "end" "lpr-prog" "delete-text" "buf" "display" "rest")) nil [15712 17244])
+            ("lpr-headers-switches" variable nil nil [17246 17275])
+            ("when" code nil nil [17746 17857])
+            ("ps-printer-name" variable nil nil [17859 17883])
+            ("define-obsolete-function-alias" code nil nil [17885 17996])
+            ("w32-direct-ps-print-region-function" function (:arguments ("start" "end" "lpr-prog" "delete-text" "buf" "display" "rest")) nil [17997 18832])
+            ("dos-w32" package nil nil [18962 18980]))          
+      :file "dos-w32.el"
+      :pointmax 19007
+      :fsize 19006
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1050 1067])
+            ("obarray" include nil nil [1069 1087])
+            ("abbrev-mode" customgroup (:user-visible-flag t) nil [1089 1203])
+            ("abbrev-file-name" variable (:default-value (locate-user-emacs-file "abbrev_defs" ".abbrev_defs")) nil [1205 1395])
+            ("only-global-abbrevs" variable nil nil [1397 1648])
+            ("define-minor-mode" code nil nil [1650 2078])
+            ("put" code nil nil [2080 2129])
+            ("edit-abbrevs-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "" (quote abbrev-edit-save-buffer)) (define-key map "" (quote abbrev-edit-save-to-file)) (define-key map "" (quote edit-abbrevs-redefine)) map)) nil [2133 2413])
+            ("define-obsolete-variable-alias" code nil nil [2414 2496])
+            ("kill-all-abbrevs" function (:user-visible-flag t) nil [2498 2669])
+            ("copy-abbrev-table" function (:arguments ("table")) nil [2671 3009])
+            ("insert-abbrevs" function (:user-visible-flag t) nil [3011 3297])
+            ("list-abbrevs" function
+               (:user-visible-flag t
+                :arguments ("local"))
+                nil [3299 3597])
+            ("abbrev-table-name" function (:arguments ("table")) nil [3599 3885])
+            ("prepare-abbrev-list-buffer" function (:arguments ("local")) nil [3887 4773])
+            ("edit-abbrevs" function (:user-visible-flag t) nil [4775 5791])
+            ("edit-abbrevs-redefine" function (:user-visible-flag t) nil [5793 5988])
+            ("define-abbrevs" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [5990 6988])
+            ("read-abbrev-file" function
+               (:user-visible-flag t
+                :arguments ("file" "quietly"))
+                nil [6990 7507])
+            ("quietly-read-abbrev-file" function (:arguments ("file")) nil [7509 7834])
+            ("write-abbrev-file" function
+               (:user-visible-flag t
+                :arguments ("file" "verbose"))
+                nil [7836 9595])
+            ("abbrev-edit-save-to-file" function
+               (:user-visible-flag t
+                :arguments ("file"))
+                nil [9597 9917])
+            ("abbrev-edit-save-buffer" function (:user-visible-flag t) nil [9919 10152])
+            ("add-mode-abbrev" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [10156 10696])
+            ("add-global-abbrev" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [10698 11188])
+            ("add-abbrev" function (:arguments ("table" "type" "arg")) nil [11190 11783])
+            ("inverse-add-mode-abbrev" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [11785 12216])
+            ("inverse-add-global-abbrev" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [12218 12561])
+            ("inverse-add-abbrev" function (:arguments ("table" "type" "arg")) nil [12563 13174])
+            ("abbrev-prefix-mark" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [13176 13837])
+            ("expand-region-abbrevs" function
+               (:user-visible-flag t
+                :arguments ("start" "end" "noquery"))
+                nil [13839 14534])
+            ("abbrev-table-get" function (:arguments ("table" "prop")) nil [14560 14713])
+            ("abbrev-table-put" function (:arguments ("table" "prop" "val")) nil [14715 14945])
+            ("defalias" code nil nil [14947 15036])
+            ("defalias" code nil nil [15038 15208])
+            ("abbrev-table-name-list" variable (:default-value (quote (fundamental-mode-abbrev-table global-abbrev-table))) nil [15264 15405])
+            ("make-abbrev-table" function (:arguments ("props")) nil [15407 16146])
+            ("abbrev-table-p" function (:arguments ("object")) nil [16148 16318])
+            ("abbrev-table-empty-p" function (:arguments ("object" "ignore-system")) nil [16320 16900])
+            ("global-abbrev-table" variable (:default-value (make-abbrev-table)) nil [16902 17149])
+            ("abbrev-minor-mode-table-alist" variable nil nil [17151 17406])
+            ("fundamental-mode-abbrev-table" variable (:default-value (let ((table (make-abbrev-table))) (setq-default local-abbrev-table table) table)) nil [17408 17683])
+            ("abbrevs-changed" variable nil nil [17685 17833])
+            ("abbrev-all-caps" variable nil nil [17835 17976])
+            ("abbrev-start-location" variable nil nil [17978 18180])
+            ("abbrev-start-location-buffer" variable nil nil [18182 18360])
+            ("last-abbrev" variable nil nil [18362 18459])
+            ("last-abbrev-text" variable nil nil [18461 18591])
+            ("last-abbrev-location" variable nil nil [18593 18683])
+            ("pre-abbrev-expand-hook" variable nil nil [18860 19135])
+            ("make-obsolete-variable" code nil nil [19136 19215])
+            ("clear-abbrev-table" function (:arguments ("table")) nil [19217 19844])
+            ("define-abbrev" function (:arguments ("table" "name" "expansion" "hook" "props")) nil [19846 22987])
+            ("abbrev--check-chars" function (:arguments ("abbrev" "global")) nil [22989 23732])
+            ("define-global-abbrev" function
+               (:user-visible-flag t
+                :arguments ("abbrev" "expansion"))
+                nil [23734 24092])
+            ("define-mode-abbrev" function
+               (:user-visible-flag t
+                :arguments ("abbrev" "expansion"))
+                nil [24094 24516])
+            ("abbrev--active-tables" function (:arguments ("tables")) nil [24518 25565])
+            ("abbrev--symbol" function (:arguments ("abbrev" "table")) nil [25568 26516])
+            ("abbrev-symbol" function (:arguments ("abbrev" "table")) nil [26518 27212])
+            ("abbrev-expansion" function (:arguments ("abbrev" "table")) nil [27215 27475])
+            ("abbrev--before-point" function nil nil [27478 30096])
+            ("abbrev-insert" function (:arguments ("abbrev" "name" "wordstart" "wordend")) nil [30098 33142])
+            ("abbrev-expand-functions" variable nil nil [33144 33230])
+            ("make-obsolete-variable" code nil nil [33231 33311])
+            ("abbrev-expand-function" variable (:default-value (function abbrev--default-expand)) nil [33313 33516])
+            ("expand-abbrev" function (:user-visible-flag t) nil [33518 34009])
+            ("abbrev--default-expand" function nil nil [34011 35530])
+            ("unexpand-abbrev" function (:user-visible-flag t) nil [35532 36430])
+            ("abbrev--write" function (:arguments ("sym")) nil [36432 36887])
+            ("abbrev--describe" function (:arguments ("sym")) nil [36889 37283])
+            ("insert-abbrev-table-description" function (:arguments ("name" "readable")) nil [37285 38326])
+            ("define-abbrev-table" function (:arguments ("tablename" "definitions" "docstring" "props")) nil [38328 40617])
+            ("abbrev-table-menu" function (:arguments ("table" "prompt" "sortfun")) nil [40619 41470])
+            ("define-derived-mode" code nil nil [41565 41779])
+            ("abbrev" package nil nil [41781 41798]))          
+      :file "abbrev.el"
+      :pointmax 41824
+      :fsize 41823
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax '((close-paren 1067 . 1068) (symbol 1032 . 1049) (open-paren 1031 . 1032))))
   :file "!drive_c!Tools!emacs-26.2!share!emacs!26.2!lisp!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

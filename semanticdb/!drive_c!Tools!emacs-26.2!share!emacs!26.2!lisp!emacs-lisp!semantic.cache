@@ -235,7 +235,41 @@
     (semanticdb-table "semanticdb-table"
       :file "cl-macs.el"
       :fsize 136385
-      :lastmodtime '(23603 24958 0 0)))
+      :lastmodtime '(23603 24958 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("defalias" code nil nil [1121 1571])
+            ("function-put" code nil nil [1572 1614])
+            ("function-put" code nil nil [1615 1663])
+            ("macro-declaration-function" variable (:default-value (function macro-declaration-function)) nil [1784 2116])
+            ("defalias" code nil nil [2118 3260])
+            ("defun-declarations-alist" variable (:default-value (list (list (quote advertised-calling-convention) (function (lambda (f _args arglist when) (list (quote set-advertised-calling-convention) (list (quote quote) f) (list (quote quote) arglist) (list (quote quote) when))))) (list (quote obsolete) (function (lambda (f _args new-name when) (list (quote make-obsolete) (list (quote quote) f) (list (quote quote) new-name) (list (quote quote) when))))) (list (quote interactive-only) (function (lambda (f _args instead) (list (quote function-put) (list (quote quote) f) (quote (quote interactive-only)) (list (quote quote) instead))))) (list (quote pure) (function (lambda (f _args val) (list (quote function-put) (list (quote quote) f) (quote (quote pure)) (list (quote quote) val)))) "If non-nil, the compiler can replace calls with their return value.
+This may shift errors from run-time to compile-time.") (list (quote side-effect-free) (function (lambda (f _args val) (list (quote function-put) (list (quote quote) f) (quote (quote side-effect-free)) (list (quote quote) val)))) "If non-nil, calls can be ignored if their value is unused.
+If `error-free', drop calls even if `byte-compile-delete-errors' is nil.") (list (quote compiler-macro) (function (lambda (f args compiler-function) (if (not (eq (car-safe compiler-function) (quote lambda))) (\` (eval-and-compile (function-put (quote (\, f)) (quote compiler-macro) (function (\, compiler-function))))) (let ((cfname (intern (concat (symbol-name f) "--anon-cmacro")))) (\` (progn (eval-and-compile (function-put (quote (\, f)) (quote compiler-macro) (function (\, cfname)))) :autoload-end (eval-and-compile (defun (\, cfname) ((\,@ (cadr compiler-function)) (\,@ args)) (\,@ (cddr compiler-function))))))))))) (list (quote doc-string) (function (lambda (f _args pos) (list (quote function-put) (list (quote quote) f) (quote (quote doc-string-elt)) (list (quote quote) pos))))) (list (quote indent) (function (lambda (f _args val) (list (quote function-put) (list (quote quote) f) (quote (quote lisp-indent-function)) (list (quote quote) val))))))) nil [3516 6460])
+            ("macro-declarations-alist" variable (:default-value (cons (list (quote debug) (function (lambda (name _args spec) (list (quote progn) :autoload-end (list (quote put) (list (quote quote) name) (quote (quote edebug-form-spec)) (list (quote quote) spec)))))) (cons (list (quote no-font-lock-keyword) (function (lambda (name _args val) (list (quote function-put) (list (quote quote) name) (quote (quote no-font-lock-keyword)) (list (quote quote) val))))) defun-declarations-alist))) nil [6462 7237])
+            ("defalias" code nil nil [7239 9492])
+            ("defun" function (:arguments ("name" "arglist" "docstring" "body")) nil [9541 12124])
+            ("defalias" code nil nil [12206 12392])
+            ("defsubst" function (:arguments ("name" "arglist" "body")) nil [13403 13875])
+            ("advertised-signature-table" variable (:default-value (make-hash-table :test (quote eq) :weakness (quote key))) nil [13877 13955])
+            ("set-advertised-calling-convention" function (:arguments ("function" "signature" "_when")) nil [13957 14327])
+            ("make-obsolete" function (:arguments ("obsolete-name" "current-name" "when")) nil [14329 15222])
+            ("define-obsolete-function-alias" function (:arguments ("obsolete-name" "current-name" "when" "docstring")) nil [15224 16191])
+            ("make-obsolete-variable" function (:arguments ("obsolete-name" "current-name" "when" "access-type")) nil [16193 17024])
+            ("define-obsolete-variable-alias" function (:arguments ("obsolete-name" "current-name" "when" "docstring")) nil [17027 18868])
+            ("define-obsolete-face-alias" function (:arguments ("obsolete-face" "current-face" "when")) nil [19198 19634])
+            ("dont-compile" function (:arguments ("body")) nil [19636 19945])
+            ("eval-when-compile" function (:arguments ("body")) nil [20188 20681])
+            ("eval-and-compile" function (:arguments ("body")) nil [20683 21269])
+            ("with-no-warnings" function (:arguments ("body")) nil [21271 21479])
+            ("make-obsolete-variable" code nil nil [22774 22883])
+            ("make-obsolete" code nil nil [22884 22975]))          
+      :file "byte-run.el"
+      :pointmax 23003
+      :fsize 23002
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil))
   :file "!drive_c!Tools!emacs-26.2!share!emacs!26.2!lisp!emacs-lisp!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

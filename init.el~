@@ -28,7 +28,7 @@
 ;;                         ("melpa" . "https://melpa.org/packages/")))
 
 ;; MELPA-stable
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t) 
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 ;; Marmalade
 (add-to-list 'package-archives  '("marmalade" . "http://marmalade-repo.org/packages/") t)
@@ -106,12 +106,36 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
+ '(dumb-jump-mode t)
  '(package-selected-packages
 	 (quote
-		(helm-gtags smartparens srefactor helm ctags color-theme auto-complete))))
+		(ripgrep dumb-jump sr-speedbar helm-gtags smartparens srefactor helm ctags color-theme auto-complete))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Ricty Diminished for Powerline" :foundry "outline" :slant normal :weight normal :height 109 :width normal)))))
+
+;;;; semantic
+(semantic-mode 1)
+(global-semantic-idle-scheduler-mode 1)
+(global-semanticdb-minor-mode 1)
+(global-semantic-idle-completions-mode 1)
+(global-semantic-decoration-mode 1)
+(global-semantic-stickyfunc-mode 1)
+(global-semantic-mru-bookmark-mode 1)
+
+;;;; srefactor
+(require 'srefactor)
+(require 'srefactor-lisp)
+(define-key c-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
+(define-key c++-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
+
+
+;;;; dumb-jump
+(require 'dumb-jump)
+(setq dumb-jump-default-project "")
+(setq dumb-jump-mode t)
+(setq dumb-jump-selector 'helm)
+(setq dumb-jump-use-prefer-searcher 'rg)
