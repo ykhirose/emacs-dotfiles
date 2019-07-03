@@ -78,16 +78,13 @@
 ;; TAB count
 (setq-default tab-width 2)
 
-;; Highlight current line
-(defface my-hl-line-face
-	'((((class color) (background dark))
-		 (:background "DarkSlateGrey" t))
-		(((class color) (background light))
-		 (:background "LightGoldenrodYellow" t))
-		(t (:bold t)))
-	"hl-line's my face")
-(setq hl-line-face 'myp-hl-line-face)
-(global-hl-line-mode t)
+;; highlight brackets
+(show-paren-mode t)
+(setq sow-paren-style 'parenthesis)
+
+;; highlight current line
+(global-hl-line-mode 1)
+(set-face-background 'hl-line "gray20")
 
 ;;; helm
 (require 'helm)
@@ -109,7 +106,7 @@
  '(dumb-jump-mode t)
  '(package-selected-packages
 	 (quote
-		(ripgrep dumb-jump sr-speedbar helm-gtags smartparens srefactor helm ctags color-theme auto-complete))))
+		(magit cmake-mode ripgrep dumb-jump sr-speedbar helm-gtags smartparens srefactor helm ctags color-theme auto-complete))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -125,6 +122,8 @@
 (global-semantic-decoration-mode 1)
 (global-semantic-stickyfunc-mode 1)
 (global-semantic-mru-bookmark-mode 1)
+(global-set-key (kbd "C-c h") 'helm-semantic-or-imenu)
+
 
 ;;;; srefactor
 (require 'srefactor)
@@ -139,3 +138,10 @@
 (setq dumb-jump-mode t)
 (setq dumb-jump-selector 'helm)
 (setq dumb-jump-use-prefer-searcher 'rg)
+(setq ripgrep-executable "C:\Tools\ripgrep-11.0.1-i686-pc-windows-msvc\rg.exe")
+(setq ripgrep-arguments '("-S"))
+
+;;;; cmake-mode
+(require 'cmake-mode)
+
+

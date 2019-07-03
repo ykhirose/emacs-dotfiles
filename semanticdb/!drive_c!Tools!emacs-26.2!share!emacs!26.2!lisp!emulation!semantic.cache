@@ -1,0 +1,84 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("viper-version" variable
+               (:constant-flag t
+                :default-value "3.14.2 of July 4, 2013")
+                nil [627 709])
+            ("cl-lib" include nil nil [13694 13711])
+            ("mark-even-if-inactive" variable nil nil [13734 13764])
+            ("quail-mode" variable nil nil [13765 13784])
+            ("viper-expert-level" variable nil nil [13785 13812])
+            ("viper-mode-string" variable nil nil [13813 13839])
+            ("viper-major-mode-modifier-list" variable nil nil [13840 13879])
+            ("viper-init" include nil nil [13897 13918])
+            ("viper-keym" include nil nil [13919 13940])
+            ("viper-custom-file-name" variable (:default-value (locate-user-emacs-file "viper" ".viper")) nil [13990 14171])
+            ("viper" customgroup (:user-visible-flag t) nil [14173 14335])
+            ("viper-cmd" include nil nil [14337 14357])
+            ("viper-misc" customgroup (:user-visible-flag t) nil [14359 14458])
+            ("viper-always" variable (:default-value t) nil [14461 14810])
+            ("viper-saved-non-viper-variables" variable nil nil [14907 14951])
+            ("viper-mode" variable (:default-value (cond (noninteractive nil) (t (quote ask)))) nil [14953 15409])
+            ("viper-vi-state-mode-list" variable (:default-value (quote (fundamental-mode makefile-mode awk-mode m4-mode xrdb-mode winmgr-mode autoconf-mode cvs-edit-mode html-mode html-helper-mode emacs-lisp-mode lisp-mode lisp-interaction-mode jde-mode java-mode cc-mode c-mode c++-mode objc-mode fortran-mode f90-mode basic-mode bat-mode asm-mode prolog-mode flora-mode sql-mode text-mode indented-text-mode tex-mode latex-mode bibtex-mode ps-mode diff-mode idl-mode perl-mode cperl-mode javascript-mode tcl-mode python-mode sh-mode ksh-mode csh-mode gnus-article-mode mh-show-mode))) nil [15411 16201])
+            ("viper-emacs-state-mode-list" variable (:default-value (quote (Custom-mode dired-mode efs-mode tar-mode egg-status-buffer-mode browse-kill-ring-mode recentf-mode recentf-dialog-mode occur-mode mh-folder-mode gnus-group-mode gnus-summary-mode completion-list-mode help-mode Info-mode Buffer-menu-mode compilation-mode rcirc-mode jde-javadoc-checker-report-mode view-mode vm-mode vm-summary-mode))) nil [16203 17018])
+            ("viper-insert-state-mode-list" variable (:default-value (quote (internal-ange-ftp-mode comint-mode gud-mode inferior-emacs-lisp-mode erc-mode eshell-mode shell-mode))) nil [17020 17281])
+            ("viper-apply-major-mode-modifiers" function (:arguments ("symbol" "value")) nil [17343 17620])
+            ("viper-major-mode-modifier-list" variable (:default-value (quote ((help-mode emacs-state viper-slash-and-colon-map) (comint-mode insert-state viper-comint-mode-modifier-map) (comint-mode vi-state viper-comint-mode-modifier-map) (gud-mode insert-state viper-comint-mode-modifier-map) (shell-mode insert-state viper-comint-mode-modifier-map) (inferior-emacs-lisp-mode insert-state viper-comint-mode-modifier-map) (shell-mode vi-state viper-comint-mode-modifier-map) (ange-ftp-shell-mode insert-state viper-comint-mode-modifier-map) (ange-ftp-shell-mode vi-state viper-comint-mode-modifier-map) (internal-ange-ftp-mode insert-state viper-comint-mode-modifier-map) (internal-ange-ftp-mode vi-state viper-comint-mode-modifier-map) (dired-mode emacs-state viper-dired-modifier-map) (tar-mode emacs-state viper-slash-and-colon-map) (mh-folder-mode emacs-state viper-slash-and-colon-map) (gnus-group-mode emacs-state viper-gnus-modifier-map) (gnus-summary-mode emacs-state viper-gnus-modifier-map) (Info-mode emacs-state viper-slash-and-colon-map) (Buffer-menu-mode emacs-state viper-slash-and-colon-map) (erc-mode insert-state viper-comint-mode-modifier-map) (erc-mode vi-state viper-comint-mode-modifier-map)))) nil [17748 19789])
+            ("toggle-viper-mode" function (:user-visible-flag t) nil [19809 20026])
+            ("viper-mode" function (:user-visible-flag t) nil [20043 23382])
+            ("this-major-mode-requires-vi-state" function (:arguments ("mode")) nil [23498 23904])
+            ("viper-comint-mode-hook" function nil nil [23981 24167])
+            ("viper-remove-hooks" function (:arguments ("symbol")) nil [24204 24845])
+            ("viper-delocalize-var" function (:arguments ("symbol")) nil [24959 25092])
+            ("viper--advice-list" variable nil nil [25094 25125])
+            ("viper--advice-add" function (:arguments ("function" "where" "advice")) nil [25127 25264])
+            ("viper--deactivate-advice-list" function nil nil [25266 25451])
+            ("viper-go-away" function (:user-visible-flag t) nil [25453 30405])
+            ("viper-new-major-mode-buffer-list" variable nil nil [30546 30591])
+            ("set-viper-state-in-major-mode" function nil nil [30659 31722])
+            ("viper-major-mode-change-sentinel" function nil nil [31811 32141])
+            ("viper--tty-ESC-filter" function (:arguments ("map")) nil [32865 33029])
+            ("viper--lookup-key" function (:arguments ("map" "key")) nil [33031 33362])
+            ("viper-catch-tty-ESC" function nil nil [33364 33690])
+            ("viper-uncatch-tty-ESC" function nil nil [33692 33978])
+            ("viper-setup-ESC-to-escape" function (:arguments ("enable")) nil [33980 34426])
+            ("viper-set-hooks" function nil nil [34492 40246])
+            ("viper-non-hook-settings" function nil nil [40327 46601])
+            ("cond" code nil nil [46705 47788])
+            ("viper-load-custom-file" function nil nil [47790 47936])
+            ("if" code nil nil [47991 48575])
+            ("if" code nil nil [48731 49875])
+            ("if" code nil nil [50042 50697])
+            ("define-key" code nil nil [50825 50900])
+            ("define-key" code nil nil [50901 50980])
+            ("define-key" code nil nil [51206 51283])
+            ("define-key" code nil nil [51284 51368])
+            ("when" code nil nil [51623 53798])
+            ("run-hooks" code nil nil [53802 53830])
+            ("viper" package nil nil [53870 53886]))          
+      :file "viper.el"
+      :pointmax 54000
+      :fsize 53999
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "viper-init.el"
+      :fsize 36423
+      :lastmodtime '(23603 24958 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "viper-keym.el"
+      :fsize 28679
+      :lastmodtime '(23603 24958 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "viper-cmd.el"
+      :fsize 174510
+      :lastmodtime '(23603 24958 0 0)))
+  :file "!drive_c!Tools!emacs-26.2!share!emacs!26.2!lisp!emulation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

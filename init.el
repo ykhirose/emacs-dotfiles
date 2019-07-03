@@ -78,16 +78,13 @@
 ;; TAB count
 (setq-default tab-width 2)
 
-;; Highlight current line
-(defface my-hl-line-face
-	'((((class color) (background dark))
-		 (:background "DarkSlateGrey" t))
-		(((class color) (background light))
-		 (:background "LightGoldenrodYellow" t))
-		(t (:bold t)))
-	"hl-line's my face")
-(setq hl-line-face 'myp-hl-line-face)
-(global-hl-line-mode t)
+;; highlight brackets
+(show-paren-mode t)
+(setq sow-paren-style 'parenthesis)
+
+;; highlight current line
+(global-hl-line-mode 1)
+(set-face-background 'hl-line "gray20")
 
 ;;; helm
 (require 'helm)
@@ -109,7 +106,7 @@
  '(dumb-jump-mode t)
  '(package-selected-packages
 	 (quote
-		(cmake-mode ripgrep dumb-jump sr-speedbar helm-gtags smartparens srefactor helm ctags color-theme auto-complete))))
+		(wget magit cmake-mode ripgrep dumb-jump sr-speedbar helm-gtags smartparens srefactor helm ctags color-theme auto-complete))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -146,3 +143,5 @@
 
 ;;;; cmake-mode
 (require 'cmake-mode)
+
+

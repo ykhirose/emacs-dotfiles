@@ -1,0 +1,126 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [945 962])
+            ("gamegrid" include nil nil [965 984])
+            ("tetris" customgroup (:user-visible-flag t) nil [1066 1150])
+            ("tetris-use-glyphs" variable (:default-value t) nil [1152 1262])
+            ("tetris-use-color" variable (:default-value t) nil [1264 1372])
+            ("tetris-draw-border-with-glyphs" variable (:default-value t) nil [1374 1508])
+            ("tetris-default-tick-period" variable (:default-value 0.3) nil [1510 1641])
+            ("tetris-update-speed-function" variable (:default-value (quote tetris-default-update-speed-function)) nil [1643 2027])
+            ("tetris-mode-hook" variable nil nil [2029 2127])
+            ("tetris-tty-colors" variable (:default-value ["blue" "white" "yellow" "magenta" "cyan" "green" "red"]) nil [2129 2488])
+            ("tetris-x-colors" variable (:default-value [[0 0 1] [0.7 0 1] [1 1 0] [1 0 1] [0 1 1] [0 1 0] [1 0 0]]) nil [2490 3079])
+            ("tetris-buffer-name" variable (:default-value "*Tetris*") nil [3081 3188])
+            ("tetris-buffer-width" variable (:default-value 30) nil [3190 3294])
+            ("tetris-buffer-height" variable (:default-value 22) nil [3296 3402])
+            ("tetris-width" variable (:default-value 10) nil [3404 3491])
+            ("tetris-height" variable (:default-value 20) nil [3493 3582])
+            ("tetris-top-left-x" variable (:default-value 3) nil [3584 3692])
+            ("tetris-top-left-y" variable (:default-value 1) nil [3694 3802])
+            ("tetris-next-x" variable (:default-value (+ (* 2 tetris-top-left-x) tetris-width)) nil [3804 3897])
+            ("tetris-next-y" variable (:default-value tetris-top-left-y) nil [3899 3969])
+            ("tetris-score-x" variable (:default-value tetris-next-x) nil [3971 4033])
+            ("tetris-score-y" variable (:default-value (+ tetris-next-y 6)) nil [4035 4103])
+            ("tetris-score-file" variable (:default-value "tetris-scores") nil [4233 4443])
+            ("tetris-blank-options" variable (:default-value (quote (((glyph colorize) (t 32)) ((color-x color-x) (mono-x grid-x) (color-tty color-tty)) (((glyph color-x) [0 0 0]) (color-tty "black"))))) nil [4525 4722])
+            ("tetris-cell-options" variable (:default-value (quote (((glyph colorize) (emacs-tty 79) (t 32)) ((color-x color-x) (mono-x mono-x) (color-tty color-tty) (mono-tty mono-tty))))) nil [4724 4990])
+            ("tetris-border-options" variable (:default-value (quote (((glyph colorize) (t 43)) ((color-x color-x) (mono-x grid-x) (color-tty color-tty)) (((glyph color-x) [0.5 0.5 0.5]) (color-tty "white"))))) nil [4992 5194])
+            ("tetris-space-options" variable (:default-value (quote (((t 32)) nil nil))) nil [5196 5258])
+            ("tetris-shapes" variable
+               (:constant-flag t
+                :default-value [[[[0 0] [1 0] [0 1] [1 1]]] [[[0 0] [1 0] [2 0] [2 1]] [[1 -1] [1 0] [1 1] [0 1]] [[0 -1] [0 0] [1 0] [2 0]] [[1 -1] [2 -1] [1 0] [1 1]]] [[[0 0] [1 0] [2 0] [0 1]] [[0 -1] [1 -1] [1 0] [1 1]] [[2 -1] [0 0] [1 0] [2 0]] [[1 -1] [1 0] [1 1] [2 1]]] [[[0 0] [1 0] [1 1] [2 1]] [[1 0] [0 1] [1 1] [0 2]]] [[[1 0] [2 0] [0 1] [1 1]] [[0 0] [0 1] [1 1] [1 2]]] [[[1 0] [0 1] [1 1] [2 1]] [[1 0] [1 1] [2 1] [1 2]] [[0 1] [1 1] [2 1] [1 2]] [[1 0] [0 1] [1 1] [1 2]]] [[[0 0] [1 0] [2 0] [3 0]] [[1 -1] [1 0] [1 1] [1 2]]]])
+                nil [5340 6126])
+            ("tetris-shape-scores" variable
+               (:constant-flag t
+                :default-value [[6] [6 7 6 7] [6 7 6 7] [6 7] [6 7] [5 5 6 5] [5 8]])
+                nil [6232 6319])
+            ("tetris-shape-dimensions" variable
+               (:constant-flag t
+                :default-value [[2 2] [3 2] [3 2] [3 2] [3 2] [3 2] [4 1]])
+                nil [6321 6401])
+            ("tetris-blank" variable
+               (:constant-flag t
+                :default-value 7)
+                nil [6403 6428])
+            ("tetris-border" variable
+               (:constant-flag t
+                :default-value 8)
+                nil [6430 6456])
+            ("tetris-space" variable
+               (:constant-flag t
+                :default-value 9)
+                nil [6458 6483])
+            ("tetris-default-update-speed-function" function (:arguments ("_shapes" "rows")) nil [6485 6569])
+            ("tetris-shape" variable nil nil [6651 6674])
+            ("tetris-rot" variable nil nil [6675 6696])
+            ("tetris-next-shape" variable nil nil [6697 6725])
+            ("tetris-n-shapes" variable nil nil [6726 6752])
+            ("tetris-n-rows" variable nil nil [6753 6777])
+            ("tetris-score" variable nil nil [6778 6801])
+            ("tetris-pos-x" variable nil nil [6802 6825])
+            ("tetris-pos-y" variable nil nil [6826 6849])
+            ("tetris-paused" variable nil nil [6850 6876])
+            ("make-variable-buffer-local" code nil nil [6878 6920])
+            ("make-variable-buffer-local" code nil nil [6921 6961])
+            ("make-variable-buffer-local" code nil nil [6962 7009])
+            ("make-variable-buffer-local" code nil nil [7010 7055])
+            ("make-variable-buffer-local" code nil nil [7056 7099])
+            ("make-variable-buffer-local" code nil nil [7100 7142])
+            ("make-variable-buffer-local" code nil nil [7143 7185])
+            ("make-variable-buffer-local" code nil nil [7186 7228])
+            ("make-variable-buffer-local" code nil nil [7229 7272])
+            ("tetris-mode-map" variable (:default-value (let ((map (make-sparse-keymap (quote tetris-mode-map)))) (define-key map "n" (quote tetris-start-game)) (define-key map "q" (quote tetris-end-game)) (define-key map "p" (quote tetris-pause-game)) (define-key map " " (quote tetris-move-bottom)) (define-key map [left] (quote tetris-move-left)) (define-key map [right] (quote tetris-move-right)) (define-key map [up] (quote tetris-rotate-prev)) (define-key map [down] (quote tetris-move-down)) map)) nil [7354 7806])
+            ("tetris-null-map" variable (:default-value (let ((map (make-sparse-keymap (quote tetris-null-map)))) (define-key map "n" (quote tetris-start-game)) map)) nil [7808 7939])
+            ("tetris-display-options" function nil nil [8021 8647])
+            ("tetris-get-tick-period" function nil nil [8649 8865])
+            ("tetris-get-shape-cell" function (:arguments ("block")) nil [8867 9001])
+            ("tetris-shape-width" function nil nil [9003 9087])
+            ("tetris-shape-rotations" function nil nil [9089 9167])
+            ("tetris-draw-score" function nil nil [9169 9617])
+            ("tetris-update-score" function nil nil [9619 9759])
+            ("tetris-new-shape" function nil nil [9761 10108])
+            ("tetris-draw-next-shape" function nil nil [10110 10649])
+            ("tetris-draw-shape" function nil nil [10651 11032])
+            ("tetris-erase-shape" function nil nil [11034 11416])
+            ("tetris-test-shape" function nil nil [11418 12015])
+            ("tetris-full-row" function (:arguments ("y")) nil [12017 12270])
+            ("tetris-shift-row" function (:arguments ("y")) nil [12272 12707])
+            ("tetris-shift-down" function nil nil [12709 12924])
+            ("tetris-draw-border-p" function nil nil [12926 13041])
+            ("tetris-init-buffer" function nil nil [13043 14037])
+            ("tetris-reset-game" function nil nil [14039 14314])
+            ("tetris-shape-done" function nil nil [14316 14559])
+            ("tetris-update-game" function (:arguments ("tetris-buffer")) nil [14561 14978])
+            ("tetris-move-bottom" function (:user-visible-flag t) nil [14980 15358])
+            ("tetris-move-left" function (:user-visible-flag t) nil [15360 15637])
+            ("tetris-move-right" function (:user-visible-flag t) nil [15639 15911])
+            ("tetris-move-down" function (:user-visible-flag t) nil [15913 16185])
+            ("tetris-rotate-prev" function (:user-visible-flag t) nil [16187 16573])
+            ("tetris-rotate-next" function (:user-visible-flag t) nil [16575 16979])
+            ("tetris-end-game" function (:user-visible-flag t) nil [16981 17167])
+            ("tetris-start-game" function (:user-visible-flag t) nil [17169 17437])
+            ("tetris-pause-game" function (:user-visible-flag t) nil [17439 17632])
+            ("tetris-active-p" function nil nil [17634 17703])
+            ("put" code nil nil [17705 17744])
+            ("define-derived-mode" code nil nil [17746 18438])
+            ("tetris" function (:user-visible-flag t) nil [18455 19377])
+            ("tetris" package nil nil [19379 19396]))          
+      :file "tetris.el"
+      :pointmax 19422
+      :fsize 19421
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax '((close-paren 962 . 963) (symbol 927 . 944) (open-paren 926 . 927)))
+    (semanticdb-table "semanticdb-table"
+      :file "gamegrid.el"
+      :fsize 18704
+      :lastmodtime '(23603 24958 0 0)))
+  :file "!drive_c!Tools!emacs-26.2!share!emacs!26.2!lisp!play!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
