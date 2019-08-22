@@ -1,0 +1,715 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("diary-lib" include nil nil [2643 2663])
+            ("cl-lib" include nil nil [2664 2681])
+            ("todo-directory" variable (:default-value (locate-user-emacs-file "todo/")) nil [2926 3068])
+            ("todo-files" function (:arguments ("archives")) nil [3070 3677])
+            ("todo-files-function" variable (:default-value (function todo-files)) nil [3679 3943])
+            ("todo-files" variable (:default-value (funcall todo-files-function)) nil [3945 4038])
+            ("todo-archives" variable (:default-value (funcall todo-files-function t)) nil [4040 4141])
+            ("todo-visited" variable nil nil [4143 4310])
+            ("todo-file-buffers" variable nil nil [4312 4392])
+            ("todo-global-current-todo-file" variable nil nil [4394 4662])
+            ("todo-current-todo-file" variable nil nil [4664 4764])
+            ("todo-categories" variable nil nil [4766 5081])
+            ("todo-category-number" variable (:default-value 1) nil [5083 5222])
+            ("todo-categories-with-marks" variable nil nil [5224 5328])
+            ("todo-category-beg" variable
+               (:constant-flag t
+                :default-value "--==-- ")
+                nil [5330 5435])
+            ("todo-category-done" variable
+               (:constant-flag t
+                :default-value "==--== DONE ")
+                nil [5437 5536])
+            ("todo-done-separator-string" variable (:default-value "=") nil [5538 6103])
+            ("todo-done-separator" function nil nil [6105 6396])
+            ("todo-done-separator" variable (:default-value (todo-done-separator)) nil [6398 6664])
+            ("todo-show-done-only" variable nil nil [6666 6842])
+            ("todo-nondiary-marker" variable (:default-value (quote ("[" "]"))) nil [6844 7286])
+            ("todo-nondiary-start" variable
+               (:constant-flag t
+                :default-value (nth 0 todo-nondiary-marker))
+                nil [7288 7410])
+            ("todo-nondiary-end" variable
+               (:constant-flag t
+                :default-value (nth 1 todo-nondiary-marker))
+                nil [7412 7537])
+            ("todo-month-name-array" variable
+               (:constant-flag t
+                :default-value (vconcat calendar-month-name-array (vector "*")))
+                nil [7539 7719])
+            ("todo-month-abbrev-array" variable
+               (:constant-flag t
+                :default-value (vconcat calendar-month-abbrev-array (vector "*")))
+                nil [7721 7917])
+            ("with-no-warnings" code nil nil [7919 8174])
+            ("todo-date-pattern" variable
+               (:constant-flag t
+                :default-value (let ((dayname (diary-name-pattern calendar-day-name-array nil t))) (concat "\\(?4:\\(?5:" dayname "\\)\\|" (let ((dayname) (monthname (format "\\(?6:%s\\)" (diary-name-pattern todo-month-name-array todo-month-abbrev-array))) (month "\\(?7:[0-9]+\\|\\*\\)") (day "\\(?8:[0-9]+\\|\\*\\)") (year "-?\\(?9:[0-9]+\\|\\*\\)")) (mapconcat (function eval) calendar-date-display-form "")) "\\)")))
+                nil [8176 8700])
+            ("todo-date-string-start" variable
+               (:constant-flag t
+                :default-value (concat "^\\(" (regexp-quote todo-nondiary-start) "\\|" (regexp-quote diary-nonmarking-symbol) "\\)?"))
+                nil [8860 9070])
+            ("todo-done-string" variable (:default-value "DONE ") nil [9072 9281])
+            ("todo-done-string-start" variable
+               (:constant-flag t
+                :default-value (concat "^\\[" (regexp-quote todo-done-string)))
+                nil [9283 9418])
+            ("todo-item-start" variable
+               (:constant-flag t
+                :default-value (concat "\\(" todo-date-string-start "\\|" todo-done-string-start "\\)" todo-date-pattern))
+                nil [9420 9592])
+            ("todo-prefix" variable nil nil [9787 10215])
+            ("todo-number-prefix" variable (:default-value t) nil [10217 10484])
+            ("todo-mode-line-control" function (:arguments ("cat")) nil [10486 10844])
+            ("todo-mode-line-function" variable (:default-value (function todo-mode-line-control)) nil [10846 11207])
+            ("todo-highlight-item" variable nil nil [11209 11403])
+            ("todo-wrap-lines" variable (:default-value t) nil [11405 11536])
+            ("todo-indent-to-here" variable (:default-value 3) nil [11538 11944])
+            ("todo-indent" function nil nil [11946 12070])
+            ("todo-show-with-done" variable nil nil [12072 12200])
+            ("todo-key-prompt" variable
+               (:default-value (quote ((t (:weight bold))))
+                :type "face")
+                nil [12375 12506])
+            ("todo-mark" variable
+               (:default-value (quote ((((class color) (min-colors 88) (background light)) (:weight bold :foreground "Red1")) (((class color) (min-colors 88) (background dark)) (:weight bold :foreground "Pink")) (((class color) (min-colors 16) (background light)) (:weight bold :foreground "Red1")) (((class color) (min-colors 16) (background dark)) (:weight bold :foreground "Pink")) (((class color) (min-colors 8)) (:foreground "red")) (t (:weight bold :inverse-video t))))
+                :type "face")
+                nil [12508 13172])
+            ("todo-prefix-string" variable
+               (:default-value (quote ((((class grayscale) (background light)) (:foreground "LightGray" :weight bold :underline t)) (((class grayscale) (background dark)) (:foreground "Gray50" :weight bold :underline t)) (((class color) (min-colors 88) (background light)) (:foreground "dark cyan")) (((class color) (min-colors 88) (background dark)) (:foreground "Aquamarine")) (((class color) (min-colors 16) (background light)) (:foreground "CadetBlue")) (((class color) (min-colors 16) (background dark)) (:foreground "Aquamarine")) (((class color) (min-colors 8)) (:foreground "magenta")) (t (:weight bold :underline t))))
+                :type "face")
+                nil [13174 13958])
+            ("todo-top-priority" variable
+               (:default-value (quote ((default :weight bold) (((class grayscale) (background light)) :foreground "DimGray" :slant italic) (((class grayscale) (background dark)) :foreground "LightGray" :slant italic) (((class color) (min-colors 88) (background light)) :foreground "Firebrick") (((class color) (min-colors 88) (background dark)) :foreground "chocolate1") (((class color) (min-colors 16) (background light)) :foreground "red") (((class color) (min-colors 16) (background dark)) :foreground "red1") (((class color) (min-colors 8) (background light)) :foreground "red") (((class color) (min-colors 8) (background dark)) :foreground "yellow") (t :slant italic)))
+                :type "face")
+                nil [13960 14900])
+            ("todo-nondiary" variable
+               (:default-value (quote ((((class grayscale) (background light)) :foreground "Gray90" :weight bold) (((class grayscale) (background dark)) :foreground "DimGray" :weight bold) (((class color) (min-colors 88) (background light)) :foreground "ForestGreen") (((class color) (min-colors 88) (background dark)) :foreground "PaleGreen") (((class color) (min-colors 16) (background light)) :foreground "ForestGreen") (((class color) (min-colors 16) (background dark)) :foreground "PaleGreen") (((class color) (min-colors 8)) :foreground "green") (t :weight bold :underline t)))
+                :type "face")
+                nil [14902 15632])
+            ("todo-date" variable
+               (:default-value (quote ((t :inherit diary)))
+                :type "face")
+                nil [15634 15743])
+            ("todo-time" variable
+               (:default-value (quote ((t :inherit diary-time)))
+                :type "face")
+                nil [15745 15859])
+            ("todo-diary-expired" variable
+               (:default-value (quote ((default :weight bold) (((class color) (min-colors 88) (background light)) :foreground "Blue1") (((class color) (min-colors 88) (background dark)) :foreground "LightSkyBlue") (((class color) (min-colors 16) (background light)) :foreground "Blue") (((class color) (min-colors 16) (background dark)) :foreground "LightSkyBlue") (((class color) (min-colors 8)) :foreground "blue") (t :inverse-video t)))
+                :type "face")
+                nil [15861 16657])
+            ("todo-done-sep" variable
+               (:default-value (quote ((((class grayscale) (background light)) :foreground "LightGray" :weight bold) (((class grayscale) (background dark)) :foreground "DimGray" :weight bold) (((class color) (min-colors 88) (background light)) :foreground "dark slate blue") (((class color) (min-colors 88) (background dark)) :foreground "LightSteelBlue") (((class color) (min-colors 16) (background light)) :foreground "Orchid") (((class color) (min-colors 16) (background dark)) :foreground "LightSteelBlue") (((class color) (min-colors 8)) :foreground "blue" :weight bold) (t :weight bold)))
+                :type "face")
+                nil [16659 17404])
+            ("todo-done" variable
+               (:default-value (quote ((((class grayscale) (background light)) :foreground "LightGray" :weight bold) (((class grayscale) (background dark)) :foreground "DimGray" :weight bold) (((class color) (min-colors 88) (background light)) :foreground "Purple") (((class color) (min-colors 88) (background dark)) :foreground "Cyan1") (((class color) (min-colors 16) (background light)) :foreground "Purple") (((class color) (min-colors 16) (background dark)) :foreground "Cyan") (((class color) (min-colors 8)) :foreground "cyan" :weight bold) (t :weight bold)))
+                :type "face")
+                nil [17406 18095])
+            ("todo-comment" variable
+               (:default-value (quote ((((class grayscale) (background light)) :foreground "DimGray" :weight bold :slant italic) (((class grayscale) (background dark)) :foreground "LightGray" :weight bold :slant italic) (((class color) (min-colors 88) (background light)) :foreground "Firebrick") (((class color) (min-colors 88) (background dark)) :foreground "chocolate1") (((class color) (min-colors 16) (background light)) :foreground "red") (((class color) (min-colors 16) (background dark)) :foreground "red1") (((class color) (min-colors 8) (background light)) :foreground "red") (((class color) (min-colors 8) (background dark)) :foreground "yellow") (t :weight bold :slant italic)))
+                :type "face")
+                nil [18097 18962])
+            ("todo-search" variable
+               (:default-value (quote ((((class color) (min-colors 88) (background light)) (:background "yellow1")) (((class color) (min-colors 88) (background dark)) (:background "RoyalBlue3")) (((class color) (min-colors 8) (background light)) (:foreground "black" :background "yellow")) (((class color) (min-colors 8) (background dark)) (:foreground "white" :background "blue")) (((type tty) (class mono)) (:inverse-video t)) (t (:background "gray"))))
+                :type "face")
+                nil [18964 19602])
+            ("todo-button" variable
+               (:default-value (quote ((((type tty)) (:foreground "black" :background "yellow3")) (((class grayscale color) (background light)) (:background "gray85")) (((class grayscale color) (background dark)) (:background "dim gray")) (t (:slant italic))))
+                :type "face")
+                nil [19604 19994])
+            ("todo-sorted-column" variable
+               (:default-value (quote ((((type tty)) (:inverse-video t)) (((class color) (background light)) (:background "grey85")) (((class color) (background dark)) (:background "grey85" :foreground "grey10")) (t (:background "gray"))))
+                :type "face")
+                nil [19996 20345])
+            ("todo-archived-only" variable
+               (:default-value (quote ((((class color) (background light)) (:foreground "grey50")) (((class color) (background dark)) (:foreground "grey70")) (t (:foreground "gray"))))
+                :type "face")
+                nil [20347 20678])
+            ("todo-category-string" variable
+               (:default-value (quote ((((class grayscale) (background light)) :foreground "Gray90" :weight bold) (((class grayscale) (background dark)) :foreground "DimGray" :weight bold) (((class color) (min-colors 88) (background light)) :foreground "ForestGreen") (((class color) (min-colors 88) (background dark)) :foreground "PaleGreen") (((class color) (min-colors 16) (background light)) :foreground "ForestGreen") (((class color) (min-colors 16) (background dark)) :foreground "PaleGreen") (((class color) (min-colors 8)) :foreground "green") (t :weight bold :underline t)))
+                :type "face")
+                nil [20680 21416])
+            ("todo-short-file-name" function (:arguments ("file")) nil [21959 22182])
+            ("todo--files-type-list" function nil nil [22184 22312])
+            ("todo-default-todo-file" variable (:default-value (todo-short-file-name (car (funcall todo-files-function)))) nil [22314 22559])
+            ("todo-show-current-file" variable (:default-value t) nil [22561 22829])
+            ("todo-show-first" variable (:default-value (quote first)) nil [22831 23177])
+            ("todo-add-item-if-new-category" variable (:default-value t) nil [23179 23322])
+            ("todo-initial-file" variable (:default-value "Todo") nil [23324 23448])
+            ("todo-initial-category" variable (:default-value "Todo") nil [23450 23588])
+            ("todo-category-completions-files" variable nil nil [23590 23758])
+            ("todo-completion-ignore-case" variable nil nil [23760 23897])
+            ("todo-show" function
+               (:user-visible-flag t
+                :arguments ("solicit-file" "interactive"))
+                nil [23914 31466])
+            ("todo-save" function (:user-visible-flag t) nil [31468 31681])
+            ("todo-descending-counts" variable nil nil [31683 31714])
+            ("todo-quit" function (:user-visible-flag t) nil [31716 33090])
+            ("todo-skip-archived-categories" variable nil nil [33300 33852])
+            ("todo-forward-category" function
+               (:user-visible-flag t
+                :arguments ("back"))
+                nil [33854 34606])
+            ("todo-backward-category" function (:user-visible-flag t) nil [34608 34823])
+            ("todo-categories-buffer" variable nil nil [34825 34856])
+            ("todo-jump-to-category" function
+               (:user-visible-flag t
+                :arguments ("file" "where"))
+                nil [34858 37631])
+            ("todo-next-item" function
+               (:user-visible-flag t
+                :arguments ("count"))
+                nil [37633 38686])
+            ("todo-previous-item" function
+               (:user-visible-flag t
+                :arguments ("count"))
+                nil [38688 39655])
+            ("todo-toggle-prefix-numbers" function (:user-visible-flag t) nil [39848 40366])
+            ("todo-toggle-view-done-items" function (:user-visible-flag t) nil [40368 41122])
+            ("todo-toggle-view-done-only" function (:user-visible-flag t) nil [41124 41317])
+            ("todo-toggle-item-highlighting" function (:user-visible-flag t) nil [41319 41630])
+            ("todo--item-headers-hidden" variable nil nil [41632 41738])
+            ("todo-toggle-item-header" function (:user-visible-flag t) nil [41740 43003])
+            ("todo-add-file" function (:user-visible-flag t) nil [43198 44234])
+            ("todo-rename-file" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [44236 46093])
+            ("todo-delete-file" function (:user-visible-flag t) nil [46095 48887])
+            ("todo-edit-buffer" variable (:default-value "*Todo Edit*") nil [48889 48974])
+            ("todo-edit-file" function (:user-visible-flag t) nil [48976 50188])
+            ("todo-add-category" function
+               (:user-visible-flag t
+                :arguments ("file" "cat"))
+                nil [50190 52133])
+            ("todo-rename-category" function (:user-visible-flag t) nil [52135 53236])
+            ("todo-delete-category" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [53238 55622])
+            ("todo-move-category" function (:user-visible-flag t) nil [55624 60985])
+            ("todo-merge-category" function
+               (:user-visible-flag t
+                :arguments ("file"))
+                nil [60987 66596])
+            ("todo-include-in-diary" variable nil nil [66778 66917])
+            ("todo-diary-nonmarking" variable nil nil [66919 67193])
+            ("todo-always-add-time-string" variable nil nil [67195 67548])
+            ("todo-use-only-highlighted-region" variable (:default-value t) nil [67550 67702])
+            ("todo-default-priority" variable (:default-value (quote first)) nil [67704 67904])
+            ("todo-item-mark" variable (:default-value "*") nil [67906 68425])
+            ("todo-comment-string" variable (:default-value "COMMENT") nil [68427 68646])
+            ("todo-undo-item-omit-comment" variable (:default-value (quote ask)) nil [68648 68988])
+            ("todo-toggle-mark-item" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [68990 70695])
+            ("todo-mark-category" function (:user-visible-flag t) nil [70697 71696])
+            ("todo-unmark-category" function (:user-visible-flag t) nil [71698 72326])
+            ("todo-date-from-calendar" variable nil nil [72328 72431])
+            ("todo-insert-item--keys-so-far" variable nil nil [72433 72471])
+            ("todo-insert-item--parameters" variable nil nil [72472 72509])
+            ("todo-insert-item" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [72511 73547])
+            ("todo-insert-item--basic" function (:arguments ("arg" "diary-type" "date-type" "time" "where")) nil [73549 79726])
+            ("todo-set-date-from-calendar" function nil nil [79728 80951])
+            ("todo-insert-item-from-calendar" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [80953 81563])
+            ("define-key" code nil nil [81565 81632])
+            ("todo-delete-item" function (:user-visible-flag t) nil [81634 83168])
+            ("todo-edit-item--param-key-alist" variable nil nil [83170 83210])
+            ("todo-edit-done-item--param-key-alist" variable nil nil [83211 83256])
+            ("todo-edit-item" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [83258 83687])
+            ("todo-edit-item--text" function (:arguments ("arg")) nil [83689 87342])
+            ("todo-edit-quit" function (:user-visible-flag t) nil [87344 89471])
+            ("todo-edit-item--header" function (:arguments ("what" "inc")) nil [89473 95761])
+            ("todo-edit-item--diary-inclusion" function (:arguments ("nonmarking")) nil [95763 97366])
+            ("todo-edit-category-diary-inclusion" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [97368 98720])
+            ("todo-edit-category-diary-nonmarking" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [98722 99435])
+            ("todo-set-item-priority" function
+               (:user-visible-flag t
+                :arguments ("item" "cat" "new" "arg"))
+                nil [99437 104722])
+            ("todo-raise-item-priority" function (:user-visible-flag t) nil [104724 104885])
+            ("todo-lower-item-priority" function (:user-visible-flag t) nil [104887 105050])
+            ("todo-move-item" function
+               (:user-visible-flag t
+                :arguments ("file"))
+                nil [105052 111391])
+            ("todo-item-done" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [111393 114847])
+            ("todo-item-undone" function (:user-visible-flag t) nil [114849 118442])
+            ("todo-find-archive" function
+               (:user-visible-flag t
+                :arguments ("ask"))
+                nil [118630 120215])
+            ("todo-choose-archive" function (:user-visible-flag t) nil [120217 120323])
+            ("todo-archive-done-item" function
+               (:user-visible-flag t
+                :arguments ("all"))
+                nil [120325 125415])
+            ("todo-unarchive-items" function (:user-visible-flag t) nil [125417 129428])
+            ("todo-jump-to-archive-category" function
+               (:user-visible-flag t
+                :arguments ("file"))
+                nil [129430 129782])
+            ("todo-categories-category-label" variable (:default-value "Category") nil [129995 130141])
+            ("todo-categories-todo-label" variable (:default-value "Todo") nil [130143 130277])
+            ("todo-categories-diary-label" variable (:default-value "Diary") nil [130279 130416])
+            ("todo-categories-done-label" variable (:default-value "Done") nil [130418 130552])
+            ("todo-categories-archived-label" variable (:default-value "Archived") nil [130554 130700])
+            ("todo-categories-totals-label" variable (:default-value "Totals") nil [130702 130856])
+            ("todo-categories-number-separator" variable (:default-value " | ") nil [130858 131120])
+            ("todo-categories-align" variable (:default-value (quote center)) nil [131122 131305])
+            ("todo-show-categories-table" function (:user-visible-flag t) nil [131307 132959])
+            ("todo-next-button" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [132961 133274])
+            ("todo-previous-button" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [133276 133598])
+            ("todo-set-category-number" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [133600 135954])
+            ("todo-raise-category" function (:user-visible-flag t) nil [135956 136106])
+            ("todo-lower-category" function (:user-visible-flag t) nil [136108 136258])
+            ("todo-sort-categories-alphabetically-or-numerically" function (:user-visible-flag t) nil [136260 136682])
+            ("todo-sort-categories-by-todo" function (:user-visible-flag t) nil [136684 136904])
+            ("todo-sort-categories-by-diary" function (:user-visible-flag t) nil [136906 137129])
+            ("todo-sort-categories-by-done" function (:user-visible-flag t) nil [137131 137364])
+            ("todo-sort-categories-by-archived" function (:user-visible-flag t) nil [137366 137598])
+            ("todo-categories-buffer" variable (:default-value "*Todo Categories*") nil [137600 137695])
+            ("todo-longest-category-name-length" function (:arguments ("categories")) nil [137697 137917])
+            ("todo-adjusted-category-label-length" function nil nil [137919 138388])
+            ("todo-padded-string" function (:arguments ("str")) nil [138390 139296])
+            ("todo-descending-counts" variable nil nil [139298 139398])
+            ("todo-sort" function (:arguments ("list" "key")) nil [139400 140225])
+            ("todo-display-sorted" function (:arguments ("type")) nil [140227 140415])
+            ("todo-label-to-key" function (:arguments ("label")) nil [140417 140894])
+            ("todo-insert-sort-button" function (:arguments ("label")) nil [140896 141728])
+            ("todo-total-item-counts" function nil nil [141730 141969])
+            ("todo-categories-category-number" variable nil nil [141971 142076])
+            ("todo-insert-category-line" function (:arguments ("cat" "nonum")) nil [142078 144782])
+            ("todo-display-categories" function nil nil [144784 146344])
+            ("todo-update-categories-display" function (:arguments ("sortkey")) nil [146346 147941])
+            ("todo-search" function (:user-visible-flag t) nil [148139 150316])
+            ("todo-clear-matches" function (:user-visible-flag t) nil [150318 150480])
+            ("todo-top-priorities-overrides" variable nil nil [150482 151270])
+            ("todo-top-priorities" variable (:default-value 1) nil [151272 151422])
+            ("todo-filter-files" variable nil nil [151424 151578])
+            ("todo-filter-done-items" variable nil nil [151580 151788])
+            ("todo-set-top-priorities-in-file" function (:user-visible-flag t) nil [151790 151972])
+            ("todo-set-top-priorities-in-category" function (:user-visible-flag t) nil [151974 152166])
+            ("todo-filter-top-priorities" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [152168 153052])
+            ("todo-filter-top-priorities-multifile" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [153054 153917])
+            ("todo-filter-diary-items" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [153919 154456])
+            ("todo-filter-diary-items-multifile" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [154458 155128])
+            ("todo-filter-regexp-items" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [155130 155815])
+            ("todo-filter-regexp-items-multifile" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [155817 156634])
+            ("todo-find-filtered-items-file" function (:user-visible-flag t) nil [156636 157395])
+            ("todo-go-to-source-item" function (:user-visible-flag t) nil [157397 158150])
+            ("todo-multiple-filter-files" variable nil nil [158152 158260])
+            ("todo-multiple-filter-files-widget" variable nil nil [158262 158377])
+            ("todo-multiple-filter-files" function nil nil [158379 159594])
+            ("todo-filtered-items-buffer" variable
+               (:constant-flag t
+                :default-value "Todo filtered items")
+                nil [159596 159709])
+            ("todo-top-priorities-buffer" variable
+               (:constant-flag t
+                :default-value "Todo top priorities")
+                nil [159711 159818])
+            ("todo-diary-items-buffer" variable
+               (:constant-flag t
+                :default-value "Todo diary items")
+                nil [159820 159921])
+            ("todo-regexp-items-buffer" variable
+               (:constant-flag t
+                :default-value "Todo regexp items")
+                nil [159923 160026])
+            ("todo-filter-items" function (:arguments ("filter" "new" "multifile")) nil [160028 162626])
+            ("todo-filter-items-1" function (:arguments ("filter" "file-list")) nil [162628 168643])
+            ("todo-set-top-priorities" function (:arguments ("arg")) nil [168645 170138])
+            ("todo-find-item" function (:arguments ("str")) nil [170140 173087])
+            ("todo-check-filtered-items-file" function nil nil [173089 173855])
+            ("todo-filter-items-filename" function nil nil [173857 174711])
+            ("todo-save-filtered-items-buffer" function nil nil [174713 174970])
+            ("todo-print-buffer-function" variable (:default-value (function ps-print-buffer-with-faces)) nil [175166 175476])
+            ("todo-print-buffer" variable (:default-value "*Todo Print*") nil [175478 175582])
+            ("todo-print-buffer" function
+               (:user-visible-flag t
+                :arguments ("to-file"))
+                nil [175584 177360])
+            ("todo-print-buffer-to-file" function (:user-visible-flag t) nil [177362 177501])
+            ("todo-legacy-date-time-regexp" variable (:default-value (concat "\\(?1:[0-9]\\{4\\}\\)-\\(?2:[0-9]\\{2\\}\\)-" "\\(?3:[0-9]\\{2\\}\\) \\(?4:[0-9]\\{2\\}:[0-9]\\{2\\}\\)")) nil [177693 178410])
+            ("todo-convert-legacy-date-time" function nil nil [178412 178846])
+            ("todo-convert-legacy-files" function (:user-visible-flag t) nil [178848 186236])
+            ("todo-absolute-file-name" function (:arguments ("name" "type")) nil [186460 186992])
+            ("todo-check-file" function (:arguments ("file")) nil [186994 188624])
+            ("todo-category-number" function (:arguments ("cat")) nil [188626 189048])
+            ("todo-current-category" function nil nil [189050 189183])
+            ("todo-category-select" function nil nil [189185 191139])
+            ("todo-get-count" function (:arguments ("type" "category")) nil [191141 191526])
+            ("todo-update-count" function (:arguments ("type" "increment" "category")) nil [191528 191989])
+            ("todo-set-categories" function nil nil [191991 192559])
+            ("todo-update-categories-sexp" function nil nil [192561 193068])
+            ("todo-make-categories-list" function (:arguments ("force")) nil [193070 196001])
+            ("todo-repair-categories-sexp" function (:user-visible-flag t) nil [196003 196486])
+            ("todo-check-format" function nil nil [196488 198146])
+            ("todo-item-start" function nil nil [198148 198941])
+            ("todo-item-end" function nil nil [198943 200027])
+            ("todo-item-string" function nil nil [200029 200269])
+            ("todo-forward-item" function (:arguments ("count")) nil [200271 201025])
+            ("todo-backward-item" function (:arguments ("count")) nil [201641 203583])
+            ("todo-remove-item" function nil nil [203585 203933])
+            ("todo-diary-item-p" function nil nil [203935 204180])
+            ("todo-diary-goto-entry" function (:arguments ("button")) nil [204532 205823])
+            ("add-function" code nil nil [205825 205899])
+            ("todo-revert-buffer" function
+               (:user-visible-flag t
+                :arguments ("ignore-auto" "noconfirm"))
+                nil [205901 206445])
+            ("todo-desktop-save-buffer" function (:arguments ("_dir")) nil [206447 206550])
+            ("declare-function" code nil nil [206552 206668])
+            ("todo-restore-desktop-buffer" function (:arguments ("file" "buffer" "misc")) nil [206670 206929])
+            ("add-to-list" code nil nil [206931 207023])
+            ("todo-done-item-p" function nil nil [207025 207185])
+            ("todo-done-item-section-p" function nil nil [207187 207473])
+            ("todo--user-error-if-marked-done-item" function nil nil [207475 208078])
+            ("todo-reset-done-separator" function (:arguments ("sep")) nil [208080 208807])
+            ("todo-get-overlay" function (:arguments ("val")) nil [208809 209554])
+            ("todo-marked-item-p" function nil nil [209556 210040])
+            ("todo-insert-with-overlays" function (:arguments ("item")) nil [210042 211110])
+            ("todo-prefix-overlays" function nil nil [211112 213095])
+            ("todo-insert-item--parameters" variable
+               (:constant-flag t
+                :default-value (quote ((default copy) (diary nonmarking) (calendar date dayname) time (here region))))
+                nil [213705 213979])
+            ("todo-insert-item--param-key-alist" variable
+               (:constant-flag t
+                :default-value (quote ((default . "i") (copy . "p") (diary . "y") (nonmarking . "k") (calendar . "c") (date . "d") (dayname . "n") (time . "t") (here . "h") (region . "r"))))
+                nil [213981 214327])
+            ("todo-insert-item--keyof" function (:arguments ("param")) nil [214329 214476])
+            ("todo-insert-item--argsleft" function (:arguments ("key" "list")) nil [214478 215035])
+            ("todo-insert-item--this-key" function nil nil [215037 215113])
+            ("todo-insert-item--keys-so-far" variable nil nil [215115 215223])
+            ("todo-insert-item--args" variable nil nil [215225 215260])
+            ("todo-insert-item--argleft" variable nil nil [215261 215299])
+            ("todo-insert-item--argsleft" variable nil nil [215300 215339])
+            ("todo-insert-item--newargsleft" variable nil nil [215340 215382])
+            ("todo-insert-item--apply-args" function nil nil [215384 216395])
+            ("todo-insert-item--next-param" function (:arguments ("last" "args" "argsleft")) nil [216397 218742])
+            ("todo-edit-item--param-key-alist" variable
+               (:constant-flag t
+                :default-value (quote ((edit . "e") (header . "h") (multiline . "m") (diary . "y") (nonmarking . "k") (date . "d") (time . "t"))))
+                nil [218744 219001])
+            ("todo-edit-item--date-param-key-alist" variable
+               (:constant-flag t
+                :default-value (quote ((full . "f") (calendar . "c") (today . "a") (dayname . "n") (year . "y") (month . "m") (daynum . "d"))))
+                nil [219003 219270])
+            ("todo-edit-done-item--param-key-alist" variable
+               (:constant-flag t
+                :default-value (quote ((add/edit . "c") (delete . "d"))))
+                nil [219272 219432])
+            ("todo-edit-item--prompt" variable (:default-value "Press a key (so far `e'): ") nil [219434 219494])
+            ("todo-edit-item--next-key" function (:arguments ("params" "arg")) nil [219496 221071])
+            ("todo-y-with-space" variable nil nil [221266 221392])
+            ("todo-y-or-n-p" function (:arguments ("prompt")) nil [221394 221779])
+            ("todo-category-completions" function (:arguments ("archive")) nil [221781 224780])
+            ("todo-read-file-name" function (:arguments ("prompt" "archive" "mustmatch")) nil [224782 226124])
+            ("todo-read-category" function (:arguments ("prompt" "match-type" "file")) nil [226126 230187])
+            ("todo-validate-name" function (:arguments ("name" "type")) nil [230189 231869])
+            ("todo-read-date" function (:arguments ("arg" "mo" "yr")) nil [231932 234923])
+            ("todo-read-dayname" function nil nil [234925 235184])
+            ("todo-read-time" function nil nil [235186 235803])
+            ("todo" customgroup (:user-visible-flag t) nil [236007 236160])
+            ("todo-edit" customgroup (:user-visible-flag t) nil [236162 236271])
+            ("todo-categories" customgroup (:user-visible-flag t) nil [236273 236379])
+            ("todo-filtered" customgroup (:user-visible-flag t) nil [236381 236487])
+            ("todo-display" customgroup (:user-visible-flag t) nil [236489 236589])
+            ("todo-faces" customgroup (:user-visible-flag t) nil [236591 236679])
+            ("todo-set-show-current-file" function (:arguments ("symbol" "value")) nil [236681 236972])
+            ("todo-reset-prefix" function (:arguments ("symbol" "value")) nil [236974 237398])
+            ("todo-reset-nondiary-marker" function (:arguments ("symbol" "value")) nil [237400 238841])
+            ("todo-reset-done-separator-string" function (:arguments ("symbol" "value")) nil [238843 239380])
+            ("todo-reset-done-string" function (:arguments ("symbol" "value")) nil [239382 240392])
+            ("todo-reset-comment-string" function (:arguments ("symbol" "value")) nil [240394 241248])
+            ("todo-reset-highlight-item" function (:arguments ("symbol" "value")) nil [241250 241779])
+            ("todo-update-filelist-defcustoms" function nil nil [241781 242132])
+            ("todo-nondiary-marker-matcher" function (:arguments ("lim")) nil [242314 242635])
+            ("todo-diary-nonmarking-matcher" function (:arguments ("lim")) nil [242637 242887])
+            ("todo-date-string-matcher" function (:arguments ("lim")) nil [242889 243089])
+            ("todo-time-string-matcher" function (:arguments ("lim")) nil [243091 243336])
+            ("todo-diary-expired-matcher" function (:arguments ("lim")) nil [243338 244025])
+            ("todo-done-string-matcher" function (:arguments ("lim")) nil [244027 244216])
+            ("todo-comment-string-matcher" function (:arguments ("lim")) nil [244218 244409])
+            ("todo-category-string-matcher-1" function (:arguments ("lim")) nil [244411 244935])
+            ("todo-category-string-matcher-2" function (:arguments ("lim")) nil [244937 245409])
+            ("todo-nondiary-face" variable (:default-value (quote todo-nondiary)) nil [245411 245453])
+            ("todo-date-face" variable (:default-value (quote todo-date)) nil [245454 245488])
+            ("todo-time-face" variable (:default-value (quote todo-time)) nil [245489 245523])
+            ("todo-diary-expired-face" variable (:default-value (quote todo-diary-expired)) nil [245524 245576])
+            ("todo-done-sep-face" variable (:default-value (quote todo-done-sep)) nil [245577 245619])
+            ("todo-done-face" variable (:default-value (quote todo-done)) nil [245620 245654])
+            ("todo-comment-face" variable (:default-value (quote todo-comment)) nil [245655 245695])
+            ("todo-category-string-face" variable (:default-value (quote todo-category-string)) nil [245696 245752])
+            ("todo-font-lock-keywords" variable (:default-value (list (quote (todo-nondiary-marker-matcher 1 todo-nondiary-face t)) (quote (todo-nondiary-marker-matcher 2 todo-nondiary-face t)) (quote (todo-diary-nonmarking-matcher 1 font-lock-constant-face t)) (quote (todo-date-string-matcher 1 todo-date-face t)) (quote (todo-time-string-matcher 1 todo-time-face t)) (quote (todo-done-string-matcher 0 todo-done-face t)) (quote (todo-comment-string-matcher 1 todo-comment-face t)) (quote (todo-category-string-matcher-1 1 todo-category-string-face t t)) (quote (todo-category-string-matcher-2 1 todo-category-string-face t t)) (quote (todo-diary-expired-matcher 1 todo-diary-expired-face t)) (quote (todo-diary-expired-matcher 2 todo-diary-expired-face t t)))) nil [245753 246556])
+            ("todo-key-bindings-t" variable (:default-value (\` (("Af" todo-find-archive) ("Ac" todo-choose-archive) ("Ad" todo-archive-done-item) ("Cv" todo-toggle-view-done-items) ("v" todo-toggle-view-done-items) ("Ca" todo-add-category) ("Cr" todo-rename-category) ("Cg" todo-merge-category) ("Cm" todo-move-category) ("Ck" todo-delete-category) ("Cts" todo-set-top-priorities-in-category) ("Cey" todo-edit-category-diary-inclusion) ("Cek" todo-edit-category-diary-nonmarking) ("Fa" todo-add-file) ("Fr" todo-rename-file) ("Ff" todo-find-filtered-items-file) ("FV" todo-toggle-view-done-only) ("V" todo-toggle-view-done-only) ("Ftt" todo-filter-top-priorities) ("Ftm" todo-filter-top-priorities-multifile) ("Fts" todo-set-top-priorities-in-file) ("Fyy" todo-filter-diary-items) ("Fym" todo-filter-diary-items-multifile) ("Fxx" todo-filter-regexp-items) ("Fxm" todo-filter-regexp-items-multifile) ("e" todo-edit-item) ("d" todo-item-done) ("i" todo-insert-item) ("k" todo-delete-item) ("m" todo-move-item) ("u" todo-item-undone) ([remap newline] newline-and-indent)))) nil [246737 248107])
+            ("todo-key-bindings-t+a+f" variable (:default-value (\` (("C*" todo-mark-category) ("Cu" todo-unmark-category) ("Fh" todo-toggle-item-header) ("h" todo-toggle-item-header) ("Fk" todo-delete-file) ("Fe" todo-edit-file) ("FH" todo-toggle-item-highlighting) ("H" todo-toggle-item-highlighting) ("FN" todo-toggle-prefix-numbers) ("N" todo-toggle-prefix-numbers) ("PB" todo-print-buffer) ("PF" todo-print-buffer-to-file) ("b" todo-backward-category) ("d" todo-item-done) ("f" todo-forward-category) ("j" todo-jump-to-category) ("n" todo-next-item) ("p" todo-previous-item) ("q" todo-quit) ("s" todo-save) ("t" todo-show)))) nil [248109 248876])
+            ("todo-key-bindings-t+a" variable (:default-value (\` (("Fc" todo-show-categories-table) ("S" todo-search) ("X" todo-clear-matches) ("*" todo-toggle-mark-item)))) nil [248878 249100])
+            ("todo-key-bindings-t+f" variable (:default-value (\` (("l" todo-lower-item-priority) ("r" todo-raise-item-priority) ("#" todo-set-item-priority)))) nil [249102 249310])
+            ("todo-mode-map" variable (:default-value (let ((map (make-keymap))) (dolist (kb todo-key-bindings-t) (define-key map (nth 0 kb) (nth 1 kb))) (dolist (kb todo-key-bindings-t+a+f) (define-key map (nth 0 kb) (nth 1 kb))) (dolist (kb todo-key-bindings-t+a) (define-key map (nth 0 kb) (nth 1 kb))) (dolist (kb todo-key-bindings-t+f) (define-key map (nth 0 kb) (nth 1 kb))) map)) nil [249312 249734])
+            ("todo-archive-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (dolist (kb todo-key-bindings-t+a+f) (define-key map (nth 0 kb) (nth 1 kb))) (dolist (kb todo-key-bindings-t+a) (define-key map (nth 0 kb) (nth 1 kb))) (define-key map "a" (quote todo-jump-to-archive-category)) (define-key map "u" (quote todo-unarchive-items)) map)) nil [249736 250116])
+            ("todo-edit-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "" (quote todo-edit-quit)) (define-key map [remap newline] (quote newline-and-indent)) map)) nil [250118 250322])
+            ("todo-categories-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "c" (quote todo-sort-categories-alphabetically-or-numerically)) (define-key map "t" (quote todo-sort-categories-by-todo)) (define-key map "y" (quote todo-sort-categories-by-diary)) (define-key map "d" (quote todo-sort-categories-by-done)) (define-key map "a" (quote todo-sort-categories-by-archived)) (define-key map "#" (quote todo-set-category-number)) (define-key map "l" (quote todo-lower-category)) (define-key map "r" (quote todo-raise-category)) (define-key map "n" (quote todo-next-button)) (define-key map "p" (quote todo-previous-button)) (define-key map [tab] (quote todo-next-button)) (define-key map [backtab] (quote todo-previous-button)) (define-key map "q" (quote todo-quit)) map)) nil [250324 251104])
+            ("todo-filtered-items-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (dolist (kb todo-key-bindings-t+a+f) (define-key map (nth 0 kb) (nth 1 kb))) (dolist (kb todo-key-bindings-t+f) (define-key map (nth 0 kb) (nth 1 kb))) (define-key map "g" (quote todo-go-to-source-item)) (define-key map [remap newline] (quote todo-go-to-source-item)) map)) nil [251106 251507])
+            ("easy-menu-define" code nil nil [251509 254401])
+            ("todo-show-current-file" function nil nil [254606 254868])
+            ("todo-update-buffer-list" function nil nil [255576 255932])
+            ("todo-reset-global-current-todo-file" function nil nil [255934 256450])
+            ("todo-reset-and-enable-done-separator" function nil nil [256452 256824])
+            ("todo-modes-set-1" function nil nil [256826 257236])
+            ("todo-hl-line-range" function nil nil [257238 257436])
+            ("todo-modes-set-2" function nil nil [257438 257751])
+            ("todo-modes-set-3" function nil nil [257753 257998])
+            ("put" code nil nil [258000 258037])
+            ("define-derived-mode" code nil nil [258054 259123])
+            ("put" code nil nil [259125 259170])
+            ("define-derived-mode" code nil nil [259311 259620])
+            ("todo-mode-external-set" function nil nil [259622 260464])
+            ("define-derived-mode" code nil nil [260466 260673])
+            ("put" code nil nil [260675 260723])
+            ("define-derived-mode" code nil nil [260725 260908])
+            ("put" code nil nil [260910 260962])
+            ("define-derived-mode" code nil nil [260979 261188])
+            ("todo-mode" package nil nil [261271 261291]))          
+      :file "todo-mode.el"
+      :pointmax 261320
+      :fsize 261319
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "diary-lib.el"
+      :fsize 116255
+      :lastmodtime '(23603 24958 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("timeclock" customgroup (:user-visible-flag t) nil [3092 3178])
+            ("timeclock-file" variable (:default-value (locate-user-emacs-file "timelog" ".timelog")) nil [3201 3404])
+            ("timeclock-workday" variable (:default-value (* 8 60 60)) nil [3406 3528])
+            ("timeclock-relative" variable (:default-value t) nil [3530 4075])
+            ("timeclock-get-project-function" variable (:default-value (quote timeclock-ask-for-project)) nil [4077 4439])
+            ("timeclock-get-reason-function" variable (:default-value (quote timeclock-ask-for-reason)) nil [4441 4770])
+            ("timeclock-get-workday-function" variable nil nil [4772 5352])
+            ("timeclock-ask-before-exiting" variable (:default-value t) nil [5354 5761])
+            ("timeclock-update-timer" variable nil nil [5763 5852])
+            ("display-time-hook" variable nil nil [5876 5902])
+            ("timeclock-mode-line-display" variable nil nil [5903 5939])
+            ("timeclock-use-display-time" variable (:default-value t) nil [5941 7449])
+            ("timeclock-first-in-hook" variable nil nil [7451 7788])
+            ("timeclock-load-hook" variable nil nil [7790 7915])
+            ("timeclock-in-hook" variable nil nil [7917 8039])
+            ("timeclock-day-over-hook" variable nil nil [8041 8312])
+            ("timeclock-out-hook" variable nil nil [8314 8438])
+            ("timeclock-done-hook" variable nil nil [8440 8569])
+            ("timeclock-event-hook" variable nil nil [8571 8690])
+            ("timeclock-last-event" variable nil nil [8692 8829])
+            ("timeclock-last-event-workday" variable nil nil [8831 8940])
+            ("timeclock-discrepancy" variable nil nil [8967 9463])
+            ("timeclock-elapsed" variable nil nil [9465 9819])
+            ("timeclock-use-elapsed" variable nil nil [9821 9928])
+            ("timeclock-last-period" variable nil nil [9930 10135])
+            ("timeclock-mode-string" variable nil nil [10137 10305])
+            ("timeclock-day-over" variable nil nil [10307 10399])
+            ("define-obsolete-function-alias" code nil nil [10422 10520])
+            ("define-obsolete-variable-alias" code nil nil [10521 10619])
+            ("define-minor-mode" code nil nil [10636 12794])
+            ("timeclock-time-to-date" function (:arguments ("time")) nil [12796 12938])
+            ("timeclock-in" function
+               (:user-visible-flag t
+                :arguments ("arg" "project" "find-project"))
+                nil [12955 14947])
+            ("timeclock-out" function
+               (:user-visible-flag t
+                :arguments ("arg" "reason" "find-reason"))
+                nil [14964 15890])
+            ("timeclock-workday-remaining" function (:arguments ("today-only")) nil [15961 16412])
+            ("timeclock-status-string" function
+               (:user-visible-flag t
+                :arguments ("show-seconds" "today-only"))
+                nil [16429 17558])
+            ("timeclock-change" function
+               (:user-visible-flag t
+                :arguments ("arg" "project"))
+                nil [17575 17997])
+            ("timeclock-query-out" function nil nil [18014 18355])
+            ("timeclock-reread-log" function (:user-visible-flag t) nil [18372 18713])
+            ("timeclock-seconds-to-string" function (:arguments ("seconds" "show-seconds" "reverse-leader")) nil [18715 19598])
+            ("timeclock-currently-in-p" function nil nil [19600 19735])
+            ("timeclock-workday-remaining-string" function
+               (:user-visible-flag t
+                :arguments ("show-seconds" "today-only"))
+                nil [19752 20342])
+            ("timeclock-workday-elapsed" function nil nil [20344 20679])
+            ("timeclock-workday-elapsed-string" function
+               (:user-visible-flag t
+                :arguments ("show-seconds"))
+                nil [20696 21164])
+            ("define-obsolete-function-alias" code nil nil [21166 21244])
+            ("define-obsolete-function-alias" code nil nil [21245 21330])
+            ("timeclock-when-to-leave" function (:arguments ("today-only")) nil [21401 21807])
+            ("timeclock-when-to-leave-string" function
+               (:user-visible-flag t
+                :arguments ("show-seconds" "today-only"))
+                nil [21824 22569])
+            ("timeclock-make-hours-explicit" function
+               (:user-visible-flag t
+                :arguments ("old-default"))
+                nil [22571 23897])
+            ("timeclock-project-list" variable nil nil [23924 23959])
+            ("timeclock-last-project" variable nil nil [23960 23995])
+            ("timeclock-completing-read" function (:arguments ("prompt" "alist" "default")) nil [23997 24436])
+            ("timeclock-ask-for-project" function nil nil [24438 24792])
+            ("timeclock-reason-list" variable nil nil [24794 24828])
+            ("timeclock-ask-for-reason" function nil nil [24830 25023])
+            ("define-obsolete-function-alias" code nil nil [25025 25121])
+            ("timeclock-update-mode-line" function (:user-visible-flag t) nil [25123 26033])
+            ("put" code nil nil [26035 26087])
+            ("timeclock-log" function (:arguments ("code" "project")) nil [26089 27213])
+            ("timeclock-moment-regexp" variable (:default-value (concat "\\([bhioO]\\)\\s-+" "\\([0-9]+\\)/\\([0-9]+\\)/\\([0-9]+\\)\\s-+" "\\([0-9]+\\):\\([0-9]+\\):\\([0-9]+\\)[ 	]*" "\\([^
+]*\\)")) nil [27215 27393])
+            ("timeclock-read-moment" function nil nil [27395 27944])
+            ("timeclock-last-period" function (:arguments ("moment")) nil [27946 28470])
+            ("timeclock-entry-length" function (:arguments ("entry")) nil [28472 28618])
+            ("timeclock-entry-begin" function (:arguments ("entry")) nil [28620 28710])
+            ("timeclock-entry-end" function (:arguments ("entry")) nil [28712 28799])
+            ("timeclock-entry-project" function (:arguments ("entry")) nil [28801 28892])
+            ("timeclock-entry-comment" function (:arguments ("entry")) nil [28894 28985])
+            ("timeclock-entry-list-length" function (:arguments ("entry-list")) nil [28987 29218])
+            ("timeclock-entry-list-begin" function (:arguments ("entry-list")) nil [29220 29375])
+            ("timeclock-entry-list-end" function (:arguments ("entry-list")) nil [29377 29532])
+            ("timeclock-entry-list-span" function (:arguments ("entry-list")) nil [29534 29758])
+            ("timeclock-entry-list-break" function (:arguments ("entry-list")) nil [29760 29964])
+            ("timeclock-entry-list-projects" function (:arguments ("entry-list")) nil [29966 30272])
+            ("timeclock-day-required" function (:arguments ("day")) nil [30274 30427])
+            ("timeclock-day-length" function (:arguments ("day")) nil [30429 30556])
+            ("timeclock-day-debt" function (:arguments ("day")) nil [30558 30733])
+            ("timeclock-day-begin" function (:arguments ("day")) nil [30735 30846])
+            ("timeclock-day-end" function (:arguments ("day")) nil [30848 30953])
+            ("timeclock-day-span" function (:arguments ("day")) nil [30955 31058])
+            ("timeclock-day-break" function (:arguments ("day")) nil [31060 31177])
+            ("timeclock-day-projects" function (:arguments ("day")) nil [31179 31309])
+            ("timeclock-day-list-template" function (:arguments ("func" "day-list")) nil [31311 31545])
+            ("timeclock-day-list-required" function (:arguments ("day-list")) nil [31547 31717])
+            ("timeclock-day-list-length" function (:arguments ("day-list")) nil [31719 31877])
+            ("timeclock-day-list-debt" function (:arguments ("day-list")) nil [31879 32038])
+            ("timeclock-day-list-begin" function (:arguments ("day-list")) nil [32040 32164])
+            ("timeclock-day-list-end" function (:arguments ("day-list")) nil [32166 32291])
+            ("timeclock-day-list-span" function (:arguments ("day-list")) nil [32293 32430])
+            ("timeclock-day-list-break" function (:arguments ("day-list")) nil [32432 32578])
+            ("timeclock-day-list-projects" function (:arguments ("day-list")) nil [32580 32868])
+            ("timeclock-current-debt" function (:arguments ("log-data")) nil [32870 33042])
+            ("timeclock-day-alist" function (:arguments ("log-data")) nil [33044 33211])
+            ("timeclock-day-list" function (:arguments ("log-data")) nil [33213 33465])
+            ("timeclock-project-alist" function (:arguments ("log-data")) nil [33467 33641])
+            ("timeclock-log-data" function (:arguments ("recent-only" "filename")) nil [33643 40310])
+            ("timeclock-find-discrep" function nil nil [40312 43956])
+            ("timeclock-day-base" function (:arguments ("time")) nil [44013 44367])
+            ("timeclock-mean" function (:arguments ("l")) nil [44369 44615])
+            ("timeclock-generate-report" function
+               (:user-visible-flag t
+                :arguments ("html-p"))
+                nil [44617 50834])
+            ("timeclock-visit-timelog" function (:user-visible-flag t) nil [50867 51022])
+            ("timeclock" package nil nil [51024 51044])
+            ("run-hooks" code nil nil [51046 51078])
+            ("if" code nil nil [51193 51257]))          
+      :file "timeclock.el"
+      :pointmax 51286
+      :fsize 51289
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("with-decoded-time-value" function (:arguments ("varlist" "body")) nil [1600 4231])
+            ("encode-time-value" function (:arguments ("high" "low" "micro" "pico" "type")) nil [4233 4847])
+            ("make-obsolete" code nil nil [4849 4894])
+            ("make-obsolete" code nil nil [4895 4946])
+            ("parse-time-string" function (:prototype-flag t) nil [4948 4990])
+            ("timezone-make-date-arpa-standard" function (:prototype-flag t) nil [4991 5046])
+            ("date-to-time" function (:arguments ("date")) nil [5323 6009])
+            ("defalias" code nil nil [6026 6065])
+            ("seconds-to-time" function (:arguments ("seconds")) nil [6082 6175])
+            ("days-to-time" function (:arguments ("days")) nil [6192 6437])
+            ("time-since" function (:arguments ("time")) nil [6454 6710])
+            ("define-obsolete-function-alias" code nil nil [6727 6796])
+            ("date-to-day" function (:arguments ("date")) nil [6813 6966])
+            ("days-between" function (:arguments ("date1" "date2")) nil [6983 7163])
+            ("date-leap-year-p" function (:arguments ("year")) nil [7180 7338])
+            ("time-date--day-in-year" function (:arguments ("tim")) nil [7340 7751])
+            ("time-to-day-in-year" function (:arguments ("time")) nil [7768 7913])
+            ("time-to-days" function (:arguments ("time")) nil [7930 8400])
+            ("time-to-number-of-days" function (:arguments ("time")) nil [8428 8586])
+            ("safe-date-to-time" function (:arguments ("date")) nil [8603 8831])
+            ("format-seconds" function (:arguments ("string" "seconds")) nil [8850 12072])
+            ("seconds-to-string" variable (:default-value (list (list 1 "ms" 0.001) (list 100 "s" 1) (list (* 60 100) "m" 60.0) (list (* 3600 30) "h" 3600.0) (list (* 3600 24 400) "d" (* 3600.0 24.0)) (list nil "y" (* 365.25 24 3600)))) nil [12074 12377])
+            ("seconds-to-string" function (:arguments ("delay")) nil [12393 12808])
+            ("time-date" package nil nil [12810 12830]))          
+      :file "time-date.el"
+      :pointmax 12859
+      :fsize 12858
+      :lastmodtime '(23661 22986 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_c!Tools!emacs-26.2!share!emacs!26.2!lisp!calendar!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

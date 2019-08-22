@@ -235,7 +235,385 @@
     (semanticdb-table "semanticdb-table"
       :file "cl-macs.el"
       :fsize 136385
-      :lastmodtime '(23603 24958 0 0)))
+      :lastmodtime '(23603 24958 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("defalias" code nil nil [1121 1571])
+            ("function-put" code nil nil [1572 1614])
+            ("function-put" code nil nil [1615 1663])
+            ("macro-declaration-function" variable (:default-value (function macro-declaration-function)) nil [1784 2116])
+            ("defalias" code nil nil [2118 3260])
+            ("defun-declarations-alist" variable (:default-value (list (list (quote advertised-calling-convention) (function (lambda (f _args arglist when) (list (quote set-advertised-calling-convention) (list (quote quote) f) (list (quote quote) arglist) (list (quote quote) when))))) (list (quote obsolete) (function (lambda (f _args new-name when) (list (quote make-obsolete) (list (quote quote) f) (list (quote quote) new-name) (list (quote quote) when))))) (list (quote interactive-only) (function (lambda (f _args instead) (list (quote function-put) (list (quote quote) f) (quote (quote interactive-only)) (list (quote quote) instead))))) (list (quote pure) (function (lambda (f _args val) (list (quote function-put) (list (quote quote) f) (quote (quote pure)) (list (quote quote) val)))) "If non-nil, the compiler can replace calls with their return value.
+This may shift errors from run-time to compile-time.") (list (quote side-effect-free) (function (lambda (f _args val) (list (quote function-put) (list (quote quote) f) (quote (quote side-effect-free)) (list (quote quote) val)))) "If non-nil, calls can be ignored if their value is unused.
+If `error-free', drop calls even if `byte-compile-delete-errors' is nil.") (list (quote compiler-macro) (function (lambda (f args compiler-function) (if (not (eq (car-safe compiler-function) (quote lambda))) (\` (eval-and-compile (function-put (quote (\, f)) (quote compiler-macro) (function (\, compiler-function))))) (let ((cfname (intern (concat (symbol-name f) "--anon-cmacro")))) (\` (progn (eval-and-compile (function-put (quote (\, f)) (quote compiler-macro) (function (\, cfname)))) :autoload-end (eval-and-compile (defun (\, cfname) ((\,@ (cadr compiler-function)) (\,@ args)) (\,@ (cddr compiler-function))))))))))) (list (quote doc-string) (function (lambda (f _args pos) (list (quote function-put) (list (quote quote) f) (quote (quote doc-string-elt)) (list (quote quote) pos))))) (list (quote indent) (function (lambda (f _args val) (list (quote function-put) (list (quote quote) f) (quote (quote lisp-indent-function)) (list (quote quote) val))))))) nil [3516 6460])
+            ("macro-declarations-alist" variable (:default-value (cons (list (quote debug) (function (lambda (name _args spec) (list (quote progn) :autoload-end (list (quote put) (list (quote quote) name) (quote (quote edebug-form-spec)) (list (quote quote) spec)))))) (cons (list (quote no-font-lock-keyword) (function (lambda (name _args val) (list (quote function-put) (list (quote quote) name) (quote (quote no-font-lock-keyword)) (list (quote quote) val))))) defun-declarations-alist))) nil [6462 7237])
+            ("defalias" code nil nil [7239 9492])
+            ("defun" function (:arguments ("name" "arglist" "docstring" "body")) nil [9541 12124])
+            ("defalias" code nil nil [12206 12392])
+            ("defsubst" function (:arguments ("name" "arglist" "body")) nil [13403 13875])
+            ("advertised-signature-table" variable (:default-value (make-hash-table :test (quote eq) :weakness (quote key))) nil [13877 13955])
+            ("set-advertised-calling-convention" function (:arguments ("function" "signature" "_when")) nil [13957 14327])
+            ("make-obsolete" function (:arguments ("obsolete-name" "current-name" "when")) nil [14329 15222])
+            ("define-obsolete-function-alias" function (:arguments ("obsolete-name" "current-name" "when" "docstring")) nil [15224 16191])
+            ("make-obsolete-variable" function (:arguments ("obsolete-name" "current-name" "when" "access-type")) nil [16193 17024])
+            ("define-obsolete-variable-alias" function (:arguments ("obsolete-name" "current-name" "when" "docstring")) nil [17027 18868])
+            ("define-obsolete-face-alias" function (:arguments ("obsolete-face" "current-face" "when")) nil [19198 19634])
+            ("dont-compile" function (:arguments ("body")) nil [19636 19945])
+            ("eval-when-compile" function (:arguments ("body")) nil [20188 20681])
+            ("eval-and-compile" function (:arguments ("body")) nil [20683 21269])
+            ("with-no-warnings" function (:arguments ("body")) nil [21271 21479])
+            ("make-obsolete-variable" code nil nil [22774 22883])
+            ("make-obsolete" code nil nil [22884 22975]))          
+      :file "byte-run.el"
+      :pointmax 23003
+      :fsize 23002
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1327 1344])
+            ("internal--thread-argument" function (:arguments ("first?" "forms")) nil [1348 1830])
+            ("thread-first" function (:arguments ("forms")) nil [1832 2265])
+            ("thread-last" function (:arguments ("forms")) nil [2267 2656])
+            ("internal--listify" function (:arguments ("elt")) nil [2658 2916])
+            ("internal--check-binding" function (:arguments ("binding")) nil [2918 3133])
+            ("internal--build-binding-value-form" function (:arguments ("binding" "prev-var")) nil [3135 3338])
+            ("internal--build-binding" function (:arguments ("binding" "prev-var")) nil [3340 3573])
+            ("internal--build-bindings" function (:arguments ("bindings")) nil [3575 3897])
+            ("if-let*" function (:arguments ("varlist" "then" "else")) nil [3899 4396])
+            ("when-let*" function (:arguments ("varlist" "body")) nil [4398 4695])
+            ("and-let*" function (:arguments ("varlist" "body")) nil [4697 5243])
+            ("if-let" function (:arguments ("spec" "then" "else")) nil [5245 6378])
+            ("when-let" function (:arguments ("spec" "body")) nil [6380 6751])
+            ("hash-table-empty-p" function (:arguments ("hash-table")) nil [6753 6891])
+            ("hash-table-keys" function (:arguments ("hash-table")) nil [6893 7035])
+            ("hash-table-values" function (:arguments ("hash-table")) nil [7037 7185])
+            ("string-empty-p" function (:arguments ("string")) nil [7187 7278])
+            ("string-join" function (:arguments ("strings" "separator")) nil [7280 7412])
+            ("define-obsolete-function-alias" code nil nil [7414 7478])
+            ("string-trim-left" function (:arguments ("string" "regexp")) nil [7480 7750])
+            ("string-trim-right" function (:arguments ("string" "regexp")) nil [7752 8025])
+            ("string-trim" function (:arguments ("string" "trim-left" "trim-right")) nil [8027 8297])
+            ("string-blank-p" function (:arguments ("string")) nil [8299 8439])
+            ("string-remove-prefix" function (:arguments ("prefix" "string")) nil [8441 8621])
+            ("string-remove-suffix" function (:arguments ("suffix" "string")) nil [8623 8825])
+            ("subr-x" package nil nil [8827 8844]))          
+      :file "subr-x.el"
+      :pointmax 8870
+      :fsize 8869
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax '((close-paren 1344 . 1345) (symbol 1309 . 1326) (open-paren 1308 . 1309)))
+    (semanticdb-table "semanticdb-table"
+      :file "ring.el"
+      :fsize 8343
+      :lastmodtime '(23603 24958 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1074 1091])
+            ("cl-defstruct" code nil nil [1094 1846])
+            ("timerp" function (:arguments ("object")) nil [1848 1953])
+            ("timer--check" function (:arguments ("timer")) nil [1955 2060])
+            ("timer--time-setter" function (:arguments ("timer" "time")) nil [2062 2496])
+            ("timer--time" function (:arguments ("timer")) nil [2522 2708])
+            ("timer-set-time" function (:arguments ("timer" "time" "delta")) nil [2710 3105])
+            ("timer-set-idle-time" function (:arguments ("timer" "secs" "repeat")) nil [3107 3606])
+            ("timer-next-integral-multiple-of-time" function (:arguments ("time" "secs")) nil [3608 4613])
+            ("timer-relative-time" function (:arguments ("time" "secs" "usecs" "psecs")) nil [4615 4968])
+            ("timer--time-less-p" function (:arguments ("t1" "t2")) nil [4970 5112])
+            ("timer-inc-time" function (:arguments ("timer" "secs" "usecs" "psecs")) nil [5114 5446])
+            ("timer-set-time-with-usecs" function (:arguments ("timer" "time" "usecs" "delta")) nil [5448 6101])
+            ("timer-set-function" function (:arguments ("timer" "function" "args")) nil [6103 6333])
+            ("timer--activate" function (:arguments ("timer" "triggered-p" "reuse-cell" "idle")) nil [6336 7335])
+            ("timer-activate" function (:arguments ("timer" "triggered-p" "reuse-cell")) nil [7337 7853])
+            ("timer-activate-when-idle" function (:arguments ("timer" "dont-wait" "reuse-cell")) nil [7855 8732])
+            ("defalias" code nil nil [8734 8775])
+            ("cancel-timer" function (:arguments ("timer")) nil [8777 8981])
+            ("cancel-timer-internal" function (:arguments ("timer")) nil [8983 9405])
+            ("cancel-function-timers" function
+               (:user-visible-flag t
+                :arguments ("function"))
+                nil [9407 9945])
+            ("timer-event-last" variable nil nil [9994 10052])
+            ("timer-event-last-1" variable nil nil [10053 10121])
+            ("timer-event-last-2" variable nil nil [10122 10191])
+            ("timer-max-repeats" variable (:default-value 10) nil [10193 10570])
+            ("timer-until" function (:arguments ("timer" "time")) nil [10572 10829])
+            ("timer-event-handler" function (:arguments ("timer")) nil [10831 13779])
+            ("timeout-event-p" function (:arguments ("event")) nil [13842 13966])
+            ("declare-function" code nil nil [13970 14021])
+            ("run-at-time" function
+               (:user-visible-flag t
+                :arguments ("time" "repeat" "function" "args"))
+                nil [14023 16444])
+            ("run-with-timer" function
+               (:user-visible-flag t
+                :arguments ("secs" "repeat" "function" "args"))
+                nil [16446 16932])
+            ("add-timeout" function (:arguments ("secs" "function" "object" "repeat")) nil [16934 17313])
+            ("run-with-idle-timer" function
+               (:user-visible-flag t
+                :arguments ("secs" "repeat" "function" "args"))
+                nil [17315 18466])
+            ("with-timeout-timers" variable nil nil [18469 18572])
+            ("with-timeout" function (:arguments ("list" "body")) nil [18574 20053])
+            ("with-timeout-suspend" function nil nil [20055 20507])
+            ("with-timeout-unsuspend" function (:arguments ("timer-spec-list")) nil [20509 20841])
+            ("y-or-n-p-with-timeout" function (:arguments ("prompt" "seconds" "default-value")) nil [20843 21083])
+            ("timer-duration-words" variable
+               (:constant-flag t
+                :default-value (list (cons "microsec" 1e-06) (cons "microsecond" 1e-06) (cons "millisec" 0.001) (cons "millisecond" 0.001) (cons "sec" 1) (cons "second" 1) (cons "min" 60) (cons "minute" 60) (cons "hour" (* 60 60)) (cons "day" (* 24 60 60)) (cons "week" (* 7 24 60 60)) (cons "fortnight" (* 14 24 60 60)) (cons "month" (* 30 24 60 60)) (cons "year" (* 365.25 24 60 60))))
+                nil [21086 21602])
+            ("timer-duration" function (:arguments ("string")) nil [21604 22306])
+            ("internal-timer-start-idle" function nil nil [22308 22535])
+            ("timer" package nil nil [22538 22554]))          
+      :file "timer.el"
+      :pointmax 22579
+      :fsize 22578
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax '((close-paren 1091 . 1092) (symbol 1056 . 1073) (open-paren 1055 . 1056)))
+    (semanticdb-table "semanticdb-table"
+      :file "syntax.el"
+      :fsize 28594
+      :lastmodtime '(23603 24958 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("trace" customgroup (:user-visible-flag t) nil [4199 4300])
+            ("trace-buffer" variable (:default-value "*trace-output*") nil [4317 4426])
+            ("trace-level" variable nil nil [4476 4498])
+            ("trace-advice-name" variable (:default-value (quote trace-function\ )) nil [4555 4599])
+            ("trace-separator" variable (:default-value (format "%s
+" (make-string 70 61))) nil [4665 4725])
+            ("inhibit-trace" variable nil nil [4727 4807])
+            ("trace-values" function (:arguments ("values")) nil [4824 5156])
+            ("trace-entry-message" function (:arguments ("function" "level" "args" "context")) nil [5158 5817])
+            ("trace-exit-message" function (:arguments ("function" "level" "value" "context")) nil [5819 6387])
+            ("trace--timer" variable nil nil [6389 6414])
+            ("trace--display-buffer" function (:arguments ("buf")) nil [6416 6742])
+            ("trace-make-advice" function (:arguments ("function" "buffer" "background" "context")) nil [6745 8381])
+            ("trace-function-internal" function (:arguments ("function" "buffer" "background" "context")) nil [8383 8688])
+            ("trace-is-traced" function (:arguments ("function")) nil [8690 8771])
+            ("trace--read-args" function (:arguments ("prompt")) nil [8773 10056])
+            ("trace-function-foreground" function
+               (:user-visible-flag t
+                :arguments ("function" "buffer" "context"))
+                nil [10073 11044])
+            ("trace-function-background" function
+               (:user-visible-flag t
+                :arguments ("function" "buffer" "context"))
+                nil [11061 11420])
+            ("defalias" code nil nil [11437 11490])
+            ("untrace-function" function
+               (:user-visible-flag t
+                :arguments ("function"))
+                nil [11492 11955])
+            ("untrace-all" function (:user-visible-flag t) nil [11957 12072])
+            ("trace" package nil nil [12074 12090]))          
+      :file "trace.el"
+      :pointmax 12115
+      :fsize 12114
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("defvar-local" code nil nil [1683 2714])
+            ("put" code nil nil [2715 2762])
+            ("defvar-local" code nil nil [2764 2875])
+            ("defvar-local" code nil nil [2877 3759])
+            ("put" code nil nil [3760 3808])
+            ("defvar-local" code nil nil [3810 4028])
+            ("put" code nil nil [4029 4077])
+            ("tabulated-list-revert-hook" variable nil nil [4079 4234])
+            ("defvar-local" code nil nil [4236 4538])
+            ("tabulated-list--near-rows" variable nil nil [4540 4574])
+            ("defvar-local" code nil nil [4576 4990])
+            ("put" code nil nil [4991 5040])
+            ("tabulated-list-get-id" function (:arguments ("pos")) nil [5042 5316])
+            ("tabulated-list-get-entry" function (:arguments ("pos")) nil [5318 5599])
+            ("tabulated-list-put-tag" function (:arguments ("tag" "advance")) nil [5601 6508])
+            ("tabulated-list-mode-map" variable (:default-value (let ((map (copy-keymap special-mode-map))) (set-keymap-parent map button-buffer-map) (define-key map "n" (quote next-line)) (define-key map "p" (quote previous-line)) (define-key map "S" (quote tabulated-list-sort)) (define-key map [follow-link] (quote mouse-face)) (define-key map [mouse-2] (quote mouse-select-window)) map)) nil [6510 6916])
+            ("tabulated-list-sort-button-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map [header-line mouse-1] (quote tabulated-list-col-sort)) (define-key map [header-line mouse-2] (quote tabulated-list-col-sort)) (define-key map [mouse-1] (quote tabulated-list-col-sort)) (define-key map [mouse-2] (quote tabulated-list-col-sort)) (define-key map "" (quote tabulated-list-sort)) (define-key map [follow-link] (quote mouse-face)) map)) nil [6918 7403])
+            ("tabulated-list-glyphless-char-display" variable (:default-value (let ((table (make-char-table (quote glyphless-char-display) nil))) (set-char-table-parent table glyphless-char-display) (aset table 9650 (cons nil "^")) (aset table 9660 (cons nil "v")) table)) nil [7405 7792])
+            ("tabulated-list--header-string" variable nil nil [7794 7944])
+            ("tabulated-list--header-overlay" variable nil nil [7945 7988])
+            ("tabulated-list-line-number-width" function nil nil [7990 8518])
+            ("tabulated-list-init-header" function nil nil [8520 10748])
+            ("tabulated-list-print-fake-header" function nil nil [10750 11368])
+            ("tabulated-list-header-overlay-p" function (:arguments ("pos")) nil [11370 11607])
+            ("tabulated-list-revert" function
+               (:user-visible-flag t
+                :arguments ("ignored"))
+                nil [11609 11984])
+            ("tabulated-list--column-number" function (:arguments ("name")) nil [11986 12283])
+            ("tabulated-list--get-sorter" function nil nil [12285 13264])
+            ("tabulated-list--col-local-max-widths" function (:arguments ("col")) nil [13266 13653])
+            ("tabulated-list-print" function (:arguments ("remember-pos" "update")) nil [13655 17414])
+            ("tabulated-list-print-entry" function (:arguments ("id" "cols")) nil [17416 18397])
+            ("tabulated-list-print-col" function (:arguments ("n" "col-desc" "x")) nil [18399 21174])
+            ("tabulated-list-delete-entry" function nil nil [21176 21817])
+            ("tabulated-list-set-col" function (:arguments ("col" "desc" "change-entry-data")) nil [21819 23677])
+            ("tabulated-list-col-sort" function
+               (:user-visible-flag t
+                :arguments ("e"))
+                nil [23679 24086])
+            ("tabulated-list-sort" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [24088 24550])
+            ("tabulated-list--sort-by-column-name" function (:arguments ("name")) nil [24552 24945])
+            ("tabulated-list--current-lnum-width" variable nil nil [24947 24994])
+            ("tabulated-list-watch-line-number-width" function (:arguments ("_window")) nil [24995 25320])
+            ("tabulated-list-window-scroll-function" function (:arguments ("window" "_start")) nil [25322 25712])
+            ("define-derived-mode" code nil nil [25740 28317])
+            ("put" code nil nil [28319 28366])
+            ("tabulated-list" package nil nil [28368 28393]))          
+      :file "tabulated-list.el"
+      :pointmax 28427
+      :fsize 28430
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("edebug" include nil nil [3214 3231])
+            ("testcover" package nil nil [3232 3252])
+            ("testcover" customgroup (:user-visible-flag t) nil [3429 3535])
+            ("testcover-constants" variable (:default-value (quote (nil t emacs-build-time emacs-version emacs-major-version emacs-minor-version))) nil [3537 3812])
+            ("testcover-1value-functions" variable (:default-value (quote (backward-char barf-if-buffer-read-only beginning-of-line buffer-disable-undo buffer-enable-undo current-global-map deactivate-mark delete-backward-char delete-char delete-region ding forward-char function* insert insert-and-inherit kill-all-local-variables kill-line kill-paragraph kill-region kill-sexp lambda minibuffer-complete-and-exit narrow-to-region next-line push-mark put-text-property run-hooks set-match-data signal substitute-key-definition suppress-keymap undo use-local-map while widen yank))) nil [3814 4751])
+            ("testcover-noreturn-functions" variable (:default-value (quote (error noreturn throw signal))) nil [4753 5000])
+            ("testcover-compose-functions" variable (:default-value (quote (+ - * / = append length list make-keymap make-sparse-keymap mapcar message propertize replace-regexp-in-string run-with-idle-timer set-buffer-modified-p))) nil [5002 5517])
+            ("testcover-progn-functions" variable (:default-value (quote (define-key fset function goto-char mapc overlay-put progn save-current-buffer save-excursion save-match-data save-restriction save-selected-window save-window-excursion set set-default set-marker-insertion-type setq setq-default with-current-buffer with-output-to-temp-buffer with-syntax-table with-temp-buffer with-temp-file with-temp-message with-timeout))) nil [5519 6213])
+            ("testcover-prog1-functions" variable (:default-value (quote (prog1 unwind-protect))) nil [6215 6520])
+            ("testcover-potentially-1value-functions" variable (:default-value (quote (add-hook and beep or remove-hook unless when))) nil [6522 6787])
+            ("testcover-nohits" variable
+               (:default-value (quote ((t (:background "DeepPink2"))))
+                :type "face")
+                nil [6789 6927])
+            ("testcover-1value" variable
+               (:default-value (quote ((t (:background "Wheat2"))))
+                :type "face")
+                nil [6929 7083])
+            ("testcover-module-constants" variable nil nil [7261 7384])
+            ("testcover-module-1value-functions" variable nil nil [7386 7566])
+            ("testcover-module-potentially-1value-functions" variable nil nil [7568 7759])
+            ("testcover-vector" variable nil nil [7761 7853])
+            ("testcover-start" function
+               (:user-visible-flag t
+                :arguments ("filename" "byte-compile"))
+                nil [8065 8932])
+            ("testcover-this-defun" function (:user-visible-flag t) nil [8949 9167])
+            ("testcover--read" function (:arguments ("orig" "stream")) nil [9169 9555])
+            ("testcover-reinstrument" function (:arguments ("form")) nil [9557 16568])
+            ("testcover-reinstrument-list" function (:arguments ("list")) nil [16570 16996])
+            ("testcover-reinstrument-compose" function (:arguments ("list" "fun")) nil [16998 17586])
+            ("testcover-end" function
+               (:user-visible-flag t
+                :arguments ("filename"))
+                nil [17588 17798])
+            ("testcover-enter" function (:arguments ("testcover-sym" "testcover-fun")) nil [17985 18315])
+            ("testcover-after" function (:arguments ("idx" "val")) nil [18317 19138])
+            ("testcover-1value" function (:arguments ("idx" "val")) nil [19140 19810])
+            ("testcover-mark" function (:arguments ("def")) nil [20032 21526])
+            ("testcover-mark-all" function
+               (:user-visible-flag t
+                :arguments ("buffer"))
+                nil [21528 21891])
+            ("testcover-unmark-all" function
+               (:user-visible-flag t
+                :arguments ("buffer"))
+                nil [21893 22141])
+            ("testcover-next-mark" function (:user-visible-flag t) nil [22176 22349]))          
+      :file "testcover.el"
+      :pointmax 22378
+      :fsize 22377
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "edebug.el"
+      :fsize 149617
+      :lastmodtime '(23603 24958 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("tq-queue" function (:arguments ("tq")) nil [2131 2175])
+            ("tq-process" function (:arguments ("tq")) nil [2176 2226])
+            ("tq-buffer" function (:arguments ("tq")) nil [2227 2277])
+            ("tq-queue-head-question" function (:arguments ("tq")) nil [2426 2487])
+            ("tq-queue-head-regexp" function (:arguments ("tq")) nil [2573 2640])
+            ("tq-queue-head-closure" function (:arguments ("tq")) nil [2693 2766])
+            ("tq-queue-head-fn" function (:arguments ("tq")) nil [2846 2919])
+            ("tq-queue-empty" function (:arguments ("tq")) nil [2957 3012])
+            ("tq-create" function (:arguments ("process")) nil [3053 3580])
+            ("tq-queue-add" function (:arguments ("tq" "question" "re" "closure" "fn")) nil [3582 3733])
+            ("tq-queue-pop" function (:arguments ("tq")) nil [3735 3947])
+            ("tq-enqueue" function (:arguments ("tq" "question" "regexp" "closure" "fn" "delay-question")) nil [3949 4796])
+            ("tq-close" function (:arguments ("tq")) nil [4798 4946])
+            ("tq-filter" function (:arguments ("tq" "string")) nil [4948 5211])
+            ("tq-process-buffer" function (:arguments ("tq")) nil [5213 6154])
+            ("tq" package nil nil [6156 6169]))          
+      :file "tq.el"
+      :pointmax 6191
+      :fsize 6190
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "easymenu.el"
+      :fsize 28289
+      :lastmodtime '(23603 24958 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("eldoc" customgroup (:user-visible-flag t) nil [2006 2124])
+            ("eldoc-idle-delay" variable (:default-value 0.5) nil [2126 2427])
+            ("eldoc-print-after-edit" variable nil nil [2429 2605])
+            ("eldoc-minor-mode-string" variable (:default-value (purecopy " ElDoc")) nil [2622 2819])
+            ("eldoc-argument-case" variable (:default-value (function identity)) nil [2821 3300])
+            ("make-obsolete-variable" code nil nil [3301 3357])
+            ("eldoc-echo-area-use-multiline-p" variable (:default-value (quote truncate-sym-name-if-fit)) nil [3359 4458])
+            ("eldoc-highlight-function-argument" variable
+               (:default-value (quote ((t (:inherit bold))))
+                :type "face")
+                nil [4460 4714])
+            ("eldoc-message-commands-table-size" variable (:default-value 31) nil [4749 5126])
+            ("eldoc-message-commands" variable (:default-value (make-vector eldoc-message-commands-table-size 0)) nil [5128 5774])
+            ("eldoc-last-data" variable (:default-value (make-vector 3 nil)) nil [5795 6201])
+            ("make-obsolete-variable" code nil nil [6202 6273])
+            ("eldoc-last-message" variable nil nil [6275 6306])
+            ("eldoc-timer" variable nil nil [6308 6356])
+            ("eldoc-current-idle-delay" variable (:default-value eldoc-idle-delay) nil [6358 6527])
+            ("eldoc-message-function" variable (:default-value (function eldoc-minibuffer-message)) nil [6529 6700])
+            ("eldoc-edit-message-commands" function nil nil [6702 7172])
+            ("define-minor-mode" code nil nil [7191 8574])
+            ("define-globalized-minor-mode" code nil nil [8591 8740])
+            ("turn-on-eldoc-mode" function nil nil [8757 8953])
+            ("eldoc--supported-p" function nil nil [8955 9099])
+            ("eldoc-schedule-timer" function nil nil [9103 9876])
+            ("eldoc-mode-line-string" variable nil nil [9878 9913])
+            ("put" code nil nil [9914 9967])
+            ("eldoc-minibuffer-message" function (:arguments ("format-string" "args")) nil [9969 10966])
+            ("eldoc-message" function (:arguments ("string")) nil [10968 11626])
+            ("eldoc--message-command-p" function (:arguments ("command")) nil [11628 11824])
+            ("eldoc-pre-command-refresh-echo-area" function nil nil [12247 12777])
+            ("eldoc-display-message-p" function nil nil [12838 13292])
+            ("eldoc-display-message-no-interference-p" function nil nil [13431 13612])
+            ("eldoc-documentation-function" variable (:default-value (function ignore)) nil [13631 14600])
+            ("eldoc-print-current-symbol-info" function nil nil [14602 15134])
+            ("eldoc-docstring-format-sym-doc" function (:arguments ("prefix" "doc" "face")) nil [15299 16674])
+            ("eldoc-add-command" function (:arguments ("cmds")) nil [17009 17246])
+            ("eldoc-add-command-completions" function (:arguments ("names")) nil [17248 17462])
+            ("eldoc-remove-command" function (:arguments ("cmds")) nil [17464 17703])
+            ("eldoc-remove-command-completions" function (:arguments ("names")) nil [17705 17944])
+            ("eldoc-add-command-completions" code nil nil [17975 18458])
+            ("eldoc" package nil nil [18460 18476]))          
+      :file "eldoc.el"
+      :pointmax 18501
+      :fsize 18500
+      :lastmodtime '(23603 24958 0 0)
+      :unmatched-syntax nil))
   :file "!drive_c!Tools!emacs-26.2!share!emacs!26.2!lisp!emacs-lisp!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

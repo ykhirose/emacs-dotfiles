@@ -1,0 +1,193 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CppUTest/TestHarness_c.h" include (:system-flag t) nil [1 36])
+            ("CppUTestExt/MockSupport_c.h" include (:system-flag t) nil [37 75])
+            ("Lsm6ds3.h" include nil nil [77 97])
+            ("gyrAccSetI2CConfig" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [123 128]))                  
+                :type "void")
+                nil [99 178])
+            ("gyrAccWriteRegister" function
+               (:arguments 
+                  ( ("address" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [234 250])
+                    ("data" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [251 264])
+                    ("i2cTimeOut" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [265 285]))                  
+                :type "void")
+                nil [209 336])
+            ("gyrAccI2cWrite" function
+               (:arguments 
+                  ( ("reg_addr" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [357 380])
+                    ("length" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [381 402])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [403 429])
+                    ("i2cTimeOut" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [430 450]))                  
+                :type "int")
+                nil [338 533])
+            ("gyrAccReadRegister" function
+               (:arguments 
+                  ( ("pBuffer" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [558 575])
+                    ("length" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [576 597])
+                    ("address" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [598 614])
+                    ("i2cTimeOut" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [615 635]))                  
+                :type "int")
+                nil [535 722])
+            ("gyrAccI2cRead" function
+               (:arguments 
+                  ( ("reg_addr" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [742 765])
+                    ("length" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [766 787])
+                    ("data" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [788 808])
+                    ("i2cTimeOut" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [809 829]))                  
+                :type "int")
+                nil [724 911])
+            ("gyrAccSetOutputDataRateAndPowerMode" function
+               (:arguments 
+                  ( ("outputDataRate" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [957 981])
+                    ("powerMode" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [982 1000]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [913 1104])
+            ("accSetFullScale" function
+               (:arguments 
+                  ( ("fullScale" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1130 1148]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1106 1232])
+            ("gyrAccInit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1252 1257]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [1234 1336])
+            ("gyrAccGetAccRawData" function
+               (:arguments 
+                  ( ("xAxis" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1362 1375])
+                    ("yAxis" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1376 1389])
+                    ("zAxis" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1390 1403])
+                    ("i2cTimeOut" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1404 1424]))                  
+                :type "int")
+                nil [1338 1512])
+            ("accIsDataReady" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1537 1542]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1514 1625])
+            ("gyrAccGetGyrRawData" function
+               (:arguments 
+                  ( ("xAxis" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1651 1664])
+                    ("yAxis" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1665 1678])
+                    ("zAxis" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1679 1692])
+                    ("i2cTimeOut" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1693 1713]))                  
+                :type "int")
+                nil [1627 1801])
+            ("gyrAccGetTempData" function
+               (:arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1829 1838]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1803 1924])
+            ("gyrAccPrepareWakeupInterrupt" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1960 1965]))                  
+                :type "void")
+                nil [1926 2025])
+            ("gyrAccCheckSleepEvent" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2057 2062]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2027 2152])
+            ("gyrAccGyrPowerOff" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2177 2182]))                  
+                :type "void")
+                nil [2154 2231])
+            ("gyrAccGyrPowerOn" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2255 2260]))                  
+                :type "void")
+                nil [2233 2308])
+            ("gyrAccPrepareDoubleTapInterrupt" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2347 2352]))                  
+                :type "void")
+                nil [2310 2415])
+            ("gyrAccCheckDoubleTapEvent" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2451 2456]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2417 2550])
+            ("initAcc" function
+               (:arguments 
+                  ( ("outputDataRate" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2568 2592])
+                    ("fullScaleRange" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2593 2617]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2552 2693])
+            ("initGyr" function
+               (:arguments 
+                  ( ("outputDataRate" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2711 2735])
+                    ("fullScaleRange" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2736 2760]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2695 2836])
+            ("setAccOdrFsBw" function
+               (:arguments 
+                  ( ("outputDataRate" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2860 2884])
+                    ("fullScaleRange" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2885 2909])
+                    ("bandwidth" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2910 2929]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [2838 3011])
+            ("setGyrOdrFs" function
+               (:arguments 
+                  ( ("outputDataRate" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3033 3057])
+                    ("fullScaleRange" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3058 3082]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3013 3162])
+            ("setAccFullScale" function
+               (:arguments 
+                  ( ("fullScale" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3188 3206]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3164 3290])
+            ("setGyrFullScale" function
+               (:arguments 
+                  ( ("fullScale" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3316 3335]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [3292 3419]))          
+      :file "MockedLsm6ds3.c"
+      :pointmax 3421
+      :fsize 3420
+      :lastmodtime '(23802 13506 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_c!dev!leomo!lpsensor-source!LemonadeSensorFirmware!Test!MockTest!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

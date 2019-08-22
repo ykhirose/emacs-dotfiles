@@ -1,0 +1,288 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__ACC_GYR_H__" variable (:constant-flag t) nil [62 75])
+            ("stdint.h" include (:system-flag t) nil [77 96])
+            ("ACC_GAIN_2G" variable (:constant-flag t) nil [184 195])
+            ("ACC_GAIN_4G" variable (:constant-flag t) nil [223 234])
+            ("ACC_GAIN_8G" variable (:constant-flag t) nil [262 273])
+            ("ACC_GAIN_16G" variable (:constant-flag t) nil [301 313])
+            ("GYR_GAIN_DPS_125" variable (:constant-flag t) nil [405 421])
+            ("GYR_GAIN_DPS_245" variable (:constant-flag t) nil [442 458])
+            ("GYR_GAIN_DPS_500" variable (:constant-flag t) nil [479 495])
+            ("GYR_GAIN_DPS_1000" variable (:constant-flag t) nil [516 533])
+            ("GYR_GAIN_DPS_2000" variable (:constant-flag t) nil [553 570])
+            ("_AccRange" type
+               (:members 
+                  ( ("ACC_RANGE_2G" variable
+                       (:constant-flag t
+                        :default-value (629 630)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [614 630])
+                    ("ACC_RANGE_4G" variable
+                       (:constant-flag t
+                        :default-value (651 652)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [636 652])
+                    ("ACC_RANGE_8G" variable
+                       (:constant-flag t
+                        :default-value (673 674)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [658 674])
+                    ("ACC_RANGE_16G" variable
+                       (:constant-flag t
+                        :default-value (696 698)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [680 698]))                  
+                :type "enum")
+                nil [585 712])
+            ("AccRange" type
+               (:typedef ("_AccRange" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [585 712])
+            ("_AccODR" type
+               (:members 
+                  ( ("ACC_ODR_13HZ" variable
+                       (:constant-flag t
+                        :default-value (762 764)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [743 764])
+                    ("ACC_ODR_26HZ" variable
+                       (:constant-flag t
+                        :default-value (789 791)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [770 791])
+                    ("ACC_ODR_52HZ" variable
+                       (:constant-flag t
+                        :default-value (816 818)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [797 818])
+                    ("ACC_ODR_104HZ" variable
+                       (:constant-flag t
+                        :default-value (842 845)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [824 845])
+                    ("ACC_ODR_208HZ" variable
+                       (:constant-flag t
+                        :default-value (869 872)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [851 872])
+                    ("ACC_ODR_416HZ" variable
+                       (:constant-flag t
+                        :default-value (896 899)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [878 899])
+                    ("ACC_ODR_833HZ" variable
+                       (:constant-flag t
+                        :default-value (923 926)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [905 926])
+                    ("ACC_ODR_1660HZ" variable
+                       (:constant-flag t
+                        :default-value (949 953)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [932 953])
+                    ("ACC_ODR_3330HZ" variable
+                       (:constant-flag t
+                        :default-value (976 980)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [959 980])
+                    ("ACC_ODR_6660HZ" variable
+                       (:constant-flag t
+                        :default-value (1003 1007)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [986 1007]))                  
+                :type "enum")
+                nil [716 1019])
+            ("AccODR" type
+               (:typedef ("_AccODR" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [716 1019])
+            ("_AccFilterBandWidth" type
+               (:members 
+                  ( ("ACC_FILTER_BW_50HZ" variable
+                       (:constant-flag t
+                        :default-value (1083 1085)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1062 1085])
+                    ("ACC_FILTER_BW_100HZ" variable
+                       (:constant-flag t
+                        :default-value (1113 1116)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1091 1116])
+                    ("ACC_FILTER_BW_200HZ" variable
+                       (:constant-flag t
+                        :default-value (1144 1147)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1122 1147])
+                    ("ACC_FILTER_BW_400HZ" variable
+                       (:constant-flag t
+                        :default-value (1175 1178)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1153 1178]))                  
+                :type "enum")
+                nil [1023 1202])
+            ("AccFilterBandWidth" type
+               (:typedef ("_AccFilterBandWidth" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [1023 1202])
+            ("_GyrRange" type
+               (:members 
+                  ( ("GYR_RANGE_DPS_125" variable
+                       (:constant-flag t
+                        :default-value (1256 1259)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1235 1259])
+                    ("GYR_RANGE_DPS_245" variable
+                       (:constant-flag t
+                        :default-value (1286 1289)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1265 1289])
+                    ("GYR_RANGE_DPS_500" variable
+                       (:constant-flag t
+                        :default-value (1316 1319)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1295 1319])
+                    ("GYR_RANGE_DPS_1000" variable
+                       (:constant-flag t
+                        :default-value (1346 1350)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1325 1350])
+                    ("GYR_RANGE_DPS_2000" variable
+                       (:constant-flag t
+                        :default-value (1377 1381)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1356 1381]))                  
+                :type "enum")
+                nil [1206 1395])
+            ("GyrRange" type
+               (:typedef ("_GyrRange" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [1206 1395])
+            ("_GyrODR" type
+               (:members 
+                  ( ("GYR_ODR_13HZ" variable
+                       (:constant-flag t
+                        :default-value (1445 1447)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1426 1447])
+                    ("GYR_ODR_26HZ" variable
+                       (:constant-flag t
+                        :default-value (1472 1474)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1453 1474])
+                    ("GYR_ODR_52HZ" variable
+                       (:constant-flag t
+                        :default-value (1499 1501)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1480 1501])
+                    ("GYR_ODR_104HZ" variable
+                       (:constant-flag t
+                        :default-value (1525 1528)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1507 1528])
+                    ("GYR_ODR_208HZ" variable
+                       (:constant-flag t
+                        :default-value (1552 1555)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1534 1555])
+                    ("GYR_ODR_416HZ" variable
+                       (:constant-flag t
+                        :default-value (1579 1582)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1561 1582])
+                    ("GYR_ODR_833HZ" variable
+                       (:constant-flag t
+                        :default-value (1606 1609)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1588 1609])
+                    ("GYR_ODR_1660HZ" variable
+                       (:constant-flag t
+                        :default-value (1632 1636)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1615 1636]))                  
+                :type "enum")
+                nil [1399 1648])
+            ("GyrODR" type
+               (:typedef ("_GyrODR" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [1399 1648])
+            ("acc_gyr_initialize" function
+               (:prototype-flag t
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [1652 1681])
+            ("acc_gyr_deinitialize" function
+               (:prototype-flag t
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [1684 1715])
+            ("acc_gyr_configure" function
+               (:prototype-flag t
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [1719 1747])
+            ("acc_gyr_on" function
+               (:prototype-flag t
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [1751 1772])
+            ("acc_gyr_off" function
+               (:prototype-flag t
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [1775 1797])
+            ("acc_gyr_set_acc_config" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("odr" variable (:type ("AccODR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1832 1843])
+                    ("range" variable (:type ("AccRange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1844 1859]))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [1801 1860])
+            ("acc_gyr_set_gyr_config" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("odr" variable (:type ("GyrODR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1894 1905])
+                    ("range" variable (:type ("GyrRange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1906 1921]))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [1863 1922])
+            ("acc_gyr_get_acc_gyr_16bit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("acc" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1960 1971])
+                    ("gyr" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1972 1983]))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [1926 1984])
+            ("acc_gyr_dump_registers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2015 2020]))                  
+                :type "void")
+                nil [1987 2021]))          
+      :file "acc_gyr.h"
+      :pointmax 2091
+      :fsize 2090
+      :lastmodtime '(23800 38948 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ACC_GAIN_4G" . ((semantic-list "(1.0f/8192.0f)" 239 . 253)))
+          ("GYR_GAIN_DPS_125" . ((number "0.004375f" 424 . 433)))
+          ("GYR_GAIN_DPS_245" . ((number "0.00875f" 462 . 470)))
+          ("GYR_GAIN_DPS_1000" . ((number "0.035f" 538 . 544)))
+          ("GYR_GAIN_DPS_2000" . ((number "0.070f" 575 . 581)))
+          ("ACC_GAIN_16G" . ((semantic-list "(1.0f/2048.0f)" 317 . 331)))
+          ("ACC_GAIN_2G" . ((semantic-list "(1.0f/16384.0f)" 199 . 214)))
+          ("__ACC_GYR_H__")
+          ("ACC_GAIN_8G" . ((semantic-list "(1.0f/4096.0f)" 278 . 292)))
+          ("GYR_GAIN_DPS_500" . ((number "0.0175f" 500 . 507)))
+          )
+))
+  :file "!drive_c!Users!hiros!AppData!Local!Packages!CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc!LocalState!rootfs!home!yhrs!leomo!projects!lpsensor-source!lib!app!inc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

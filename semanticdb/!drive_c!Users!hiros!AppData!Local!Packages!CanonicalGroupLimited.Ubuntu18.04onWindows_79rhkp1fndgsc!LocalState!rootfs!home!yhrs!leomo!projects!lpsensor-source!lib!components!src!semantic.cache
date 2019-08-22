@@ -1,0 +1,181 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdint.h" include (:system-flag t) nil [1 20])
+            ("mcu.h" include nil nil [22 38])
+            ("mcu_initialize" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [224 229]))                  
+                :type "void")
+                nil [204 235])
+            ("mcu_wait_ms" function
+               (:arguments 
+                  ( ("ms" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [328 340]))                  
+                :type "void")
+                nil [311 346])
+            ("mcu_current_count" function (:type ("uint32_t" type (:type "class") nil nil)) nil [425 459])
+            ("mcu_reset" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [534 539]))                  
+                :type "void")
+                nil [519 545])
+            ("mcu_set_bor_level" function (:type "void") nil [608 638])
+            ("mcu_enter_sleep" function
+               (:arguments 
+                  ( ("mode" variable (:type ("McuSleepMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [746 764]))                  
+                :type "void")
+                nil [725 770]))          
+      :file "mcu.c"
+      :pointmax 815
+      :fsize 814
+      :lastmodtime '(23800 38949 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdint.h" include (:system-flag t) nil [25 44])
+            ("i2c.h" include nil nil [46 62])
+            ("i2c_initialize" function
+               (:arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [164 173]))                  
+                :type "void")
+                nil [144 179])
+            ("i2c_deinitialize" function
+               (:arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [227 236]))                  
+                :type "void")
+                nil [205 242])
+            ("i2c_enable" function
+               (:arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [284 293]))                  
+                :type "void")
+                nil [268 299])
+            ("i2c_disable" function
+               (:arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [342 351]))                  
+                :type "void")
+                nil [325 357])
+            ("i2c_send_start" function
+               (:arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [405 414]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [383 434])
+            ("i2c_send_address" function
+               (:arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [484 493])
+                    ("addr" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [494 507])
+                    ("dir" variable (:type ("I2CDirection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [508 525]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [460 545])
+            ("i2c_send_stop" function
+               (:arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [596 605]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [575 625])
+            ("i2c_ack" function
+               (:arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [666 675])
+                    ("ack" variable (:type ("I2CAck" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [676 687]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [651 707])
+            ("i2c_recv_nack" function
+               (:arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [754 763])
+                    ("nack" variable (:type ("I2CNack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [764 777]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [733 797])
+            ("i2c_write_data" function
+               (:arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [845 854])
+                    ("data" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [855 868]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [823 888])
+            ("i2c_read_data" function
+               (:arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [935 944])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [945 959]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [914 979]))          
+      :file "i2c.c"
+      :pointmax 1024
+      :fsize 1023
+      :lastmodtime '(23800 38949 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("charger.h" include nil nil [1 21])
+            ("charger_initialize" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [129 134]))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [102 154])
+            ("charger_deinitialize" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [209 214]))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [180 234])
+            ("charger_status_pin_enable" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [294 299]))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [260 319])
+            ("charger_status_pin_disable" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [380 385]))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [345 405])
+            ("charger_get_status" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [465 470]))                  
+                :type ("CHARGER_STATUS" type (:type "class") nil nil))
+                nil [431 509]))          
+      :file "charger.c"
+      :pointmax 555
+      :fsize 554
+      :lastmodtime '(23800 38949 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_c!Users!hiros!AppData!Local!Packages!CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc!LocalState!rootfs!home!yhrs!leomo!projects!lpsensor-source!lib!components!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,818 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdint.h" include (:system-flag t) nil [36 55])
+            ("acc_gyr.h" include nil nil [57 77])
+            ("mag.h" include nil nil [78 94])
+            ("config.h" include nil nil [95 114])
+            ("embed_flash.h" include nil nil [115 139])
+            ("filter.h" include nil nil [140 159])
+            ("mainloop.h" include nil nil [160 181])
+            ("mag.h" include nil nil [182 198])
+            ("matrix.h" include nil nil [199 218])
+            ("mcu.h" include nil nil [219 235])
+            ("register.h" include nil nil [236 257])
+            ("sensor_manager.h" include nil nil [258 285])
+            ("version.h" include nil nil [286 306])
+            ("DEG2RAD" variable (:constant-flag t) nil [371 378])
+            ("GYRO_ONLINE_CAL_ITER" variable (:constant-flag t) nil [400 420])
+            ("SENSOR_DATA_QUEUE_SIZE" variable (:constant-flag t) nil [433 455])
+            ("sm_status" variable
+               (:default-value "0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [461 484])
+            ("mode" variable (:type ("SensorManagerMode" type (:type "class") nil nil)) nil [487 510])
+            ("rawData" variable (:type ("SensorData" type (:type "class") nil nil)) nil [514 533])
+            ("data" variable (:type ("SensorData" type (:type "class") nil nil)) nil [536 552])
+            ("dataQueue" variable
+               (:dereference 1
+                :type ("SensorData" type (:type "class") nil nil))
+                nil [555 600])
+            ("dataQueueCount" variable
+               (:default-value "0"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [603 630])
+            ("gDrift" variable (:type ("Vector3f" type (:type "class") nil nil)) nil [634 650])
+            ("velocity" variable (:type ("Vector3f" type (:type "class") nil nil)) nil [654 672])
+            ("q" variable (:type ("Vector4f" type (:type "class") nil nil)) nil [676 687])
+            ("qOffset" variable (:type ("Vector4f" type (:type "class") nil nil)) nil [690 707])
+            ("qAfterOffset" variable (:type ("Vector4f" type (:type "class") nil nil)) nil [710 732])
+            ("rAfterOffset" variable (:type ("Vector3f" type (:type "class") nil nil)) nil [735 757])
+            ("mQ_hx" variable (:type ("Vector4f" type (:type "class") nil nil)) nil [761 776])
+            ("mQ_offset" variable (:type ("Vector4f" type (:type "class") nil nil)) nil [779 798])
+            ("w" variable (:type ("Vector3f" type (:type "class") nil nil)) nil [802 813])
+            ("kf" variable (:type ("KF" type (:type "class") nil nil)) nil [829 835])
+            ("calibrationData" variable (:type ("CalibrationData" type (:type "class") nil nil)) nil [838 870])
+            ("sm_state" variable (:type ("SensorManagerState" type (:type "class") nil nil)) nil [873 901])
+            ("filterParam" variable (:type ("FilterParameters" type (:type "class") nil nil)) nil [906 935])
+            ("refCalibration" variable (:type ("RefCalibration" type (:type "class") nil nil)) nil [939 969])
+            ("gyrCalibration" variable (:type ("GyrCalibration" type (:type "class") nil nil)) nil [972 1002])
+            ("measurementTime" variable
+               (:default-value "0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1005 1034])
+            ("measurementPeriod" variable
+               (:default-value "0.00250f"
+                :type "float")
+                nil [1037 1072])
+            ("measurementIntervals" variable
+               (:typemodifiers ("volatile")
+                :default-value "1"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1075 1117])
+            ("magNoise" variable
+               (:default-value "0.0f"
+                :type "float")
+                nil [1121 1143])
+            ("gReg" variable
+               (:typemodifiers ("extern")
+                :type ("Register" type (:type "class") nil nil))
+                nil [1147 1168])
+            ("hasUserConfig" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1201 1206]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1172 1302])
+            ("_smCalibrationdataInit" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("gReg" variable (:type ("Register" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1341 1355]))                  
+                :type "void")
+                nil [1306 1356])
+            ("_smFilterParamInit" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("gReg" variable (:type ("Register" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1390 1404]))                  
+                :type "void")
+                nil [1359 1405])
+            ("_smRefCalibration_init_struct" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("calibration" variable
+                       (:pointer 1
+                        :type ("RefCalibration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1450 1478]))                  
+                :type "void")
+                nil [1408 1479])
+            ("_smGyrCalibration_init_struct" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("calibration" variable
+                       (:pointer 1
+                        :type ("GyrCalibration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1524 1552]))                  
+                :type "void")
+                nil [1482 1553])
+            ("_smCorrectRawAxisAlignment" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1596 1601]))                  
+                :type "void")
+                nil [1557 1602])
+            ("_smCheckGyrCal" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1633 1638]))                  
+                :type "void")
+                nil [1606 1639])
+            ("_smStopGyrCalibration" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1676 1681]))                  
+                :type "void")
+                nil [1642 1682])
+            ("_smGyrOnlineCal" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("gyr" variable (:type ("Vector3f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1714 1727]))                  
+                :type "void")
+                nil [1686 1728])
+            ("_smCalcLinearAcceleration" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1774 1779]))                  
+                :type ("Vector3f" type (:type "class") nil nil))
+                nil [1732 1780])
+            ("_smPushSensorData" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1814 1819]))                  
+                :type "void")
+                nil [1784 1820])
+            ("_smResetSensorDataQueue" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1859 1864]))                  
+                :type "void")
+                nil [1823 1865])
+            ("_smPollSensorData" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1904 1909]))                  
+                :type ("SensorData" type (:type "class") nil nil))
+                nil [1868 1910])
+            ("smInitialize" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1935 1940]))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [1914 2631])
+            ("ccc" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2635 2659])
+            ("smUpdateSensorData" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2687 2692]))                  
+                :type "void")
+                nil [2663 3099])
+            ("smProcessSensorData" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3128 3133]))                  
+                :type "void")
+                nil [3103 5102])
+            ("smGetSensorData" function
+               (:arguments 
+                  ( ("out" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5130 5143])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5144 5156]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [5106 8856])
+            ("smGetCurrentMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8895 8900]))                  
+                :type ("SensorManagerMode" type (:type "class") nil nil))
+                nil [8860 8923])
+            ("smSetCommandMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8949 8954]))                  
+                :type "void")
+                nil [8927 8972])
+            ("smInitStreamMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8998 9003]))                  
+                :type "void")
+                nil [8976 9683])
+            ("smSetStreamMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9708 9713]))                  
+                :type "void")
+                nil [9687 9833])
+            ("smUpdateStreamFreq" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9861 9866]))                  
+                :type "void")
+                nil [9837 10952])
+            ("smStartGyrCalibration" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10983 10988]))                  
+                :type "void")
+                nil [10956 11487])
+            ("_smCheckGyrCal" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11518 11523]))                  
+                :type "void")
+                nil [11491 12697])
+            ("_smStopGyrCalibration" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12735 12740]))                  
+                :type "void")
+                nil [12701 13564])
+            ("smStartRefCalibration" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13595 13600]))                  
+                :type "void")
+                nil [13568 14128])
+            ("smCheckRefCal" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14151 14156]))                  
+                :type "void")
+                nil [14132 14360])
+            ("smStopRefCalibration" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14390 14395]))                  
+                :type "void")
+                nil [14364 14422])
+            ("smGetStorageMode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14451 14456]))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [14426 14488])
+            ("smSetStorageMode" function
+               (:arguments 
+                  ( ("mode" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14517 14530]))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [14492 14562])
+            ("smGetCurrentMeasurementTime" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14601 14615])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14616 14628]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [14566 14912])
+            ("_smRefCalibration_init_struct" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("calibration" variable
+                       (:pointer 1
+                        :type ("RefCalibration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14959 14987]))                  
+                :type "void")
+                nil [14917 15250])
+            ("_smGyrCalibration_init_struct" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("calibration" variable
+                       (:pointer 1
+                        :type ("GyrCalibration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15296 15324]))                  
+                :type "void")
+                nil [15254 15703])
+            ("_smCorrectRawAxisAlignment" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15746 15751]))                  
+                :type "void")
+                nil [15707 16248])
+            ("_smGyrOnlineCal" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("gyr" variable (:type ("Vector3f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16280 16293]))                  
+                :type "void")
+                nil [16252 18157])
+            ("_smCalcLinearAcceleration" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18203 18208]))                  
+                :type ("Vector3f" type (:type "class") nil nil))
+                nil [18161 18500])
+            ("_smPushSensorData" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18535 18540]))                  
+                :type "void")
+                nil [18505 18818])
+            ("_smResetSensorDataQueue" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18858 18863]))                  
+                :type "void")
+                nil [18822 18893])
+            ("_smPollSensorData" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18933 18938]))                  
+                :type ("SensorData" type (:type "class") nil nil))
+                nil [18897 19698])
+            ("_smCalibrationdataInit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("gReg" variable (:type ("Register" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19737 19751]))                  
+                :type "void")
+                nil [19702 24074])
+            ("_smFilterParamInit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("gReg" variable (:type ("Register" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24109 24123]))                  
+                :type "void")
+                nil [24078 25853]))          
+      :file "sensor_manager.c"
+      :pointmax 25899
+      :fsize 25898
+      :lastmodtime '(23800 38949 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEG2RAD" . ((number "0.017453293f" 379 . 391)))
+          ("SENSOR_DATA_QUEUE_SIZE" . ((number "8" 456 . 457)))
+          ("GYRO_ONLINE_CAL_ITER" . ((number "64" 421 . 423)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("acc_gyr.h" include nil nil [1 21])
+            ("acc_gyr_initialize" function (:type ("int16_t" type (:type "class") nil nil)) nil [103 151])
+            ("acc_gyr_deinitialize" function (:type ("int16_t" type (:type "class") nil nil)) nil [181 231])
+            ("acc_gyr_configure" function (:type ("int16_t" type (:type "class") nil nil)) nil [257 304])
+            ("acc_gyr_on" function (:type ("int16_t" type (:type "class") nil nil)) nil [330 370])
+            ("acc_gyr_off" function (:type ("int16_t" type (:type "class") nil nil)) nil [396 437])
+            ("acc_gyr_set_acc_config" function
+               (:arguments 
+                  ( ("odr" variable (:type ("AccODR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [494 505])
+                    ("range" variable (:type ("AccRange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [506 521]))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [463 541])
+            ("acc_gyr_set_gyr_config" function
+               (:arguments 
+                  ( ("odr" variable (:type ("GyrODR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [598 609])
+                    ("range" variable (:type ("GyrRange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [610 625]))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [567 645])
+            ("acc_gyr_get_acc_gyr_16bit" function
+               (:arguments 
+                  ( ("acc" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [705 716])
+                    ("gyr" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [717 728]))                  
+                :type ("int16_t" type (:type "class") nil nil))
+                nil [671 748])
+            ("acc_gyr_dump_registers" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [802 807]))                  
+                :type "void")
+                nil [774 825]))          
+      :file "acc_gyr.c"
+      :pointmax 870
+      :fsize 869
+      :lastmodtime '(23800 38948 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("string.h" include (:system-flag t) nil [46 65])
+            ("math.h" include (:system-flag t) nil [66 83])
+            ("mcu.h" include nil nil [85 101])
+            ("bt.h" include nil nil [102 117])
+            ("communication_manager.h" include nil nil [118 152])
+            ("gasgauge.h" include nil nil [153 174])
+            ("sensor_manager.h" include nil nil [175 202])
+            ("config.h" include nil nil [203 222])
+            ("command.h" include nil nil [223 243])
+            ("led.h" include nil nil [244 260])
+            ("packet.h" include nil nil [261 280])
+            ("parameter.h" include nil nil [281 303])
+            ("register.h" include nil nil [304 325])
+            ("sensor_manager.h" include nil nil [326 353])
+            ("system_updater.h" include nil nil [354 381])
+            ("version.h" include nil nil [382 402])
+            ("PRINT_DEBUG" variable (:constant-flag t) nil [531 542])
+            ("gReg" variable
+               (:typemodifiers ("extern")
+                :type ("Register" type (:type "class") nil nil))
+                nil [628 649])
+            ("productId" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [652 681])
+            ("sensorInfo" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [684 714])
+            ("syncFlag" variable
+               (:typemodifiers ("extern")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [717 741])
+            ("commSendPacket" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("packet" variable
+                       (:pointer 1
+                        :type ("MsPacket" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [774 791]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [745 792])
+            ("commSendPacket" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("packet" variable
+                       (:pointer 1
+                        :type ("MsPacket" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [824 841]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [795 1247])
+            ("commSendData" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("address" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1278 1295])
+                    ("function" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1296 1314])
+                    ("length" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1345 1361])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1362 1376]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [1251 1377])
+            ("commSendData" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("address" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1408 1425])
+                    ("function" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1426 1444])
+                    ("length" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1475 1491])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1492 1506]))                  
+                :type ("int8_t" type (:type "class") nil nil))
+                nil [1381 1626])
+            ("commSendAck" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1654 1659]))                  
+                :type "void")
+                nil [1630 1768])
+            ("commSendNack" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1796 1801]))                  
+                :type "void")
+                nil [1771 1911])
+            ("commInitialize" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1935 1940]))                  
+                :type "void")
+                nil [1915 2034])
+            ("commStreaming" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2057 2062]))                  
+                :type "void")
+                nil [2038 2247])
+            ("sendBatteryLevel" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2305 2310]))                  
+                :type "void")
+                nil [2283 2345])
+            ("sendBatteryVoltage" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2406 2411]))                  
+                :type "void")
+                nil [2382 2448])
+            ("sendSensorTemperature" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2508 2513]))                  
+                :type "void")
+                nil [2481 2551])
+            ("sendRTCDatetime" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2598 2603]))                  
+                :type "void")
+                nil [2577 2637])
+            ("commGoToCommandMode" function (:type "void") nil [2660 2761])
+            ("commGoToStreamMode" function (:type "void") nil [2783 2858])
+            ("commOrientationOffsetSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2917 2933]))                  
+                :type "void")
+                nil [2887 3051])
+            ("commOrientationOffsetReset" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3114 3130]))                  
+                :type "void")
+                nil [3082 3250])
+            ("commStreamFreqSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3295 3311]))                  
+                :type "void")
+                nil [3272 3448])
+            ("commConfigGet" function (:type "void") nil [3466 3607])
+            ("commStatusGet" function (:type "void") nil [3611 3738])
+            ("commImuIDSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3760 3776]))                  
+                :type "void")
+                nil [3742 3860])
+            ("commImuIDGet" function (:type "void") nil [3864 4004])
+            ("commGyrRangeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4029 4045]))                  
+                :type "void")
+                nil [4008 4154])
+            ("commGyrRangeGet" function (:type "void") nil [4158 4307])
+            ("commAccRangeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4332 4348]))                  
+                :type "void")
+                nil [4311 4464])
+            ("commAccRangeGet" function (:type "void") nil [4468 4617])
+            ("commMagRangeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4642 4658]))                  
+                :type "void")
+                nil [4621 4791])
+            ("commMagRangeGet" function (:type "void") nil [4795 4982])
+            ("commFilterModeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5009 5025]))                  
+                :type "void")
+                nil [4986 5136])
+            ("commFilterModeGet" function (:type "void") nil [5139 5294])
+            ("commFilterPresetSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5323 5339]))                  
+                :type "void")
+                nil [5298 5452])
+            ("commFilterPresetGet" function (:type "void") nil [5456 5617])
+            ("commSensorDataGet" function (:type "void") nil [5621 5741])
+            ("commHardIronOffsetSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5772 5788]))                  
+                :type "void")
+                nil [5745 5907])
+            ("commHardIronOffsetGet" function (:type "void") nil [5911 6135])
+            ("commSoftIronMatrixSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6166 6182]))                  
+                :type "void")
+                nil [6139 6301])
+            ("commSoftIronMatrixGet" function (:type "void") nil [6305 6529])
+            ("commReferenceReset" function (:type "void") nil [6533 6614])
+            ("commFieldEstimateSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6644 6660]))                  
+                :type "void")
+                nil [6618 6777])
+            ("commFieldEstimateGet" function (:type "void") nil [6781 7001])
+            ("commAccAlignMatrixSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7032 7048]))                  
+                :type "void")
+                nil [7005 7162])
+            ("commAccAlignMatrixGet" function (:type "void") nil [7166 7386])
+            ("commAccBiasSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7410 7426]))                  
+                :type "void")
+                nil [7390 7535])
+            ("commAccBiasGet" function (:type "void") nil [7539 7739])
+            ("commGyrAlignMatrixSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7770 7786]))                  
+                :type "void")
+                nil [7743 7900])
+            ("commGyrAlignMatrixGet" function (:type "void") nil [7904 8124])
+            ("commGyrAlignBiasSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8153 8169]))                  
+                :type "void")
+                nil [8128 8281])
+            ("commGyrAlignBiasGet" function (:type "void") nil [8285 8499])
+            ("commGyrStaticBiasSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8550 8566]))                  
+                :type "void")
+                nil [8524 8673])
+            ("commGyrStaticBiasGet" function (:type "void") nil [8677 8888])
+            ("commRawDataLpSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8914 8930]))                  
+                :type "void")
+                nil [8892 9063])
+            ("commRawDataLpGet" function (:type "void") nil [9067 9272])
+            ("commTimestampSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9298 9314]))                  
+                :type "void")
+                nil [9276 9407])
+            ("commLinAccCompModeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9438 9454]))                  
+                :type "void")
+                nil [9411 9589])
+            ("commLinAccCompModeGet" function (:type "void") nil [9593 9858])
+            ("commCentriCompModeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9889 9905]))                  
+                :type "void")
+                nil [9862 10043])
+            ("commCentriCompModeGet" function (:type "void") nil [10047 10311])
+            ("commGyrAutoCalEnable" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10341 10357]))                  
+                :type "void")
+                nil [10315 10474])
+            ("commGyrThresEnable" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10502 10518]))                  
+                :type "void")
+                nil [10478 10634])
+            ("commGyrCalibraStart" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10663 10668]))                  
+                :type "void")
+                nil [10638 10724])
+            ("commTransmitDataSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10753 10769]))                  
+                :type "void")
+                nil [10728 10881])
+            ("commLpBusDataModeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10911 10927]))                  
+                :type "void")
+                nil [10885 11064])
+            ("commTimestampOutputModeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11100 11116]))                  
+                :type "void")
+                nil [11068 11259])
+            ("commMagAlignmentMatrixSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11294 11310]))                  
+                :type "void")
+                nil [11263 11448])
+            ("commMagAlignmentMatrixGet" function (:type "void") nil [11452 11724])
+            ("commMagAlignmentBiasSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11758 11774]))                  
+                :type "void")
+                nil [11729 11910])
+            ("commMagAlignmentBiasGet" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11943 11948]))                  
+                :type "void")
+                nil [11914 12184])
+            ("commMagReferenceSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12213 12229]))                  
+                :type "void")
+                nil [12188 12365])
+            ("commMagReferenceGet" function (:type "void") nil [12369 12626])
+            ("commRegistersWrite" function (:type "void") nil [12630 12788])
+            ("commFactoryValueRestore" function (:type "void") nil [12792 12983])
+            ("commFirmwareVersionGet" function (:type "void") nil [12987 13205])
+            ("commIAPUpdate" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13229 13245]))                  
+                :type "void")
+                nil [13209 13276])
+            ("commFirmwareUpdate" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13304 13320]))                  
+                :type "void")
+                nil [13280 13356])
+            ("commBatteryLevelGet" function (:type "void") nil [13360 13572])
+            ("commBatteryVoltageGet" function (:type "void") nil [13576 13794])
+            ("commChargingStatusGet" function (:type "void") nil [13798 13947])
+            ("commTemperatureDataGet" function (:type "void") nil [13951 14165])
+            ("commProductIdSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14191 14207]))                  
+                :type "void")
+                nil [14169 14332])
+            ("commProductIdGet" function (:type "void") nil [14336 14481])
+            ("commDeviceNameSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14508 14524]))                  
+                :type "void")
+                nil [14485 14572])
+            ("commDeviceNameGet" function (:type "void") nil [14576 14774])
+            ("commDeviceInfoGet" function (:type "void") nil [14779 14928])
+            ("commLedColorSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14953 14969]))                  
+                :type "void")
+                nil [14932 15089])
+            ("commLedColorGet" function (:type "void") nil [15093 15291])
+            ("commLedWaveformSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15319 15335]))                  
+                :type "void")
+                nil [15295 15443])
+            ("commVibratorStateSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15473 15489]))                  
+                :type "void")
+                nil [15447 15541])
+            ("commVibratorWaveformSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15574 15590]))                  
+                :type "void")
+                nil [15545 15642])
+            ("commPingGet" function (:type "void") nil [15646 15894])
+            ("commSyncStart" function (:type "void") nil [15914 15982])
+            ("commSyncStop" function (:type "void") nil [16002 16069])
+            ("commRTCOutputModeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16099 16115]))                  
+                :type "void")
+                nil [16073 16249])
+            ("commRTCOutputModeGet" function (:type "void") nil [16253 16669])
+            ("commStorageModeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22003 22019]))                  
+                :type "void")
+                nil [21979 22022])
+            ("commStorageModeGet" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23312 23317]))                  
+                :type "void")
+                nil [23288 23560])
+            ("commMCUReset" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23582 23587]))                  
+                :type "void")
+                nil [23564 23612])
+            ("commRTCDatetimeGet" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23640 23645]))                  
+                :type "void")
+                nil [23616 23871])
+            ("commRTCDatetimeSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23899 23915]))                  
+                :type "void")
+                nil [23875 24052])
+            ("commRTCSmoothCalibrationGet" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [24089 24094]))                  
+                :type "void")
+                nil [24056 24573])
+            ("commRTCSmoothCalibrationSet" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24610 24626]))                  
+                :type "void")
+                nil [24577 24767])
+            ("communicate" function
+               (:arguments 
+                  ( ("packet" variable (:type ("MsPacket" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24789 24805]))                  
+                :type "void")
+                nil [24771 33695]))          
+      :file "communication_manager.c"
+      :pointmax 33739
+      :fsize 33738
+      :lastmodtime '(23800 38949 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PRINT_DEBUG" (spp-arg-list ("msg" "...") 542 . 552))
+          )
+))
+  :file "!drive_c!Users!hiros!AppData!Local!Packages!CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc!LocalState!rootfs!home!yhrs!leomo!projects!lpsensor-source!lib!app!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

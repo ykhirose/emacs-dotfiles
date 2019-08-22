@@ -28,7 +28,7 @@
 ;;                         ("melpa" . "https://melpa.org/packages/")))
 
 ;; MELPA-stable
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t) 
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 ;; Marmalade
 (add-to-list 'package-archives  '("marmalade" . "http://marmalade-repo.org/packages/") t)
@@ -72,8 +72,18 @@
 ;; TAB count
 (setq-default tab-width 2)
 
+<<<<<<< HEAD
 ;; Highlight current line
 (global-hl-line-mode t)
+=======
+;; highlight brackets
+(show-paren-mode t)
+(setq sow-paren-style 'parenthesis)
+
+;; highlight current line
+(global-hl-line-mode 1)
+(set-face-background 'hl-line "gray20")
+>>>>>>> 0ebf0ccc9c30fe597583ea085eee64a5656fab93
 
 ;; brackets highlight
 (show-paren-mode t)
@@ -103,9 +113,14 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
+ '(dumb-jump-mode t)
  '(package-selected-packages
 	 (quote
+<<<<<<< HEAD
 		(cmake-mode volatile-highlights magit dumb-jump helm-gtags smartparens srefactor helm ctags color-theme auto-complete))))
+=======
+		(wget magit cmake-mode ripgrep dumb-jump sr-speedbar helm-gtags smartparens srefactor helm ctags color-theme auto-complete))))
+>>>>>>> 0ebf0ccc9c30fe597583ea085eee64a5656fab93
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -121,6 +136,11 @@
 (global-semantic-decoration-mode 1)
 (global-semantic-stickyfunc-mode 1)
 (global-semantic-mru-bookmark-mode 1)
+<<<<<<< HEAD
+=======
+(global-set-key (kbd "C-c h") 'helm-semantic-or-imenu)
+
+>>>>>>> 0ebf0ccc9c30fe597583ea085eee64a5656fab93
 
 ;;;; srefactor
 (require 'srefactor)
@@ -128,6 +148,7 @@
 (define-key c-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
 (define-key c++-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
 
+<<<<<<< HEAD
 ;;;; dumb-jump
 (require 'dumb-jump)
 (setq dumb-jump-mode t)
@@ -188,3 +209,19 @@ descreate the transparency, otherwise increase it in 10%-steps"
 
 ;; set C-h as backspace
 (keyboard-translate ?\C-h ?\C-?)
+=======
+
+;;;; dumb-jump
+(require 'dumb-jump)
+(setq dumb-jump-default-project "")
+(setq dumb-jump-mode t)
+(setq dumb-jump-selector 'helm)
+(setq dumb-jump-use-prefer-searcher 'rg)
+(setq ripgrep-executable "C:\Tools\ripgrep-11.0.1-i686-pc-windows-msvc\rg.exe")
+(setq ripgrep-arguments '("-S"))
+
+;;;; cmake-mode
+(require 'cmake-mode)
+
+
+>>>>>>> 0ebf0ccc9c30fe597583ea085eee64a5656fab93

@@ -10,7 +10,421 @@
       :pointmax 361
       :fsize 3804
       :lastmodtime '(23826 59829 0 0)
-      :unmatched-syntax nil))
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("dash" include nil nil [1114 1129])
+            ("thingatpt" include nil nil [1130 1150])
+            ("cua--region-keymap" variable nil nil [1203 1230])
+            ("cl" include nil nil [1170 1183])
+            ("declare-function" code nil nil [1232 1280])
+            ("declare-function" code nil nil [1281 1335])
+            ("declare-function" code nil nil [1336 1389])
+            ("sp-keymap" variable (:default-value (make-sparse-keymap)) nil [1481 1560])
+            ("defvaralias" code nil nil [1561 1607])
+            ("sp-paredit-bindings" variable (:default-value (quote (("C-M-f" . sp-forward-sexp) ("C-M-b" . sp-backward-sexp) ("C-M-u" . sp-backward-up-sexp) ("C-M-d" . sp-down-sexp) ("C-M-p" . sp-backward-down-sexp) ("C-M-n" . sp-up-sexp) ("M-s" . sp-splice-sexp) ("M-<up>" . sp-splice-sexp-killing-backward) ("M-<down>" . sp-splice-sexp-killing-forward) ("M-r" . sp-splice-sexp-killing-around) ("C-)" . sp-forward-slurp-sexp) ("C-<right>" . sp-forward-slurp-sexp) ("C-}" . sp-forward-barf-sexp) ("C-<left>" . sp-forward-barf-sexp) ("C-(" . sp-backward-slurp-sexp) ("C-M-<left>" . sp-backward-slurp-sexp) ("C-{" . sp-backward-barf-sexp) ("C-M-<right>" . sp-backward-barf-sexp) ("M-S" . sp-split-sexp)))) nil [1609 3028])
+            ("sp-use-paredit-bindings" function (:user-visible-flag t) nil [3045 3336])
+            ("sp-smartparens-bindings" variable (:default-value (quote (("C-M-f" . sp-forward-sexp) ("C-M-b" . sp-backward-sexp) ("C-M-d" . sp-down-sexp) ("C-M-a" . sp-backward-down-sexp) ("C-S-a" . sp-beginning-of-sexp) ("C-S-d" . sp-end-of-sexp) ("C-M-e" . sp-up-sexp) ("C-M-u" . sp-backward-up-sexp) ("C-M-n" . sp-next-sexp) ("C-M-p" . sp-previous-sexp) ("C-M-k" . sp-kill-sexp) ("C-M-w" . sp-copy-sexp) ("M-<delete>" . sp-unwrap-sexp) ("M-<backspace>" . sp-backward-unwrap-sexp) ("C-<right>" . sp-forward-slurp-sexp) ("C-<left>" . sp-forward-barf-sexp) ("C-M-<left>" . sp-backward-slurp-sexp) ("C-M-<right>" . sp-backward-barf-sexp) ("M-D" . sp-splice-sexp) ("C-M-<delete>" . sp-splice-sexp-killing-forward) ("C-M-<backspace>" . sp-splice-sexp-killing-backward) ("C-S-<backspace>" . sp-splice-sexp-killing-around) ("C-]" . sp-select-next-thing-exchange) ("C-M-]" . sp-select-next-thing) ("M-F" . sp-forward-symbol) ("M-B" . sp-backward-symbol)))) nil [3338 5224])
+            ("sp-use-smartparens-bindings" function (:user-visible-flag t) nil [5241 5509])
+            ("sp-escape-char" variable nil nil [5511 5590])
+            ("make-variable-buffer-local" code nil nil [5591 5635])
+            ("sp-pair-list" variable nil nil [5637 5792])
+            ("make-variable-buffer-local" code nil nil [5793 5835])
+            ("sp-local-pairs" variable nil nil [5837 5918])
+            ("make-variable-buffer-local" code nil nil [5919 5963])
+            ("sp-last-operation" variable nil nil [5965 6045])
+            ("make-variable-buffer-local" code nil nil [6046 6093])
+            ("sp-previous-point" variable (:default-value -1) nil [6095 6281])
+            ("make-variable-buffer-local" code nil nil [6282 6329])
+            ("sp-wrap-point" variable nil nil [6331 6486])
+            ("make-variable-buffer-local" code nil nil [6487 6530])
+            ("sp-wrap-mark" variable nil nil [6532 6685])
+            ("make-variable-buffer-local" code nil nil [6686 6728])
+            ("sp-last-inserted-characters" variable nil nil [6730 6927])
+            ("make-variable-buffer-local" code nil nil [6928 6985])
+            ("sp-last-wrapped-region" variable nil nil [6987 7122])
+            ("make-variable-buffer-local" code nil nil [7123 7175])
+            ("sp-point-inside-string" variable nil nil [7177 7323])
+            ("sp-max-pair-length-c" variable
+               (:constant-flag t
+                :default-value 10)
+                nil [7325 7500])
+            ("sp-pairs" variable (:default-value (quote ((t (:open "\\\\(" :close "\\\\)" :actions (insert wrap)) (:open "\\{" :close "\\}" :actions (insert wrap)) (:open "\\(" :close "\\)" :actions (insert wrap)) (:open "\\\"" :close "\\\"" :actions (insert wrap)) (:open "/*" :close "*/" :actions (insert wrap)) (:open "\"" :close "\"" :actions (insert wrap)) (:open "'" :close "'" :actions (insert wrap)) (:open "(" :close ")" :actions (insert wrap)) (:open "[" :close "]" :actions (insert wrap)) (:open "{" :close "}" :actions (insert wrap)) (:open "`" :close "`" :actions (insert wrap)))))) nil [7502 8485])
+            ("sp-tags" variable nil nil [8487 8578])
+            ("smartparens" customgroup (:user-visible-flag t) nil [8674 8744])
+            ("define-minor-mode" code nil nil [8761 9387])
+            ("sp-trigger-keys" variable nil nil [9389 9443])
+            ("sp--update-trigger-keys" function (:arguments ("remove")) nil [9445 10912])
+            ("sp--keybinding-fallback" function (:arguments ("key-sequence")) nil [10914 11155])
+            ("sp--update-local-pairs" function nil nil [11157 11824])
+            ("sp--update-local-pairs-everywhere" function (:arguments ("modes")) nil [11826 12303])
+            ("smartparens-enabled-hook" variable nil nil [12305 12392])
+            ("smartparens-disabled-hook" variable nil nil [12394 12483])
+            ("sp-ignore-modes-list" variable (:default-value (quote (minibuffer-inactive-mode))) nil [12502 12745])
+            ("define-globalized-minor-mode" code nil nil [12762 12862])
+            ("turn-on-smartparens-mode" function (:user-visible-flag t) nil [12879 13101])
+            ("turn-off-smartparens-mode" function (:user-visible-flag t) nil [13118 13227])
+            ("sp-autoinsert-pair" variable (:default-value t) nil [13246 13374])
+            ("sp-autoinsert-if-followed-by-same" variable (:default-value 2) nil [13376 15087])
+            ("sp-autoinsert-if-followed-by-word" variable nil nil [15089 15344])
+            ("sp-autoinsert-quote-if-followed-by-closing-pair" variable nil nil [15346 16251])
+            ("sp-autoinsert-inhibit-functions" variable nil nil [16253 16676])
+            ("sp-autoskip-closing-pair" variable (:default-value t) nil [16678 16847])
+            ("sp-cancel-autoskip-on-backward-movement" variable (:default-value t) nil [16849 17127])
+            ("sp-autodelete-pair" variable (:default-value t) nil [17146 17275])
+            ("sp-autodelete-closing-pair" variable (:default-value t) nil [17277 17431])
+            ("sp-autodelete-opening-pair" variable (:default-value t) nil [17433 17587])
+            ("sp-autowrap-region" variable (:default-value t) nil [17604 17774])
+            ("sp-autodelete-wrap" variable (:default-value t) nil [17776 18039])
+            ("sp-wrap-repeat-last" variable (:default-value 1) nil [18041 18580])
+            ("sp-autoescape-string-quote" variable (:default-value t) nil [18601 18745])
+            ("sp-autoescape-string-quote-if-empty" variable (:default-value (quote (python-mode))) nil [18747 19276])
+            ("sp-navigate-consider-sgml-tags" variable (:default-value (quote (html-mode))) nil [19278 19532])
+            ("sp-navigate-consider-symbols" variable (:default-value t) nil [19563 19978])
+            ("sp-navigate-reindent-after-up" variable (:default-value (quote interactive)) nil [19980 20469])
+            ("sp-navigate-close-if-unbalanced" variable nil nil [20471 20726])
+            ("sp-highlight-pair-overlay" variable (:default-value t) nil [20741 20902])
+            ("sp-highlight-wrap-overlay" variable (:default-value t) nil [20904 21065])
+            ("sp-highlight-wrap-tag-overlay" variable (:default-value t) nil [21067 21240])
+            ("sp--delete-selection-p" function nil nil [21332 21583])
+            ("sp--cua-replace-region" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [21585 21886])
+            ("sp--init-delete-selection-mode-emulation" function nil nil [21888 22598])
+            ("cua-mode" function (:arguments ("after" "cua-mode-fix-selection" "activate")) nil [22600 22834])
+            ("delete-selection-mode" function (:arguments ("after" "delete-selection-mode-fix-selection" "activate")) nil [22836 23022])
+            ("!delete" function (:arguments ("elm" "list")) nil [23104 23217])
+            ("!cddr" function (:arguments ("list")) nil [23219 23317])
+            ("sp-with-modes" function (:arguments ("arg" "forms")) nil [23319 23608])
+            ("font-lock-add-keywords" code nil nil [23610 23711])
+            ("--last" function (:arguments ("form" "list")) nil [23713 23893])
+            ("-last" function (:arguments ("pred" "list")) nil [23895 24021])
+            ("sp--reverse-string" function (:arguments ("str")) nil [24023 24121])
+            ("sp-point-in-string" function (:arguments ("p")) nil [24123 24359])
+            ("sp-point-in-comment" function (:arguments ("p")) nil [24361 24993])
+            ("sp-point-in-string-or-comment" function (:arguments ("p")) nil [24995 25245])
+            ("sp--single-key-description" function (:arguments ("event")) nil [25247 25585])
+            ("sp--split-string" function (:arguments ("string" "by")) nil [25587 25844])
+            ("sp--this-command-self-insert-p" function nil nil [25846 26123])
+            ("sp--signum" function (:arguments ("x")) nil [26125 26245])
+            ("eval-when" code nil nil [26247 26639])
+            ("sp-get" function (:arguments ("struct" "attr")) nil [27148 30948])
+            ("sp--compare-sexps" function (:arguments ("a" "b" "what")) nil [30950 31285])
+            ("sp--merge-prop" function (:arguments ("old-pair" "new-pair" "prop")) nil [31394 32472])
+            ("sp--merge-pairs" function (:arguments ("old-pair" "new-pair")) nil [32474 32745])
+            ("sp--update-pair" function (:arguments ("old-pair" "new-pair")) nil [32747 33034])
+            ("sp--update-pair-list" function (:arguments ("pair" "mode")) nil [33036 33905])
+            ("sp--get-pair" function (:arguments ("open" "list")) nil [33907 34036])
+            ("sp--get-pair-definition" function (:arguments ("open" "list" "prop")) nil [34038 34311])
+            ("sp-get-pair-definition" function (:arguments ("open" "mode" "prop")) nil [34313 34626])
+            ("sp-get-pair" function (:arguments ("open" "prop")) nil [34628 34902])
+            ("sp--merge-with-local" function (:arguments ("mode")) nil [34904 36251])
+            ("sp--generate-wrapping-function" function (:arguments ("pair" "binding" "keymap")) nil [36253 36878])
+            ("sp-pair" function (:arguments ("open" "close" "actions" "when" "unless" "pre-handlers" "post-handlers" "bind")) nil [36880 41303])
+            ("sp-local-pair" function (:arguments ("modes" "open" "close" "actions" "when" "unless" "pre-handlers" "post-handlers" "bind" "prefix")) nil [41305 44983])
+            ("sp-local-tag" function (:arguments ("modes" "trig" "open" "close" "transform" "actions" "post-handlers")) nil [44985 47737])
+            ("sp-pair-overlay-face" variable
+               (:default-value (quote ((t (:inherit highlight))))
+                :type "face")
+                nil [47837 47965])
+            ("sp-wrap-overlay-face" variable
+               (:default-value (quote ((t (:inherit sp-pair-overlay-face))))
+                :type "face")
+                nil [47967 48106])
+            ("sp-wrap-tag-overlay-face" variable
+               (:default-value (quote ((t (:inherit sp-pair-overlay-face))))
+                :type "face")
+                nil [48108 48255])
+            ("sp-pair-overlay-list" variable (:default-value (quote nil)) nil [48257 48560])
+            ("make-variable-buffer-local" code nil nil [48561 48611])
+            ("sp-wrap-overlays" variable nil nil [48613 48674])
+            ("make-variable-buffer-local" code nil nil [48675 48721])
+            ("sp-wrap-tag-overlays" variable nil nil [48723 48792])
+            ("make-variable-buffer-local" code nil nil [48793 48843])
+            ("sp-pair-overlay-keymap" variable (:default-value (make-sparse-keymap)) nil [48845 48931])
+            ("define-key" code nil nil [48932 49010])
+            ("sp-wrap-overlay-keymap" variable (:default-value (make-sparse-keymap)) nil [49012 49098])
+            ("define-key" code nil nil [49099 49162])
+            ("sp-wrap-tag-overlay-keymap" variable (:default-value (make-sparse-keymap)) nil [49164 49258])
+            ("define-key" code nil nil [49259 49328])
+            ("define-key" code nil nil [49329 49403])
+            ("define-key" code nil nil [49404 49472])
+            ("sp--overlays-at" function (:arguments ("pos")) nil [49474 49736])
+            ("sp--point-in-overlay-p" function (:arguments ("overlay")) nil [49738 49900])
+            ("sp--get-overlay-length" function (:arguments ("overlay")) nil [49902 50029])
+            ("sp--get-active-overlay" function (:arguments ("type")) nil [50031 50543])
+            ("sp--pair-overlay-create" function (:arguments ("start" "end" "id")) nil [50545 51147])
+            ("sp-wrap-cancel" function
+               (:user-visible-flag t
+                :arguments ("can-delete"))
+                nil [51149 52039])
+            ("sp--pair-overlay-fix-highlight" function nil nil [52041 52871])
+            ("sp--pair-overlay-post-command-handler" function nil nil [52873 53612])
+            ("sp-remove-active-pair-overlay" function (:user-visible-flag t) nil [53614 53862])
+            ("sp--remove-overlay" function (:arguments ("overlay")) nil [53864 54560])
+            ("sp-in-string-p" function (:arguments ("id" "action" "context")) nil [54660 54791])
+            ("sp-in-code-p" function (:arguments ("id" "action" "context")) nil [54793 54907])
+            ("sp-in-math-p" function (:arguments ("id" "action" "context")) nil [54909 55048])
+            ("sp-point-after-word-p" function (:arguments ("id" "action" "context")) nil [55050 55315])
+            ("sp--do-action-p" function (:arguments ("id" "action" "use-inside-string")) nil [55317 56697])
+            ("sp--get-context" function (:arguments ("type")) nil [56699 57125])
+            ("sp--run-hook-with-args" function (:arguments ("id" "type" "action")) nil [57127 57392])
+            ("sp--post-command-hook-handler" function nil nil [57572 58663])
+            ("sp--setaction" function (:arguments ("action" "forms")) nil [58665 58789])
+            ("sp--self-insert-command" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [58791 59453])
+            ("sp--call-fallback-command" function nil nil [59455 59742])
+            ("self-insert-command" function (:arguments ("around" "self-insert-command-adviced" "activate")) nil [59744 61916])
+            ("sp--delete-selection-mode-handle" function (:arguments ("from-wrap")) nil [61918 63790])
+            ("sp--pre-command-hook-handler" function nil nil [63792 63980])
+            ("sp-recent-keys" variable nil nil [63982 64071])
+            ("sp--get-recent-keys" function nil nil [64073 64213])
+            ("sp--get-pair-list" function nil nil [64215 64456])
+            ("sp--get-allowed-pair-list" function nil nil [64458 64791])
+            ("sp--get-pair-list-wrap" function nil nil [64793 64949])
+            ("sp--get-opening-regexp" function (:arguments ("pair-list")) nil [64951 65113])
+            ("sp--get-closing-regexp" function (:arguments ("pair-list")) nil [65115 65277])
+            ("sp--get-allowed-regexp" function (:arguments ("pair-list")) nil [65279 65524])
+            ("sp--get-last-wraped-region" function (:arguments ("beg" "end" "open" "close")) nil [65526 65981])
+            ("sp-wrap-region-init" function nil nil [65983 71126])
+            ("sp-wrap-region" function nil nil [71128 73318])
+            ("sp--get-active-tag" function (:arguments ("recent")) nil [73320 73994])
+            ("sp-wrap-tag-region-init" function nil nil [73996 77471])
+            ("sp--wrap-tag-create-overlays" function (:arguments ("tag" "ostart" "oend")) nil [77473 80113])
+            ("sp--wrap-tag-update" function (:arguments ("overlay" "after?" "beg" "end" "length")) nil [80115 80758])
+            ("sp--wrap-tag-post-command-handler" function nil nil [80760 81076])
+            ("sp-match-sgml-tags" function (:arguments ("tag")) nil [81078 81258])
+            ("sp-wrap-tag-beginning" function (:user-visible-flag t) nil [81260 81429])
+            ("sp-wrap-tag-end" function (:user-visible-flag t) nil [81431 81586])
+            ("sp-wrap-tag-done" function (:user-visible-flag t) nil [81588 82107])
+            ("sp--wrap-region-autoescape" function (:arguments ("strbound")) nil [82109 83426])
+            ("sp-insert-pair" function nil nil [83428 89047])
+            ("sp--wrap-repeat-last" function (:arguments ("active-pair")) nil [89049 91160])
+            ("sp-skip-closing-pair" function nil nil [91162 93589])
+            ("sp-delete-pair" function (:arguments ("arg")) nil [93591 97654])
+            ("sp--looking-back" function (:arguments ("regexp" "limit" "not-greedy")) nil [97732 98682])
+            ("sp--search-backward-regexp" function (:arguments ("regexp" "bound" "noerror")) nil [98684 99187])
+            ("sp--get-bounds" function (:arguments ("name" "docstring" "test")) nil [99189 99725])
+            ("sp--get-bounds" code nil nil [99727 99858])
+            ("sp--get-bounds" code nil nil [99860 100020])
+            ("sp--get-string-or-comment-bounds" function nil nil [100022 100189])
+            ("sp--search-and-save-match" function (:arguments ("search-fn" "pattern" "bound" "res" "beg" "end" "str")) nil [100191 100491])
+            ("sp--lisp-modes" variable (:default-value (quote (emacs-lisp-mode inferior-emacs-lisp-mode lisp-interaction-mode scheme-mode lisp-mode eshell-mode slime-repl-mode clojure-mode common-lisp-mode))) nil [100493 100686])
+            ("sp-get-paired-expression" function (:arguments ("back")) nil [100908 105527])
+            ("sp-get-sexp" function (:arguments ("back")) nil [105529 107638])
+            ("sp-get-enclosing-sexp" function (:arguments ("arg")) nil [107640 109096])
+            ("sp-get-list-items" function (:arguments ("lst")) nil [109098 109812])
+            ("sp--get-prefix" function (:arguments ("p" "use-mode-regexp")) nil [109814 110235])
+            ("sp-get-symbol" function (:arguments ("back")) nil [110237 111056])
+            ("sp--get-string" function (:arguments ("bounds")) nil [111058 111452])
+            ("sp-get-string" function (:arguments ("back")) nil [111454 112241])
+            ("sp-get-whitespace" function nil nil [112243 112571])
+            ("sp--sgml-get-tag-name" function (:arguments ("match")) nil [112573 112780])
+            ("sp--sgml-opening-p" function (:arguments ("tag")) nil [112782 112854])
+            ("sp-get-sgml-tag" function (:arguments ("back")) nil [112856 115194])
+            ("sp-prefix-tag-object" variable nil nil [115196 115295])
+            ("sp-prefix-pair-object" variable nil nil [115297 115472])
+            ("sp-prefix-tag-object" function (:user-visible-flag t) nil [115474 115682])
+            ("sp-prefix-pair-object" function (:user-visible-flag t) nil [115684 115960])
+            ("sp-get-thing" function (:arguments ("back")) nil [115962 117260])
+            ("sp-forward-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [117262 117926])
+            ("sp-backward-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [117928 118611])
+            ("sp-next-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [118613 119471])
+            ("sp-previous-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [119473 120321])
+            ("sp--raw-argument-p" function (:arguments ("arg")) nil [120323 120456])
+            ("sp--negate-argument" function (:arguments ("arg")) nil [120458 120858])
+            ("sp-down-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [120860 122403])
+            ("sp-backward-down-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [122405 123027])
+            ("sp-beginning-of-sexp" function (:user-visible-flag t) nil [123029 123297])
+            ("sp-end-of-sexp" function (:user-visible-flag t) nil [123299 123561])
+            ("sp-up-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg" "interactive"))
+                nil [123563 126336])
+            ("sp-backward-up-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg" "interactive"))
+                nil [126338 126900])
+            ("sp-kill-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg" "dont-kill"))
+                nil [126902 131078])
+            ("sp-backward-kill-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg" "dont-kill"))
+                nil [131080 131442])
+            ("sp-copy-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [131444 131723])
+            ("sp-backward-copy-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [131725 132043])
+            ("sp-transpose-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [132045 133529])
+            ("sp-forward-slurp-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [133617 136868])
+            ("sp-backward-slurp-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [136870 140053])
+            ("sp-add-to-previous-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [140055 140738])
+            ("sp-add-to-next-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [140740 141404])
+            ("sp--barf-sexp" function (:arguments ("fw-1")) nil [141406 143485])
+            ("sp-forward-barf-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [143487 144875])
+            ("sp-backward-barf-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [144877 145794])
+            ("sp--skip-to-symbol-1" function (:arguments ("forward")) nil [145847 147153])
+            ("sp-skip-forward-to-symbol" function
+               (:user-visible-flag t
+                :arguments ("stop-at-string" "stop-after-string"))
+                nil [147155 147478])
+            ("sp-skip-backward-to-symbol" function
+               (:user-visible-flag t
+                :arguments ("stop-at-string" "stop-after-string"))
+                nil [147480 147807])
+            ("sp--forward-symbol-1" function (:arguments ("fw-1")) nil [147809 149407])
+            ("sp-forward-symbol" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [149409 150014])
+            ("sp-backward-symbol" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [150016 150629])
+            ("sp--unwrap-sexp" function (:arguments ("sexp")) nil [150631 151881])
+            ("sp-unwrap-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [151883 152449])
+            ("sp-backward-unwrap-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [152451 152746])
+            ("sp-splice-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [152748 153048])
+            ("sp--splice-sexp-do-killing" function (:arguments ("beg" "end" "expr" "jump-end")) nil [153050 153623])
+            ("sp-splice-sexp-killing-backward" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [153840 154763])
+            ("sp-splice-sexp-killing-forward" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [154765 155518])
+            ("sp-splice-sexp-killing-around" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [155520 157225])
+            ("defalias" code nil nil [157227 157283])
+            ("sp-convolute-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [157285 158944])
+            ("sp-absorb-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [158946 159732])
+            ("sp-emit-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [159734 160596])
+            ("sp-forward-whitespace" function (:user-visible-flag t) nil [160598 160726])
+            ("sp-backward-whitespace" function (:user-visible-flag t) nil [160728 160859])
+            ("sp-split-sexp" function (:user-visible-flag t) nil [160861 161166])
+            ("sp--join-sexp" function (:arguments ("prev" "next")) nil [161168 162309])
+            ("sp-join-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [162311 163569])
+            ("sp-select-next-thing" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [163669 167477])
+            ("sp-select-previous-thing" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [167479 167839])
+            ("sp-select-next-thing-exchange" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [167841 168054])
+            ("sp-select-previous-thing-exchange" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [168056 168281])
+            ("show-smartparens" customgroup (:user-visible-flag t) nil [168370 168456])
+            ("sp-show-pair-delay" variable (:default-value 0.125) nil [168458 168615])
+            ("sp-show-pair-match-face" variable
+               (:default-value (quote ((((class color) (background light)) :background "turquoise") (((class color) (background dark)) :background "steelblue3") (((background dark)) :background "grey50") (t :background "gray")))
+                :type "face")
+                nil [168617 169038])
+            ("sp-show-pair-mismatch-face" variable
+               (:default-value (quote ((((class color)) (:foreground "white" :background "purple")) (t (:inverse-video t))))
+                :type "face")
+                nil [169040 169258])
+            ("sp-show-pair-idle-timer" variable nil nil [169260 169296])
+            ("sp-show-pair-overlays" variable nil nil [169298 169332])
+            ("define-minor-mode" code nil nil [169349 170004])
+            ("define-globalized-minor-mode" code nil nil [170021 170136])
+            ("turn-on-show-smartparens-mode" function (:user-visible-flag t) nil [170153 170390])
+            ("turn-off-show-smartparens-mode" function (:user-visible-flag t) nil [170407 170531])
+            ("sp-show--pair-function" function nil nil [170533 171651])
+            ("sp-show--pair-create-overlays" function (:arguments ("start" "end" "olen" "clen")) nil [171653 172223])
+            ("sp-show--pair-create-mismatch-overlay" function (:arguments ("start" "len")) nil [172225 172618])
+            ("sp-show--pair-delete-overlays" function nil nil [172620 172944])
+            ("sp--update-trigger-keys" code nil nil [172971 172996])
+            ("delete-backward-char" function (:arguments ("before" "sp-delete-pair-advice" "activate")) nil [172997 173125])
+            ("add-hook" code nil nil [173126 173186])
+            ("add-hook" code nil nil [173187 173245])
+            ("sp--mc/cursor-specific-vars" variable (:default-value (quote (sp-wrap-point sp-wrap-mark sp-last-wrapped-region sp-pair-overlay-list sp-wrap-overlays sp-wrap-tag-overlays sp-last-operation sp-previous-point))) nil [173247 173537])
+            ("eval-after-load" code nil nil [173539 173666])
+            ("smartparens" package nil nil [173668 173690]))          
+      :file "smartparens.el"
+      :pointmax 173721
+      :fsize 178057
+      :lastmodtime '(23826 59829 0 0)
+      :unmatched-syntax '((close-paren 1230 . 1231) (symbol 1152 . 1169) (open-paren 1151 . 1152))))
   :file "!drive_c!Users!hiros!.emacs.d!elpa!smartparens-1.4!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

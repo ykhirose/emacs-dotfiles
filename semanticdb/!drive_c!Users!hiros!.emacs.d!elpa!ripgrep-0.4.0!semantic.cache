@@ -1,0 +1,49 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "ripgrep-autoloads.el"
+      :pointmax 353
+      :fsize 751
+      :lastmodtime '(23829 57572 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("compile" include nil nil [1527 1545])
+            ("grep" include nil nil [1546 1561])
+            ("thingatpt" include nil nil [1562 1582])
+            ("ripgrep" customgroup (:user-visible-flag t) nil [1633 1702])
+            ("ripgrep-executable" variable (:default-value "rg") nil [1705 1819])
+            ("ripgrep-arguments" variable (:default-value (list "")) nil [1822 1949])
+            ("ripgrep-highlight-search" variable (:default-value t) nil [1952 2176])
+            ("ripgrep-hit-face" variable
+               (:default-value (quote ((t :inherit compilation-info)))
+                :type "face")
+                nil [2220 2339])
+            ("ripgrep-match-face" variable
+               (:default-value (quote ((t :inherit match)))
+                :type "face")
+                nil [2342 2452])
+            ("ripgrep-search-finished-hook" variable nil nil [2496 2595])
+            ("ripgrep/run-finished-hook" function (:arguments ("buffer" "how-finished")) nil [2597 2795])
+            ("ripgrep-search-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map compilation-minor-mode-map) (define-key map "p" (quote compilation-previous-error)) (define-key map "n" (quote compilation-next-error)) (define-key map "{" (quote compilation-previous-file)) (define-key map "}" (quote compilation-next-file)) (define-key map "k" (quote (lambda nil (interactive) (let ((kill-buffer-query-functions)) (kill-buffer))))) map)) nil [2797 3404])
+            ("define-compilation-mode" code nil nil [3407 4094])
+            ("ripgrep-filter" function nil nil [4154 5228])
+            ("ripgrep-regexp" function
+               (:user-visible-flag t
+                :arguments ("regexp" "directory" "args"))
+                nil [5286 5954])
+            ("ripgrep" package nil nil [5957 5975]))          
+      :file "ripgrep.el"
+      :pointmax 6001
+      :fsize 6000
+      :lastmodtime '(23829 57572 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_c!Users!hiros!.emacs.d!elpa!ripgrep-0.4.0!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
