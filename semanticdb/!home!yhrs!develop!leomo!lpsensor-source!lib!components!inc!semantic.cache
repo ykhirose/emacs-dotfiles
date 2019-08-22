@@ -1,0 +1,476 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__BLUETOOTH_H__" variable (:constant-flag t) nil [453 468])
+            ("stdint.h" include (:system-flag t) nil [470 489])
+            ("BT_DMA_TIMEOUT_SHORT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4683 4703])
+            ("BT_DMA_TIMEOUT_LONG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4650 4669])
+            ("BT_UART_WAIT_LONG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4575 4592])
+            ("BTGPIORead" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pin" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4483 4495]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4464 4496])
+            ("BTGPIOWrite" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pin" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4406 4419])
+                    ("val" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4420 4432]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4386 4433])
+            ("BTGPIOConfig" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pin" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4334 4347])
+                    ("io" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4348 4359]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4313 4360])
+            ("bluetoothVerifyAddress" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("expect" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4214 4230]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4184 4231])
+            ("bluetoothDisableResetPin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4150 4182])
+            ("bluetoothEnableResetPin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4117 4148])
+            ("bluetoothSendConfigCommand" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4101 4114]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4066 4115])
+            ("bluetoothDefaultAuth" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4033 4064])
+            ("bluetoothSetUseExtLpo" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3999 4031])
+            ("bluetoothMFIPing" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3991 3996]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3966 3997])
+            ("bluetoothDisable" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3958 3963]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3936 3964])
+            ("bluetoothSetActive" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("f" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3923 3933]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3899 3934])
+            ("bluetoothEnableSleepMode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3891 3896]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3858 3897])
+            ("bluetoothDisableAuthentification" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3850 3855]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3809 3856])
+            ("bluetoothSetFactory" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3801 3806]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3773 3807])
+            ("bluetoothSetNoBuffers" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3765 3770]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3735 3771])
+            ("bluetoothSetDisableEncryption" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3727 3732]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3689 3733])
+            ("bluetoothSetCpuSpeed" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3681 3686]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3652 3687])
+            ("bluetoothWaitForInit" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3644 3649]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3615 3650])
+            ("bluetoothSetAlternateMfiPins" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3607 3612]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3570 3613])
+            ("bluetoothSetTimeout" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3562 3567]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3534 3568])
+            ("bluetoothSetFlowControl" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3526 3531]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3494 3532])
+            ("bluetoothGotoSleepMode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3486 3491]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3455 3492])
+            ("checkConnectionStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3447 3452]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3417 3453])
+            ("bluetoothGotoFastMode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3409 3414]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3379 3415])
+            ("pollBluetoothData" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3371 3376]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3345 3377])
+            ("bluetoothCheckConnectionStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3305 3310]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3266 3311])
+            ("bluetoothIsReadyForSend" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [3214 3218]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3186 3219])
+            ("bluetoothDisableSpecialCommands" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3122 3127]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3082 3128])
+            ("bluetoothEnableLowLatencyOptimization" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3045 3050]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2999 3051])
+            ("bluetoothEnableLowLatency" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2955 2960]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2921 2961])
+            ("bluetoothDisableLowPowerConnectMode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2882 2887]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2838 2888])
+            ("bluetoothEnableLowPowerConnectMode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2792 2797]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2749 2798])
+            ("bluetoothGetName" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2704 2709]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2678 2710])
+            ("bluetoothSetName" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2636 2641]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2611 2642])
+            ("bluetoothStopDataTransfer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2569 2574]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2538 2575])
+            ("bluetoothStartDataTransfer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pDataBuffer" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2460 2481])
+                    ("dataLength" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2482 2502]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2428 2503])
+            ("bluetoothSetBaudrate" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("baudrate" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2373 2391]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2344 2392])
+            ("bluetoothSetAutoDiscovery" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("isEnabled" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2289 2307]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2258 2308])
+            ("bluetoothSetFactoryDefault" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("isEnabled" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2190 2208]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2158 2209])
+            ("bluetoothShowStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2105 2110]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2080 2111])
+            ("bluetoothGotoDataMode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2046 2051]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2016 2052])
+            ("bluetoothGotoCommandMode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1973 1978]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1940 1979])
+            ("bluetoothSetMaster" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("isEnabled" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1881 1899]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1857 1900])
+            ("bluetoothUseFirmwareBaudrate" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1809 1814]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1775 1815])
+            ("bluetoothForceBaudrate9600" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1730 1735]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1698 1736])
+            ("bluetoothSoftReset" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1633 1638]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1606 1639])
+            ("bluetoothReset" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1599 1604]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1576 1605])
+            ("bluetoothInitBaudrate" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1541 1546]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1511 1547])
+            ("bluetoothSetGpioConfig" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1462 1467]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1434 1468])
+            ("bluetoothSetDmaConfig" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1389 1394]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1362 1395])
+            ("bluetoothSetUSARTConfig" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("baudrate" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1305 1323]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1276 1324])
+            ("BT_MAX_RX_BUFFER_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1167 1190])
+            ("BT_NOT_CONNECTED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1104 1120])
+            ("BT_CONNECTED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1080 1092])
+            ("BT_BAUDRATE_921600" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1004 1022])
+            ("BT_BAUDRATE_460800" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [961 979])
+            ("BT_BAUDRATE_230400" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [918 936])
+            ("BT_BAUDRATE_115200" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [875 893])
+            ("BT_BAUDRATE_57600" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [833 850])
+            ("BT_BAUDRATE_38400" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [791 808])
+            ("BT_BAUDRATE_19200" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [749 766])
+            ("BT_BAUDRATE_9600" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [708 724])
+            ("BT_BAUDRATE_4800" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [667 683])
+            ("BT_BAUDRATE_2400" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [626 642])
+            ("BT_BAUDRATE_1200" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [585 601]))          
+      :file "Bluetooth.h"
+      :pointmax 4779
+      :fsize 4778
+      :lastmodtime '(23825 44861 443982 877000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BT_BAUDRATE_2400" . ((number "2400" 654 . 658)))
+          ("BT_BAUDRATE_19200" . ((number "19200" 777 . 782)))
+          ("BT_MAX_RX_BUFFER_LENGTH" . ((number "64" 1191 . 1193)))
+          ("BT_DMA_TIMEOUT_LONG" . ((number "5000" 4670 . 4674)))
+          ("BT_BAUDRATE_115200" . ((number "115200" 903 . 909)))
+          ("BT_BAUDRATE_460800" . ((number "460800" 989 . 995)))
+          ("BT_CONNECTED" . ((number "1" 1094 . 1095)))
+          ("BT_BAUDRATE_1200" . ((number "1200" 613 . 617)))
+          ("BT_BAUDRATE_230400" . ((number "230400" 946 . 952)))
+          ("BT_UART_WAIT_LONG" . ((number "8000" 4593 . 4597)))
+          ("BT_BAUDRATE_921600" . ((number "921600" 1032 . 1038)))
+          ("BT_BAUDRATE_57600" . ((number "57600" 861 . 866)))
+          ("BT_DMA_TIMEOUT_SHORT" . ((number "200" 4704 . 4707)))
+          ("__BLUETOOTH_H__")
+          ("BT_BAUDRATE_4800" . ((number "4800" 695 . 699)))
+          ("BT_BAUDRATE_9600" . ((number "9600" 736 . 740)))
+          ("BT_BAUDRATE_38400" . ((number "38400" 819 . 824)))
+          ("BT_NOT_CONNECTED" . ((number "0" 1121 . 1122)))
+          )
+))
+  :file "!home!yhrs!develop!leomo!lpsensor-source!lib!components!inc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

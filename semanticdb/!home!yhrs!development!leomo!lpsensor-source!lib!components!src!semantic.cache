@@ -1,0 +1,230 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("gpio.h" include nil nil [1 18])
+            ("gpio_pin_unset_interrupt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("GpioPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [776 791])
+                    ("pin" variable
+                       (:pointer 1
+                        :type ("GpioPin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [792 805]))                  )
+                (reparse-symbol extern-c-contents) [746 813])
+            ("gpio_pin_set_interrupt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("GpioPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [659 674])
+                    ("pin" variable
+                       (:pointer 1
+                        :type ("GpioPin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [675 688])
+                    ("trigger" variable (:type ("GpioPinTrigger" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [689 712]))                  )
+                (reparse-symbol extern-c-contents) [631 720])
+            ("gpio_pin_write_output" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pin" variable
+                       (:pointer 1
+                        :type ("GpioPin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [562 575])
+                    ("signal" variable (:type ("GpioPinSignal" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [576 597]))                  )
+                (reparse-symbol extern-c-contents) [535 605])
+            ("gpio_pin_read_input" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GpioPinSignal" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pin" variable
+                       (:pointer 1
+                        :type ("GpioPin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [467 480]))                  )
+                (reparse-symbol extern-c-contents) [433 509])
+            ("gpio_pin_set_direction" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pin" variable
+                       (:pointer 1
+                        :type ("GpioPin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [367 380])
+                    ("dir" variable (:type ("GpioDirection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [381 399]))                  )
+                (reparse-symbol extern-c-contents) [339 407])
+            ("gpio_pin_initialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("GpioPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [276 291])
+                    ("pin" variable
+                       (:pointer 1
+                        :type ("GpioPin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [292 305]))                  )
+                (reparse-symbol extern-c-contents) [251 313])
+            ("gpio_port_deinitialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("GpioPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [202 217]))                  )
+                (reparse-symbol extern-c-contents) [174 225])
+            ("gpio_port_initialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("GpioPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [125 140]))                  )
+                (reparse-symbol extern-c-contents) [99 148]))          
+      :file "gpio.c"
+      :pointmax 858
+      :fsize 857
+      :lastmodtime '(23839 314 956407 446000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdint.h" include (:system-flag t) nil [25 44])
+            ("i2c.h" include nil nil [46 62])
+            ("i2c_read_data" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [935 944])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [945 959]))                  )
+                (reparse-symbol extern-c-contents) [914 979])
+            ("i2c_write_data" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [845 854])
+                    ("data" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [855 868]))                  )
+                (reparse-symbol extern-c-contents) [823 888])
+            ("i2c_recv_nack" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [754 763])
+                    ("nack" variable (:type ("I2CNack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [764 777]))                  )
+                (reparse-symbol extern-c-contents) [733 797])
+            ("i2c_ack" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [666 675])
+                    ("ack" variable (:type ("I2CAck" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [676 687]))                  )
+                (reparse-symbol extern-c-contents) [651 707])
+            ("i2c_send_stop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [596 605]))                  )
+                (reparse-symbol extern-c-contents) [575 625])
+            ("i2c_send_address" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [484 493])
+                    ("addr" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [494 507])
+                    ("dir" variable (:type ("I2CDirection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [508 525]))                  )
+                (reparse-symbol extern-c-contents) [460 545])
+            ("i2c_send_start" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [405 414]))                  )
+                (reparse-symbol extern-c-contents) [383 434])
+            ("i2c_disable" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [342 351]))                  )
+                (reparse-symbol extern-c-contents) [325 357])
+            ("i2c_enable" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [284 293]))                  )
+                (reparse-symbol extern-c-contents) [268 299])
+            ("i2c_deinitialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [227 236]))                  )
+                (reparse-symbol extern-c-contents) [205 242])
+            ("i2c_initialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [164 173]))                  )
+                (reparse-symbol extern-c-contents) [144 179]))          
+      :file "i2c.c"
+      :pointmax 1024
+      :fsize 1023
+      :lastmodtime '(23839 314 956407 446000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "watchdog.c"
+      :pointmax 534
+      :fsize 533
+      :lastmodtime '(23839 314 956407 446000)
+      :unmatched-syntax nil))
+  :file "!home!yhrs!development!leomo!lpsensor-source!lib!components!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

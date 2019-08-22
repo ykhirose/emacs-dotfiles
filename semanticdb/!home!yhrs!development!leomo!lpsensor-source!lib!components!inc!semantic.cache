@@ -1,0 +1,848 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__ACC_GYR_LSM6DS3_H__" variable (:constant-flag t) nil [39 60])
+            ("GyrODR" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_GyrODR" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [1363 1612])
+            ("_GyrODR" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("GYR_ODR_13HZ" variable
+                       (:constant-flag t
+                        :default-value (1409 1411)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1390 1411])
+                    ("GYR_ODR_26HZ" variable
+                       (:constant-flag t
+                        :default-value (1436 1438)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1417 1438])
+                    ("GYR_ODR_52HZ" variable
+                       (:constant-flag t
+                        :default-value (1463 1465)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1444 1465])
+                    ("GYR_ODR_104HZ" variable
+                       (:constant-flag t
+                        :default-value (1489 1492)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1471 1492])
+                    ("GYR_ODR_208HZ" variable
+                       (:constant-flag t
+                        :default-value (1516 1519)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1498 1519])
+                    ("GYR_ODR_416HZ" variable
+                       (:constant-flag t
+                        :default-value (1543 1546)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1525 1546])
+                    ("GYR_ODR_833HZ" variable
+                       (:constant-flag t
+                        :default-value (1570 1573)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1552 1573])
+                    ("GYR_ODR_1660HZ" variable
+                       (:constant-flag t
+                        :default-value (1596 1600)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1579 1600]))                  )
+                (reparse-symbol extern-c-contents) [1363 1612])
+            ("GyrRange" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_GyrRange" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [1170 1359])
+            ("_GyrRange" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("GYR_RANGE_DPS_125" variable
+                       (:constant-flag t
+                        :default-value (1220 1223)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1199 1223])
+                    ("GYR_RANGE_DPS_245" variable
+                       (:constant-flag t
+                        :default-value (1250 1253)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1229 1253])
+                    ("GYR_RANGE_DPS_500" variable
+                       (:constant-flag t
+                        :default-value (1280 1283)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1259 1283])
+                    ("GYR_RANGE_DPS_1000" variable
+                       (:constant-flag t
+                        :default-value (1310 1314)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1289 1314])
+                    ("GYR_RANGE_DPS_2000" variable
+                       (:constant-flag t
+                        :default-value (1341 1345)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1320 1345]))                  )
+                (reparse-symbol extern-c-contents) [1170 1359])
+            ("AccFilterBandWidth" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_AccFilterBandWidth" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [987 1166])
+            ("_AccFilterBandWidth" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("ACC_FILTER_BW_50HZ" variable
+                       (:constant-flag t
+                        :default-value (1047 1049)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1026 1049])
+                    ("ACC_FILTER_BW_100HZ" variable
+                       (:constant-flag t
+                        :default-value (1077 1080)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1055 1080])
+                    ("ACC_FILTER_BW_200HZ" variable
+                       (:constant-flag t
+                        :default-value (1108 1111)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1086 1111])
+                    ("ACC_FILTER_BW_400HZ" variable
+                       (:constant-flag t
+                        :default-value (1139 1142)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1117 1142]))                  )
+                (reparse-symbol extern-c-contents) [987 1166])
+            ("AccODR" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_AccODR" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [680 983])
+            ("_AccODR" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("ACC_ODR_13HZ" variable
+                       (:constant-flag t
+                        :default-value (726 728)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [707 728])
+                    ("ACC_ODR_26HZ" variable
+                       (:constant-flag t
+                        :default-value (753 755)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [734 755])
+                    ("ACC_ODR_52HZ" variable
+                       (:constant-flag t
+                        :default-value (780 782)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [761 782])
+                    ("ACC_ODR_104HZ" variable
+                       (:constant-flag t
+                        :default-value (806 809)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [788 809])
+                    ("ACC_ODR_208HZ" variable
+                       (:constant-flag t
+                        :default-value (833 836)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [815 836])
+                    ("ACC_ODR_416HZ" variable
+                       (:constant-flag t
+                        :default-value (860 863)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [842 863])
+                    ("ACC_ODR_833HZ" variable
+                       (:constant-flag t
+                        :default-value (887 890)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [869 890])
+                    ("ACC_ODR_1660HZ" variable
+                       (:constant-flag t
+                        :default-value (913 917)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [896 917])
+                    ("ACC_ODR_3330HZ" variable
+                       (:constant-flag t
+                        :default-value (940 944)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [923 944])
+                    ("ACC_ODR_6660HZ" variable
+                       (:constant-flag t
+                        :default-value (967 971)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [950 971]))                  )
+                (reparse-symbol extern-c-contents) [680 983])
+            ("AccRange" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_AccRange" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [549 676])
+            ("_AccRange" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("ACC_RANGE_2G" variable
+                       (:constant-flag t
+                        :default-value (593 594)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [578 594])
+                    ("ACC_RANGE_4G" variable
+                       (:constant-flag t
+                        :default-value (615 616)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [600 616])
+                    ("ACC_RANGE_8G" variable
+                       (:constant-flag t
+                        :default-value (637 638)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [622 638])
+                    ("ACC_RANGE_16G" variable
+                       (:constant-flag t
+                        :default-value (660 662)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [644 662]))                  )
+                (reparse-symbol extern-c-contents) [549 676])
+            ("GYR_GAIN_DPS_2000" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [517 534])
+            ("GYR_GAIN_DPS_1000" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [480 497])
+            ("GYR_GAIN_DPS_500" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [443 459])
+            ("GYR_GAIN_DPS_245" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [406 422])
+            ("GYR_GAIN_DPS_125" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [369 385])
+            ("ACC_GAIN_16G" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [265 277])
+            ("ACC_GAIN_8G" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [226 237])
+            ("ACC_GAIN_4G" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [187 198])
+            ("ACC_GAIN_2G" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [148 159]))          
+      :file "acc_gyr_lsm6ds3.h"
+      :pointmax 1690
+      :fsize 1689
+      :lastmodtime '(23839 314 953074 113000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ACC_GAIN_4G" . ((semantic-list "(1.0f/8192.0f)" 203 . 217)))
+          ("GYR_GAIN_DPS_125" . ((number "0.004375f" 388 . 397)))
+          ("GYR_GAIN_DPS_245" . ((number "0.00875f" 426 . 434)))
+          ("GYR_GAIN_DPS_1000" . ((number "0.035f" 502 . 508)))
+          ("GYR_GAIN_DPS_2000" . ((number "0.070f" 539 . 545)))
+          ("ACC_GAIN_16G" . ((semantic-list "(1.0f/2048.0f)" 281 . 295)))
+          ("__ACC_GYR_LSM6DS3_H__")
+          ("ACC_GAIN_2G" . ((semantic-list "(1.0f/16384.0f)" 163 . 178)))
+          ("ACC_GAIN_8G" . ((semantic-list "(1.0f/4096.0f)" 242 . 256)))
+          ("GYR_GAIN_DPS_500" . ((number "0.0175f" 464 . 471)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__I2C_H__" variable (:constant-flag t) nil [27 36])
+            ("stdint.h" include (:system-flag t) nil [38 57])
+            ("gpio.h" include nil nil [59 76])
+            ("i2c_read_data" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1369 1378])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1379 1393]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1348 1394])
+            ("i2c_write_data" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1321 1330])
+                    ("data" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1331 1344]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1299 1345])
+            ("i2c_recv_nack" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1271 1280])
+                    ("nack" variable (:type ("I2CNack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1281 1294]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1250 1295])
+            ("i2c_ack" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1225 1234])
+                    ("ack" variable (:type ("I2CAck" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1235 1246]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1210 1247])
+            ("i2c_send_stop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1197 1206]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1176 1207])
+            ("i2c_send_address" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1131 1140])
+                    ("addr" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1141 1154])
+                    ("dir" variable (:type ("I2CDirection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1155 1172]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1107 1173])
+            ("i2c_send_start" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1094 1103]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1072 1104])
+            ("i2c_disable" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1058 1067]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1041 1068])
+            ("i2c_enable" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1028 1037]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1012 1038])
+            ("i2c_deinitialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [998 1007]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [976 1008])
+            ("i2c_initialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("i2c" variable
+                       (:pointer 1
+                        :type ("I2C" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [963 972]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [943 973])
+            ("I2C" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_I2C" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [669 939])
+            ("_I2C" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("bus" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [695 705])
+                    ("instance" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [710 725])
+                    ("scl" variable
+                       (:pointer 1
+                        :type ("GpioPin" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [730 743])
+                    ("sda" variable
+                       (:pointer 1
+                        :type ("GpioPin" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [748 761])
+                    ("mode" variable (:type ("I2CMode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [766 779])
+                    ("address" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [806 823])
+                    ("addressing" variable (:type ("I2CAddressing" type (:type "class") nil nil)) (reparse-symbol classsubparts) [828 853])
+                    ("ack" variable (:type ("I2CAck" type (:type "class") nil nil)) (reparse-symbol classsubparts) [858 869])
+                    ("speed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [874 889])
+                    ("duty" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [894 908])
+                    ("timeout" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [913 930]))                  )
+                (reparse-symbol extern-c-contents) [669 939])
+            ("I2CDuty" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_I2CDuty" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [591 661])
+            ("_I2CDuty" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("I2C_DUTY_16_9" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [619 633])
+                    ("I2C_DUTY_2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [638 652]))                  )
+                (reparse-symbol extern-c-contents) [591 661])
+            ("I2CNack" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_I2CNack" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [511 587])
+            ("_I2CNack" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("I2C_NACK_NEXT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [539 553])
+                    ("I2C_NACK_CURRENT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [558 578]))                  )
+                (reparse-symbol extern-c-contents) [511 587])
+            ("I2CAck" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_I2CAck" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [433 507])
+            ("_I2CAck" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("I2C_ACK_ENABLE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [460 475])
+                    ("I2C_ACK_DISABLE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [480 499]))                  )
+                (reparse-symbol extern-c-contents) [433 507])
+            ("I2CAddressing" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_I2CAddressing" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [323 429])
+            ("_I2CAddressing" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("I2C_ADDRESSINGMODE_7BIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [357 381])
+                    ("I2C_ADDRESSINGMODE_10BIT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [386 414]))                  )
+                (reparse-symbol extern-c-contents) [323 429])
+            ("I2CDirection" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_I2CDirection" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [215 319])
+            ("_I2CDirection" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("I2C_DIRECTION_TRANSMITTER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [248 274])
+                    ("I2C_DIRECTION_RECEIVER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [279 305]))                  )
+                (reparse-symbol extern-c-contents) [215 319])
+            ("I2CMode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_I2CMode" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [135 211])
+            ("_I2CMode" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("I2C_MODE_MASTER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [163 179])
+                    ("I2C_MODE_SLAVE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [184 202]))                  )
+                (reparse-symbol extern-c-contents) [135 211]))          
+      :file "i2c.h"
+      :pointmax 1463
+      :fsize 1462
+      :lastmodtime '(23839 314 956407 446000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__I2C_H__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__GPIO_H__" variable (:constant-flag t) nil [78 88])
+            ("stdint.h" include (:system-flag t) nil [90 109])
+            ("stdlib.h" include (:system-flag t) nil [110 129])
+            ("gpio_pin_unset_interrupt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("GpioPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1677 1692])
+                    ("pin" variable
+                       (:pointer 1
+                        :type ("GpioPin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1693 1706]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1647 1707])
+            ("gpio_pin_set_interrupt" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("GpioPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1590 1605])
+                    ("pin" variable
+                       (:pointer 1
+                        :type ("GpioPin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1606 1619])
+                    ("trigger" variable (:type ("GpioPinTrigger" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1620 1643]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1562 1644])
+            ("gpio_pin_write_output" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pin" variable
+                       (:pointer 1
+                        :type ("GpioPin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1522 1535])
+                    ("signal" variable (:type ("GpioPinSignal" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1536 1557]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1495 1558])
+            ("gpio_pin_read_input" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GpioPinSignal" type (:type "class") nil nil)
+                :arguments 
+                  ( ("pin" variable
+                       (:pointer 1
+                        :type ("GpioPin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1478 1491]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1444 1492])
+            ("gpio_pin_set_direction" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("pin" variable
+                       (:pointer 1
+                        :type ("GpioPin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1408 1421])
+                    ("dir" variable (:type ("GpioDirection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1422 1440]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1380 1441])
+            ("gpio_pin_initialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("GpioPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1346 1361])
+                    ("pin" variable
+                       (:pointer 1
+                        :type ("GpioPin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1362 1375]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1321 1376])
+            ("gpio_port_deinitialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("GpioPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1301 1316]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1273 1317])
+            ("gpio_port_initialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("GpioPort" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1254 1269]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1228 1270])
+            ("GpioPin" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_GpioPin" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [978 1224])
+            ("_GpioPin" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type ("GpioPort" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1008 1023])
+                    ("number" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1028 1043])
+                    ("direction" variable (:type ("GpioDirection" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1048 1072])
+                    ("speed" variable (:type ("GpioClock" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1077 1093])
+                    ("function" variable (:type ("GpioFunction" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1098 1120])
+                    ("otype" variable (:type ("GpioOType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1125 1141])
+                    ("pp" variable (:type ("GpioPP" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1146 1156])
+                    ("interruptable" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1161 1183])
+                    ("trigger" variable (:type ("GpioPinTrigger" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1188 1211]))                  )
+                (reparse-symbol extern-c-contents) [978 1224])
+            ("GpioFunction" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_GpioFunction" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [875 974])
+            ("_GpioFunction" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("GPIO_NONE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [908 918])
+                    ("GPIO_ALTERNATIVE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [923 940])
+                    ("GPIO_ANALOG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [945 960]))                  )
+                (reparse-symbol extern-c-contents) [875 974])
+            ("GpioClock" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_GpioClock" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [747 871])
+            ("_GpioClock" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("GPIO_CLOCK_HIGH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [777 793])
+                    ("GPIO_CLOCK_FAST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [798 814])
+                    ("GPIO_CLOCK_MEDIUM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [819 837])
+                    ("GPIO_CLOCK_LOW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [842 860]))                  )
+                (reparse-symbol extern-c-contents) [747 871])
+            ("GpioPinTrigger" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_GpioPinTrigger" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [634 743])
+            ("_GpioPinTrigger" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("GPIO_RISING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [669 681])
+                    ("GPIO_FALLING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [686 699])
+                    ("GPIO_RISING_FALLING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [704 727]))                  )
+                (reparse-symbol extern-c-contents) [634 743])
+            ("GpioPinSignal" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_GpioPinSignal" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [546 630])
+            ("_GpioPinSignal" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("GPIO_LOW" variable
+                       (:constant-flag t
+                        :default-value (591 592)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [580 592])
+                    ("GPIO_HIGH" variable
+                       (:constant-flag t
+                        :default-value (610 611)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [598 611]))                  )
+                (reparse-symbol extern-c-contents) [546 630])
+            ("GpioPP" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_GpioPP" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [456 542])
+            ("_GpioPP" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("GPIO_NOPULL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [483 495])
+                    ("GPIO_PULLUP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [500 512])
+                    ("GPIO_PULLDOWN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [517 534]))                  )
+                (reparse-symbol extern-c-contents) [456 542])
+            ("GpioOType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_GpioOType" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [374 452])
+            ("_GpioOType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("GPIO_PUSHPULL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [404 418])
+                    ("GPIO_OPENDRAIN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [423 441]))                  )
+                (reparse-symbol extern-c-contents) [374 452])
+            ("GpioDirection" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_GpioDirection" type (:type "enum") nil nil))
+                (reparse-symbol extern-c-contents) [268 370])
+            ("_GpioDirection" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("GPIO_INPUT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [302 313])
+                    ("GPIO_OUTPUT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [318 330])
+                    ("GPIO_NODIRECTION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [335 355]))                  )
+                (reparse-symbol extern-c-contents) [268 370])
+            ("GpioPort" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_GpioPort" type (:type "struct") nil nil))
+                (reparse-symbol extern-c-contents) [189 264])
+            ("_GpioPort" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("bus" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [220 230])
+                    ("instance" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [235 250]))                  )
+                (reparse-symbol extern-c-contents) [189 264]))          
+      :file "gpio.h"
+      :pointmax 1775
+      :fsize 1774
+      :lastmodtime '(23839 314 956407 446000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__GPIO_H__")
+          )
+))
+  :file "!home!yhrs!development!leomo!lpsensor-source!lib!components!inc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

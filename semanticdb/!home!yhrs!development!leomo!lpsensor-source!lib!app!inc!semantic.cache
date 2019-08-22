@@ -1,0 +1,129 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__ACC_GYR_H__" variable (:constant-flag t) nil [62 75])
+            ("stdint.h" include (:system-flag t) nil [77 96])
+            ("stdbool.h" include (:system-flag t) nil [97 117])
+            ("AccRange" type
+               (:typedef ("_AccRange" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [180 218])
+            ("AccODR" type
+               (:typedef ("_AccODR" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [222 256])
+            ("GyrRange" type
+               (:typedef ("_GyrRange" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [260 298])
+            ("GyrODR" type
+               (:typedef ("_GyrODR" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [302 336])
+            ("acc_gyr_dump_registers" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [984 989]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [956 990])
+            ("acc_gyr_is_valid_gyr_odr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("odr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [938 951]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [908 952])
+            ("acc_gyr_is_valid_acc_odr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("odr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [891 904]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [861 905])
+            ("acc_gyr_is_valid_gyr_range" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("range" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [841 856]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [809 857])
+            ("acc_gyr_is_valid_acc_range" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("range" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [790 805]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [758 806])
+            ("acc_gyr_get_acc_gyr_16bit" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("acc" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [730 741])
+                    ("gyr" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [742 753]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [696 754])
+            ("acc_gyr_set_gyr_config" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("odr" variable (:type ("GyrODR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [664 675])
+                    ("range" variable (:type ("GyrRange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [676 691]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [633 692])
+            ("acc_gyr_set_acc_config" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("odr" variable (:type ("AccODR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [602 613])
+                    ("range" variable (:type ("AccRange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [614 629]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [571 630])
+            ("acc_gyr_off" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [545 567])
+            ("acc_gyr_on" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [521 542])
+            ("acc_gyr_configure" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [489 517])
+            ("acc_gyr_deinitialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [454 485])
+            ("acc_gyr_initialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [422 451]))          
+      :file "acc_gyr.h"
+      :pointmax 1060
+      :fsize 1059
+      :lastmodtime '(23839 314 949740 779000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__ACC_GYR_H__")
+          )
+))
+  :file "!home!yhrs!development!leomo!lpsensor-source!lib!app!inc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

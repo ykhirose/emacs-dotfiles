@@ -1,0 +1,282 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [43 61])
+            ("stm32f4xx.h" include nil nil [63 85])
+            ("acc_gyr.h" include nil nil [87 107])
+            ("mcu.h" include nil nil [108 124])
+            ("lsm6ds3_stm32.h" include nil nil [126 152])
+            ("acc_gyr_dump_registers" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8377 8382]))                  )
+                (reparse-symbol extern-c-contents) [8349 8865])
+            ("acc_gyr_is_valid_gyr_odr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("odr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8074 8087]))                  )
+                (reparse-symbol extern-c-contents) [8044 8345])
+            ("acc_gyr_is_valid_acc_odr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("odr" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7719 7732]))                  )
+                (reparse-symbol extern-c-contents) [7689 8040])
+            ("acc_gyr_is_valid_gyr_range" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("range" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7458 7473]))                  )
+                (reparse-symbol extern-c-contents) [7426 7685])
+            ("acc_gyr_is_valid_acc_range" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("range" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7244 7259]))                  )
+                (reparse-symbol extern-c-contents) [7212 7422])
+            ("acc_gyr_get_acc_gyr_16bit" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("acc" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [5859 5870])
+                    ("gyr" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [5871 5882]))                  )
+                (reparse-symbol extern-c-contents) [5825 7208])
+            ("acc_gyr_is_available_data" function
+               (:type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("status" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5714 5729])
+                    ("flag" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5730 5743]))                  
+                :typemodifiers ("extern" "\"C\"" "static" "inline"))
+                (reparse-symbol extern-c-contents) [5666 5821])
+            ("acc_gyr_set_gyr_config" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("odr" variable (:type ("GyrODR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4068 4079])
+                    ("range" variable (:type ("GyrRange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4080 4095]))                  )
+                (reparse-symbol extern-c-contents) [4037 5662])
+            ("acc_gyr_set_acc_config" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("odr" variable (:type ("AccODR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2229 2240])
+                    ("range" variable (:type ("AccRange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2241 2256]))                  )
+                (reparse-symbol extern-c-contents) [2198 4033])
+            ("acc_gyr_off" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [1633 2194])
+            ("acc_gyr_on" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [1139 1629])
+            ("acc_gyr_configure" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [366 1135])
+            ("acc_gyr_deinitialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [287 362])
+            ("acc_gyr_initialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [212 283]))          
+      :file "acc_gyr_lsm6ds3_stm32.c"
+      :pointmax 8910
+      :fsize 8909
+      :lastmodtime '(23825 44861 763678 18000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__LSM6DS3_STM32_H__" variable (:constant-flag t) nil [117 136])
+            ("stm32f4xx.h" include nil nil [138 160])
+            ("lsm6ds3_registers.h" include nil nil [162 192])
+            ("lsm6ds3_i2c_write_reg_with_timeout" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("addr" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [668 681])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [682 696])
+                    ("len" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [697 710])
+                    ("timeout" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [711 728]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [625 729])
+            ("lsm6ds3_i2c_write_reg" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("addr" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [579 592])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [593 607])
+                    ("len" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [608 621]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [549 622])
+            ("lsm6ds3_i2c_read_reg_with_timeout" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("addr" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [484 497])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [498 512])
+                    ("len" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [513 526])
+                    ("timeout" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [527 544]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [442 545])
+            ("lsm6ds3_i2c_read_reg" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("addr" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [396 409])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [410 424])
+                    ("len" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [425 438]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [367 439])
+            ("lsm6ds3_i2c_deinitialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [328 363])
+            ("lsm6ds3_i2c_initialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [292 325])
+            ("LSM6DS3_I2C_ADDRESS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [259 278]))          
+      :file "lsm6ds3_stm32.h"
+      :pointmax 805
+      :fsize 804
+      :lastmodtime '(23825 44861 763678 18000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__LSM6DS3_STM32_H__")
+          ("LSM6DS3_I2C_ADDRESS" . ((number "0xd4" 284 . 288)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("gpio.h" include nil nil [105 122])
+            ("i2c.h" include nil nil [123 139])
+            ("stm32f4xx.h" include nil nil [141 163])
+            ("lsm6ds3_stm32.h" include nil nil [165 191])
+            ("lsm6ds3_registers.h" include nil nil [192 222])
+            ("lsm6ds3_i2c_write_reg_with_timeout" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("addr" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3959 3972])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3973 3987])
+                    ("len" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3988 4001])
+                    ("timeout" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4002 4019]))                  )
+                (reparse-symbol extern-c-contents) [3916 4193])
+            ("lsm6ds3_i2c_write_reg" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("addr" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3311 3324])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3325 3339])
+                    ("l" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3340 3351]))                  )
+                (reparse-symbol extern-c-contents) [3281 3912])
+            ("lsm6ds3_i2c_read_reg_with_timeout" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("addr" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3044 3057])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3058 3072])
+                    ("len" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3073 3086])
+                    ("timeout" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3087 3104]))                  )
+                (reparse-symbol extern-c-contents) [3002 3277])
+            ("lsm6ds3_i2c_read_reg" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("addr" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1600 1613])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1614 1628])
+                    ("len" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1629 1642]))                  )
+                (reparse-symbol extern-c-contents) [1571 2998])
+            ("lsm6ds3_i2c_deinitialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [1460 1567])
+            ("lsm6ds3_i2c_initialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [469 1456])
+            ("i2c1_sda" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GpioPin" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [448 465])
+            ("i2c1_scl" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GpioPin" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [428 445])
+            ("i2c1_port" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GpioPort" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [406 425])
+            ("i2c1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("I2C" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [393 402])
+            ("LSM6DS3_I2C_TIMEOUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [336 355])
+            ("LSM6DS3_I2C_BAUDRATE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [288 308]))          
+      :file "lsm6ds3_stm32.c"
+      :pointmax 4240
+      :fsize 4239
+      :lastmodtime '(23825 44861 763678 18000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LSM6DS3_I2C_BAUDRATE" . 
+              ((number "400" 309 . 312) (punctuation "*" 313 . 314) (number "1000" 315 . 319)))
+          ("LSM6DS3_I2C_TIMEOUT" . ((number "50000" 357 . 362)))
+          )
+))
+  :file "!home!yhrs!develop!leomo!lpsensor-source!sensorapp!platform_stm32!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

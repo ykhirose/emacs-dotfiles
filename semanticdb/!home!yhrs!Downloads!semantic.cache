@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode mhtml-mode
+      :tags 
+        '( ("leomo-motionsensor-pdb/SensorBoard.kicad_pcb at master · LemonadeLabInc/leomo-motionsensor-pdb" section nil nil [1206 7375])
+            ("Skip to content" section (:members 
+              ( ("Skip to content" anchor nil nil [7504 7507])
+                ("Edit status" section (:members 
+                  ( ("Suggestions:" section nil nil [35233 57877]))                  ) nil [31918 57877])
+                ("Fork leomo-motionsensor-pdb" section (:members 
+                  ( ("the fork page" anchor nil nil [58211 58214])
+                    ("0" anchor nil nil [58410 58413]))                  ) nil [57877 58586])
+                ("LemonadeLabInc" section (:members 
+                  ( ("Find file" anchor nil nil [70778 70781])
+                    ("leomo-motionsensor-pdb" section (:members 
+                      ( ("Find file" anchor nil nil [71875 71878])
+                        ("Users who have contributed to this file" section (:members 
+                          ( ("Status" anchor nil nil [804914 804917])
+                            ("Pricing" anchor nil nil [806291 806294])
+                            ("API" anchor nil nil [806428 806431])
+                            ("Training" anchor nil nil [806555 806558])
+                            ("Blog" anchor nil nil [806698 806701]))                          ) nil [74914 807947]))                      ) nil [71193 807947]))                  ) nil [58586 807947]))              ) nil [7375 807947])
+            ("You signed in with another tab or window. <a href=\"\">Reload" section nil nil [807947 808205])
+            ("You signed in with another tab or window. <a href=\"\">Reload" section nil nil [808205 808462])
+            ("You signed in with another tab or window. <a href=\"\">Reload" section (:members 
+              ( ("Reload" anchor nil nil [809325 809328])
+                ("Reload" anchor nil nil [809459 809462]))              ) nil [808462 810752]))          
+      :file "SensorBoard.kicad_pcb"
+      :pointmax 810752
+      :fsize 810788
+      :lastmodtime '(23874 37287 283204 472000)
+      :unmatched-syntax nil))
+  :file "!home!yhrs!Downloads!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,20 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags nil
+      :file "volatile-highlights-autoloads.el"
+      :pointmax 377
+      :fsize 669
+      :lastmodtime '(23842 65446 830064 760000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "volatile-highlights.el"
+      :fsize 30517
+      :lastmodtime '(23842 65446 770064 761000)))
+  :file "!home!yhrs!.emacs.d!elpa!volatile-highlights-1.11!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

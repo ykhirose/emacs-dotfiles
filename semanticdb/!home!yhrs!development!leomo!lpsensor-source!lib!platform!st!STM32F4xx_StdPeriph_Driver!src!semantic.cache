@@ -1,0 +1,145 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stm32f4xx_gpio.h" include nil nil [3979 4006])
+            ("stm32f4xx_rcc.h" include nil nil [4007 4033])
+            ("GPIO_DeInit" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5631 5651]))                  
+                :type "void")
+                nil [5614 7416])
+            ("GPIO_Init" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8062 8082])
+                    ("GPIO_InitStruct" variable
+                       (:pointer 1
+                        :type ("GPIO_InitTypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8083 8117]))                  
+                :type "void")
+                nil [8047 9848])
+            ("GPIO_StructInit" function
+               (:arguments 
+                  ( ("GPIO_InitStruct" variable
+                       (:pointer 1
+                        :type ("GPIO_InitTypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10064 10098]))                  
+                :type "void")
+                nil [10043 10389])
+            ("GPIO_PinLockConfig" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11221 11241])
+                    ("GPIO_Pin" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11242 11260]))                  
+                :type "void")
+                nil [11197 11648])
+            ("GPIO_ReadInputDataBit" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12592 12612])
+                    ("GPIO_Pin" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12613 12631]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [12562 12947])
+            ("GPIO_ReadInputData" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13414 13434]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [13386 13544])
+            ("GPIO_ReadOutputDataBit" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14137 14157])
+                    ("GPIO_Pin" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14158 14176]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [14106 14494])
+            ("GPIO_ReadOutputData" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14964 14984]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [14935 15094])
+            ("GPIO_SetBits" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15875 15895])
+                    ("GPIO_Pin" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15896 15914]))                  
+                :type "void")
+                nil [15857 16057])
+            ("GPIO_ResetBits" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16842 16862])
+                    ("GPIO_Pin" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16863 16881]))                  
+                :type "void")
+                nil [16822 17024])
+            ("GPIO_WriteBit" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17843 17863])
+                    ("GPIO_Pin" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17864 17882])
+                    ("BitVal" variable (:type ("BitAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17883 17900]))                  
+                :type "void")
+                nil [17824 18173])
+            ("GPIO_Write" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18697 18717])
+                    ("PortVal" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18718 18735]))                  
+                :type "void")
+                nil [18681 18836])
+            ("GPIO_ToggleBits" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19321 19341])
+                    ("GPIO_Pin" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19342 19360]))                  
+                :type "void")
+                nil [19300 19463])
+            ("GPIO_PinAFConfig" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23838 23858])
+                    ("GPIO_PinSource" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23859 23883])
+                    ("GPIO_AF" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23884 23900]))                  
+                :type "void")
+                nil [23816 24279]))          
+      :file "stm32f4xx_gpio.c"
+      :pointmax 24433
+      :fsize 25204
+      :lastmodtime '(23839 315 353074 126000)
+      :unmatched-syntax nil))
+  :file "!home!yhrs!development!leomo!lpsensor-source!lib!platform!st!STM32F4xx_StdPeriph_Driver!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

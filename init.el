@@ -54,14 +54,8 @@
 (if window-system (progn
 		(set-frame-parameter nil 'alpha 95) ;透明度
     ))
-
-;; 透明度を変更するコマンド M-x set-alpha
-;; http://qiita.com/marcy@github/items/ba0d018a03381a964f24
-(defun set-alpha (alpha-num)
-  "set frame parameter 'alpha"
-  (interactive "nAlpha: ")
-  (set-frame-parameter nil 'alpha (cons alpha-num '(90))))
-
+;; Font
+(add-to-list 'default-frame-alist '(font . "Ricty Diminished" ))
 
 ;; display line-number
 (global-linum-mode t)
@@ -79,15 +73,18 @@
 (setq-default tab-width 2)
 
 ;; Highlight current line
-(defface my-hl-line-face
-	'((((class color) (background dark))
-		 (:background "DarkSlateGrey" t))
-		(((class color) (background light))
-		 (:background "LightGoldenrodYellow" t))
-		(t (:bold t)))
-	"hl-line's my face")
-(setq hl-line-face 'myp-hl-line-face)
 (global-hl-line-mode t)
+
+;; brackets highlight
+(show-paren-mode t)
+(setq show-paren-style 'parenthesis)
+
+;; volatile-highlights
+(require 'volatile-highlights)
+(volatile-highlights-mode t)
+
+;; disable C-z minimize
+(global-set-key "\C-z" nil)
 
 ;;; helm
 (require 'helm)
@@ -108,40 +105,13 @@
  '(column-number-mode t)
  '(package-selected-packages
 	 (quote
-		(helm-gtags smartparens srefactor helm ctags color-theme auto-complete))))
+		(cmake-mode volatile-highlights magit dumb-jump helm-gtags smartparens srefactor helm ctags color-theme auto-complete))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Ricty Diminished for Powerline" :foundry "outline" :slant normal :weight normal :height 109 :width normal)))))
-
-;;; helm-gtags
-(require 'helm-gtags)
-(helm-gtags-mode t)
-
-(custom-set-variables
-	;'(helm-gtags-path-style 'relative)
- '(helm-gtags-ignore-case t)
- '(helm-gtags-auto-update t))
-
-(add-hook 'helm-gtags-mode-hook
-					'(lambda ()
-						 ;; do what i mean
-						 (local-set-key (kbd "M-.") 'helm-gtags-dwim)
-						 ;; 入力されたタグの定義元へジャンプ
-						 (local-set-key (kbd "M-t") 'helm-gtags-find-tag)
-						 ;; 入力タグを参照する場所へジャンプ
-						 (local-set-key (kbd "M-r") 'helm-gtags-find-rtag)
-						 ;; 入力したシンボルを参照する場所へジャンプ
-						 (local-set-key (kbd "M-s") 'helm-gtags-find-symbol)
-						 ;; タグ一覧からタグを選択し、その定義元にジャンプする
-						 (local-set-key (kbd "M-l") 'helm-gtags-select)
-						 ;; ジャンプ前の場所に戻る
-						 (local-set-key (kbd "M-,") 'helm-gtags-pop-stack)
-						 (local-set-key (kbd "M-g M-p") 'helm-gtags-parse-file)
-						 (local-set-key (kbd "C-c <") 'helm-gtags-previous-history)
-						 (local-set-key (kbd "C-c >") 'helm-gtags-next-history)))
 
 ;;;; semantic
 (semantic-mode 1)
@@ -151,9 +121,70 @@
 (global-semantic-decoration-mode 1)
 (global-semantic-stickyfunc-mode 1)
 (global-semantic-mru-bookmark-mode 1)
-lo
+
 ;;;; srefactor
 (require 'srefactor)
 (require 'srefactor-lisp)
 (define-key c-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
 (define-key c++-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
+
+;;;; dumb-jump
+(require 'dumb-jump)
+(setq dumb-jump-mode t)
+(setq dumb-jump-selector 'helm)
+(setq dumb-jump-use-prefer-searcher 'rg)
+
+;;;; X window settings
+(setq transient-mark-mode t)
+(if window-system
+		(progn
+			(set-frame-parameter nil 'alpha 85)
+
+      ;;;; (setq frame-alpha-lower-limit 10)
+			(defun djcb-opacity-modify (&optional dec)
+        "modify the transparency of the emacs frame; if DEC is t,
+descreate the transparency, otherwise increase it in 10%-steps"
+        (let* ((alpha-or-nil (frame-parameter nil 'alpha)) ; nil before setting
+               (oldalpha (if alpha-or-nil alpha-or-nil 100))
+               (newalpha (if dec (- oldalpha 10) (+ oldalpha 10))))
+          (when (and frame-alpha-lower-limit (>= newalpha frame-alpha-lower-limit) (<= newalpha 100))
+            (modify-frame-parameters nil (list (cons 'alpha newalpha))))))
+
+      (defun toggle-transparency ()
+        (interactive)
+        (let* ((alpha (find 'alpha (frame-parameters nil) :key #'car))
+               (transparent (if (and (consp alpha) (< (cdr alpha) 100))
+                                t
+                              nil)))
+          (if transparent
+              (set-frame-parameter nil 'alpha '100)
+            (set-frame-parameter nil 'alpha '90))))
+
+      ;; C-8 increase opacity
+      ;; C-9 decrease opacity
+      ;; C-0 to normal
+      (global-set-key (kbd "C-x j 8") 
+                      '(lambda ()
+                         (interactive)
+                         (djcb-opacity-modify)))
+
+      (global-set-key (kbd "C-x j 9") 
+                      '(lambda ()
+                         (interactive)
+                         (djcb-opacity-modify t)))
+
+      (global-set-key (kbd "C-x j 0") 'toggle-transparency)))
+
+;;Menu bar
+(if (fboundp 'scroll-bar-mode)
+    (scroll-bar-mode -1))
+(if (fboundp 'tool-bar-mode)
+    (tool-bar-mode -1))
+(if (fboundp 'menu-bar-mode)
+    (menu-bar-mode -1))
+
+;; max-specpdl-size
+(setq max-specpdl-size 10000)
+
+;; set C-h as backspace
+(keyboard-translate ?\C-h ?\C-?)

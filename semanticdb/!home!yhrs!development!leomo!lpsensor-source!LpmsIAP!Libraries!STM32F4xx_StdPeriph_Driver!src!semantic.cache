@@ -1,0 +1,479 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stm32f4xx_i2c.h" include nil nil [4491 4517])
+            ("stm32f4xx_rcc.h" include nil nil [4518 4544])
+            ("CR1_CLEAR_MASK" variable (:constant-flag t) nil [4836 4850])
+            ("FLAG_MASK" variable (:constant-flag t) nil [4914 4923])
+            ("ITEN_MASK" variable (:constant-flag t) nil [4986 4995])
+            ("I2C_DeInit" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6037 6055]))                  
+                :type "void")
+                nil [6021 6831])
+            ("I2C_Init" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7400 7418])
+                    ("I2C_InitStruct" variable
+                       (:pointer 1
+                        :type ("I2C_InitTypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7419 7451]))                  
+                :type "void")
+                nil [7386 11278])
+            ("I2C_StructInit" function
+               (:arguments 
+                  ( ("I2C_InitStruct" variable
+                       (:pointer 1
+                        :type ("I2C_InitTypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11490 11522]))                  
+                :type "void")
+                nil [11470 12166])
+            ("I2C_Cmd" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12454 12472])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12473 12498]))                  
+                :type "void")
+                nil [12441 12841])
+            ("I2C_AnalogFilterCmd" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13379 13397])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13398 13423]))                  
+                :type "void")
+                nil [13354 13760])
+            ("I2C_DigitalFilterConfig" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14325 14343])
+                    ("I2C_DigitalFilter" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14344 14371]))                  
+                :type "void")
+                nil [14296 14842])
+            ("I2C_GenerateSTART" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15151 15169])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15170 15195]))                  
+                :type "void")
+                nil [15128 15539])
+            ("I2C_GenerateSTOP" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15845 15863])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15864 15889]))                  
+                :type "void")
+                nil [15823 16229])
+            ("I2C_Send7bitAddress" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16793 16811])
+                    ("Address" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16812 16828])
+                    ("I2C_Direction" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16829 16851]))                  
+                :type "void")
+                nil [16768 17320])
+            ("I2C_AcknowledgeConfig" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17635 17653])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17654 17679]))                  
+                :type "void")
+                nil [17608 18008])
+            ("I2C_OwnAddress2Config" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18250 18268])
+                    ("Address" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18269 18285]))                  
+                :type "void")
+                nil [18223 18689])
+            ("I2C_DualAddressCmd" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19006 19024])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19025 19050]))                  
+                :type "void")
+                nil [18982 19391])
+            ("I2C_GeneralCallCmd" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19700 19718])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19719 19744]))                  
+                :type "void")
+                nil [19676 20063])
+            ("I2C_SoftwareResetCmd" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20502 20520])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20521 20546]))                  
+                :type "void")
+                nil [20476 20874])
+            ("I2C_StretchClockCmd" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21185 21203])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21204 21229]))                  
+                :type "void")
+                nil [21160 21598])
+            ("I2C_FastModeDutyCycleConfig" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22057 22075])
+                    ("I2C_DutyCycle" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22076 22099]))                  
+                :type "void")
+                nil [22024 22437])
+            ("I2C_NACKPositionConfig" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23719 23737])
+                    ("I2C_NACKPosition" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23738 23764]))                  
+                :type "void")
+                nil [23691 24217])
+            ("I2C_SMBusAlertConfig" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24670 24688])
+                    ("I2C_SMBusAlert" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24689 24713]))                  
+                :type "void")
+                nil [24644 25061])
+            ("I2C_ARPCmd" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25338 25356])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25357 25382]))                  
+                :type "void")
+                nil [25322 25717])
+            ("I2C_SendData" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26305 26323])
+                    ("Data" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26324 26337]))                  
+                :type "void")
+                nil [26287 26483])
+            ("I2C_ReceiveData" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26709 26727]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [26685 26872])
+            ("I2C_TransmitPEC" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27542 27560])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27561 27586]))                  
+                :type "void")
+                nil [27521 27943])
+            ("I2C_PECPositionConfig" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28651 28669])
+                    ("I2C_PECPosition" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28670 28695]))                  
+                :type "void")
+                nil [28624 29067])
+            ("I2C_CalculatePEC" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29396 29414])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29415 29440]))                  
+                :type "void")
+                nil [29374 29799])
+            ("I2C_GetPEC" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29986 30004]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [29967 30149])
+            ("I2C_DMACmd" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30930 30948])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30949 30974]))                  
+                :type "void")
+                nil [30914 31327])
+            ("I2C_DMALastTransferCmd" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31639 31657])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31658 31683]))                  
+                :type "void")
+                nil [31611 32041])
+            ("I2C_ReadRegister" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38105 38123])
+                    ("I2C_Register" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38124 38145]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [38079 38420])
+            ("I2C_ITConfig" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39042 39060])
+                    ("I2C_IT" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39061 39077])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39078 39103]))                  
+                :type "void")
+                nil [39024 39471])
+            ("I2C_CheckEvent" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41665 41683])
+                    ("I2C_EVENT" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41684 41703]))                  
+                :type ("ErrorStatus" type (:type "class") nil nil))
+                nil [41638 42431])
+            ("I2C_GetLastEvent" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42992 43010]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [42966 43393])
+            ("I2C_GetFlagStatus" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45428 45446])
+                    ("I2C_FLAG" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45447 45465]))                  
+                :type ("FlagStatus" type (:type "class") nil nil))
+                nil [45399 46362])
+            ("I2C_ClearFlag" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48223 48241])
+                    ("I2C_FLAG" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48242 48260]))                  
+                :type "void")
+                nil [48204 48541])
+            ("I2C_GetITStatus" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49873 49891])
+                    ("I2C_IT" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49892 49908]))                  
+                :type ("ITStatus" type (:type "class") nil nil))
+                nil [49848 50560])
+            ("I2C_ClearITPendingBit" function
+               (:arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52466 52484])
+                    ("I2C_IT" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52485 52501]))                  
+                :type "void")
+                nil [52439 52778]))          
+      :file "stm32f4xx_i2c.c"
+      :pointmax 52932
+      :fsize 54393
+      :lastmodtime '(23839 314 943074 113000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ITEN_MASK" . ((semantic-list "((uint32_t)0x07000000)" 5004 . 5026)))
+          ("CR1_CLEAR_MASK" . ((semantic-list "((uint16_t)0xFBF5)" 4854 . 4872)))
+          ("FLAG_MASK" . ((semantic-list "((uint32_t)0x00FFFFFF)" 4932 . 4954)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stm32f4xx_gpio.h" include nil nil [3977 4004])
+            ("stm32f4xx_rcc.h" include nil nil [4005 4031])
+            ("GPIO_DeInit" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5629 5649]))                  
+                :type "void")
+                nil [5612 7418])
+            ("GPIO_Init" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8064 8084])
+                    ("GPIO_InitStruct" variable
+                       (:pointer 1
+                        :type ("GPIO_InitTypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8085 8119]))                  
+                :type "void")
+                nil [8049 9850])
+            ("GPIO_StructInit" function
+               (:arguments 
+                  ( ("GPIO_InitStruct" variable
+                       (:pointer 1
+                        :type ("GPIO_InitTypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10066 10100]))                  
+                :type "void")
+                nil [10045 10391])
+            ("GPIO_PinLockConfig" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11223 11243])
+                    ("GPIO_Pin" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11244 11262]))                  
+                :type "void")
+                nil [11199 11650])
+            ("GPIO_ReadInputDataBit" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12594 12614])
+                    ("GPIO_Pin" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12615 12633]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [12564 12949])
+            ("GPIO_ReadInputData" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13416 13436]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [13388 13546])
+            ("GPIO_ReadOutputDataBit" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14139 14159])
+                    ("GPIO_Pin" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14160 14178]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [14108 14496])
+            ("GPIO_ReadOutputData" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14966 14986]))                  
+                :type ("uint16_t" type (:type "class") nil nil))
+                nil [14937 15096])
+            ("GPIO_SetBits" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15877 15897])
+                    ("GPIO_Pin" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15898 15916]))                  
+                :type "void")
+                nil [15859 16059])
+            ("GPIO_ResetBits" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16844 16864])
+                    ("GPIO_Pin" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16865 16883]))                  
+                :type "void")
+                nil [16824 17026])
+            ("GPIO_WriteBit" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17845 17865])
+                    ("GPIO_Pin" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17866 17884])
+                    ("BitVal" variable (:type ("BitAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17885 17902]))                  
+                :type "void")
+                nil [17826 18175])
+            ("GPIO_Write" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18699 18719])
+                    ("PortVal" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18720 18737]))                  
+                :type "void")
+                nil [18683 18838])
+            ("GPIO_ToggleBits" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19323 19343])
+                    ("GPIO_Pin" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19344 19362]))                  
+                :type "void")
+                nil [19302 19465])
+            ("GPIO_PinAFConfig" function
+               (:arguments 
+                  ( ("GPIOx" variable
+                       (:pointer 1
+                        :type ("GPIO_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23840 23860])
+                    ("GPIO_PinSource" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23861 23885])
+                    ("GPIO_AF" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23886 23902]))                  
+                :type "void")
+                nil [23818 24442]))          
+      :file "stm32f4xx_gpio.c"
+      :pointmax 24596
+      :fsize 25206
+      :lastmodtime '(23839 314 939740 779000)
+      :unmatched-syntax nil))
+  :file "!home!yhrs!development!leomo!lpsensor-source!LpmsIAP!Libraries!STM32F4xx_StdPeriph_Driver!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

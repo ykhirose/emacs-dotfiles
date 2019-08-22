@@ -1,0 +1,44 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__STM32F4xx_CONF_H" variable (:constant-flag t) nil [1211 1229])
+            ("stm32f4xx_adc.h" include nil nil [1386 1412])
+            ("stm32f4xx_crc.h" include nil nil [1413 1439])
+            ("stm32f4xx_dbgmcu.h" include nil nil [1440 1469])
+            ("stm32f4xx_dma.h" include nil nil [1470 1496])
+            ("stm32f4xx_exti.h" include nil nil [1497 1524])
+            ("stm32f4xx_flash.h" include nil nil [1525 1553])
+            ("stm32f4xx_gpio.h" include nil nil [1554 1581])
+            ("stm32f4xx_i2c.h" include nil nil [1582 1608])
+            ("stm32f4xx_iwdg.h" include nil nil [1609 1636])
+            ("stm32f4xx_pwr.h" include nil nil [1637 1663])
+            ("stm32f4xx_rcc.h" include nil nil [1664 1690])
+            ("stm32f4xx_rtc.h" include nil nil [1691 1717])
+            ("stm32f4xx_sdio.h" include nil nil [1718 1745])
+            ("stm32f4xx_spi.h" include nil nil [1746 1772])
+            ("stm32f4xx_syscfg.h" include nil nil [1773 1802])
+            ("stm32f4xx_tim.h" include nil nil [1803 1829])
+            ("stm32f4xx_usart.h" include nil nil [1830 1858])
+            ("stm32f4xx_wwdg.h" include nil nil [1859 1886])
+            ("misc.h" include nil nil [1887 1904])
+            ("I2S_EXTERNAL_CLOCK_VAL" variable (:constant-flag t) nil [3390 3412])
+            ("assert_param" variable (:constant-flag t) nil [4293 4305]))          
+      :file "stm32f4xx_conf.h"
+      :pointmax 4466
+      :fsize 4465
+      :lastmodtime '(23825 44861 763678 18000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__STM32F4xx_CONF_H")
+          ("assert_param" (spp-arg-list ("expr") 4305 . 4311) . ((semantic-list "((void)0)" 4312 . 4321)))
+          ("I2S_EXTERNAL_CLOCK_VAL" . ((number "12288000" 3415 . 3423)))
+          )
+))
+  :file "!home!yhrs!develop!leomo!lpsensor-source!sensorapp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

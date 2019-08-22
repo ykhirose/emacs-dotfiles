@@ -1,0 +1,975 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__STM32F4xx_I2C_H" variable (:constant-flag t) nil [1279 1296])
+            ("I2C_ClearITPendingBit" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31014 31032])
+                    ("I2C_IT" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31033 31049]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [30987 31050])
+            ("I2C_GetITStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("ITStatus" type (:type "class") nil nil)
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30950 30968])
+                    ("I2C_IT" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30969 30985]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [30925 30986])
+            ("I2C_ClearFlag" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30886 30904])
+                    ("I2C_FLAG" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30905 30923]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [30867 30924])
+            ("I2C_GetFlagStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FlagStatus" type (:type "class") nil nil)
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30826 30844])
+                    ("I2C_FLAG" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30845 30863]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [30797 30864])
+            ("I2C_GetLastEvent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30551 30569]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [30525 30570])
+            ("I2C_CheckEvent" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("ErrorStatus" type (:type "class") nil nil)
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30261 30279])
+                    ("I2C_EVENT" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30280 30299]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [30234 30300])
+            ("I2C_ITConfig" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25302 25320])
+                    ("I2C_IT" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25321 25337])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25338 25363]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [25284 25364])
+            ("I2C_ReadRegister" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25242 25260])
+                    ("I2C_Register" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25261 25282]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [25216 25283])
+            ("I2C_DMALastTransferCmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25088 25106])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25107 25132]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [25060 25133])
+            ("I2C_DMACmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25014 25032])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25033 25058]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24998 25059])
+            ("I2C_GetPEC" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24896 24914]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24877 24915])
+            ("I2C_CalculatePEC" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24831 24849])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24850 24875]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24809 24876])
+            ("I2C_PECPositionConfig" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24763 24781])
+                    ("I2C_PECPosition" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24782 24807]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24736 24808])
+            ("I2C_TransmitPEC" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24690 24708])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24709 24734]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24669 24735])
+            ("I2C_ReceiveData" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24566 24584]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24542 24585])
+            ("I2C_SendData" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24508 24526])
+                    ("Data" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24527 24540]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24490 24541])
+            ("I2C_ARPCmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24361 24379])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24380 24405]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24345 24406])
+            ("I2C_SMBusAlertConfig" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24300 24318])
+                    ("I2C_SMBusAlert" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24319 24343]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24274 24344])
+            ("I2C_NACKPositionConfig" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24227 24245])
+                    ("I2C_NACKPosition" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24246 24272]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24199 24273])
+            ("I2C_FastModeDutyCycleConfig" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24155 24173])
+                    ("I2C_DutyCycle" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24174 24197]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24122 24198])
+            ("I2C_StretchClockCmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24076 24094])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24095 24120]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24051 24121])
+            ("I2C_SoftwareResetCmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24005 24023])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24024 24049]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23979 24050])
+            ("I2C_GeneralCallCmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23933 23951])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23952 23977]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23909 23978])
+            ("I2C_DualAddressCmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23863 23881])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23882 23907]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23839 23908])
+            ("I2C_OwnAddress2Config" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23802 23820])
+                    ("Address" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23821 23837]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23775 23838])
+            ("I2C_AcknowledgeConfig" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23729 23747])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23748 23773]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23702 23774])
+            ("I2C_Send7bitAddress" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23642 23660])
+                    ("Address" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23661 23677])
+                    ("I2C_Direction" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23678 23700]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23617 23701])
+            ("I2C_GenerateSTOP" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23571 23589])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23590 23615]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23549 23616])
+            ("I2C_GenerateSTART" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23503 23521])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23522 23547]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23480 23548])
+            ("I2C_AnalogFilterCmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23434 23452])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23453 23478]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23409 23479])
+            ("I2C_DigitalFilterConfig" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23361 23379])
+                    ("I2C_DigitalFilter" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23380 23407]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23332 23408])
+            ("I2C_Cmd" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23286 23304])
+                    ("NewState" variable (:type ("FunctionalState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23305 23330]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23273 23331])
+            ("I2C_StructInit" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2C_InitStruct" variable
+                       (:pointer 1
+                        :type ("I2C_InitTypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23239 23271]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23219 23272])
+            ("I2C_Init" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23166 23184])
+                    ("I2C_InitStruct" variable
+                       (:pointer 1
+                        :type ("I2C_InitTypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23185 23217]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23152 23218])
+            ("I2C_DeInit" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("I2Cx" variable
+                       (:pointer 1
+                        :type ("I2C_TypeDef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23050 23068]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23034 23069])
+            ("IS_I2C_CLOCK_SPEED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [22687 22705])
+            ("IS_I2C_OWN_ADDRESS1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [22566 22585])
+            ("IS_I2C_EVENT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20772 20784])
+            ("I2C_EVENT_SLAVE_ACK_FAILURE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20453 20480])
+            ("I2C_EVENT_SLAVE_BYTE_TRANSMITTING" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20326 20359])
+            ("I2C_EVENT_SLAVE_BYTE_TRANSMITTED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20208 20240])
+            ("I2C_EVENT_SLAVE_STOP_DETECTED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [20043 20072])
+            ("I2C_EVENT_SLAVE_BYTE_RECEIVED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [19921 19950])
+            ("I2C_EVENT_SLAVE_GENERALCALLADDRESS_MATCHED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18335 18377])
+            ("I2C_EVENT_SLAVE_TRANSMITTER_SECONDADDRESS_MATCHED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18162 18211])
+            ("I2C_EVENT_SLAVE_RECEIVER_SECONDADDRESS_MATCHED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [18052 18098])
+            ("I2C_EVENT_SLAVE_TRANSMITTER_ADDRESS_MATCHED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17882 17925])
+            ("I2C_EVENT_SLAVE_RECEIVER_ADDRESS_MATCHED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [17774 17814])
+            ("I2C_EVENT_MASTER_BYTE_TRANSMITTED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15933 15966])
+            ("I2C_EVENT_MASTER_BYTE_TRANSMITTING" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15804 15838])
+            ("I2C_EVENT_MASTER_BYTE_RECEIVED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [15622 15652])
+            ("I2C_EVENT_MASTER_MODE_ADDRESS10" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [14030 14061])
+            ("I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13904 13943])
+            ("I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [13780 13822])
+            ("I2C_EVENT_MASTER_MODE_SELECT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [12421 12449])
+            ("IS_I2C_GET_FLAG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10821 10836])
+            ("IS_I2C_CLEAR_FLAG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10718 10735])
+            ("I2C_FLAG_SB" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10654 10665])
+            ("I2C_FLAG_ADDR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10591 10604])
+            ("I2C_FLAG_BTF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10528 10540])
+            ("I2C_FLAG_ADD10" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10465 10479])
+            ("I2C_FLAG_STOPF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10402 10416])
+            ("I2C_FLAG_RXNE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10339 10352])
+            ("I2C_FLAG_TXE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10276 10288])
+            ("I2C_FLAG_BERR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10213 10226])
+            ("I2C_FLAG_ARLO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10150 10163])
+            ("I2C_FLAG_AF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10087 10098])
+            ("I2C_FLAG_OVR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10024 10036])
+            ("I2C_FLAG_PECERR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9961 9976])
+            ("I2C_FLAG_TIMEOUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9898 9914])
+            ("I2C_FLAG_SMBALERT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9835 9852])
+            ("I2C_FLAG_MSL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9727 9739])
+            ("I2C_FLAG_BUSY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9664 9677])
+            ("I2C_FLAG_TRA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9601 9613])
+            ("I2C_FLAG_GENCALL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9538 9554])
+            ("I2C_FLAG_SMBDEFAULT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9475 9494])
+            ("I2C_FLAG_SMBHOST" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9412 9428])
+            ("I2C_FLAG_DUALF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9349 9363])
+            ("IS_I2C_GET_IT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8686 8699])
+            ("IS_I2C_CLEAR_IT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8591 8606])
+            ("I2C_IT_SB" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8527 8536])
+            ("I2C_IT_ADDR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8464 8475])
+            ("I2C_IT_BTF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8401 8411])
+            ("I2C_IT_ADD10" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8338 8350])
+            ("I2C_IT_STOPF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8275 8287])
+            ("I2C_IT_RXNE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8212 8223])
+            ("I2C_IT_TXE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8149 8159])
+            ("I2C_IT_BERR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8086 8097])
+            ("I2C_IT_ARLO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8023 8034])
+            ("I2C_IT_AF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7960 7969])
+            ("I2C_IT_OVR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7897 7907])
+            ("I2C_IT_PECERR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7834 7847])
+            ("I2C_IT_TIMEOUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7771 7785])
+            ("I2C_IT_SMBALERT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7708 7723])
+            ("IS_I2C_CONFIG_IT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7551 7567])
+            ("I2C_IT_ERR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7492 7502])
+            ("I2C_IT_EVT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7433 7443])
+            ("I2C_IT_BUF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7374 7384])
+            ("IS_I2C_PEC_POSITION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7141 7160])
+            ("I2C_PECPosition_Current" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7082 7105])
+            ("I2C_PECPosition_Next" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7023 7043])
+            ("IS_I2C_SMBUS_ALERT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6820 6838])
+            ("I2C_SMBusAlert_High" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6761 6780])
+            ("I2C_SMBusAlert_Low" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6702 6720])
+            ("IS_I2C_NACK_POSITION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6463 6483])
+            ("I2C_NACKPosition_Current" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6404 6428])
+            ("I2C_NACKPosition_Next" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6345 6366])
+            ("IS_I2C_REGISTER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5626 5641])
+            ("I2C_Register_TRISE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5570 5588])
+            ("I2C_Register_CCR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5514 5530])
+            ("I2C_Register_SR2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5458 5474])
+            ("I2C_Register_SR1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5402 5418])
+            ("I2C_Register_DR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5346 5361])
+            ("I2C_Register_OAR2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5290 5307])
+            ("I2C_Register_OAR1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5234 5251])
+            ("I2C_Register_CR2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5178 5194])
+            ("I2C_Register_CR1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5122 5138])
+            ("IS_I2C_ACKNOWLEDGE_ADDRESS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4877 4903])
+            ("I2C_AcknowledgedAddress_10bit" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4818 4847])
+            ("I2C_AcknowledgedAddress_7bit" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4759 4787])
+            ("IS_I2C_DIRECTION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4526 4542])
+            ("I2C_Direction_Receiver" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4471 4493])
+            ("I2C_Direction_Transmitter" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4415 4440])
+            ("IS_I2C_ACK_STATE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4217 4233])
+            ("I2C_Ack_Disable" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4158 4173])
+            ("I2C_Ack_Enable" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4099 4113])
+            ("IS_I2C_DUTY_CYCLE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3899 3916])
+            ("I2C_DutyCycle_2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3803 3818])
+            ("I2C_DutyCycle_16_9" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3704 3722])
+            ("IS_I2C_MODE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3450 3461])
+            ("I2C_Mode_SMBusHost" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3391 3409])
+            ("I2C_Mode_SMBusDevice" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3330 3350])
+            ("I2C_Mode_I2C" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3271 3283])
+            ("IS_I2C_DIGITAL_FILTER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3151 3172])
+            ("IS_I2C_ALL_PERIPH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2931 2948])
+            ("I2C_InitTypeDef" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("" type
+                     (:members 
+                        ( ("I2C_ClockSpeed" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1689 1713])
+                          ("I2C_Mode" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1862 1880])
+                          ("I2C_DutyCycle" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2019 2042])
+                          ("I2C_OwnAddress1" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2211 2236])
+                          ("I2C_Ack" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2386 2403])
+                          ("I2C_AcknowledgedAddress" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2571 2604]))                        
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [1670 2788])
+            ("stm32f4xx.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1420 1442]))          
+      :file "stm32f4xx_i2c.h"
+      :pointmax 31229
+      :fsize 31939
+      :lastmodtime '(23839 314 933074 113000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("I2C_Mode_SMBusDevice" . ((semantic-list "((uint16_t)0x0002)" 3362 . 3380)))
+          ("IS_I2C_REGISTER" (spp-arg-list ("REGISTER") 5641 . 5651) . ((semantic-list "(((REGISTER) == I2C_Register_CR1) || \\
+                                   ((REGISTER) == I2C_Register_CR2) || \\
+                                   ((REGISTER) == I2C_Register_OAR1) || \\
+                                   ((REGISTER) == I2C_Register_OAR2) || \\
+                                   ((REGISTER) == I2C_Register_DR) || \\
+                                   ((REGISTER) == I2C_Register_SR1) || \\
+                                   ((REGISTER) == I2C_Register_SR2) || \\
+                                   ((REGISTER) == I2C_Register_CCR) || \\
+                                   ((REGISTER) == I2C_Register_TRISE))" 5652 . 6273)))
+          ("I2C_IT_TXE" . ((semantic-list "((uint32_t)0x06000080)" 8181 . 8203)))
+          ("I2C_FLAG_BUSY" . ((semantic-list "((uint32_t)0x00020000)" 9696 . 9718)))
+          ("I2C_FLAG_MSL" . ((semantic-list "((uint32_t)0x00010000)" 9759 . 9781)))
+          ("I2C_EVENT_SLAVE_RECEIVER_SECONDADDRESS_MATCHED" . ((semantic-list "((uint32_t)0x00820000)" 18102 . 18124)))
+          ("I2C_EVENT_SLAVE_TRANSMITTER_SECONDADDRESS_MATCHED" . ((semantic-list "((uint32_t)0x00860080)" 18212 . 18234)))
+          ("I2C_Ack_Disable" . ((semantic-list "((uint16_t)0x0000)" 4190 . 4208)))
+          ("I2C_Direction_Receiver" . ((semantic-list "((uint8_t)0x01)" 4502 . 4517)))
+          ("IS_I2C_DIRECTION" (spp-arg-list ("DIRECTION") 4542 . 4553) . ((semantic-list "(((DIRECTION) == I2C_Direction_Transmitter) || \\
+                                     ((DIRECTION) == I2C_Direction_Receiver))" 4554 . 4680)))
+          ("IS_I2C_ACKNOWLEDGE_ADDRESS" (spp-arg-list ("ADDRESS") 4903 . 4912) . ((semantic-list "(((ADDRESS) == I2C_AcknowledgedAddress_7bit) || \\
+                                             ((ADDRESS) == I2C_AcknowledgedAddress_10bit))" 4913 . 5053)))
+          ("I2C_IT_OVR" . ((semantic-list "((uint32_t)0x01000800)" 7929 . 7951)))
+          ("I2C_IT_ARLO" . ((semantic-list "((uint32_t)0x01000200)" 8055 . 8077)))
+          ("I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED" . ((semantic-list "((uint32_t)0x00030002)" 13954 . 13976)))
+          ("I2C_EVENT_MASTER_BYTE_TRANSMITTING" . ((semantic-list "((uint32_t)0x00070080)" 15855 . 15877)))
+          ("IS_I2C_DIGITAL_FILTER" (spp-arg-list ("FILTER") 3172 . 3180) . ((semantic-list "((FILTER) <= 0x0000000F)" 3183 . 3207)))
+          ("I2C_Register_CR1" . ((semantic-list "((uint8_t)0x00)" 5154 . 5169)))
+          ("I2C_Register_OAR1" . ((semantic-list "((uint8_t)0x08)" 5266 . 5281)))
+          ("IS_I2C_SMBUS_ALERT" (spp-arg-list ("ALERT") 6838 . 6845) . ((semantic-list "(((ALERT) == I2C_SMBusAlert_Low) || \\
+                                   ((ALERT) == I2C_SMBusAlert_High))" 6846 . 6952)))
+          ("I2C_FLAG_PECERR" . ((semantic-list "((uint32_t)0x10001000)" 9993 . 10015)))
+          ("I2C_FLAG_BERR" . ((semantic-list "((uint32_t)0x10000100)" 10245 . 10267)))
+          ("I2C_FLAG_BTF" . ((semantic-list "((uint32_t)0x10000004)" 10560 . 10582)))
+          ("I2C_FLAG_ADDR" . ((semantic-list "((uint32_t)0x10000002)" 10623 . 10645)))
+          ("I2C_EVENT_MASTER_MODE_SELECT" . ((semantic-list "((uint32_t)0x00030001)" 12471 . 12493)))
+          ("I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED" . ((semantic-list "((uint32_t)0x00070082)" 13830 . 13852)))
+          ("I2C_EVENT_SLAVE_BYTE_RECEIVED" . ((semantic-list "((uint32_t)0x00020040)" 19971 . 19993)))
+          ("I2C_EVENT_SLAVE_BYTE_TRANSMITTED" . ((semantic-list "((uint32_t)0x00060084)" 20258 . 20280)))
+          ("I2C_Register_CR2" . ((semantic-list "((uint8_t)0x04)" 5210 . 5225)))
+          ("I2C_Register_OAR2" . ((semantic-list "((uint8_t)0x0C)" 5322 . 5337)))
+          ("I2C_Register_DR" . ((semantic-list "((uint8_t)0x10)" 5378 . 5393)))
+          ("I2C_Register_SR1" . ((semantic-list "((uint8_t)0x14)" 5434 . 5449)))
+          ("I2C_Register_CCR" . ((semantic-list "((uint8_t)0x1C)" 5546 . 5561)))
+          ("I2C_IT_ERR" . ((semantic-list "((uint16_t)0x0100)" 7524 . 7542)))
+          ("I2C_IT_RXNE" . ((semantic-list "((uint32_t)0x06000040)" 8244 . 8266)))
+          ("I2C_IT_STOPF" . ((semantic-list "((uint32_t)0x02000010)" 8307 . 8329)))
+          ("I2C_FLAG_SMBHOST" . ((semantic-list "((uint32_t)0x00400000)" 9444 . 9466)))
+          ("I2C_FLAG_GENCALL" . ((semantic-list "((uint32_t)0x00100000)" 9570 . 9592)))
+          ("IS_I2C_GET_FLAG" (spp-arg-list ("FLAG") 10836 . 10842) . ((semantic-list "(((FLAG) == I2C_FLAG_DUALF) || ((FLAG) == I2C_FLAG_SMBHOST) || \\
+                               ((FLAG) == I2C_FLAG_SMBDEFAULT) || ((FLAG) == I2C_FLAG_GENCALL) || \\
+                               ((FLAG) == I2C_FLAG_TRA) || ((FLAG) == I2C_FLAG_BUSY) || \\
+                               ((FLAG) == I2C_FLAG_MSL) || ((FLAG) == I2C_FLAG_SMBALERT) || \\
+                               ((FLAG) == I2C_FLAG_TIMEOUT) || ((FLAG) == I2C_FLAG_PECERR) || \\
+                               ((FLAG) == I2C_FLAG_OVR) || ((FLAG) == I2C_FLAG_AF) || \\
+                               ((FLAG) == I2C_FLAG_ARLO) || ((FLAG) == I2C_FLAG_BERR) || \\
+                               ((FLAG) == I2C_FLAG_TXE) || ((FLAG) == I2C_FLAG_RXNE) || \\
+                               ((FLAG) == I2C_FLAG_STOPF) || ((FLAG) == I2C_FLAG_ADD10) || \\
+                               ((FLAG) == I2C_FLAG_BTF) || ((FLAG) == I2C_FLAG_ADDR) || \\
+                               ((FLAG) == I2C_FLAG_SB))" 10843 . 11795)))
+          ("I2C_EVENT_MASTER_BYTE_TRANSMITTED" . ((semantic-list "((uint32_t)0x00070084)" 15983 . 16005)))
+          ("I2C_DutyCycle_16_9" . ((semantic-list "((uint16_t)0x4000)" 3736 . 3754)))
+          ("I2C_Register_SR2" . ((semantic-list "((uint8_t)0x18)" 5490 . 5505)))
+          ("I2C_IT_EVT" . ((semantic-list "((uint16_t)0x0200)" 7465 . 7483)))
+          ("I2C_IT_SB" . ((semantic-list "((uint32_t)0x02000001)" 8559 . 8581)))
+          ("I2C_FLAG_SMBALERT" . ((semantic-list "((uint32_t)0x10008000)" 9867 . 9889)))
+          ("I2C_FLAG_TIMEOUT" . ((semantic-list "((uint32_t)0x10004000)" 9930 . 9952)))
+          ("I2C_EVENT_SLAVE_RECEIVER_ADDRESS_MATCHED" . ((semantic-list "((uint32_t)0x00020002)" 17824 . 17846)))
+          ("I2C_Mode_I2C" . ((semantic-list "((uint16_t)0x0000)" 3303 . 3321)))
+          ("I2C_AcknowledgedAddress_7bit" . ((semantic-list "((uint16_t)0x4000)" 4791 . 4809)))
+          ("I2C_NACKPosition_Next" . ((semantic-list "((uint16_t)0x0800)" 6377 . 6395)))
+          ("IS_I2C_NACK_POSITION" (spp-arg-list ("POSITION") 6483 . 6493) . ((semantic-list "(((POSITION) == I2C_NACKPosition_Next) || \\
+                                         ((POSITION) == I2C_NACKPosition_Current))" 6495 . 6621)))
+          ("I2C_IT_ADD10" . ((semantic-list "((uint32_t)0x02000008)" 8370 . 8392)))
+          ("I2C_FLAG_DUALF" . ((semantic-list "((uint32_t)0x00800000)" 9381 . 9403)))
+          ("I2C_FLAG_STOPF" . ((semantic-list "((uint32_t)0x10000010)" 10434 . 10456)))
+          ("I2C_EVENT_MASTER_MODE_ADDRESS10" . ((semantic-list "((uint32_t)0x00030008)" 14080 . 14102)))
+          ("I2C_EVENT_SLAVE_STOP_DETECTED" . ((semantic-list "((uint32_t)0x00000010)" 20093 . 20115)))
+          ("I2C_EVENT_SLAVE_BYTE_TRANSMITTING" . ((semantic-list "((uint32_t)0x00060080)" 20376 . 20398)))
+          ("I2C_EVENT_SLAVE_ACK_FAILURE" . ((semantic-list "((uint32_t)0x00000400)" 20503 . 20525)))
+          ("I2C_IT_AF" . ((semantic-list "((uint32_t)0x01000400)" 7992 . 8014)))
+          ("IS_I2C_CLEAR_IT" (spp-arg-list ("IT") 8606 . 8610) . ((semantic-list "((((IT) & (uint16_t)0x20FF) == 0x00) && ((IT) != (uint16_t)0x00))" 8611 . 8676)))
+          ("I2C_FLAG_ARLO" . ((semantic-list "((uint32_t)0x10000200)" 10182 . 10204)))
+          ("I2C_FLAG_TXE" . ((semantic-list "((uint32_t)0x10000080)" 10308 . 10330)))
+          ("I2C_FLAG_SB" . ((semantic-list "((uint32_t)0x10000001)" 10686 . 10708)))
+          ("I2C_EVENT_SLAVE_GENERALCALLADDRESS_MATCHED" . ((semantic-list "((uint32_t)0x00120000)" 18385 . 18407)))
+          ("I2C_Direction_Transmitter" . ((semantic-list "((uint8_t)0x00)" 4446 . 4461)))
+          ("I2C_SMBusAlert_High" . ((semantic-list "((uint16_t)0xDFFF)" 6793 . 6811)))
+          ("I2C_IT_TIMEOUT" . ((semantic-list "((uint32_t)0x01004000)" 7803 . 7825)))
+          ("I2C_FLAG_OVR" . ((semantic-list "((uint32_t)0x10000800)" 10056 . 10078)))
+          ("I2C_FLAG_ADD10" . ((semantic-list "((uint32_t)0x10000008)" 10497 . 10519)))
+          ("I2C_EVENT_SLAVE_TRANSMITTER_ADDRESS_MATCHED" . ((semantic-list "((uint32_t)0x00060082)" 17932 . 17954)))
+          ("IS_I2C_ALL_PERIPH" (spp-arg-list ("PERIPH") 2948 . 2956) . ((semantic-list "(((PERIPH) == I2C1) || \\
+                                   ((PERIPH) == I2C2) || \\
+                                   ((PERIPH) == I2C3))" 2957 . 3095)))
+          ("IS_I2C_MODE" (spp-arg-list ("MODE") 3461 . 3467) . ((semantic-list "(((MODE) == I2C_Mode_I2C) || \\
+                           ((MODE) == I2C_Mode_SMBusDevice) || \\
+                           ((MODE) == I2C_Mode_SMBusHost))" 3468 . 3622)))
+          ("IS_I2C_DUTY_CYCLE" (spp-arg-list ("CYCLE") 3916 . 3923) . ((semantic-list "(((CYCLE) == I2C_DutyCycle_16_9) || \\
+                                  ((CYCLE) == I2C_DutyCycle_2))" 3924 . 4025)))
+          ("IS_I2C_GET_IT" (spp-arg-list ("IT") 8699 . 8703) . ((semantic-list "(((IT) == I2C_IT_SMBALERT) || ((IT) == I2C_IT_TIMEOUT) || \\
+                           ((IT) == I2C_IT_PECERR) || ((IT) == I2C_IT_OVR) || \\
+                           ((IT) == I2C_IT_AF) || ((IT) == I2C_IT_ARLO) || \\
+                           ((IT) == I2C_IT_BERR) || ((IT) == I2C_IT_TXE) || \\
+                           ((IT) == I2C_IT_RXNE) || ((IT) == I2C_IT_STOPF) || \\
+                           ((IT) == I2C_IT_ADD10) || ((IT) == I2C_IT_BTF) || \\
+                           ((IT) == I2C_IT_ADDR) || ((IT) == I2C_IT_SB))" 8704 . 9230)))
+          ("I2C_FLAG_SMBDEFAULT" . ((semantic-list "((uint32_t)0x00200000)" 9507 . 9529)))
+          ("I2C_FLAG_AF" . ((semantic-list "((uint32_t)0x10000400)" 10119 . 10141)))
+          ("I2C_FLAG_RXNE" . ((semantic-list "((uint32_t)0x10000040)" 10371 . 10393)))
+          ("I2C_DutyCycle_2" . ((semantic-list "((uint16_t)0xBFFF)" 3835 . 3853)))
+          ("I2C_Ack_Enable" . ((semantic-list "((uint16_t)0x0400)" 4131 . 4149)))
+          ("IS_I2C_ACK_STATE" (spp-arg-list ("STATE") 4233 . 4240) . ((semantic-list "(((STATE) == I2C_Ack_Enable) || \\
+                                 ((STATE) == I2C_Ack_Disable))" 4241 . 4337)))
+          ("I2C_NACKPosition_Current" . ((semantic-list "((uint16_t)0xF7FF)" 6436 . 6454)))
+          ("I2C_SMBusAlert_Low" . ((semantic-list "((uint16_t)0x2000)" 6734 . 6752)))
+          ("IS_I2C_PEC_POSITION" (spp-arg-list ("POSITION") 7160 . 7170) . ((semantic-list "(((POSITION) == I2C_PECPosition_Next) || \\
+                                       ((POSITION) == I2C_PECPosition_Current))" 7171 . 7293)))
+          ("I2C_IT_PECERR" . ((semantic-list "((uint32_t)0x01001000)" 7866 . 7888)))
+          ("I2C_IT_BTF" . ((semantic-list "((uint32_t)0x02000004)" 8433 . 8455)))
+          ("I2C_IT_BERR" . ((semantic-list "((uint32_t)0x01000100)" 8118 . 8140)))
+          ("I2C_IT_ADDR" . ((semantic-list "((uint32_t)0x02000002)" 8496 . 8518)))
+          ("I2C_FLAG_TRA" . ((semantic-list "((uint32_t)0x00040000)" 9633 . 9655)))
+          ("I2C_EVENT_MASTER_BYTE_RECEIVED" . ((semantic-list "((uint32_t)0x00030040)" 15672 . 15694)))
+          ("IS_I2C_EVENT" (spp-arg-list ("EVENT") 20784 . 20791) . ((semantic-list "(((EVENT) == I2C_EVENT_SLAVE_TRANSMITTER_ADDRESS_MATCHED) || \\
+                             ((EVENT) == I2C_EVENT_SLAVE_RECEIVER_ADDRESS_MATCHED) || \\
+                             ((EVENT) == I2C_EVENT_SLAVE_TRANSMITTER_SECONDADDRESS_MATCHED) || \\
+                             ((EVENT) == I2C_EVENT_SLAVE_RECEIVER_SECONDADDRESS_MATCHED) || \\
+                             ((EVENT) == I2C_EVENT_SLAVE_GENERALCALLADDRESS_MATCHED) || \\
+                             ((EVENT) == I2C_EVENT_SLAVE_BYTE_RECEIVED) || \\
+                             ((EVENT) == (I2C_EVENT_SLAVE_BYTE_RECEIVED | I2C_FLAG_DUALF)) || \\
+                             ((EVENT) == (I2C_EVENT_SLAVE_BYTE_RECEIVED | I2C_FLAG_GENCALL)) || \\
+                             ((EVENT) == I2C_EVENT_SLAVE_BYTE_TRANSMITTED) || \\
+                             ((EVENT) == (I2C_EVENT_SLAVE_BYTE_TRANSMITTED | I2C_FLAG_DUALF)) || \\
+                             ((EVENT) == (I2C_EVENT_SLAVE_BYTE_TRANSMITTED | I2C_FLAG_GENCALL)) || \\
+                             ((EVENT) == I2C_EVENT_SLAVE_STOP_DETECTED) || \\
+                             ((EVENT) == I2C_EVENT_MASTER_MODE_SELECT) || \\
+                             ((EVENT) == I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED) || \\
+                             ((EVENT) == I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED) || \\
+                             ((EVENT) == I2C_EVENT_MASTER_BYTE_RECEIVED) || \\
+                             ((EVENT) == I2C_EVENT_MASTER_BYTE_TRANSMITTED) || \\
+                             ((EVENT) == I2C_EVENT_MASTER_BYTE_TRANSMITTING) || \\
+                             ((EVENT) == I2C_EVENT_MASTER_MODE_ADDRESS10) || \\
+                             ((EVENT) == I2C_EVENT_SLAVE_ACK_FAILURE))" 20792 . 22495)))
+          ("I2C_Mode_SMBusHost" . ((semantic-list "((uint16_t)0x000A)" 3423 . 3441)))
+          ("IS_I2C_CONFIG_IT" (spp-arg-list ("IT") 7567 . 7571) . ((semantic-list "((((IT) & (uint16_t)0xF8FF) == 0x00) && ((IT) != 0x00))" 7572 . 7627)))
+          ("I2C_IT_SMBALERT" . ((semantic-list "((uint32_t)0x01008000)" 7740 . 7762)))
+          ("IS_I2C_CLEAR_FLAG" (spp-arg-list ("FLAG") 10735 . 10741) . ((semantic-list "((((FLAG) & (uint16_t)0x20FF) == 0x00) && ((FLAG) != (uint16_t)0x00))" 10742 . 10811)))
+          ("IS_I2C_OWN_ADDRESS1" (spp-arg-list ("ADDRESS1") 22585 . 22595) . ((semantic-list "((ADDRESS1) <= 0x3FF)" 22596 . 22617)))
+          ("IS_I2C_CLOCK_SPEED" (spp-arg-list ("SPEED") 22705 . 22712) . ((semantic-list "(((SPEED) >= 0x1) && ((SPEED) <= 400000))" 22713 . 22754)))
+          ("__STM32F4xx_I2C_H")
+          ("I2C_AcknowledgedAddress_10bit" . ((semantic-list "((uint16_t)0xC000)" 4850 . 4868)))
+          ("I2C_Register_TRISE" . ((semantic-list "((uint8_t)0x20)" 5602 . 5617)))
+          ("I2C_PECPosition_Next" . ((semantic-list "((uint16_t)0x0800)" 7055 . 7073)))
+          ("I2C_PECPosition_Current" . ((semantic-list "((uint16_t)0xF7FF)" 7114 . 7132)))
+          ("I2C_IT_BUF" . ((semantic-list "((uint16_t)0x0400)" 7406 . 7424)))
+          )
+))
+  :file "!home!yhrs!development!leomo!lpsensor-source!LpmsIAP!Libraries!STM32F4xx_StdPeriph_Driver!inc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

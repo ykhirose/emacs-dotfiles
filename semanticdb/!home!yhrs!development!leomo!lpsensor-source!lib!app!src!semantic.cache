@@ -1,0 +1,743 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("mainloop.h" include nil nil [21 42])
+            ("acc_gyr.h" include nil nil [44 64])
+            ("app_gasgauge.h" include nil nil [65 90])
+            ("app_led.h" include nil nil [91 111])
+            ("bt.h" include nil nil [112 127])
+            ("charger.h" include nil nil [128 148])
+            ("communication_manager.h" include nil nil [149 183])
+            ("filemanager.h" include nil nil [184 208])
+            ("gasgauge.h" include nil nil [209 230])
+            ("mcu.h" include nil nil [231 247])
+            ("watchdog.h" include nil nil [248 269])
+            ("sensor_manager.h" include nil nil [270 297])
+            ("system_step_timer.h" include nil nil [298 328])
+            ("mainloop_get_cycles_per_transfer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2655 2660]))                  )
+                (reparse-symbol extern-c-contents) [2614 2696])
+            ("mainloop_set_cycles_per_transfer" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("cycle" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2559 2573]))                  )
+                (reparse-symbol extern-c-contents) [2521 2610])
+            ("mainloop_on_connected" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2504 2509]))                  )
+                (reparse-symbol extern-c-contents) [2477 2517])
+            ("mainloop_on_not_connected" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2438 2443]))                  )
+                (reparse-symbol extern-c-contents) [2407 2451])
+            ("mainloop_on_sleeping" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2368 2373]))                  )
+                (reparse-symbol extern-c-contents) [2342 2381])
+            ("mainloop_run_loop" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2182 2187]))                  )
+                (reparse-symbol extern-c-contents) [2159 2316])
+            ("mainloop_run_post" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2135 2140]))                  )
+                (reparse-symbol extern-c-contents) [2112 2155])
+            ("mainloop_run_pre" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1992 1997]))                  )
+                (reparse-symbol extern-c-contents) [1970 2012])
+            ("mainloop_run" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1567 1572]))                  )
+                (reparse-symbol extern-c-contents) [1549 1871])
+            ("mainloop_initialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [544 549]))                  )
+                (reparse-symbol extern-c-contents) [519 1545])
+            ("__bt_wakeup_interruption" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [509 514]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [479 515])
+            ("cyclesPerTransfer" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :default-value "0")
+                (reparse-symbol extern-c-contents) [447 476])
+            ("gotoSleep" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :default-value "0")
+                (reparse-symbol extern-c-contents) [421 443])
+            ("SystemInit" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [411 416]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [388 417]))          
+      :file "mainloop.c"
+      :pointmax 2741
+      :fsize 2740
+      :lastmodtime '(23884 63742 543244 181000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("PRINT_DEBUG" variable (:constant-flag t) nil [143 154])
+            ("stdint.h" include (:system-flag t) nil [182 201])
+            ("acc_gyr.h" include nil nil [203 223])
+            ("mag.h" include nil nil [224 240])
+            ("config.h" include nil nil [241 260])
+            ("embed_flash.h" include nil nil [261 285])
+            ("filter.h" include nil nil [286 305])
+            ("mainloop.h" include nil nil [306 327])
+            ("mag.h" include nil nil [328 344])
+            ("matrix.h" include nil nil [345 364])
+            ("mcu.h" include nil nil [365 381])
+            ("register.h" include nil nil [382 403])
+            ("sensor_manager.h" include nil nil [404 431])
+            ("user_addr.h" include nil nil [432 454])
+            ("version.h" include nil nil [455 475])
+            ("_smFilterParamInit" function
+               (:type "void"
+                :arguments 
+                  ( ("gReg" variable (:type ("Register" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25363 25377]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [25332 27107])
+            ("_smCalibrationdataInit" function
+               (:type "void"
+                :arguments 
+                  ( ("gReg" variable (:type ("Register" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20958 20972]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [20923 25328])
+            ("_smPollSensorData" function
+               (:type ("SensorData" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20154 20159]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [20118 20919])
+            ("_smResetSensorDataQueue" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20079 20084]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [20043 20114])
+            ("_smPushSensorData" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19756 19761]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [19726 20039])
+            ("_smCalcLinearAcceleration" function
+               (:type ("Vector3f" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19424 19429]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [19382 19721])
+            ("_smGyrOnlineCal" function
+               (:type "void"
+                :arguments 
+                  ( ("gyr" variable (:type ("Vector3f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17501 17514]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [17473 19378])
+            ("_smCorrectRawAxisAlignment" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16967 16972]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [16928 17469])
+            ("_smGyrCalibration_init_struct" function
+               (:type "void"
+                :arguments 
+                  ( ("calibration" variable
+                       (:pointer 1
+                        :type ("GyrCalibration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16517 16545]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [16475 16924])
+            ("_smRefCalibration_init_struct" function
+               (:type "void"
+                :arguments 
+                  ( ("calibration" variable
+                       (:pointer 1
+                        :type ("RefCalibration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16180 16208]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [16138 16471])
+            ("_smGetGyrRange" function
+               (:type ("GyrRange" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [15933 16134])
+            ("_smGetGyrODR" function
+               (:type ("GyrODR" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [15738 15929])
+            ("_smGetAccRange" function
+               (:type ("AccRange" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [15538 15734])
+            ("_smGetAccODR" function
+               (:type ("AccODR" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [15343 15534])
+            ("smGetSensorData" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("out" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11149 11162])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11163 11175]))                  )
+                (reparse-symbol extern-c-contents) [11125 15339])
+            ("smProcessSensorData" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9266 9271]))                  )
+                (reparse-symbol extern-c-contents) [9241 11121])
+            ("smUpdateSensorData" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8928 8933]))                  )
+                (reparse-symbol extern-c-contents) [8904 9237])
+            ("smGetCurrentMeasurementTime" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8588 8602])
+                    ("l" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8603 8615]))                  )
+                (reparse-symbol extern-c-contents) [8553 8900])
+            ("smResetMeasurementTime" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("t" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8507 8518]))                  )
+                (reparse-symbol extern-c-contents) [8479 8549])
+            ("smSetStorageMode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("mode" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8430 8443]))                  )
+                (reparse-symbol extern-c-contents) [8405 8475])
+            ("smGetStorageMode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8364 8369]))                  )
+                (reparse-symbol extern-c-contents) [8339 8401])
+            ("smStopRefCalibration" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8303 8308]))                  )
+                (reparse-symbol extern-c-contents) [8277 8335])
+            ("smCheckRefCal" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8064 8069]))                  )
+                (reparse-symbol extern-c-contents) [8045 8273])
+            ("smStartRefCalibration" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7508 7513]))                  )
+                (reparse-symbol extern-c-contents) [7481 8041])
+            ("_smStopGyrCalibration" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6646 6651]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [6612 7477])
+            ("_smCheckGyrCal" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5429 5434]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [5402 6608])
+            ("smStartGyrCalibration" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4894 4899]))                  )
+                (reparse-symbol extern-c-contents) [4867 5398])
+            ("smUpdateStreamFreq" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3811 3816]))                  )
+                (reparse-symbol extern-c-contents) [3787 4863])
+            ("smSetStreamMode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3658 3663]))                  )
+                (reparse-symbol extern-c-contents) [3637 3783])
+            ("smInitStreamMode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3351 3356]))                  )
+                (reparse-symbol extern-c-contents) [3329 3633])
+            ("smSetCommandMode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3302 3307]))                  )
+                (reparse-symbol extern-c-contents) [3280 3325])
+            ("smGetCurrentMode" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SensorManagerMode" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3248 3253]))                  )
+                (reparse-symbol extern-c-contents) [3213 3276])
+            ("smGetStatus" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint32_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3176 3181]))                  )
+                (reparse-symbol extern-c-contents) [3155 3209])
+            ("smInitMag" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3114 3119]))                  )
+                (reparse-symbol extern-c-contents) [3096 3151])
+            ("smInitAcc" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3012 3017]))                  )
+                (reparse-symbol extern-c-contents) [2994 3092])
+            ("smInitGyr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2910 2915]))                  )
+                (reparse-symbol extern-c-contents) [2892 2990])
+            ("smInitialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2136 2141]))                  )
+                (reparse-symbol extern-c-contents) [2115 2888])
+            ("_smPollSensorData" function
+               (:type ("SensorData" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2105 2110]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2069 2111])
+            ("_smResetSensorDataQueue" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2060 2065]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2024 2066])
+            ("_smPushSensorData" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2015 2020]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1985 2021])
+            ("_smCalcLinearAcceleration" function
+               (:type ("Vector3f" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1975 1980]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1933 1981])
+            ("_smGyrOnlineCal" function
+               (:type "void"
+                :arguments 
+                  ( ("gyr" variable (:type ("Vector3f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1915 1928]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1887 1929])
+            ("_smStopGyrCalibration" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1877 1882]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1843 1883])
+            ("_smCheckGyrCal" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1834 1839]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1807 1840])
+            ("_smCorrectRawAxisAlignment" function
+               (:type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1797 1802]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1758 1803])
+            ("_smGyrCalibration_init_struct" function
+               (:type "void"
+                :arguments 
+                  ( ("calibration" variable
+                       (:pointer 1
+                        :type ("GyrCalibration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1725 1753]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1683 1754])
+            ("_smRefCalibration_init_struct" function
+               (:type "void"
+                :arguments 
+                  ( ("calibration" variable
+                       (:pointer 1
+                        :type ("RefCalibration" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1651 1679]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1609 1680])
+            ("_smFilterParamInit" function
+               (:type "void"
+                :arguments 
+                  ( ("gReg" variable (:type ("Register" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1591 1605]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1560 1606])
+            ("_smCalibrationdataInit" function
+               (:type "void"
+                :arguments 
+                  ( ("gReg" variable (:type ("Register" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1542 1556]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1507 1557])
+            ("_smGetGyrRange" function
+               (:type ("GyrRange" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1497 1502]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1466 1503])
+            ("_smGetGyrODR" function
+               (:type ("GyrODR" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1457 1462]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1430 1463])
+            ("_smGetAccRange" function
+               (:type ("AccRange" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1421 1426]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1390 1427])
+            ("_smGetAccODR" function
+               (:type ("AccODR" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1381 1386]))                  
+                :typemodifiers ("extern" "\"C\"" "static")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1354 1387])
+            ("hasUserConfig" function
+               (:type ("uint8_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1249 1254]))                  
+                :typemodifiers ("extern" "\"C\"" "static"))
+                (reparse-symbol extern-c-contents) [1220 1350])
+            ("gReg" variable
+               (:type ("Register" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern"))
+                (reparse-symbol extern-c-contents) [1195 1216])
+            ("magNoise" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "float"
+                :default-value "0.0f")
+                (reparse-symbol extern-c-contents) [1169 1191])
+            ("measurementIntervals" variable
+               (:type ("uint8_t" type (:type "class") nil nil)
+                :default-value "1"
+                :typemodifiers ("extern" "\"C\"" "volatile"))
+                (reparse-symbol extern-c-contents) [1123 1165])
+            ("measurementPeriod" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type "float"
+                :default-value "0.00250f")
+                (reparse-symbol extern-c-contents) [1085 1120])
+            ("measurementTime" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint32_t" type (:type "class") nil nil)
+                :default-value "0")
+                (reparse-symbol extern-c-contents) [1053 1082])
+            ("gyrCalibration" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GyrCalibration" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [1020 1050])
+            ("refCalibration" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("RefCalibration" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [987 1017])
+            ("sm_state" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SensorManagerState" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [955 983])
+            ("calibrationData" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("CalibrationData" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [920 952])
+            ("filterParam" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FilterParameters" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [887 916])
+            ("kf" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("KF" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [878 884])
+            ("w" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("Vector3f" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [851 862])
+            ("r" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("Vector3f" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [837 848])
+            ("q" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("Vector4f" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [823 834])
+            ("gDrift" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("Vector3f" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [803 819])
+            ("dataQueueCount" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint8_t" type (:type "class") nil nil)
+                :default-value "0")
+                (reparse-symbol extern-c-contents) [772 799])
+            ("dataQueue" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SensorData" type (:type "class") nil nil)
+                :dereference 1)
+                (reparse-symbol extern-c-contents) [724 769])
+            ("data" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SensorData" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [705 721])
+            ("rawData" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SensorData" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [683 702])
+            ("mode" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("SensorManagerMode" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [656 679])
+            ("sm_status" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint32_t" type (:type "class") nil nil)
+                :default-value "0")
+                (reparse-symbol extern-c-contents) [630 653])
+            ("SENSOR_DATA_QUEUE_SIZE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [602 624])
+            ("GYRO_ONLINE_CAL_ITER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [569 589])
+            ("DEG2RAD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [540 547]))          
+      :file "sensor_manager.c"
+      :pointmax 27153
+      :fsize 26132
+      :lastmodtime '(23884 63742 546577 515000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEG2RAD" . ((number "0.017453293f" 548 . 560)))
+          ("PRINT_DEBUG" (spp-arg-list ("msg" "...") 154 . 164))
+          ("SENSOR_DATA_QUEUE_SIZE" . ((number "8" 625 . 626)))
+          ("GYRO_ONLINE_CAL_ITER" . ((number "64" 590 . 592)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("app_led.h" include nil nil [1 21])
+            ("app_led_pwm_set_waveform" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("uptime" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1343 1359])
+                    ("ontime" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1414 1430])
+                    ("downtime" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1485 1503])
+                    ("offtime" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1558 1575]))                  )
+                (reparse-symbol extern-c-contents) [1313 1578])
+            ("app_led_pwm_get_color" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1247 1259])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1260 1272])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1273 1285]))                  )
+                (reparse-symbol extern-c-contents) [1220 1288])
+            ("app_led_pwm_set_color" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("r" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1157 1168])
+                    ("g" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1169 1180])
+                    ("b" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1181 1192]))                  )
+                (reparse-symbol extern-c-contents) [1130 1195])
+            ("app_led_pwm_reset" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1079 1084]))                  )
+                (reparse-symbol extern-c-contents) [1053 1104])
+            ("app_led_pwm_update" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1002 1007]))                  )
+                (reparse-symbol extern-c-contents) [975 1027])
+            ("app_led_rgb_cyan" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [941 946]))                  )
+                (reparse-symbol extern-c-contents) [919 949])
+            ("app_led_rgb_off" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [886 891]))                  )
+                (reparse-symbol extern-c-contents) [865 894])
+            ("app_led_rgb_magenta" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [832 837]))                  )
+                (reparse-symbol extern-c-contents) [807 840])
+            ("app_led_rgb_yellow" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [774 779]))                  )
+                (reparse-symbol extern-c-contents) [750 782])
+            ("app_led_rgb_blue" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [717 722]))                  )
+                (reparse-symbol extern-c-contents) [695 725])
+            ("app_led_rgb_green" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [662 667]))                  )
+                (reparse-symbol extern-c-contents) [639 670])
+            ("app_led_rgb_red" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [606 611]))                  )
+                (reparse-symbol extern-c-contents) [585 614])
+            ("app_led_rgb_white" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [552 557]))                  )
+                (reparse-symbol extern-c-contents) [529 560])
+            ("app_led_is_cathode_comon" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [474 479]))                  )
+                (reparse-symbol extern-c-contents) [444 503])
+            ("app_led_pwm_deinitialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [393 398]))                  )
+                (reparse-symbol extern-c-contents) [360 418])
+            ("app_led_pwm_initialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [309 314]))                  )
+                (reparse-symbol extern-c-contents) [278 334])
+            ("app_led_deinitialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [227 232]))                  )
+                (reparse-symbol extern-c-contents) [198 252])
+            ("app_led_initialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("int16_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [148 153]))                  )
+                (reparse-symbol extern-c-contents) [121 173])
+            ("wf" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("LedWaveform" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [80 95]))          
+      :file "app_led.c"
+      :pointmax 1624
+      :fsize 1623
+      :lastmodtime '(23884 63742 543244 181000)
+      :unmatched-syntax nil))
+  :file "!home!yhrs!development!leomo!lpsensor-source!lib!app!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

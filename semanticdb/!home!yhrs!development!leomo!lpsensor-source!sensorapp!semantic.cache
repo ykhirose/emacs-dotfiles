@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main.h" include nil nil [21 38])
+            ("mainloop.h" include nil nil [39 60])
+            ("main" function (:type "int") nil [158 350]))          
+      :file "main.c"
+      :pointmax 351
+      :fsize 350
+      :lastmodtime '(23861 34182 262935 360000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "main.h"
+      :fsize 168
+      :lastmodtime '(23884 63742 546577 515000)))
+  :file "!home!yhrs!development!leomo!lpsensor-source!sensorapp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
